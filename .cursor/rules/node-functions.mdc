@@ -1,0 +1,36 @@
+---
+description: Node.js Cloud Run function conventions for Beaver 4.0
+globs: functions/dispatcher/**,functions/classifier/**,functions/personalization/**,packages/shared/**
+alwaysApply: false
+---
+
+# Node Function Conventions
+
+## Structure
+
+- `src/index.ts` — Express HTTP handler (Pub/Sub push endpoint at `POST /`).
+- `src/{name}.ts` — Business logic, exported for testing.
+- Dockerfile builds from monorepo root (needs `packages/shared`).
+
+## Patterns
+
+```typescript
+// Parse Pub/Sub envelope or direct JSON body
+if (envelope?.message?.data) {
+  const decoded = Buffer.from(envelope.message.data, 'base64').toString('utf-8');
+  message = schema.parse(JSON.parse(decoded));
+}
+
+// Mock mode for local dev
+const MOCK_MODE = process.env.MOCK_MODE === 'true';
+```
+
+## Dependencies
+
+- Import contracts from `@beaver/shared`.
+- Use workspace protocol: `"@beaver/shared": "workspace:*"`.
+- GCP clients: `@google-cloud/firestore`, `@google-cloud/bigquery`, `@google-cloud/pubsub`, `@google-cloud/storage`.
+
+## Health check
+
+Every service exposes `GET /health` returning `{ status: 'ok', service: 'beaver-{name}' }`.

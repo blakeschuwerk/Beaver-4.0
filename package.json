@@ -1,0 +1,21 @@
+{
+  "name": "beaver-4.0",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Beaver 4.0 — Government meeting document pipeline for early-stage infrastructure project discovery",
+  "scripts": {
+    "build": "pnpm -r build",
+    "build:shared": "pnpm --filter @beaver/shared build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "dev:dispatcher": "pnpm --filter @beaver/dispatcher dev",
+    "dev:classifier": "pnpm --filter @beaver/classifier dev",
+    "dev:personalization": "pnpm --filter @beaver/personalization dev"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

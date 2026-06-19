@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://beaver.dev/schemas/project-created.json",
+  "title": "ProjectCreatedMessage",
+  "type": "object",
+  "required": ["schema_version", "trace_id", "published_at", "project_id", "county_id", "niche_tags", "stage", "document_id", "chunk_ids"],
+  "properties": {
+    "schema_version": { "type": "string", "default": "1.0.0" },
+    "trace_id": { "type": "string", "format": "uuid" },
+    "published_at": { "type": "string", "format": "date-time" },
+    "project_id": { "type": "string" },
+    "tracking_number": { "type": "string" },
+    "county_id": { "type": "string" },
+    "niche_tags": { "type": "array", "items": { "type": "string" } },
+    "stage": { "type": "string", "enum": ["subcommittee", "approved", "bidding", "awarded", "closed"] },
+    "document_id": { "type": "string" },
+    "chunk_ids": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

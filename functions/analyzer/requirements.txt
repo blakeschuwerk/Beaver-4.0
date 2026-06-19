@@ -1,0 +1,10 @@
+# Beaver analyzer (F3) dependencies
+google-cloud-storage>=2.19.0
+google-cloud-pubsub>=2.27.0
+pydantic>=2.10.0
+jsonschema>=4.23.0
+flask>=3.1.0
+gunicorn>=23.0.0
+
+# Docling — install for production extraction
+# docling

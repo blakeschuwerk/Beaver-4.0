@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://beaver.dev/schemas/scrape-job.json",
+  "title": "ScrapeJobMessage",
+  "type": "object",
+  "required": ["schema_version", "trace_id", "published_at", "job_id", "county_id", "scraper_strategy", "source_urls"],
+  "properties": {
+    "schema_version": { "type": "string", "default": "1.0.0" },
+    "trace_id": { "type": "string", "format": "uuid" },
+    "published_at": { "type": "string", "format": "date-time" },
+    "job_id": { "type": "string" },
+    "county_id": { "type": "string" },
+    "scraper_strategy": { "type": "string", "enum": ["civic_scraper", "crawl4ai", "custom"] },
+    "source_urls": { "type": "array", "items": { "type": "string", "format": "uri" } },
+    "platform": { "type": "string" }
+  },
+  "additionalProperties": false
+}

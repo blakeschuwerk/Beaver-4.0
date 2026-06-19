@@ -1,0 +1,27 @@
+{
+  "name": "@beaver/personalization",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "dev": "node --import tsx --watch src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "echo 'no lint configured'",
+    "test": "node --import tsx --test src/**/*.test.ts"
+  },
+  "dependencies": {
+    "@beaver/shared": "workspace:*",
+    "@google-cloud/bigquery": "^7.9.1",
+    "@google-cloud/firestore": "^7.11.0",
+    "@google-cloud/pubsub": "^4.9.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

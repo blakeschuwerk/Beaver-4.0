@@ -1,0 +1,15 @@
+# Beaver scraper (F2) dependencies
+# civic-scraper and crawl4ai are optional heavy deps — mock mode works without them
+aiohttp>=3.11.0
+PyMuPDF>=1.25.0
+google-cloud-storage>=2.19.0
+google-cloud-firestore>=2.19.0
+google-cloud-pubsub>=2.27.0
+pydantic>=2.10.0
+jsonschema>=4.23.0
+flask>=3.1.0
+gunicorn>=23.0.0
+
+# Scraper libraries (install for production scraping)
+# civic-scraper
+# crawl4ai

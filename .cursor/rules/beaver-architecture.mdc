@@ -1,0 +1,41 @@
+---
+description: Beaver 4.0 core architecture invariants — contracts, idempotency, lifecycle
+alwaysApply: true
+---
+
+# Beaver Architecture Invariants
+
+## Contracts
+
+- Pub/Sub message schemas live in `packages/shared/contracts/*.json` (source of truth).
+- TypeScript: `packages/shared/src/messages.ts` (zod). Python: `packages/shared-py/`.
+- All messages carry `schema_version`, `trace_id`, `published_at`.
+- Use constants from `@beaver/shared` / `beaver_shared.constants` — never hardcode topic/bucket names.
+
+## Idempotency
+
+- Documents: `content_hash` (sha256) + `document_id = doc-{county}-{hash16}`.
+- Jobs: `job_id = job-{county_id}-{date}`.
+- Projects: MERGE upsert on `project_id` / `tracking_number` — never duplicate rows.
+
+## Project Lifecycle
+
+Stages: `subcommittee` → `approved` → `bidding` → `awarded` → `closed`.
+Projects accumulate data across meetings via MERGE, not INSERT.
+
+## Do Not Build
+
+- Discovery Engine integration (unresolved).
+- Full F5 per-user LLM matching (scaffold only — see personalization.ts TODOs).
+- Frontend or Notifier beyond stubs.
+
+## Language Split
+
+- Node: dispatcher, classifier, personalization.
+- Python: scraper, analyzer (required libraries are Python-only).
+
+## Error Handling
+
+- Structural scraper failures → circuit breaker on Firestore county (`broken_until` cooldown).
+- Transient failures → Pub/Sub retry → DLQ after 5 attempts.
+- Propagate `trace_id` through every message for observability.

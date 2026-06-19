@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://beaver.dev/schemas/match-created.json",
+  "title": "MatchCreatedMessage",
+  "type": "object",
+  "required": ["schema_version", "trace_id", "published_at", "match_id", "user_id", "project_id", "relevance_score", "county_id"],
+  "properties": {
+    "schema_version": { "type": "string", "default": "1.0.0" },
+    "trace_id": { "type": "string", "format": "uuid" },
+    "published_at": { "type": "string", "format": "date-time" },
+    "match_id": { "type": "string" },
+    "user_id": { "type": "string" },
+    "project_id": { "type": "string" },
+    "relevance_score": { "type": "number", "minimum": 0, "maximum": 1 },
+    "county_id": { "type": "string" }
+  },
+  "additionalProperties": false
+}

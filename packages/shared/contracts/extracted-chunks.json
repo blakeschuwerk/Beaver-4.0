@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://beaver.dev/schemas/extracted-chunks.json",
+  "title": "ExtractedChunksMessage",
+  "type": "object",
+  "required": ["schema_version", "trace_id", "published_at", "gcs_uri", "document_id", "county_id", "chunk_count"],
+  "properties": {
+    "schema_version": { "type": "string", "default": "1.0.0" },
+    "trace_id": { "type": "string", "format": "uuid" },
+    "published_at": { "type": "string", "format": "date-time" },
+    "gcs_uri": { "type": "string" },
+    "document_id": { "type": "string" },
+    "county_id": { "type": "string" },
+    "chunk_count": { "type": "integer", "minimum": 0 },
+    "content_hash": { "type": "string" }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,37 @@
+---
+description: Python Cloud Run function conventions for Beaver 4.0
+globs: functions/scraper/**,functions/analyzer/**,packages/shared-py/**
+alwaysApply: false
+---
+
+# Python Function Conventions
+
+## Structure
+
+- `src/main.py` — Flask app with `POST /` (Pub/Sub push) and `GET /health`.
+- `requirements.txt` for dependencies.
+- Dockerfile in function directory; `CMD` uses gunicorn.
+
+## Patterns
+
+```python
+MOCK_MODE = os.getenv("MOCK_MODE", "false").lower() == "true"
+
+# Pub/Sub envelope parsing
+if envelope.get("message", {}).get("data"):
+    job = json.loads(base64.b64decode(raw).decode("utf-8"))
+```
+
+## Heavy deps (optional for mock mode)
+
+- F2: `civic-scraper`, `crawl4ai` — fallback heuristics when not installed.
+- F3: `docling` — mock text extraction when not installed.
+
+## Shared contracts
+
+Mirror TS schemas in `packages/shared-py/src/beaver_shared/`.
+Validate against JSON Schemas in `packages/shared/contracts/` when publishing.
+
+## Async in scraper
+
+Use `asyncio.run()` for aiohttp download logic inside Flask sync handler.
