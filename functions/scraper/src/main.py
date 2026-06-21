@@ -191,7 +191,7 @@ def mark_county_broken(county_id: str, error: str) -> None:
         logger.info("[MOCK] Would mark county %s broken: %s", county_id, error)
         return
 
-    db = firestore.Client()
+    db = firestore.Client(database=os.getenv("FIRESTORE_DATABASE", "(default)"))
     ref = db.collection(FS_COUNTIES).document(county_id)
     doc = ref.get()
     data = doc.to_dict() or {}

@@ -18,7 +18,7 @@ deploy_node() {
   local name="$1"
   local dir="$2"
   echo "==> Building and deploying $name..."
-  docker build -t "${REGISTRY}/${name}:latest" -f "$dir/Dockerfile" .
+  docker build --platform linux/amd64 -t "${REGISTRY}/${name}:latest" -f "$dir/Dockerfile" .
   docker push "${REGISTRY}/${name}:latest"
   gcloud run services update "$name" \
     --image="${REGISTRY}/${name}:latest" \
@@ -30,7 +30,7 @@ deploy_python() {
   local name="$1"
   local dir="$2"
   echo "==> Building and deploying $name..."
-  docker build -t "${REGISTRY}/${name}:latest" -f "$dir/Dockerfile" "$dir"
+  docker build --platform linux/amd64 -t "${REGISTRY}/${name}:latest" -f "$dir/Dockerfile" "$dir"
   docker push "${REGISTRY}/${name}:latest"
   gcloud run services update "$name" \
     --image="${REGISTRY}/${name}:latest" \

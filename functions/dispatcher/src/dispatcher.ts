@@ -24,7 +24,7 @@ export interface DispatcherDeps {
 
 export function createDispatcherDeps(): DispatcherDeps {
   return {
-    firestore: new Firestore(),
+    firestore: new Firestore({ databaseId: process.env.FIRESTORE_DATABASE ?? '(default)' }),
     bigquery: new BigQuery(),
     pubsub: new PubSub(),
   };

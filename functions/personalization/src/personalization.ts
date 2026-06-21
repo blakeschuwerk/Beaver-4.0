@@ -140,7 +140,7 @@ export interface PersonalizationResult {
 }
 
 export async function runPersonalization(project: ProjectCreatedMessage): Promise<PersonalizationResult> {
-  const firestore = new Firestore();
+  const firestore = new Firestore({ databaseId: process.env.FIRESTORE_DATABASE ?? '(default)' });
   const bigquery = new BigQuery();
   const pubsub = new PubSub();
 

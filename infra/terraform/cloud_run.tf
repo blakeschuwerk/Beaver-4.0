@@ -16,6 +16,10 @@ resource "google_cloud_run_v2_service" "dispatcher" {
         name  = "GCP_PROJECT_ID"
         value = var.project_id
       }
+      env {
+        name  = "FIRESTORE_DATABASE"
+        value = "beaver-firebase"
+      }
       resources {
         limits = { cpu = "1", memory = "512Mi" }
       }
@@ -41,6 +45,10 @@ resource "google_cloud_run_v2_service" "scraper" {
       env {
         name  = "GCS_RAW_BUCKET"
         value = google_storage_bucket.raw_documents.name
+      }
+      env {
+        name  = "FIRESTORE_DATABASE"
+        value = "beaver-firebase"
       }
       resources {
         limits = { cpu = "2", memory = "2Gi" }
@@ -141,6 +149,10 @@ resource "google_cloud_run_v2_service" "personalization" {
       env {
         name  = "GCP_PROJECT_ID"
         value = var.project_id
+      }
+      env {
+        name  = "FIRESTORE_DATABASE"
+        value = "beaver-firebase"
       }
       resources {
         limits = { cpu = "1", memory = "512Mi" }

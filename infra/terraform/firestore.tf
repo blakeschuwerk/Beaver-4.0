@@ -3,6 +3,7 @@
 
 resource "google_firestore_index" "counties_broken" {
   project    = var.project_id
+  database   = "beaver-firebase"
   collection = "counties"
 
   fields {
@@ -17,10 +18,15 @@ resource "google_firestore_index" "counties_broken" {
 
 resource "google_firestore_index" "user_profiles_geography" {
   project    = var.project_id
+  database   = "beaver-firebase"
   collection = "user_profiles"
 
   fields {
     field_path = "geography"
     array_config = "CONTAINS"
+  }
+  fields {
+    field_path = "created_at"
+    order      = "DESCENDING"
   }
 }
