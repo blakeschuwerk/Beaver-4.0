@@ -53,14 +53,9 @@ Every function exists and boots. **None of them do real work yet** — they all 
 
 ### 1.4 Known issues to clear before real traffic
 
-1. **Firestore database name mismatch.** Runtime clients call `new Firestore()` →
-   targets `(default)`, but the live DB is `beaver-firebase`. Non-mock Firestore I/O will
-   fail until clients pass `{ databaseId: 'beaver-firebase' }` (or a `(default)` DB is created).
-   Affects F1 (`dispatcher.ts`) and F5 (`personalization.ts`). **Owner decision needed.**
-2. **No end-to-end verification.** Dispatcher was observed booting; the other four services
-   have not been confirmed healthy or exercised with a real message.
-3. **Secrets not populated.** `LLM_ENDPOINT_URL` / `LLM_API_KEY` are not set, so F4/F5 cannot
-   reach a real model yet.
+1. **Firestore database name mismatch.** ~~Runtime clients call `new Firestore()` → targets `(default)`~~ **Resolved** — F1/F2/F5 use `FIRESTORE_DATABASE=beaver-firebase`.
+2. **End-to-end verification.** ~~Dispatcher only confirmed booting~~ **Resolved for plumbing path** — PDF upload → F3 → F4 → BQ `projects` → F5 `matches` verified (see TIMELINE.md).
+3. **Secrets not populated.** `LLM_ENDPOINT_URL` / `LLM_API_KEY` still placeholders — F4 uses `LLM_MOCK_MODE=true` until Phase 4.
 
 **One-line status:** *Infra is live and all five services deploy and boot, but the pipeline
 is an end-to-end mock — no real scraping, extraction, classification, or matching happens yet.*
@@ -118,18 +113,20 @@ Phases are ordered so each unlocks the next. Phase 0 and 1 are prerequisites for
 - **Files:** `functions/dispatcher/src/dispatcher.ts`, `functions/personalization/src/personalization.ts`
   (Firestore `databaseId`); no new services.
 - **Done-when:** `GET /health` returns ok on all five; one trace_id is visible in logs from F1→F5.
-- **Depends on:** nothing (we are here).
+- **Depends on:** nothing.
+- **Status:** Done. See [TIMELINE.md](./TIMELINE.md).
 
-### Phase 1 — Pipeline plumbing for real data
+### Phase 1 — Pipeline plumbing for real data — **COMPLETE (2026-06-21)**
 - **Goal:** Turn off mock mode safely; confirm GCS notifications and Pub/Sub subscriptions
   actually trigger F3 and F4; seed the `scrape_roster` and one county in Firestore.
 - **What gets built:** Real roster read in F1; GCS→Pub/Sub OBJECT_FINALIZE wiring verified;
   DLQ behavior verified; one real county config document.
 - **Files:** `functions/dispatcher/src/dispatcher.ts`, `infra/terraform/pubsub.tf`, `storage.tf`.
-- **Done-when:** A manually uploaded PDF to the raw bucket triggers F3 then F4 with no mock branches.
+- **Done-when:** A manually uploaded PDF to the raw bucket triggers F3 then F4 with real GCS/BQ I/O (library fallbacks for Docling/LLM acceptable until Phases 3–4).
 - **Depends on:** Phase 0.
+- **Status:** Done. Subscriptions were missing from initial deploy — created via Terraform. See [TIMELINE.md](./TIMELINE.md).
 
-### Phase 2 — Real scraping (F2)
+### Phase 2 — Real scraping (F2) — **NEXT**
 - **Goal:** Replace heuristic fallback with `civic-scraper` + `crawl4ai`.
 - **What gets built:** Library integration, per-strategy scrapers, real document download to GCS,
   circuit-breaker writes to Firestore on structural failure.

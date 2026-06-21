@@ -107,6 +107,10 @@ resource "google_cloud_run_v2_service" "classifier" {
         value = var.project_id
       }
       env {
+        name  = "LLM_MOCK_MODE"
+        value = "true"
+      }
+      env {
         name = "LLM_ENDPOINT_URL"
         value_source {
           secret_key_ref {

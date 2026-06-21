@@ -65,54 +65,113 @@ export async function mergeUpsertProject(
   }
 
   const now = new Date().toISOString();
-  const query = `
-    MERGE \`${process.env.GCP_PROJECT_ID}.${BQ_DATASET}.${BQ_TABLE_PROJECTS}\` T
-    USING (SELECT @project_id AS project_id) S
-    ON T.project_id = S.project_id
-    WHEN MATCHED THEN UPDATE SET
-      tracking_number = COALESCE(@tracking_number, T.tracking_number),
-      project_type = COALESCE(@project_type, T.project_type),
-      niche_tags = @niche_tags,
-      estimated_budget = COALESCE(@estimated_budget, T.estimated_budget),
-      requirements = COALESCE(@requirements, T.requirements),
-      stage = @stage,
-      location = COALESCE(@location, T.location),
-      bid_deadline = COALESCE(@bid_deadline, T.bid_deadline),
-      source_document_ids = ARRAY(
-        SELECT DISTINCT id FROM UNNEST(ARRAY_CONCAT(T.source_document_ids, @source_document_ids)) AS id
-      ),
-      content_hash = COALESCE(@content_hash, T.content_hash),
-      last_updated_at = @last_updated_at
-    WHEN NOT MATCHED THEN INSERT (
-      project_id, tracking_number, county_id, project_type, niche_tags,
-      estimated_budget, requirements, stage, location, bid_deadline,
-      source_document_ids, content_hash, first_seen_at, last_updated_at
-    ) VALUES (
-      @project_id, @tracking_number, @county_id, @project_type, @niche_tags,
-      @estimated_budget, @requirements, @stage, @location, @bid_deadline,
-      @source_document_ids, @content_hash, @first_seen_at, @last_updated_at
-    )
-  `;
+  const firstSeen = project.first_seen_at ?? now;
+  const tableId = `${process.env.GCP_PROJECT_ID}.${BQ_DATASET}.${BQ_TABLE_PROJECTS}`;
 
-  await bigquery.query({
-    query,
-    params: {
-      project_id: project.project_id,
-      tracking_number: project.tracking_number ?? null,
-      county_id: project.county_id,
-      project_type: project.project_type ?? null,
-      niche_tags: project.niche_tags ?? [],
-      estimated_budget: project.estimated_budget ?? null,
-      requirements: project.requirements ?? null,
-      stage: project.stage ?? 'subcommittee',
-      location: project.location ?? null,
-      bid_deadline: project.bid_deadline ?? null,
-      source_document_ids: project.source_document_ids ?? [],
-      content_hash: project.content_hash ?? null,
-      first_seen_at: project.first_seen_at ?? now,
-      last_updated_at: now,
-    },
+  const params = {
+    project_id: project.project_id,
+    tracking_number: project.tracking_number ?? null,
+    county_id: project.county_id,
+    project_type: project.project_type ?? null,
+    niche_tags: project.niche_tags ?? [],
+    estimated_budget: project.estimated_budget ?? null,
+    requirements: project.requirements ?? null,
+    stage: project.stage ?? 'subcommittee',
+    location: project.location ?? null,
+    bid_deadline: project.bid_deadline ?? null,
+    source_document_ids: project.source_document_ids ?? [],
+    content_hash: project.content_hash ?? null,
+    first_seen_at: firstSeen,
+    last_updated_at: now,
+  };
+
+  const types = {
+    project_id: 'STRING',
+    tracking_number: 'STRING',
+    county_id: 'STRING',
+    project_type: 'STRING',
+    niche_tags: ['STRING'],
+    estimated_budget: 'FLOAT64',
+    requirements: 'STRING',
+    stage: 'STRING',
+    location: 'STRING',
+    bid_deadline: 'TIMESTAMP',
+    source_document_ids: ['STRING'],
+    content_hash: 'STRING',
+    first_seen_at: 'TIMESTAMP',
+    last_updated_at: 'TIMESTAMP',
+  };
+
+  const [existing] = await bigquery.query({
+    query: `SELECT project_id FROM \`${tableId}\` WHERE project_id = @project_id`,
+    params: { project_id: project.project_id },
+    types: { project_id: 'STRING' },
   });
+
+  if ((existing as { project_id: string }[]).length > 0) {
+    await bigquery.query({
+      query: `
+        UPDATE \`${tableId}\`
+        SET
+          tracking_number = COALESCE(@tracking_number, tracking_number),
+          project_type = COALESCE(@project_type, project_type),
+          niche_tags = @niche_tags,
+          estimated_budget = COALESCE(@estimated_budget, estimated_budget),
+          requirements = COALESCE(@requirements, requirements),
+          stage = @stage,
+          location = COALESCE(@location, location),
+          source_document_ids = @source_document_ids,
+          content_hash = COALESCE(@content_hash, content_hash),
+          last_updated_at = TIMESTAMP(@last_updated_at)
+        WHERE project_id = @project_id
+      `,
+      params: {
+        project_id: params.project_id,
+        tracking_number: params.tracking_number,
+        project_type: params.project_type,
+        niche_tags: params.niche_tags,
+        estimated_budget: params.estimated_budget,
+        requirements: params.requirements,
+        stage: params.stage,
+        location: params.location,
+        source_document_ids: params.source_document_ids,
+        content_hash: params.content_hash,
+        last_updated_at: params.last_updated_at,
+      },
+      types: {
+        project_id: 'STRING',
+        tracking_number: 'STRING',
+        project_type: 'STRING',
+        niche_tags: ['STRING'],
+        estimated_budget: 'FLOAT64',
+        requirements: 'STRING',
+        stage: 'STRING',
+        location: 'STRING',
+        source_document_ids: ['STRING'],
+        content_hash: 'STRING',
+        last_updated_at: 'STRING',
+      },
+    });
+    return;
+  }
+
+  const table = bigquery.dataset(BQ_DATASET).table(BQ_TABLE_PROJECTS);
+  await table.insert([{
+    project_id: params.project_id,
+    tracking_number: params.tracking_number,
+    county_id: params.county_id,
+    project_type: params.project_type,
+    niche_tags: params.niche_tags,
+    estimated_budget: params.estimated_budget,
+    requirements: params.requirements,
+    stage: params.stage,
+    location: params.location,
+    bid_deadline: params.bid_deadline,
+    source_document_ids: params.source_document_ids,
+    content_hash: params.content_hash,
+    first_seen_at: params.first_seen_at,
+    last_updated_at: params.last_updated_at,
+  }]);
 }
 
 export async function insertProjectChunk(

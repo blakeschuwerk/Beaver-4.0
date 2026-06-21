@@ -41,6 +41,12 @@ resource "google_project_iam_member" "dispatcher_bq" {
   member  = "serviceAccount:${google_service_account.dispatcher.email}"
 }
 
+resource "google_project_iam_member" "dispatcher_bq_job_user" {
+  project = var.project_id
+  role    = "roles/bigquery.jobUser"
+  member  = "serviceAccount:${google_service_account.dispatcher.email}"
+}
+
 resource "google_project_iam_member" "dispatcher_pubsub" {
   project = var.project_id
   role    = "roles/pubsub.publisher"
@@ -86,6 +92,12 @@ resource "google_project_iam_member" "classifier_bq" {
   member  = "serviceAccount:${google_service_account.classifier.email}"
 }
 
+resource "google_project_iam_member" "classifier_bq_job_user" {
+  project = var.project_id
+  role    = "roles/bigquery.jobUser"
+  member  = "serviceAccount:${google_service_account.classifier.email}"
+}
+
 resource "google_project_iam_member" "classifier_pubsub" {
   project = var.project_id
   role    = "roles/pubsub.publisher"
@@ -114,6 +126,12 @@ resource "google_project_iam_member" "personalization_firestore" {
 resource "google_project_iam_member" "personalization_bq" {
   project = var.project_id
   role    = "roles/bigquery.dataEditor"
+  member  = "serviceAccount:${google_service_account.personalization.email}"
+}
+
+resource "google_project_iam_member" "personalization_bq_job_user" {
+  project = var.project_id
+  role    = "roles/bigquery.jobUser"
   member  = "serviceAccount:${google_service_account.personalization.email}"
 }
 

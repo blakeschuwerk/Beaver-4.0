@@ -11,7 +11,8 @@
     "test": "pnpm -r test",
     "dev:dispatcher": "pnpm --filter @beaver/dispatcher dev",
     "dev:classifier": "pnpm --filter @beaver/classifier dev",
-    "dev:personalization": "pnpm --filter @beaver/personalization dev"
+    "dev:personalization": "pnpm --filter @beaver/personalization dev",
+    "seed": "node scripts/seed.mjs"
   },
   "engines": {
     "node": ">=20.0.0",

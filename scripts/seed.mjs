@@ -1,11 +1,16 @@
 #!/usr/bin/env node
 /**
  * Seed one plumbing-test county in Firestore (beaver-firebase) and scrape_roster in BigQuery.
- * Usage: GCP_PROJECT_ID=beaver4 node scripts/seed.mjs
+ * Usage: pnpm seed   (from repo root, after pnpm install)
  */
 
-import { Firestore } from '@google-cloud/firestore';
-import { BigQuery } from '@google-cloud/bigquery';
+import { createRequire } from 'node:module';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
+
+const require = createRequire(join(dirname(fileURLToPath(import.meta.url)), '../functions/dispatcher/package.json'));
+const { Firestore } = require('@google-cloud/firestore');
+const { BigQuery } = require('@google-cloud/bigquery');
 
 const PROJECT_ID = process.env.GCP_PROJECT_ID ?? 'beaver4';
 const FIRESTORE_DB = process.env.FIRESTORE_DATABASE ?? 'beaver-firebase';
@@ -28,6 +33,14 @@ async function seedFirestore() {
   const db = new Firestore({ projectId: PROJECT_ID, databaseId: FIRESTORE_DB });
   await db.collection('counties').doc(COUNTY_ID).set(COUNTY_DOC, { merge: true });
   console.log(`Firestore: seeded counties/${COUNTY_ID} in database ${FIRESTORE_DB}`);
+
+  await db.collection('user_profiles').doc('user-plumbing-test').set({
+    user_id: 'user-plumbing-test',
+    company: 'Plumbing Test Contractors',
+    service_categories: ['roadway', 'drainage', 'civil'],
+    geography: ['test-county', 'CA'],
+  }, { merge: true });
+  console.log('Firestore: seeded user_profiles/user-plumbing-test');
 }
 
 async function seedBigQuery() {
