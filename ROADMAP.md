@@ -57,8 +57,7 @@ Every function exists and boots. **None of them do real work yet** — they all 
 2. **End-to-end verification.** ~~Dispatcher only confirmed booting~~ **Resolved for plumbing path** — PDF upload → F3 → F4 → BQ `projects` → F5 `matches` verified (see TIMELINE.md).
 3. **Secrets not populated.** `LLM_ENDPOINT_URL` / `LLM_API_KEY` still placeholders — F4 uses `LLM_MOCK_MODE=true` until Phase 4.
 
-**One-line status:** *Infra is live and all five services deploy and boot, but the pipeline
-is an end-to-end mock — no real scraping, extraction, classification, or matching happens yet.*
+**One-line status:** *Phase 0 + Phase 1 complete (2026-06-21). Infra wired with Pub/Sub subscriptions + DLQs; real GCS/BQ/PubSub I/O verified end-to-end with Docling/LLM fallbacks. Phase 2 (real scraping) is next.*
 
 ---
 
