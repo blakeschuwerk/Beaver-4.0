@@ -1,0 +1,37 @@
+{
+  "trace_id": "e84d42cf-62ef-4331-8f99-e59f95c1ef7e",
+  "documents_processed": 6,
+  "projects_found": 23,
+  "matches_created": 23,
+  "llm_endpoint": "http://localhost:11434/v1/chat/completions",
+  "llm_model": "llama3.1:8b",
+  "sample_project": {
+    "project_id": "proj-demo-county-2024-042",
+    "tracking_number": "2024-042",
+    "county_id": "demo-county",
+    "document_id": "doc-demo-county-a15a2abda4dd3ab8",
+    "chunk_id": "doc-demo-county-a15a2abda4dd3ab8-parent-0",
+    "niche_tags": [
+      "roadway",
+      "drainage",
+      "civil"
+    ],
+    "stage": "subcommittee",
+    "project_type": "infrastructure",
+    "estimated_budget": 2500000,
+    "requirements": "Roadway resurfacing and drainage improvements",
+    "confidence": 0.85
+  },
+  "sample_match": {
+    "match_id": "match-user-local-test-proj-demo-county-2024-042",
+    "user_id": "user-local-test",
+    "project_id": "proj-demo-county-2024-042",
+    "county_id": "demo-county",
+    "relevance_score": 0.85,
+    "matched_at": "2026-06-22T13:53:16.406Z"
+  },
+  "by_county": {
+    "demo-county": 5,
+    "nc-nashcounty": 18
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "document_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26",
+  "county_id": "nc-nashcounty",
+  "trace_id": "b6da625d-1726-4101-ba11-24a904de72d7",
+  "extracted_at": "2026-06-22T13:52:53.959093+00:00",
+  "chunk_count": 52,
+  "chunks": [
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-1",
+      "parent_chunk_id": null,
+      "text": "## Nash County Board of Commissioners",
+      "chunk_type": "parent",
+      "heading": "Nash County Board of Commissioners"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-2",
+      "parent_chunk_id": null,
+      "text": "## Regular Board Meeting\n\nJune 01, 2026 at 9:00 AM\n\nNash County Administration Building\n\n3 rd  Floor - Frederick B. Cooper Jr. Commissioners Room\n\n120 West Washington Street\n\nNashville, North Carolina\n\nCitizens with disabilities requiring assistance to participate in public meetings should contact the County Manager's office.\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Regular Board Meeting"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-2-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-2",
+      "text": "3 rd  Floor - Frederick B. Cooper Jr. Commissioners Room",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-2-1",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-2",
+      "text": "Citizens with disabilities requiring assistance to participate in public meetings should contact the County Manager's office.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-3",
+      "parent_chunk_id": null,
+      "text": "## June 01, 2026 Regular Board Meeting\n\n1. Call to Order\n\nChairman Marvin C. Arrington\n\n2. Invocation Commissioner Fred Belfield, Jr.",
+      "chunk_type": "parent",
+      "heading": "June 01, 2026 Regular Board Meeting"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-3-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-3",
+      "text": "2. Invocation Commissioner Fred Belfield, Jr.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-4",
+      "parent_chunk_id": null,
+      "text": "## 3. Pledge of Allegiance\n\nCommissioner J. Wayne Outlaw",
+      "chunk_type": "parent",
+      "heading": "3. Pledge of Allegiance"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-5",
+      "parent_chunk_id": null,
+      "text": "## 4. Approval of Minutes\n\nMay 27, 2026, Recessed / Joint Meeting with Planning Board (to be provided to the\n\nRegular Meeting Minutes of May 4, 2026 Recessed Joint NCPS Meeting Minutes of May 12, 2026 Regular Meeting Minutes of May 18, 2026 Board for approval on June 1)\n\n5. Public Comment\n6. Introduction of Animal Services Director Tia Foula, Assistant County Manager\n7. Introduction of the Nash County Public Health Director Tia Foula, Assistant County Manager\n8. PETA Animal Welfare Advocacy Presentation Jonathan Boone, Deputy County Manager\n9. FY27 Budget Public Hearing\n\nStacie Shatzer, County Manager\n\n10. Public Hearing on Resolution Approving Extension of the Extraterritorial Jurisdiction of the Town of Spring Hope\n2. Adam Tyson, Planning Director Town Manager Jonathan Allen &amp; Shawn Lucas, Town of Spring Hope\n11. Second Public Hearing on Conditional Rezoning Request CZ-260302:\n4. Bissett's Bay Subdivision\n\nAdam Tyson, Planning Director\n\n12. Public Hearing on General Rezoning Request Z-260301: 231 Homes, LLC Adam Tyson, Planning Director\n2. Resolution for Addition to the State Maintained Secondary Road System:\n13. Bentridge Subdivision Adam Tyson, Planning Director\n\n| 14.     | Resolution for Addition to the State Maintained Secondary Road System: River Stone Subdivision Adam Tyson, Planning Director                                        |\n|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 15.     | Whitaker's Fire Department Purchase of New Apparatus Charles (Trip) Bunn, Fire Marshal / Emergency Management Director                                              |\n| 16.     | Request for Approval to Submit Two Census Tracts for North Carolina Opportunity Zone Designation 2.0 Nomination Process Susan Phelps, Economic Development Director |\n| 17.     | 2026 Project Floor Building Reuse Program Susan Phelps, Economic Development Director ",
+      "chunk_type": "parent",
+      "heading": "4. Approval of Minutes"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-5-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-5",
+      "text": "May 27, 2026, Recessed / Joint Meeting with Planning Board (to be provided to the",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-5-1",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-5",
+      "text": "Regular Meeting Minutes of May 4, 2026 Recessed Joint NCPS Meeting Minutes of May 12, 2026 Regular Meeting Minutes of May 18, 2026 Board for approval on June 1)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-5-2",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-5",
+      "text": "5. Public Comment\n6. Introduction of Animal Services Director Tia Foula, Assistant County Manager\n7. Introduction of the Nash County Public Health Director Tia Foula, Assistant County Manager\n8. PETA Animal Welfare Advocacy Presentation Jonathan Boone, Deputy County Manager\n9. FY27 Budget Public Hearing",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-5-3",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-5",
+      "text": "10. Public Hearing on Resolution Approving Extension of the Extraterritorial Jurisdiction of the Town of Spring Hope\n2. Adam Tyson, Planning Director Town Manager Jonathan Allen &amp; Shawn Lucas, Town of Spring Hope\n11. Second Public Hearing on Conditional Rezoning Request CZ-260302:\n4. Bissett's Bay Subdivision",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-5-4",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-5",
+      "text": "12. Public Hearing on General Rezoning Request Z-260301: 231 Homes, LLC Adam Tyson, Planning Director\n2. Resolution for Addition to the State Maintained Secondary Road System:\n13. Bentridge Subdivision Adam Tyson, Planning Director",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-5-5",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-5",
+      "text": "| 14.     | Resolution for Addition to the State Maintained Secondary Road System: River Stone Subdivision Adam Tyson, Planning Director                                        |\n|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| 15.     | Whitaker's Fire Department Purchase of New Apparatus Charles (Trip) Bunn, Fire Marshal / Emergency Management Director                                              |\n| 16.     | Request for Approval to Submit Two Census Tracts for North Carolina Opportunity Zone Designation 2.0 Nomination Process Susan Phelps, Economic Development Director |\n| 17.     | 2026 Project Floor Building Reuse Program Susan Phelps, Economic Development Director                                                                               |\n| 18.     | Monthly Tax Report Shameeka Tillery, Interim Tax Administrator                                                                                                      |\n| 19.     | Refund Requests Shameeka Tillery, Interim Tax Administrator                                                                                                         |\n| 20.     | Board of Equalization and Review (Scheduled for 11 AM) Shameeka Tillery, Interim Tax Administrator                                                                  |\n| 21.     | Lead Service Line Replacement - Inventory Project Ordinance Nikki Stanton, Finance Officer                                                                          |\n| 22.     | Detention Center Grant Project Ordinance Nikki Stanton, Finance Officer                                                                                             |\n| 23.     | Capital Project Ordinance for Middlesex Shell Building #3 Nikki Stanton, Finance Officer                                                                            |\n| 24.     | Nashville Business Center Shell Building Capital Project Ordinance Nikki Stanton, Finance Officer                                                                   |\n| 25.     | Budget Amendments Nikki Stanton, Finance Officer                                                                                                                    |\n| 26.     | Board Appointments Tia Foula, Assistant County Manager                                                                                                              |\n| 27.     | Commissioner Comments                                                                                                                                               |\n|         | Manager's Report                                                                                                                                                    |\n| 28. 29. | Stacie Shatzer, County Manager Closed Session                                                                                                                       |",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-5-6",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-5",
+      "text": "Closed session as permitted by NCGS 143-318.11(a)(3) to consult with an attorney employed or retained by the public body in order to preserve the attorney-client privilege; NCGS 143-318.11(a)(4) for the discussion of matters relating to economic development and the location or expansion of industries or other businesses in the County; and NCGS 143-318.11(a)(6) to consider the qualifications and performance of an employee.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-6",
+      "parent_chunk_id": null,
+      "text": "## 30. Adjournment",
+      "chunk_type": "parent",
+      "heading": "30. Adjournment"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-7",
+      "parent_chunk_id": null,
+      "text": "## Nash County",
+      "chunk_type": "parent",
+      "heading": "Nash County"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-8",
+      "parent_chunk_id": null,
+      "text": "## Commissioner's Agenda Information Sheet\n\nDate: Monday, June 1, 2026\n\nPage 1 of 1\n\nAttachments: No\n\nItem:\n\nIntroduction of Animal Services Director\n\nInitiated By:\n\nTia Foula, Assistant County Manager\n\nAction Proposed:\n\nInformation Only",
+      "chunk_type": "parent",
+      "heading": "Commissioner's Agenda Information Sheet"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-8-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-8",
+      "text": "## Commissioner's Agenda Information Sheet",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-8-1",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-8",
+      "text": "Introduction of Animal Services Director",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-9",
+      "parent_chunk_id": null,
+      "text": "## Description:\n\nIt is my pleasure to introduce Ashley Howell as Nash County's new Animal Services Director.\n\nMs. Howell brings more than five years of progressive experience in animal welfare, animal control, and shelter leadership. She began her career in North Carolina, working in animal control before advancing into shelter management leadership roles in Virginia.\n\nMost recently, she served as Animal Shelter Manager for the Page County Animal Shelter, where she oversaw shelter operations, staff supervision, animal care services, public outreach, and community programming. Throughout her career, she has demonstrated a strong commitment to improving outcomes for shelter animals while building strong relationships with rescue organizations, community partners, and the public.\n\nMs. Howell has worked extensively with rescue and transfer partners to expand lifesaving opportunities for animals in need and has been a strong advocate for spay and neuter initiatives and community-based programs aimed at reducing pet overpopulation and increasing access to affordable services for pet owners.\n\nWe are excited to welcome Ms. Howell to Nash County and look forward to the leadership, compassion, and energy she will bring to Animal Services as we continue strengthening services, partnerships, and care for the animals and residents of Nash County.\n\nPlease join me in welcoming Ashley Howell to Nash County.",
+      "chunk_type": "parent",
+      "heading": "Description:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-9-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-9",
+      "text": "It is my pleasure to introduce Ashley Howell as Nash County's new Animal Services Director.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-9-1",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-9",
+      "text": "Ms. Howell brings more than five years of progressive experience in animal welfare, animal control, and shelter leadership. She began her career in North Carolina, working in animal control before advancing into shelter management leadership roles in Virginia.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-9-2",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-9",
+      "text": "Most recently, she served as Animal Shelter Manager for the Page County Animal Shelter, where she oversaw shelter operations, staff supervision, animal care services, public outreach, and community programming. Throughout her career, she has demonstrated a strong commitment to improving outcomes for shelter animals while building strong relationships with rescue organizations, community partners, and the public.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-9-3",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-9",
+      "text": "Ms. Howell has worked extensively with rescue and transfer partners to expand lifesaving opportunities for animals in need and has been a strong advocate for spay and neuter initiatives and community-based programs aimed at reducing pet overpopulation and increasing access to affordable services for pet owners.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-9-4",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-9",
+      "text": "We are excited to welcome Ms. Howell to Nash County and look forward to the leadership, compassion, and energy she will bring to Animal Services as we continue strengthening services, partnerships, and care for the animals and residents of Nash County.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-9-5",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-9",
+      "text": "Please join me in welcoming Ashley Howell to Nash County.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-10",
+      "parent_chunk_id": null,
+      "text": "## Nash County",
+      "chunk_type": "parent",
+      "heading": "Nash County"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-11",
+      "parent_chunk_id": null,
+      "text": "## Commissioner's Agenda Information Sheet\n\nDate: Monday, June 1, 2026\n\nPage 1 of 1\n\nAttachments: No\n\nItem:\n\nIntroduction to the Nash County Public Health Director\n\nInitiated By:\n\nTia Foula, Assistant County Manager\n\nAction Proposed:\n\nInformation Only",
+      "chunk_type": "parent",
+      "heading": "Commissioner's Agenda Information Sheet"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-11-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-11",
+      "text": "## Commissioner's Agenda Information Sheet",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-11-1",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-11",
+      "text": "Introduction to the Nash County Public Health Director",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-12",
+      "parent_chunk_id": null,
+      "text": "## Description:\n\nGood morning. It is my pleasure to introduce our new Public Health Director, Angela Manning.\n\nAngela Manning brings more than 22 years of experience in local public health, including extensive leadership experience serving communities in North Carolina. Most recently, she served as Deputy Health Director, where she helped oversee public health operations, programs, staff leadership, and community health initiatives.\n\nThroughout her career, she has demonstrated a strong commitment to public service, community health improvement, staff development, and collaborative leadership. Her background includes experience in environmental health, public health administration, program oversight, and strategic leadership, all of which will be valuable as we continue strengthening public health services in Nash County.\n\nShe joins us at an important time for our community, and I am confident that her experience, professionalism, and passion for public health will complement the strong team already in place within our Health Department.\n\nWe are excited to welcome her to Nash County and look forward to the leadership, partnership, and vision she will bring as we continue working to improve the health and well-being of our residents.\n\nPlease join me in welcoming Angela Manning to Nash County.",
+      "chunk_type": "parent",
+      "heading": "Description:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-12-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-12",
+      "text": "Good morning. It is my pleasure to introduce our new Public Health Director, Angela Manning.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-12-1",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-12",
+      "text": "Angela Manning brings more than 22 years of experience in local public health, including extensive leadership experience serving communities in North Carolina. Most recently, she served as Deputy Health Director, where she helped oversee public health operations, programs, staff leadership, and community health initiatives.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-12-2",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-12",
+      "text": "Throughout her career, she has demonstrated a strong commitment to public service, community health improvement, staff development, and collaborative leadership. Her background includes experience in environmental health, public health administration, program oversight, and strategic leadership, all of which will be valuable as we continue strengthening public health services in Nash County.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-12-3",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-12",
+      "text": "She joins us at an important time for our community, and I am confident that her experience, professionalism, and passion for public health will complement the strong team already in place within our Health Department.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-12-4",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-12",
+      "text": "We are excited to welcome her to Nash County and look forward to the leadership, partnership, and vision she will bring as we continue working to improve the health and well-being of our residents.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-12-5",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-12",
+      "text": "Please join me in welcoming Angela Manning to Nash County.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-13",
+      "parent_chunk_id": null,
+      "text": "## Recommended Action:\n\nAt this time, Ms. Manning will take her Oath of Office as Nash County Public Health Director.",
+      "chunk_type": "parent",
+      "heading": "Recommended Action:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-13-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-13",
+      "text": "At this time, Ms. Manning will take her Oath of Office as Nash County Public Health Director.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-14",
+      "parent_chunk_id": null,
+      "text": "## Nash County",
+      "chunk_type": "parent",
+      "heading": "Nash County"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-15",
+      "parent_chunk_id": null,
+      "text": "## Commissioner's Agenda Information Sheet\n\nDate: Monday, June 1, 2026\n\nPage 1 of 1\n\nAttachments: No\n\nItem:\n\nPETA Animal Welfare Advocacy Presentation\n\nInitiated By:\n\nJonathan Boone, Deputy County Manager\n\nAction Proposed:\n\nInformation Only",
+      "chunk_type": "parent",
+      "heading": "Commissioner's Agenda Information Sheet"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-15-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-15",
+      "text": "## Commissioner's Agenda Information Sheet",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-15-1",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-15",
+      "text": "PETA Animal Welfare Advocacy Presentation",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-16",
+      "parent_chunk_id": null,
+      "text": "## Description:\n\nRachel Bellis, Director of Local Affairs with PETA contacted Commissioner Howell in late April 2026, requesting an opportunity to address the Board of Commissioners regarding animal welfare in Nash County.  In addition to discussing her desire to see Nash County enact a chaining ban, she would also like to address the Board of Commissioners regarding a mandatory spay/neuter program prior to the adoption of animals at the Pet Connection Center.  Staff completed a virtual call with Ms. Bellis on May 12, 2026, to discuss these items, to provide a general overview of current county policy, and to discuss initiatives proposed in Animal Services for FY2027.",
+      "chunk_type": "parent",
+      "heading": "Description:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-16-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-16",
+      "text": "Rachel Bellis, Director of Local Affairs with PETA contacted Commissioner Howell in late April 2026, requesting an opportunity to address the Board of Commissioners regarding animal welfare in Nash County.  In addition to discussing her desire to see Nash County enact a chaining ban, she would also like to address the Board of Commissioners regarding a mandatory spay/neuter program prior to the adoption of animals at the Pet Connection Center.  Staff completed a virtual call with Ms. Bellis on May 12, 2026, to discuss these items, to provide a general overview of current county policy, and to discuss initiatives proposed in Animal Services for FY2027.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-17",
+      "parent_chunk_id": null,
+      "text": "## Recommended Action:\n\nReceive information for further consideration and follow up.",
+      "chunk_type": "parent",
+      "heading": "Recommended Action:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-17-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-17",
+      "text": "Receive information for further consideration and follow up.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-18",
+      "parent_chunk_id": null,
+      "text": "## Nash County",
+      "chunk_type": "parent",
+      "heading": "Nash County"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-19",
+      "parent_chunk_id": null,
+      "text": "## Commissioner's Agenda Information Sheet\n\nDate: Monday, June 1, 2026\n\nPage 1 of 1\n\nAttachments:  No\n\nItem:\n\nFY27 Budget Public Hearing\n\nInitiated By:\n\nStacie Shatzer, County Manager\n\nAction Proposed:\n\nHold the Public Hearing",
+      "chunk_type": "parent",
+      "heading": "Commissioner's Agenda Information Sheet"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-child-19-0",
+      "parent_chunk_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26-parent-19",
+      "text": "## Commissioner's Agenda Information Sheet",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "4f6ba14cbc3cdd269a0db6b0b6ee85e3304c6caaee31f628c973cda00a88c892",
+  "extraction_method": "docling",
+  "source_url": "https://nc-nashcounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06012026-727",
+  "doc_type": "agenda"
+}

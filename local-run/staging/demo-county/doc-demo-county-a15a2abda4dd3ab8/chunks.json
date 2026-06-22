@@ -1,0 +1,25 @@
+{
+  "document_id": "doc-demo-county-a15a2abda4dd3ab8",
+  "county_id": "demo-county",
+  "trace_id": "a4c1bdbf-0828-47f0-bdca-b5167dbd3b78",
+  "extracted_at": "2026-06-22T13:40:36.131172+00:00",
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "doc-demo-county-a15a2abda4dd3ab8-parent-0",
+      "parent_chunk_id": null,
+      "text": "Mock extracted text for municipal infrastructure project. Tracking Number: CIP-2024-042. Estimated budget $2.5M for roadway resurfacing and drainage improvements. Subcommittee agenda item regarding capital improvement plan allocation.",
+      "chunk_type": "parent"
+    },
+    {
+      "chunk_id": "doc-demo-county-a15a2abda4dd3ab8-child-0",
+      "parent_chunk_id": "doc-demo-county-a15a2abda4dd3ab8-parent-0",
+      "text": "Mock extracted text for municipal infrastructure project. Tracking Number: CIP-2024-042. Estimated budget $2.5M for roadway resurfacing and drainage improvements. Subcommittee agenda item regarding capital improvement plan allocation.",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "a15a2abda4dd3ab86cb9e5870dbefca1f3127d262d1e3aed38776fbc44b5023a",
+  "extraction_method": "mock",
+  "source_url": "local://demo",
+  "doc_type": "agenda"
+}

@@ -1,0 +1,32 @@
+{
+  "document_id": "doc-nc-nashcounty-d217fff00b34e225",
+  "county_id": "nc-nashcounty",
+  "trace_id": "59c68965-3ea6-4e19-be7c-e7f2b20bb87a",
+  "extracted_at": "2026-06-22T13:52:54.781303+00:00",
+  "chunk_count": 3,
+  "chunks": [
+    {
+      "chunk_id": "doc-nc-nashcounty-d217fff00b34e225-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->\n\n**Nash County Board of Commissioners Recessed / Joint meeting with the Nash County Planning Board \nWednesday, May 27, 2026, from 4 PM \u2013 6 PM\nNash County Recreation Center\n981 Old White Oak Road\nNashville, NC 27856**\n\n1. Call the Board of Commissioners Meeting to Order \u2013 Chairman Marvin C. Arrington\n2. Call the Planning Board Meeting to Order\u2013 Chairman Dee Parker, Jr.\n3. Invocation \u2013 Chairman Marvin C. Arrington\n4. Pledge of Allegiance \u2013 Commissioner J. Wayne Outlaw\n5. Welcome and Introductions \u2013 Chairman Marvin C. Arrington\n6. Presentation and Discussion of UDO Steering Committee Recommendations \u2013 Adam Culpepper, WithersRavenel\n7. Adjournment of Nash County Planning Board \u2013 Chairman Dee Parker, Jr.\n8. Adjournment of Board of County Commissioners \u2013 Chairman Marvin C. Arrington",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-d217fff00b34e225-child-0-0",
+      "parent_chunk_id": "doc-nc-nashcounty-d217fff00b34e225-parent-0",
+      "text": "**Nash County Board of Commissioners Recessed / Joint meeting with the Nash County Planning Board \nWednesday, May 27, 2026, from 4 PM \u2013 6 PM\nNash County Recreation Center\n981 Old White Oak Road\nNashville, NC 27856**",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-d217fff00b34e225-child-0-1",
+      "parent_chunk_id": "doc-nc-nashcounty-d217fff00b34e225-parent-0",
+      "text": "1. Call the Board of Commissioners Meeting to Order \u2013 Chairman Marvin C. Arrington\n2. Call the Planning Board Meeting to Order\u2013 Chairman Dee Parker, Jr.\n3. Invocation \u2013 Chairman Marvin C. Arrington\n4. Pledge of Allegiance \u2013 Commissioner J. Wayne Outlaw\n5. Welcome and Introductions \u2013 Chairman Marvin C. Arrington\n6. Presentation and Discussion of UDO Steering Committee Recommendations \u2013 Adam Culpepper, WithersRavenel\n7. Adjournment of Nash County Planning Board \u2013 Chairman Dee Parker, Jr.\n8. Adjournment of Board of County Commissioners \u2013 Chairman Marvin C. Arrington",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "d217fff00b34e2256d987804ad7b036d125c325d81c674a25b946c6d2a79ac36",
+  "extraction_method": "docling",
+  "source_url": "https://nc-nashcounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_05272026-726",
+  "doc_type": "agenda"
+}

@@ -56,7 +56,7 @@ PLAYWRIGHT_BROWSERS_PATH=$PWD/.playwright-browsers .venv/bin/python -m playwrigh
 
 ## Outputs
 
-All written under `local-run/` (gitignored):
+All written under `local-run/` (**tracked in git** so you can clone and continue on another machine):
 
 | Path | Contents |
 |------|----------|

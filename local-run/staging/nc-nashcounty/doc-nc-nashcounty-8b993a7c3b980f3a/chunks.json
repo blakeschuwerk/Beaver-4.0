@@ -1,0 +1,513 @@
+{
+  "document_id": "doc-nc-nashcounty-8b993a7c3b980f3a",
+  "county_id": "nc-nashcounty",
+  "trace_id": "6821b6ae-93d0-4f1f-ac11-fc4f2d1c68f8",
+  "extracted_at": "2026-06-22T13:43:15.955233+00:00",
+  "chunk_count": 80,
+  "chunks": [
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-1",
+      "parent_chunk_id": null,
+      "text": "## NASH COUNTY BOARD OF ADJUSTMENT REGULAR MEETING",
+      "chunk_type": "parent",
+      "heading": "NASH COUNTY BOARD OF ADJUSTMENT REGULAR MEETING"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-1-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-1",
+      "text": "## NASH COUNTY BOARD OF ADJUSTMENT REGULAR MEETING",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-2",
+      "parent_chunk_id": null,
+      "text": "## MONDAY, JUNE 22, 2026 AT 6:00 P.M.",
+      "chunk_type": "parent",
+      "heading": "MONDAY, JUNE 22, 2026 AT 6:00 P.M."
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-3",
+      "parent_chunk_id": null,
+      "text": "## COMMISSIONERS ROOM -THIRD FLOOR NASH COUNTY ADMINISTRATION BUILDING 120 WEST WASHINGTON STREET NASHVILLE, NC 27856",
+      "chunk_type": "parent",
+      "heading": "COMMISSIONERS ROOM -THIRD FLOOR NASH COUNTY ADMINISTRATION BUILDING 120 WEST WASHINGTON STREET NASHVILLE, NC 27856"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-3-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-3",
+      "text": "## COMMISSIONERS ROOM -THIRD FLOOR NASH COUNTY ADMINISTRATION BUILDING 120 WEST WASHINGTON STREET NASHVILLE, NC 27856",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-4",
+      "parent_chunk_id": null,
+      "text": "## MEETING AGENDA\n\n1. Call to Order.\n2. Determination of a Quorum.\n3. Recognition of the Voting Board Members for the Meeting.\n4. Election of Board Officers for 2025-2026 Year: Chairman &amp; Vice-Chairman.\n5. 5.\n6. Approval of Meeting Minutes. September 23, 2024 &amp; May 27, 2025 Regular Meeting Minutes - Delayed\n\nApril 27, 2026 Regular Meeting Minutes\n\n6. Quasi-Judicial Public Hearing on Variance Request V-260301.\n\n(Continued from the Board's Previous March 23, 2026 &amp; April 27, 2026 Regular Meetings.)\n\nMade by Dennis E. Mills, Sr. at 1480 Womble Rd, Nashville to reduce the rear property line minimum building setback requirement to permit a detached residential accessory building to remain in its current location.\n\n- a. Staff Update.\n- b. Testimony of the Applicant.\n- c. Testimony of Other Parties and/or Witnesses.\n- d. Board Discussion.\n- e. Motion to Adopt Amended Findings of Fact.\n- f.  Motion to Adopt Supporting Conclusions.\n- g. Motion to Approve or Deny the Variance Request.\n- h. Motion to Close the Public Hearing.\n\n(CONTINUED ON NEXT PAGE)\n\n7. Quasi-Judicial Public Hearing on Special Use Permit Request S-260601.\n\nMade by Amber Hinnant at 10346 Ida St, Wilson for a temporary hardship manufactured home proposed to be located behind the primary home.\n\n- a. Motion to Open the Public Hearing.\n- b. Staff Report.\n- c. Acceptance of Staff Report &amp; Case File into the Record.\n- d. Testimony of the Applicant.\n- e. Testimony of Other Parties and/or Witnesses.\n- f.  Board Discussion.\n- g. Motion to Adopt Findings of Fact.\n- h. Motion to Adopt Supporting Conclusions.\n- i.  Motion to Approve or Deny the Special Use Permit Request.\n- j.  Motion to Close the Public Hearing.\n8. Other Business.\n9. Adjournment.",
+      "chunk_type": "parent",
+      "heading": "MEETING AGENDA"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-4-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-4",
+      "text": "1. Call to Order.\n2. Determination of a Quorum.\n3. Recognition of the Voting Board Members for the Meeting.\n4. Election of Board Officers for 2025-2026 Year: Chairman &amp; Vice-Chairman.\n5. 5.\n6. Approval of Meeting Minutes. September 23, 2024 &amp; May 27, 2025 Regular Meeting Minutes - Delayed",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-4-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-4",
+      "text": "6. Quasi-Judicial Public Hearing on Variance Request V-260301.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-4-2",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-4",
+      "text": "(Continued from the Board's Previous March 23, 2026 &amp; April 27, 2026 Regular Meetings.)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-4-3",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-4",
+      "text": "Made by Dennis E. Mills, Sr. at 1480 Womble Rd, Nashville to reduce the rear property line minimum building setback requirement to permit a detached residential accessory building to remain in its current location.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-4-4",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-4",
+      "text": "- a. Staff Update.\n- b. Testimony of the Applicant.\n- c. Testimony of Other Parties and/or Witnesses.\n- d. Board Discussion.\n- e. Motion to Adopt Amended Findings of Fact.\n- f.  Motion to Adopt Supporting Conclusions.\n- g. Motion to Approve or Deny the Variance Request.\n- h. Motion to Close the Public Hearing.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-4-5",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-4",
+      "text": "7. Quasi-Judicial Public Hearing on Special Use Permit Request S-260601.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-4-6",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-4",
+      "text": "Made by Amber Hinnant at 10346 Ida St, Wilson for a temporary hardship manufactured home proposed to be located behind the primary home.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-4-7",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-4",
+      "text": "- a. Motion to Open the Public Hearing.\n- b. Staff Report.\n- c. Acceptance of Staff Report &amp; Case File into the Record.\n- d. Testimony of the Applicant.\n- e. Testimony of Other Parties and/or Witnesses.\n- f.  Board Discussion.\n- g. Motion to Adopt Findings of Fact.\n- h. Motion to Adopt Supporting Conclusions.\n- i.  Motion to Approve or Deny the Special Use Permit Request.\n- j.  Motion to Close the Public Hearing.\n8. Other Business.\n9. Adjournment.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-5",
+      "parent_chunk_id": null,
+      "text": "## NASH COUNTY BOARD OF ADJUSTMENT STANDARD FOR THE ISSUANCE OF A VARIANCE\n\nThe Nash County Unified Development Ordinance (UDO) establishes the land development regulations that apply within the County's planning and zoning jurisdiction.\n\nA 'variance' is defined as \"official permission to depart from the requirements of this Ordinance\" (UDO Art. II, Sec. 2-4.198.) All general variance requests are to be heard and decided by the Board of Adjustment.\n\nThe North Carolina General Statutes (N.C.G.S.), Chapter 160D, Article 7, Part 5 establishes the standard and criteria for the issuance of a variance.\n\nWhen unnecessary hardships would result from carrying out the strict letter of a zoning regulation, the board of adjustment shall vary any of the provisions of the zoning regulation upon a showing of all of the following:\n\n- (1) Unnecessary hardship would result from the strict application of the regulation. It is not necessary to demonstrate that, in the absence of the variance, no reasonable use can be made of the property.\n- (2) The hardship results from conditions that are peculiar to the property, such as location, size, or topography. Hardships resulting from personal circumstances, as well as hardships resulting from conditions that are common to the neighborhood or the general public, may not be the basis for granting a variance. A variance may be granted when necessary and appropriate to make a reasonable accommodation under the Federal Fair Housing Act for a person with a disability.\n- (3) The hardship did not result from actions taken by the applicant or the property owner. The act of purchasing property with knowledge that circumstances exist that may justify the granting of a variance is not a selfcreated hardship.\n- (4) The requested variance is consistent with the spirit, purpose, and intent of the regulation, such that public safety is secured and substantial justice is achieved.\n\nNo change in permitted land uses may be authorized by a variance.\n\nAppropriat",
+      "chunk_type": "parent",
+      "heading": "NASH COUNTY BOARD OF ADJUSTMENT STANDARD FOR THE ISSUANCE OF A VARIANCE"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-5-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-5",
+      "text": "## NASH COUNTY BOARD OF ADJUSTMENT STANDARD FOR THE ISSUANCE OF A VARIANCE",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-5-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-5",
+      "text": "The Nash County Unified Development Ordinance (UDO) establishes the land development regulations that apply within the County's planning and zoning jurisdiction.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-5-2",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-5",
+      "text": "A 'variance' is defined as \"official permission to depart from the requirements of this Ordinance\" (UDO Art. II, Sec. 2-4.198.) All general variance requests are to be heard and decided by the Board of Adjustment.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-5-3",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-5",
+      "text": "The North Carolina General Statutes (N.C.G.S.), Chapter 160D, Article 7, Part 5 establishes the standard and criteria for the issuance of a variance.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-5-4",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-5",
+      "text": "When unnecessary hardships would result from carrying out the strict letter of a zoning regulation, the board of adjustment shall vary any of the provisions of the zoning regulation upon a showing of all of the following:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-5-5",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-5",
+      "text": "- (1) Unnecessary hardship would result from the strict application of the regulation. It is not necessary to demonstrate that, in the absence of the variance, no reasonable use can be made of the property.\n- (2) The hardship results from conditions that are peculiar to the property, such as location, size, or topography. Hardships resulting from personal circumstances, as well as hardships resulting from conditions that are common to the neighborhood or the general public, may not be the basis for granting a variance. A variance may be granted when necessary and appropriate to make a reasonable accommodation under the Federal Fair Housing Act for a person with a disability.\n- (3) The hardship did not result from actions taken by the applicant or the property owner. The act of purchasing property with knowledge that circumstances exist that may justify the granting of a variance is not a selfcreated hardship.\n- (4) The requested variance is consistent with the spirit, purpose, and intent of the regulation, such that public safety is secured and substantial justice is achieved.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-5-6",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-5",
+      "text": "No change in permitted land uses may be authorized by a variance.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-5-7",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-5",
+      "text": "Appropriate conditions may be imposed on any variance, provided that the conditions are reasonably related to the variance.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-5-8",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-5",
+      "text": "A four-fifths (4/5) majority vote of the Board of Adjustment is necessary to grant a variance per N.C.G.S. \u00a7 160D-406(i).",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-6",
+      "parent_chunk_id": null,
+      "text": "## NASH COUNTY BOARD OF ADJUSTMENT VARIANCE REQUEST -STAFF REPORT\n\nFile Number:\n\nV-260301: Variance Request\n\nProperty Owner / Applicant:\n\nDennis E. Mills, Sr. &amp; Cynthia N. Mills\n\nLocation:\n\n1480 Womble Rd, Nashville, NC 27856\n\nTax ID #:\n\nPIN 380100781424 / Parcel ID # 037235\n\nZoning District:\n\nA1: Agricultural\n\nVariance Description:\n\nReduction of Rear Minimum Building Setback Requirement\n\nUDO Reference:\n\nArt. IX, Sec. 9-4.1 (A), Table 9-4-1 &amp; Sec. 9-5.1 (B)\n\nNotice of Public Hearing:\n\nMailed to Property Owners within 600 Feet:  Mar. 11, 2026\n\nPosted at the Subject Property:\n\nMar. 12, 2026",
+      "chunk_type": "parent",
+      "heading": "NASH COUNTY BOARD OF ADJUSTMENT VARIANCE REQUEST -STAFF REPORT"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-6-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-6",
+      "text": "## NASH COUNTY BOARD OF ADJUSTMENT VARIANCE REQUEST -STAFF REPORT",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-6-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-6",
+      "text": "Dennis E. Mills, Sr. &amp; Cynthia N. Mills",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-6-2",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-6",
+      "text": "Reduction of Rear Minimum Building Setback Requirement",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-6-3",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-6",
+      "text": "Art. IX, Sec. 9-4.1 (A), Table 9-4-1 &amp; Sec. 9-5.1 (B)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-6-4",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-6",
+      "text": "Mailed to Property Owners within 600 Feet:  Mar. 11, 2026",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-7",
+      "parent_chunk_id": null,
+      "text": "## Findings of Fact (as Proposed by the Zoning Administrator):\n\n- (1) The subject property is a 0.69-acre lot located at 1480 Womble Road, Nashville, NC 27856 as depicted on the survey map recorded in Plat Book 30 Page 106 of the Nash County Registry and which is further identified as Lot 29 of the Cottonwood Phase 2 Section One Subdivision as well as Nash County Tax Map PIN 380100781424 and Parcel ID # 037235.\n- (2) The subject property was acquired by Dennis E. Mills, Sr. and wife, Cynthia N. Mills in September of 2004, per the general warranty deed recorded in Deed Book 2082 Pages 12-13 of the Nash County Registry.\n- (3) A single-family dwelling was constructed and completed on the subject property in 2004 per the Nash County Tax Record.\n- (4) The drain lines of the onsite septic system serving the dwelling are located on the western / rear side of the subject property per Nash County Wastewater Permit # 25338C completed in February 2004. Nash County Wastewater Repair Permit # 28335C was completed in July 2005 to abandon the initial septic lines and add three new septic lines further into the rear of the property.\n- (5) On February 27, 2026, Mr. Mills visited the Planning &amp; Inspections office and submitted an application for an Electrical Permit # P-26-836 for a 'new service for a new construction building.' Through conversation with Planning &amp; Inspections staff, it was discovered that a thirtyfoot (30') by thirty -foot (30') 900 square foot -detached residential accessory building was constructed by 'Precision Metals' on the subject property without the issuance of a building permit. Mr. Mills stated that he was misled by 'Precision Metals' and\n\nwas told that all necessary permits had been obtained. Later that same day, Senior Planner Aaron Chalker visited the subject property and confirmed that the existing 900 square foot structure encroached the rear property line minimum building setback.\n\n- (6) The subject property is located within the A1: Agricult",
+      "chunk_type": "parent",
+      "heading": "Findings of Fact (as Proposed by the Zoning Administrator):"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-7-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-7",
+      "text": "## Findings of Fact (as Proposed by the Zoning Administrator):",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-7-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-7",
+      "text": "- (1) The subject property is a 0.69-acre lot located at 1480 Womble Road, Nashville, NC 27856 as depicted on the survey map recorded in Plat Book 30 Page 106 of the Nash County Registry and which is further identified as Lot 29 of the Cottonwood Phase 2 Section One Subdivision as well as Nash County Tax Map PIN 380100781424 and Parcel ID # 037235.\n- (2) The subject property was acquired by Dennis E. Mills, Sr. and wife, Cynthia N. Mills in September of 2004, per the general warranty deed recorded in Deed Book 2082 Pages 12-13 of the Nash County Registry.\n- (3) A single-family dwelling was constructed and completed on the subject property in 2004 per the Nash County Tax Record.\n- (4) The drain lines of the onsite septic system serving the dwelling are located on the western / rear side of the subject property per Nash County Wastewater Permit # 25338C completed in February 2004. Nash County Wastewater Repair Permit # 28335C was completed in July 2005 to abandon the initial septic lines and add three new septic lines further into the rear of the property.\n- (5) On February 27, 2026, Mr. Mills visited the Planning &amp; Inspections office and submitted an application for an Electrical Permit # P-26-836 for a 'new service for a new construction building.' Through conversation with Planning &amp; Inspections staff, it was discovered that a thirtyfoot (30') by thirty -foot (30') 900 square foot -detached residential accessory building was constructed by 'Precision Metals' on the subject property without the issuance of a building permit. Mr. Mills stated that he was misled by 'Precision Metals' and",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-7-2",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-7",
+      "text": "was told that all necessary permits had been obtained. Later that same day, Senior Planner Aaron Chalker visited the subject property and confirmed that the existing 900 square foot structure encroached the rear property line minimum building setback.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-7-3",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-7",
+      "text": "- (6) The subject property is located within the A1: Agricultural Zoning District per the Official Zoning Map of Nash County.\n- (7) The minimum building setback distance required in this zoning district between a rear property line and a detached residential accessory building with a gross floor area of six hundred (600) square feet or more is thirty feet (30') per the Nash County Unified Development Ordinance Art. IX, Sec. 9-4.1 (A), Table 9-4-1 and Sec. 9-5.1 (B).\n- (8) The existing building currently encroaches approximately 16 feet into the required 30-foot rear property line minimum building setback distance at its closest point.\n- (9) Therefore, the property owner has submitted Variance Request V-260301 to reduce this standard rear property line minimum building setback requirement from thirty feet (30 ') to approximately fourteen feet (14 ') to allow the existing nine hundred square foot (900 sq ft) detached residential accessory building to remain in its current location on the subject property.\n- (10)  On March 23, 2026, the Nash County Board of Adjustment held a quasi-judicial public hearing on Variance Request V-260301.\n- (11)  Notice of the public hearing was sent by first class mail on March 11, 2026 to the variance applicant and owner of the subject property and to the owners of record for tax purposes of all properties located within six hundred feet (600') of the subject property. Notice was also posted prominently in front of the subject property on March 12, 2026.\n- (12)  All persons who provided testimony during the public hearing were sworn in by the Board Chairman.\n- (13)  During the public hearing on March 23, 2026, Mr. and Mrs. Mills, the applicants and owners of the subject property, provided testimony that:\n- They had chosen the location for the building and had the concrete foundation poured without being aware of the minimum building setback requirements.\n- They were assured by their contractor, 'Precision Metals,' that a building permit had been obtained for the building when, in fact, they discovered later that no permit had been issued.\n- They received written documentation from the contractor on the day of the building's erection, which they later realized stated in fine print that the contractor was not responsible for obtaining any necessary permits.\n- They stated that it was their expectation that the contractor would have recognized and notified them if the proposed location for the building did not comply with the applicable requirements prior to erecting the building on the property.\n- They stated that the contractor had stopped returning their telephone calls regarding this matter.\n- (14)  No members of the public present at the hearing chose to address the Board regarding this matter.\n- (15)  On March 23, 2026, the Nash County Board of Adjustment voted unanimously to table consideration of Variance Request V-260301 in order to allow the applicants additional time to explore all options for the subject building and to continue the public hearing on this matter to the Board's next regular meeting on April 27, 2026.\n- (16)  Following the March 23, 2026 meeting, the Planning Staff consulted the County Building Inspector and confirmed that due to the structure's status as an engineered metal building, a potential modification to reduce the enclosed area to less than 600 square feet in order to reduce the applicable rear property line minimum building setback to five feet (5') and to allow the building to remain in its current location on the subject property would require an evaluation of the building and determination by a licensed professional engineer at the owner 's expense.\n- (17)  Also following the March 23, 2026 meeting, the applicant contacted the owners of the two parcels located immediately adjacent to the rear of the subject lot -Ms. Bobbie S. Deans, owner of the property located at 174 Ash Lily Ct, Nashville, which is further identified as Nash County Tax Map PIN 380100688256 and Mr. Charles Tirada representing MAC 2008, LLC, the owner of the property further identified as Nash County Tax Map PIN 380100681880 -to discuss potentially acquiring additional land area from them in order to relocate the subject lot's rear property line far enough away from the building to satisfy the 30-foot rear property line minimum building setback distance. While Ms. Deans expressed a willingness to discuss the proposal, Mr. Tirada declined the offer. Based on the building's current location on the subject property, the cooperation of both adjacent property owners would be required in order to effectively relocate the rear property line.\n- (18)  On April 27, 2026, the Nash County Board of Adjustment resumed the quasi-judicial public hearing on Variance Request V-260301.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-8",
+      "parent_chunk_id": null,
+      "text": "## Supporting Conclusions (as Proposed by the Applicant):\n\n- (1) The applicant has demonstrated that an unnecessary hardship would result from the strict application of the standard thirtyfoot (30') rear property line minimum building setback requirement because it would require the applicant to either remove an approximately 16' x 30' section (over one-half) of the existing detached accessory structure or relocate the entire structure, which is built on a concrete slab, completely outside of the rear setback area, which could potentially impact the existing onsite septic system and its related repair area on the subject property. Note that the septic system on the subject property has already been repaired once in 2005 and allowing the structure to remain in its current location will reserve more land area for septic system repairs in the future, if necessary.\n- (2) The applicant has demonstrated that the hardship results from conditions that are peculiar to the subject property, specifically the location of the repaired septic system further into the rear of the property than was originally installed, and the fact that this lot is a legal nonconformity in the A1 Zoning District with an area of 30,077 square feet versus the minimum 40,000 square feet that is required by the current Unified Development Ordinance (UDO).\n- (3) The applicant has demonstrated that the hardship did not result from actions taken by the applicant or the property owner because the property owner hired 'Precision Metals' who erected the building without any permits and misled the property owner to believe that all necessary permits were acquired. Additionally, the repair of the septic system, which occurred in 2005 shortly after the completion of the single-family dwelling on the property, significantly decreased the buildable area of the backyard.\n- (4) The applicant has demonstrated that the requested variance is consistent with the spirit, purpose, and intent of the regulation, such that ",
+      "chunk_type": "parent",
+      "heading": "Supporting Conclusions (as Proposed by the Applicant):"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-8-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-8",
+      "text": "## Supporting Conclusions (as Proposed by the Applicant):",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-8-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-8",
+      "text": "- (1) The applicant has demonstrated that an unnecessary hardship would result from the strict application of the standard thirtyfoot (30') rear property line minimum building setback requirement because it would require the applicant to either remove an approximately 16' x 30' section (over one-half) of the existing detached accessory structure or relocate the entire structure, which is built on a concrete slab, completely outside of the rear setback area, which could potentially impact the existing onsite septic system and its related repair area on the subject property. Note that the septic system on the subject property has already been repaired once in 2005 and allowing the structure to remain in its current location will reserve more land area for septic system repairs in the future, if necessary.\n- (2) The applicant has demonstrated that the hardship results from conditions that are peculiar to the subject property, specifically the location of the repaired septic system further into the rear of the property than was originally installed, and the fact that this lot is a legal nonconformity in the A1 Zoning District with an area of 30,077 square feet versus the minimum 40,000 square feet that is required by the current Unified Development Ordinance (UDO).\n- (3) The applicant has demonstrated that the hardship did not result from actions taken by the applicant or the property owner because the property owner hired 'Precision Metals' who erected the building without any permits and misled the property owner to believe that all necessary permits were acquired. Additionally, the repair of the septic system, which occurred in 2005 shortly after the completion of the single-family dwelling on the property, significantly decreased the buildable area of the backyard.\n- (4) The applicant has demonstrated that the requested variance is consistent with the spirit, purpose, and intent of the regulation, such that public safety is secured and substantial justice is achieved because the standard thirtyfoot (30') rear property line minimum building setback requirement is often most applicable when a rear property line is dividing two immediately adjacent residential back yards; however, this particular subject property is located immediately adjacent at its rear property line to an approximately 115.51-acre undeveloped tract of land that is encumbered by a large area of 100-Year Flood Hazard and the presence of Pig Basket Creek and its tributaries. The rear property line of the subject property is also adjacent to a drainage swale that is identified as a 15' Drainage &amp; Utility Easement on Lot 26 (174 Ash Lily Ct) of the Cottonwood Phase 3 Section One Subdivision recorded in Plat Book 31 Page 188 in the Nash County Registry. Furthermore, the adjusted fourteen-foot (14 ') rear property line minimum building setback distance is still almost triple the fivefoot (5') rear property line minimum building setback distance required for smaller detached residential accessory buildings with a gross floor area of less than six hundred (600) square feet per UDO Art. IX, Sec. 9-5.1 (B).",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-9",
+      "parent_chunk_id": null,
+      "text": "## Procedural Notes:\n\nAll proposed findings of fact and supporting conclusions above may be revised prior to adoption as necessary to reflect the arguments, evidence, and/or testimony presented during the public hearing held on this request.\n\nAppropriate conditions may be imposed on the variance, provided that they are reasonably related to the variance.\n\nA four-fifths (4/5) majority vote of the Board of Adjustment is necessary to grant a variance.",
+      "chunk_type": "parent",
+      "heading": "Procedural Notes:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-9-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-9",
+      "text": "All proposed findings of fact and supporting conclusions above may be revised prior to adoption as necessary to reflect the arguments, evidence, and/or testimony presented during the public hearing held on this request.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-9-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-9",
+      "text": "Appropriate conditions may be imposed on the variance, provided that they are reasonably related to the variance.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-9-2",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-9",
+      "text": "A four-fifths (4/5) majority vote of the Board of Adjustment is necessary to grant a variance.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-10",
+      "parent_chunk_id": null,
+      "text": "## Suggested Motions:",
+      "chunk_type": "parent",
+      "heading": "Suggested Motions:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-11",
+      "parent_chunk_id": null,
+      "text": "## MOTION #1 -ADOPT AMENDED FINDINGS OF FACT:\n\nI move that the Nash County Board of Adjustment adopts the amended Findings of Fact as proposed by the Zoning Administrator in the staff report. (Note any necessary revisions or additions.)",
+      "chunk_type": "parent",
+      "heading": "MOTION #1 -ADOPT AMENDED FINDINGS OF FACT:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-11-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-11",
+      "text": "## MOTION #1 -ADOPT AMENDED FINDINGS OF FACT:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-11-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-11",
+      "text": "I move that the Nash County Board of Adjustment adopts the amended Findings of Fact as proposed by the Zoning Administrator in the staff report. (Note any necessary revisions or additions.)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-12",
+      "parent_chunk_id": null,
+      "text": "## MOTION #2 -ADOPT SUPPORTING CONCLUSIONS:\n\nI move that the Nash County Board of Adjustment adopts:\n\n- (A)  ALL FOUR CONCLUSIONS AS PROPOSED BY THE APPLICANT TO SUPPORT APPROVAL OF THE VARIANCE REQUEST. (Note any necessary revisions or additions.)\n\nOR\n\n- (B)  AT LEAST ONE OF THE FOLLOWING CONCLUSIONS TO SUPPORT DENIAL OF THE VARIANCE REQUEST.\n- (1) The applicant has NOT demonstrated that an unnecessary hardship would result from the strict application of the regulation.\n- (2) The applicant has NOT demonstrated that the hardship results from conditions that are peculiar to the property.\n- (3) The applicant has NOT demonstrated that the hardship did not result from actions taken by the applicant or the property owner.\n- (4) The applicant has NOT demonstrated that the requested variance is consistent with the spirit, purpose, and intent of the regulation, such that public safety is secured and substantial justice is achieved.",
+      "chunk_type": "parent",
+      "heading": "MOTION #2 -ADOPT SUPPORTING CONCLUSIONS:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-12-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-12",
+      "text": "## MOTION #2 -ADOPT SUPPORTING CONCLUSIONS:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-12-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-12",
+      "text": "I move that the Nash County Board of Adjustment adopts:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-12-2",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-12",
+      "text": "- (A)  ALL FOUR CONCLUSIONS AS PROPOSED BY THE APPLICANT TO SUPPORT APPROVAL OF THE VARIANCE REQUEST. (Note any necessary revisions or additions.)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-12-3",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-12",
+      "text": "- (B)  AT LEAST ONE OF THE FOLLOWING CONCLUSIONS TO SUPPORT DENIAL OF THE VARIANCE REQUEST.\n- (1) The applicant has NOT demonstrated that an unnecessary hardship would result from the strict application of the regulation.\n- (2) The applicant has NOT demonstrated that the hardship results from conditions that are peculiar to the property.\n- (3) The applicant has NOT demonstrated that the hardship did not result from actions taken by the applicant or the property owner.\n- (4) The applicant has NOT demonstrated that the requested variance is consistent with the spirit, purpose, and intent of the regulation, such that public safety is secured and substantial justice is achieved.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-13",
+      "parent_chunk_id": null,
+      "text": "## MOTION #3 -APPROVE OR DENY THE VARIANCE REQUEST:\n\nI move that the Nash County Board of Adjustment APPROVES or DENIES (choose one) Variance Request V-260301 to reduce the standard rear property line minimum building setback requirement from thirty feet (30') to approximately fourteen feet (14') to allow the existing nine hundred square foot (900 sq ft) detached residential accessory building to remain in its current location on the subject property.\n\nProposed 30' x 30' Detached Building\n\nRequest to Reduce Rear Building Setback From 30' to Approx. 14'\n\nVariance Request V-260301: Site Plan Property of Dennis E. Mills, Sr. &amp; Cynthia N. Mills 1480 Womble Rd, Nashville, NC 27856\n\n48'\n\n17'\n\n14'\n\n26'\n\n1500\n\n!\n\n(\n\nSeptic Drain Lines\n\n1460\n\n!\n\n(\n\n1480\n\n!\n\n(\n\nWomble Rd\n\nCottonwood Rd\n\n1 in = 40 ft\n\n\u00b1\n\n<!-- image -->\n\n100%.innoafm repri\n\n<!-- image -->\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "MOTION #3 -APPROVE OR DENY THE VARIANCE REQUEST:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-13-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-13",
+      "text": "## MOTION #3 -APPROVE OR DENY THE VARIANCE REQUEST:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-13-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-13",
+      "text": "I move that the Nash County Board of Adjustment APPROVES or DENIES (choose one) Variance Request V-260301 to reduce the standard rear property line minimum building setback requirement from thirty feet (30') to approximately fourteen feet (14') to allow the existing nine hundred square foot (900 sq ft) detached residential accessory building to remain in its current location on the subject property.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-13-2",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-13",
+      "text": "Request to Reduce Rear Building Setback From 30' to Approx. 14'",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-13-3",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-13",
+      "text": "Variance Request V-260301: Site Plan Property of Dennis E. Mills, Sr. &amp; Cynthia N. Mills 1480 Womble Rd, Nashville, NC 27856",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-14",
+      "parent_chunk_id": null,
+      "text": "## NASH COUNTY HEALTH DEPARTMENT\n\nREF NO\n\nDATE\n\nTWP\n\nMAP TAX NO.\n\n253380\n\nCONST\n\nIMPROV:PERMTT\n\n10\n\n1200\n\nNASHVTILA\n\n330100781424\n\nREQUESTER\n\nOWNER\n\nPOBERTSON REALTY PO B0X 158 NASHVILLE NC27856\n\n2\n\nNc-27056\n\nTELEPHONE\n\nSPECIFICATIONS\n\nTACE\n\n60\n\nLOCATION/DIRECTION\n\n138O KOMFLE RD,\n\nHD252201\n\nFEE\n\nLAND SIZE\n\nSIGNATUREOFOWNERORAUTHORIZEDAGENT\n\n200\n\n0.69AC\n\n256\n\n\"CLIENT'S RESPONSIBILITY TO SEE THAT PLANNING DEPT.'S RULES ARE MET BEFORE IP WILL BE VALID\"\n\nTUPO Ps\n\nTEXTURE\n\nSIRUCTURE PS\n\nDEPTH\n\nR.HOR\n\nSOIL.WET PS\n\nAVAIL.SP\n\nMEHLO\n\nMINRL\n\nOVERALL PS\n\nLTAR 0.4\n\nTYDE.sys Innrahw\n\n=DEDRMS3\n\nGPD 360\n\nOTHER\n\nSZ.TANK 1,000\n\nSZ.CHAMB\n\nNITRIFI 225'x3!\n\nOPER.REO No\n\n4dTgsn INSTALLER\n\nSITE.LOC\n\nTEMaRks:25%vedachmmnnahisysku lue t lanpe",
+      "chunk_type": "parent",
+      "heading": "NASH COUNTY HEALTH DEPARTMENT"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-14-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-14",
+      "text": "POBERTSON REALTY PO B0X 158 NASHVILLE NC27856",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-14-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-14",
+      "text": "\"CLIENT'S RESPONSIBILITY TO SEE THAT PLANNING DEPT.'S RULES ARE MET BEFORE IP WILL BE VALID\"",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-14-2",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-14",
+      "text": "TEMaRks:25%vedachmmnnahisysku lue t lanpe",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-15",
+      "parent_chunk_id": null,
+      "text": "## NOTP SGALE\n\n- A FLAbS fOR SYsTTM\n\n- -Fusau 3.75:misby Cor four\n\nA\n\n751\n\n- Lorlr syshn apprpldlovrs slopid fo shed surfuce wafy\n\n757\n\n10'\n\nA\n\n751\n\nHome WXKTION\n\n- -INSTAU DuPING IONDITONG\n\nPOAD\n\nIMPROVEMENT PERMIT DATE: CNSTRUCTION PERMIT DATE: OPERATION PERMIT DATE:\n\nENV HEALTH SPEC:\n\n12\n\nENV HEALTH SPEC:\n\nENV HEALTH SPEC\n\n<!-- image -->\n\nREFNO",
+      "chunk_type": "parent",
+      "heading": "NOTP SGALE"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-15-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-15",
+      "text": "- Lorlr syshn apprpldlovrs slopid fo shed surfuce wafy",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-15-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-15",
+      "text": "IMPROVEMENT PERMIT DATE: CNSTRUCTION PERMIT DATE: OPERATION PERMIT DATE:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-16",
+      "parent_chunk_id": null,
+      "text": "## 283350 REQUESTER",
+      "chunk_type": "parent",
+      "heading": "283350 REQUESTER"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-17",
+      "parent_chunk_id": null,
+      "text": "## NASH COUNTY HEALTH DEPaRTMENT\n\nDATE\n\nTWP\n\nCONSTIMPROVEPERMIT06/O9/20N5.NASHVILLE\n\nMITISDENN1S (C P2 29E-REP\n\n1480 WOMBLE RD\n\nNASIV1LIE NC 27856\n\nTELEPHONE\n\nSPECIFICATIONS\n\n000\n\nCOTTNAMOL\n\nPHASE",
+      "chunk_type": "parent",
+      "heading": "NASH COUNTY HEALTH DEPaRTMENT"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-18",
+      "parent_chunk_id": null,
+      "text": "## LOCATION/DIRECTION\n\n148O WOMBEE RD\n\nFEE\n\n0\n\nRECEIPT#\n\nTT\n\nLOT29E.60.60-AC)\n\nREPAIRPERMIT\n\nLAND SIZE\n\n0.69AC\n\nREV# 9123\n\n\"CLIENT'S RESPONSIBILITY TO SEE THAT PLANNING DEPT.'S RULESARE MET BEFORE IPWILL BEVALID\"\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\nTOPO\n\nSTRUCTURE\n\nDEPTH\n\nR.HOR\n\nSOIL.WET\n\nAVAIL.SP\n\nOTHER\n\n9\n\n.35\n\nMINRI.\n\nOVERAIL\n\nLTAR\n\nM\n\n360\n\n#BEDRMS\n\nGPD\n\nOTHER\n\nTYPE.SYS\n\nS%.TANK\n\nSZ.CHAMB\n\nNITRIFI\n\nOPER.REQ\n\nSITE.LOC\n\nMAX TRENCH DEP\n\nINSTALLER\n\nREMARRS:REPATR PERMTT\n\n<!-- image -->\n\n<!-- image -->\n\nPERMLI\n\nJMPROVEMFNE\n\nCONSTRUCTION PERMIT DATE:\n\nOPERATIONPERMIT DATE:\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\naekre\n\nENV HEALTH SPTO\n\nENV HEALTH SPEC:\n\nENV HEALTH SPEC:\n\nMeuseto&amp;\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\nSIGNATUREOFOWNERORAUTHORIZEDAGENT\n\nOWNER\n\nMIIISDENNISE&amp;CYNTHIAN 1480 WOMBLE RD NASHVILLE NC 27856\n\nMAP TAX NO.\n\n380100781424\n\n\u4e09\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "LOCATION/DIRECTION"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-18-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-18",
+      "text": "\"CLIENT'S RESPONSIBILITY TO SEE THAT PLANNING DEPT.'S RULESARE MET BEFORE IPWILL BEVALID\"",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-18-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-18",
+      "text": "MIIISDENNISE&amp;CYNTHIAN 1480 WOMBLE RD NASHVILLE NC 27856",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-19",
+      "parent_chunk_id": null,
+      "text": "## NASH COUNTY BOARD OF ADJUSTMENT STANDARD FOR THE ISSUANCE OF A SPECIAL USE PERMIT\n\nThe Nash County Unified Development Ordinance (UDO) establishes the land development regulations that apply within the County's planning and zoning jurisdiction.\n\nA 'special use permit' is defined as: 'A permit issued to authorize development or land uses in a particular zoning district upon presentation of competent, material, and substantial evidence establishing compliance with one or more general standards requiring that judgment and discretion be exercised as well as compliance with specific standards' (UDO Art. II, Sec. 2 -4.172.)\n\nAll special use permit requests are to be heard and decided by the Board of Adjustment.\n\nThe Board of Adjustment may APPROVE a special use permit when:\n\n- (1) The requested special use permit is within the Board of Adjustment's jurisdiction according to th e UDO's Table of Permitted Uses;\n- (2) The permit application submittal is complete; and\n- (3) If completed as proposed, the development will comply with the requirements of the UDO.\n\nThe Board of Adjustment may DENY a special use permit if it concludes, based upon the information submitted at the public hearing, that if completed as proposed, the development, more probably than not:\n\n- (1) Will materially endanger the public health or safety; or\n- (2) Will substantially injure the value of adjoining or abutting property; or\n- (3) Will not be in harmony with the area in which it is to be located; or\n- (4) Will not be in general conformity with the Nash County Comprehensive Land Use Plan.\n\nReasonable conditions may be attached to a special use permit with the consent of the applicant in order to ensure that the applicable UDO requirements are met.\n\nA simple majority vote of the Board of Adjustment is necessary to grant a special use permit per N.C.G.S. \u00a7 160D-406(i).",
+      "chunk_type": "parent",
+      "heading": "NASH COUNTY BOARD OF ADJUSTMENT STANDARD FOR THE ISSUANCE OF A SPECIAL USE PERMIT"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-19-0",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-19",
+      "text": "## NASH COUNTY BOARD OF ADJUSTMENT STANDARD FOR THE ISSUANCE OF A SPECIAL USE PERMIT",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-19-1",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-19",
+      "text": "The Nash County Unified Development Ordinance (UDO) establishes the land development regulations that apply within the County's planning and zoning jurisdiction.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-19-2",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-19",
+      "text": "A 'special use permit' is defined as: 'A permit issued to authorize development or land uses in a particular zoning district upon presentation of competent, material, and substantial evidence establishing compliance with one or more general standards requiring that judgment and discretion be exercised as well as compliance with specific standards' (UDO Art. II, Sec. 2 -4.172.)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-19-3",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-19",
+      "text": "All special use permit requests are to be heard and decided by the Board of Adjustment.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-19-4",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-19",
+      "text": "The Board of Adjustment may APPROVE a special use permit when:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-19-5",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-19",
+      "text": "- (1) The requested special use permit is within the Board of Adjustment's jurisdiction according to th e UDO's Table of Permitted Uses;\n- (2) The permit application submittal is complete; and\n- (3) If completed as proposed, the development will comply with the requirements of the UDO.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-19-6",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-19",
+      "text": "The Board of Adjustment may DENY a special use permit if it concludes, based upon the information submitted at the public hearing, that if completed as proposed, the development, more probably than not:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-19-7",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-19",
+      "text": "- (1) Will materially endanger the public health or safety; or\n- (2) Will substantially injure the value of adjoining or abutting property; or\n- (3) Will not be in harmony with the area in which it is to be located; or\n- (4) Will not be in general conformity with the Nash County Comprehensive Land Use Plan.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-19-8",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-19",
+      "text": "Reasonable conditions may be attached to a special use permit with the consent of the applicant in order to ensure that the applicable UDO requirements are met.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-child-19-9",
+      "parent_chunk_id": "doc-nc-nashcounty-8b993a7c3b980f3a-parent-19",
+      "text": "A simple majority vote of the Board of Adjustment is necessary to grant a special use permit per N.C.G.S. \u00a7 160D-406(i).",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "8b993a7c3b980f3ac8f4f212f60d2dd3afe6b06c3497bf110c1ee6d6b7d87de5",
+  "extraction_method": "docling",
+  "source_url": "https://nc-nashcounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06222026-732",
+  "doc_type": "agenda"
+}

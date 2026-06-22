@@ -1,0 +1,16 @@
+[
+  {
+    "county_id": "demo-county",
+    "documents": [
+      {
+        "document_id": "doc-demo-county-c060ab995765775e",
+        "source_url": "local://demo",
+        "chunks_path": "local-run/staging/demo-county/doc-demo-county-c060ab995765775e/chunks.json",
+        "chunk_count": 3,
+        "extraction_method": "docling"
+      }
+    ],
+    "errors": [],
+    "demo": true
+  }
+]

@@ -1,0 +1,357 @@
+{
+  "document_id": "doc-nc-nashcounty-77f809296cbbbdbd",
+  "county_id": "nc-nashcounty",
+  "trace_id": "dab79f39-1362-4c02-a32f-28827b955330",
+  "extracted_at": "2026-06-22T13:51:25.638040+00:00",
+  "chunk_count": 54,
+  "chunks": [
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-1",
+      "parent_chunk_id": null,
+      "text": "## Nash County Board of Commissioners",
+      "chunk_type": "parent",
+      "heading": "Nash County Board of Commissioners"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-2",
+      "parent_chunk_id": null,
+      "text": "## Second Regular Monthly Board Meeting\n\nJune 15, 2026 at 1:30 PM\n\nNash County Administration Building\n\n3 rd  Floor - Frederick B. Cooper Jr. Commissioners Room\n\n120 West Washington Street\n\nNashville, North Carolina\n\nCitizens with disabilities requiring assistance to participate in public meetings should contact the County Manager's office.\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Second Regular Monthly Board Meeting"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-2-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-2",
+      "text": "3 rd  Floor - Frederick B. Cooper Jr. Commissioners Room",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-2-1",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-2",
+      "text": "Citizens with disabilities requiring assistance to participate in public meetings should contact the County Manager's office.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-3",
+      "parent_chunk_id": null,
+      "text": "## June 15, 2026 Second Regular Monthly Board Meeting\n\n|   1. | Call to Order Chairman Marvin C. Arrington                                                                                                                     |\n|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|\n|   2. | Invocation Commissioner Freddy Howell                                                                                                                          |\n|   3. | Pledge of Allegiance Commissioner J. Wayne Outlaw                                                                                                              |\n|   4. | 2026 Citizens' Academy Recognition Jonathan Edwards, Communications Director                                                                                   |\n|   5. | Nash County Public Schools Sale of WL Greene Dr. Steve Ellis, Superintendent Angela Miller, Special Assistant of Auxiliary Services, Operations, and Athletics |\n|   6. | Presentation on Juneteenth Observance Tia Foula, Assistant County Manager                                                                                      |\n|   7. | America 250 North Carolina Stacie Shatzer, County Manager                                                                                                      |\n|   8. | Nash County Legislative Goals Emily Moore, Grants & Intergovernmental Relations Director                                                                       |\n|   9. | Establishment of a Nash County Fire Services Working Group Jonathan Boone, Deputy County Manager                                                               |\n|  10. | Nash County MedPark Building Renovations - Change Order 2 Jonathan Boone, Deputy County Manager                                                                |\n|  11. | Elect a Voting Delegate to the 2026 NACo Annual Conference Busines",
+      "chunk_type": "parent",
+      "heading": "June 15, 2026 Second Regular Monthly Board Meeting"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-3-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-3",
+      "text": "## June 15, 2026 Second Regular Monthly Board Meeting",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-3-1",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-3",
+      "text": "|   1. | Call to Order Chairman Marvin C. Arrington                                                                                                                     |\n|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|\n|   2. | Invocation Commissioner Freddy Howell                                                                                                                          |\n|   3. | Pledge of Allegiance Commissioner J. Wayne Outlaw                                                                                                              |\n|   4. | 2026 Citizens' Academy Recognition Jonathan Edwards, Communications Director                                                                                   |\n|   5. | Nash County Public Schools Sale of WL Greene Dr. Steve Ellis, Superintendent Angela Miller, Special Assistant of Auxiliary Services, Operations, and Athletics |\n|   6. | Presentation on Juneteenth Observance Tia Foula, Assistant County Manager                                                                                      |\n|   7. | America 250 North Carolina Stacie Shatzer, County Manager                                                                                                      |\n|   8. | Nash County Legislative Goals Emily Moore, Grants & Intergovernmental Relations Director                                                                       |\n|   9. | Establishment of a Nash County Fire Services Working Group Jonathan Boone, Deputy County Manager                                                               |\n|  10. | Nash County MedPark Building Renovations - Change Order 2 Jonathan Boone, Deputy County Manager                                                                |\n|  11. | Elect a Voting Delegate to the 2026 NACo Annual Conference Business Meeting Stacie Shatzer, County Manager                                                     |\n|  12. | Elect a Voting Delegate for the 119th Annual NCACC Conference Stacie Shatzer, County Manager                                                                   |\n|  13. | Rural Health Transformation Program- Mobile Integrated Health Grant Nikki Stanton, Finance Officer                                                             |\n|  14. | County Capital Projects Fund Ordinance Nikki Stanton, Finance Officer                                                                                          |\n|  15. | Elm Street Drainage Project CDBG - Disaster Recovery Project Ordinance Nikki Stanton, Finance Officer                                                          |",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-3-2",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-3",
+      "text": "16. Southern Nash Middle School Capital Project Ordinance Amendment Nikki Stanton, Finance Officer\n17. Budget Amendments",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-3-3",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-3",
+      "text": "18. FY 2027 Budget Ordinance Stacie Shatzer, County Manager\n19. Board, Committee or Special Reports Freddy Howell, Vice Chairman\n20. Recess Meeting Until Wednesday, June 24, 2026 @ 6 PM in the Frederick B. Cooper Jr. Commissioner's Room at the Nash County Administration Building, Nashville, NC",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-4",
+      "parent_chunk_id": null,
+      "text": "## Nash County",
+      "chunk_type": "parent",
+      "heading": "Nash County"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-5",
+      "parent_chunk_id": null,
+      "text": "## Commissioner's Agenda Information Sheet\n\nPage 1 of 1\n\nDate: Monday, June 15, 2026\n\nAttachments: No\n\nItem:\n\n2026 Citizens' Academy Recognition\n\nInitiated By:\n\nJonathan Edwards, Communications Director\n\nAction Proposed:\n\nObserve and Celebrate Graduates\n\nDescription: Communications Director Jonathan Edwards will introduce a short recap video of this year's Citizens' Academy. After the video, Commissioners will be invited to the podium to assist with recognizing participants who will receive a certificate and pose for a photo.",
+      "chunk_type": "parent",
+      "heading": "Commissioner's Agenda Information Sheet"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-5-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-5",
+      "text": "## Commissioner's Agenda Information Sheet",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-5-1",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-5",
+      "text": "Jonathan Edwards, Communications Director",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-5-2",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-5",
+      "text": "Description: Communications Director Jonathan Edwards will introduce a short recap video of this year's Citizens' Academy. After the video, Commissioners will be invited to the podium to assist with recognizing participants who will receive a certificate and pose for a photo.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-6",
+      "parent_chunk_id": null,
+      "text": "## 2026 Graduates\n\nIsabella Bailey Joseph Bailey Kla Bellamy John Brodie Linda Bulluck Olivia Caviness Toni Coleman Rodolfo Cruz Damian Jeffers Elizabeth Jones Patricia Lloyd Deidre' Lyons Everette Matthews Sherease Raeford Brent Wilson Jamie Wilson",
+      "chunk_type": "parent",
+      "heading": "2026 Graduates"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-6-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-6",
+      "text": "Isabella Bailey Joseph Bailey Kla Bellamy John Brodie Linda Bulluck Olivia Caviness Toni Coleman Rodolfo Cruz Damian Jeffers Elizabeth Jones Patricia Lloyd Deidre' Lyons Everette Matthews Sherease Raeford Brent Wilson Jamie Wilson",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-7",
+      "parent_chunk_id": null,
+      "text": "## Nash County",
+      "chunk_type": "parent",
+      "heading": "Nash County"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-8",
+      "parent_chunk_id": null,
+      "text": "## Commissioner's Agenda Information Sheet\n\nDate: Monday, June 15, 2026\n\nPage 1 of 1\n\nAttachments:  No\n\nItem:\n\nNash County Public Schools Sale of WL Greene\n\nInitiated By:\n\nDr. Steve Ellis, Superintendent Angela Miller, Special Assistant of Auxiliary Services, Operations and Athletics\n\nAction Proposed:\n\nApprove or Deny the Request",
+      "chunk_type": "parent",
+      "heading": "Commissioner's Agenda Information Sheet"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-8-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-8",
+      "text": "## Commissioner's Agenda Information Sheet",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-8-1",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-8",
+      "text": "Nash County Public Schools Sale of WL Greene",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-8-2",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-8",
+      "text": "Dr. Steve Ellis, Superintendent Angela Miller, Special Assistant of Auxiliary Services, Operations and Athletics",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-9",
+      "parent_chunk_id": null,
+      "text": "## Description:\n\nClerk to the Board, Janice Evans, received the following email from the Nash County Public School System regarding the sale of WL Greene.",
+      "chunk_type": "parent",
+      "heading": "Description:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-9-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-9",
+      "text": "Clerk to the Board, Janice Evans, received the following email from the Nash County Public School System regarding the sale of WL Greene.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-10",
+      "parent_chunk_id": null,
+      "text": "## Good morning Ms. Evans,\n\nI am reaching out to see if Dr. Ellis and I could get on the agenda to ask if you would like the surplus property WL Greene.  Our board voted last night for the sale of this property, and I am reaching out to see when we could discuss in open session if the County would want this or we could sell.\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n252.462.2537\n\nasmiller@ncpschools.net\n\nncpschools.net",
+      "chunk_type": "parent",
+      "heading": "Good morning Ms. Evans,"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-10-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-10",
+      "text": "I am reaching out to see if Dr. Ellis and I could get on the agenda to ask if you would like the surplus property WL Greene.  Our board voted last night for the sale of this property, and I am reaching out to see when we could discuss in open session if the County would want this or we could sell.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-11",
+      "parent_chunk_id": null,
+      "text": "## Nash County Commissioner's Agenda Information Sheet\n\nDate: Monday, June 15, 2026\n\nPage 1 of 2\n\nAttachments: No\n\nItem:\n\nPresentation on Juneteenth Observance\n\nInitiated By:\n\nTia Foula, Nash County Engagement Committee\n\nAction Proposed:\n\nInformation Only",
+      "chunk_type": "parent",
+      "heading": "Nash County Commissioner's Agenda Information Sheet"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-11-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-11",
+      "text": "## Nash County Commissioner's Agenda Information Sheet",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-11-1",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-11",
+      "text": "Tia Foula, Nash County Engagement Committee",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-12",
+      "parent_chunk_id": null,
+      "text": "## Description:\n\nThe Nash County Engagement Committee invites employees and members of the Board of Commissioners to participate in a Juneteenth observance on Friday, June 19, 2026.\n\nJuneteenth, a combination of the words \"June\" and \"nineteenth,\" commemorates June 19, 1865, when Union Major General Gordon Granger arrived in Galveston, Texas, and announced General Order No. 3, informing enslaved individuals that they were free. Although President Abraham Lincoln had issued the Emancipation Proclamation more than two years earlier, enforcement of emancipation depended upon the presence of Union troops. As a result, many enslaved people in Texas remained unaware of their freedom until June 19, 1865.\n\nWidely recognized as the nation's longest-running commemoration of the end of slavery, Juneteenth has been celebrated for generations through education, reflection, faith, cultural traditions, and community gatherings. The observance honors the resilience, perseverance, and contributions of African Americans while providing an opportunity to reflect on the ongoing pursuit of liberty, equality, and justice. In 2021, Juneteenth was officially recognized as a federal holiday.\n\nTo commemorate this important day, employees are encouraged to participate in the following activities throughout the day, as work schedules permit:\n\n- \uf0b7 Explore a historical Juneteenth display located in the third-floor hallway of the County Administration Building.\n- \uf0b7 Contribute to a collaborative community coloring wall.\n- \uf0b7 View a Juneteenth documentary, which will be shown throughout the day in the 3rd-floor breakroom.\n- \uf0b7 Enjoy light refreshments, puzzles, and educational activities in the breakroom.\n- \uf0b7 Share personal reflections on the \"What Freedom Means to Me\" community board.\n- \uf0b7 Support local Black-owned businesses by visiting food trucks located in the new parking lot beginning at 11:00 a.m.\n\nEmployees are encouraged to wear Juneteenth-themed attire or commemorative colors in recognition o",
+      "chunk_type": "parent",
+      "heading": "Description:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-12-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-12",
+      "text": "The Nash County Engagement Committee invites employees and members of the Board of Commissioners to participate in a Juneteenth observance on Friday, June 19, 2026.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-12-1",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-12",
+      "text": "Juneteenth, a combination of the words \"June\" and \"nineteenth,\" commemorates June 19, 1865, when Union Major General Gordon Granger arrived in Galveston, Texas, and announced General Order No. 3, informing enslaved individuals that they were free. Although President Abraham Lincoln had issued the Emancipation Proclamation more than two years earlier, enforcement of emancipation depended upon the presence of Union troops. As a result, many enslaved people in Texas remained unaware of their freedom until June 19, 1865.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-12-2",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-12",
+      "text": "Widely recognized as the nation's longest-running commemoration of the end of slavery, Juneteenth has been celebrated for generations through education, reflection, faith, cultural traditions, and community gatherings. The observance honors the resilience, perseverance, and contributions of African Americans while providing an opportunity to reflect on the ongoing pursuit of liberty, equality, and justice. In 2021, Juneteenth was officially recognized as a federal holiday.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-12-3",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-12",
+      "text": "To commemorate this important day, employees are encouraged to participate in the following activities throughout the day, as work schedules permit:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-12-4",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-12",
+      "text": "- \uf0b7 Explore a historical Juneteenth display located in the third-floor hallway of the County Administration Building.\n- \uf0b7 Contribute to a collaborative community coloring wall.\n- \uf0b7 View a Juneteenth documentary, which will be shown throughout the day in the 3rd-floor breakroom.\n- \uf0b7 Enjoy light refreshments, puzzles, and educational activities in the breakroom.\n- \uf0b7 Share personal reflections on the \"What Freedom Means to Me\" community board.\n- \uf0b7 Support local Black-owned businesses by visiting food trucks located in the new parking lot beginning at 11:00 a.m.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-12-5",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-12",
+      "text": "Employees are encouraged to wear Juneteenth-themed attire or commemorative colors in recognition of the observance.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-12-6",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-12",
+      "text": "This event provides an opportunity for learning, reflection, and community engagement as Nash County recognizes an important chapter in American history and honors the enduring values of freedom, opportunity, and service to others.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-12-7",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-12",
+      "text": "This version reads more like a commissioner agenda abstract and emphasizes both the historical significance of Juneteenth and the educational purpose of the County's observance.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-13",
+      "parent_chunk_id": null,
+      "text": "## Nash County",
+      "chunk_type": "parent",
+      "heading": "Nash County"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-14",
+      "parent_chunk_id": null,
+      "text": "## Commissioner's Agenda Information Sheet\n\nDate: Monday, June 15, 2026\n\nPage 1 of 1\n\nAttachments:  No\n\nItem:\n\nAmerica 250 North Carolina\n\nInitiated By:\n\nStacie Shatzer, County Manager\n\nAction Proposed:\n\nInformation Only",
+      "chunk_type": "parent",
+      "heading": "Commissioner's Agenda Information Sheet"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-14-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-14",
+      "text": "## Commissioner's Agenda Information Sheet",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-15",
+      "parent_chunk_id": null,
+      "text": "## Description:\n\nThe County Manager will present information to the Board concerning America 250 North Carolina events and activities.",
+      "chunk_type": "parent",
+      "heading": "Description:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-15-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-15",
+      "text": "The County Manager will present information to the Board concerning America 250 North Carolina events and activities.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-16",
+      "parent_chunk_id": null,
+      "text": "## Nash County",
+      "chunk_type": "parent",
+      "heading": "Nash County"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-17",
+      "parent_chunk_id": null,
+      "text": "## Commissioner's Agenda Information Sheet\n\nDate: Monday, June 15, 2026\n\nPage 1 of 1\n\nAttachments: Yes\n\nItem:\n\nNash County Legislative Goals\n\nInitiated By:\n\nEmily Moore, Grants &amp; Intergovernmental Relations Director\n\nAction Proposed:\n\nAdopt Legislative Goals\n\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_",
+      "chunk_type": "parent",
+      "heading": "Commissioner's Agenda Information Sheet"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-17-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-17",
+      "text": "## Commissioner's Agenda Information Sheet",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-17-1",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-17",
+      "text": "Emily Moore, Grants &amp; Intergovernmental Relations Director",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-17-2",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-17",
+      "text": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-18",
+      "parent_chunk_id": null,
+      "text": "## Description:\n\nThe  North  Carolina  Association  of  County  Commissioners  (NCACC)  is  currently involved  in  its  2026-2027  Legislative  Goals  Process.  Every  two  years,  in  the  months preceding a long session of the General Assembly, the NCACC engages counties in this  process,  which  enables  county  commissioners  across  the  State  to  reach  a consensus on legislative priorities and speak with one voice  through the NCACC. To develop its goals, the NCACC is presently soliciting input from all 100 counties.\n\nAttached in Exhibit A is a list of possible legislative priorities from Nash County. All the goals were discussed at the 2026 Nash County Legislative Dinner.\n\nFollowing  approval  by  the  County  Commissioners,  we  will  submit  a  copy  of  the Resolution and Exhibit A (the Legislative Goals) to the NCACC. We'll also submit the required  separate  'legislative  goals  proposal  form'  online  for  each  priority  by  the September goals submission deadline.",
+      "chunk_type": "parent",
+      "heading": "Description:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-18-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-18",
+      "text": "The  North  Carolina  Association  of  County  Commissioners  (NCACC)  is  currently involved  in  its  2026-2027  Legislative  Goals  Process.  Every  two  years,  in  the  months preceding a long session of the General Assembly, the NCACC engages counties in this  process,  which  enables  county  commissioners  across  the  State  to  reach  a consensus on legislative priorities and speak with one voice  through the NCACC. To develop its goals, the NCACC is presently soliciting input from all 100 counties.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-18-1",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-18",
+      "text": "Attached in Exhibit A is a list of possible legislative priorities from Nash County. All the goals were discussed at the 2026 Nash County Legislative Dinner.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-18-2",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-18",
+      "text": "Following  approval  by  the  County  Commissioners,  we  will  submit  a  copy  of  the Resolution and Exhibit A (the Legislative Goals) to the NCACC. We'll also submit the required  separate  'legislative  goals  proposal  form'  online  for  each  priority  by  the September goals submission deadline.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-19",
+      "parent_chunk_id": null,
+      "text": "## Recommended Action:\n\nWe are recommending that the Board adopt the attached Resolution and approve its submission to the North Carolina Association of County Commissioners.",
+      "chunk_type": "parent",
+      "heading": "Recommended Action:"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-child-19-0",
+      "parent_chunk_id": "doc-nc-nashcounty-77f809296cbbbdbd-parent-19",
+      "text": "We are recommending that the Board adopt the attached Resolution and approve its submission to the North Carolina Association of County Commissioners.",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "77f809296cbbbdbdf10c8081d148aef9f802182ac6789ad3a86bf1698a45833a",
+  "extraction_method": "docling",
+  "source_url": "https://nc-nashcounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06152026-728",
+  "doc_type": "agenda"
+}

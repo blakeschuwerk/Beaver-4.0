@@ -21,6 +21,7 @@ functions/*/dist/
 .env
 .env.*
 !.env.example
+!.env.local
 *.pem
 credentials.json
 *-credentials.json
@@ -40,8 +41,7 @@ infra/terraform/*.tfstate.*
 infra/terraform/.terraform.lock.hcl
 infra/terraform/crash.log
 
-# Local pipeline outputs
-local-run/
+# Local dev caches (keep local-run/ tracked for portable pipeline results)
 .playwright-browsers/
 .venv/
 *.log
