@@ -1,0 +1,47 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_id:
+        description: GCP project ID
+        required: true
+        default: beaver4
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.repository != ''
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build shared packages
+        run: pnpm build
+
+      - name: Deploy all services
+        env:
+          GCP_PROJECT_ID: ${{ inputs.project_id }}
+          GCP_REGION: us-central1
+        run: ./scripts/deploy.sh

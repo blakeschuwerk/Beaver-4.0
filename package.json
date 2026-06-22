@@ -12,7 +12,11 @@
     "dev:dispatcher": "pnpm --filter @beaver/dispatcher dev",
     "dev:classifier": "pnpm --filter @beaver/classifier dev",
     "dev:personalization": "pnpm --filter @beaver/personalization dev",
-    "seed": "node scripts/seed.mjs"
+    "seed": "node scripts/seed.mjs",
+    "seed:counties": "node scripts/seed-counties.mjs",
+    "check:county-links": "node scripts/check-county-links.mjs",
+    "test:integration": "node scripts/integration-test.mjs",
+    "test:python": "cd functions/scraper && PYTHONPATH=. python -m pytest tests/ -q && cd ../analyzer && PYTHONPATH=. python -m pytest tests/ -q"
   },
   "engines": {
     "node": ">=20.0.0",

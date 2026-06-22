@@ -102,76 +102,83 @@ export async function mergeUpsertProject(
     last_updated_at: 'TIMESTAMP',
   };
 
-  const [existing] = await bigquery.query({
-    query: `SELECT project_id FROM \`${tableId}\` WHERE project_id = @project_id`,
-    params: { project_id: project.project_id },
-    types: { project_id: 'STRING' },
+  // DML MERGE avoids streaming-buffer UPDATE failures on recently inserted rows.
+  await bigquery.query({
+    query: `
+      MERGE \`${tableId}\` T
+      USING (
+        SELECT
+          @project_id AS project_id,
+          @tracking_number AS tracking_number,
+          @county_id AS county_id,
+          @project_type AS project_type,
+          @niche_tags AS niche_tags,
+          @estimated_budget AS estimated_budget,
+          @requirements AS requirements,
+          @stage AS stage,
+          @location AS location,
+          SAFE_CAST(@bid_deadline AS TIMESTAMP) AS bid_deadline,
+          @source_document_ids AS source_document_ids,
+          @content_hash AS content_hash,
+          TIMESTAMP(@first_seen_at) AS first_seen_at,
+          TIMESTAMP(@last_updated_at) AS last_updated_at
+      ) S
+      ON T.project_id = S.project_id
+      WHEN MATCHED THEN UPDATE SET
+        tracking_number = COALESCE(S.tracking_number, T.tracking_number),
+        project_type = COALESCE(S.project_type, T.project_type),
+        niche_tags = S.niche_tags,
+        estimated_budget = COALESCE(S.estimated_budget, T.estimated_budget),
+        requirements = COALESCE(S.requirements, T.requirements),
+        stage = S.stage,
+        location = COALESCE(S.location, T.location),
+        bid_deadline = COALESCE(S.bid_deadline, T.bid_deadline),
+        source_document_ids = S.source_document_ids,
+        content_hash = COALESCE(S.content_hash, T.content_hash),
+        last_updated_at = S.last_updated_at
+      WHEN NOT MATCHED THEN INSERT (
+        project_id, tracking_number, county_id, project_type, niche_tags,
+        estimated_budget, requirements, stage, location, bid_deadline,
+        source_document_ids, content_hash, first_seen_at, last_updated_at
+      ) VALUES (
+        S.project_id, S.tracking_number, S.county_id, S.project_type, S.niche_tags,
+        S.estimated_budget, S.requirements, S.stage, S.location, S.bid_deadline,
+        S.source_document_ids, S.content_hash, S.first_seen_at, S.last_updated_at
+      )
+    `,
+    params: {
+      project_id: params.project_id,
+      tracking_number: params.tracking_number,
+      county_id: params.county_id,
+      project_type: params.project_type,
+      niche_tags: params.niche_tags,
+      estimated_budget: params.estimated_budget,
+      requirements: params.requirements,
+      stage: params.stage,
+      location: params.location,
+      bid_deadline: params.bid_deadline,
+      source_document_ids: params.source_document_ids,
+      content_hash: params.content_hash,
+      first_seen_at: params.first_seen_at,
+      last_updated_at: params.last_updated_at,
+    },
+    types: {
+      project_id: 'STRING',
+      tracking_number: 'STRING',
+      county_id: 'STRING',
+      project_type: 'STRING',
+      niche_tags: ['STRING'],
+      estimated_budget: 'FLOAT64',
+      requirements: 'STRING',
+      stage: 'STRING',
+      location: 'STRING',
+      bid_deadline: 'STRING',
+      source_document_ids: ['STRING'],
+      content_hash: 'STRING',
+      first_seen_at: 'STRING',
+      last_updated_at: 'STRING',
+    },
   });
-
-  if ((existing as { project_id: string }[]).length > 0) {
-    await bigquery.query({
-      query: `
-        UPDATE \`${tableId}\`
-        SET
-          tracking_number = COALESCE(@tracking_number, tracking_number),
-          project_type = COALESCE(@project_type, project_type),
-          niche_tags = @niche_tags,
-          estimated_budget = COALESCE(@estimated_budget, estimated_budget),
-          requirements = COALESCE(@requirements, requirements),
-          stage = @stage,
-          location = COALESCE(@location, location),
-          source_document_ids = @source_document_ids,
-          content_hash = COALESCE(@content_hash, content_hash),
-          last_updated_at = TIMESTAMP(@last_updated_at)
-        WHERE project_id = @project_id
-      `,
-      params: {
-        project_id: params.project_id,
-        tracking_number: params.tracking_number,
-        project_type: params.project_type,
-        niche_tags: params.niche_tags,
-        estimated_budget: params.estimated_budget,
-        requirements: params.requirements,
-        stage: params.stage,
-        location: params.location,
-        source_document_ids: params.source_document_ids,
-        content_hash: params.content_hash,
-        last_updated_at: params.last_updated_at,
-      },
-      types: {
-        project_id: 'STRING',
-        tracking_number: 'STRING',
-        project_type: 'STRING',
-        niche_tags: ['STRING'],
-        estimated_budget: 'FLOAT64',
-        requirements: 'STRING',
-        stage: 'STRING',
-        location: 'STRING',
-        source_document_ids: ['STRING'],
-        content_hash: 'STRING',
-        last_updated_at: 'STRING',
-      },
-    });
-    return;
-  }
-
-  const table = bigquery.dataset(BQ_DATASET).table(BQ_TABLE_PROJECTS);
-  await table.insert([{
-    project_id: params.project_id,
-    tracking_number: params.tracking_number,
-    county_id: params.county_id,
-    project_type: params.project_type,
-    niche_tags: params.niche_tags,
-    estimated_budget: params.estimated_budget,
-    requirements: params.requirements,
-    stage: params.stage,
-    location: params.location,
-    bid_deadline: params.bid_deadline,
-    source_document_ids: params.source_document_ids,
-    content_hash: params.content_hash,
-    first_seen_at: params.first_seen_at,
-    last_updated_at: params.last_updated_at,
-  }]);
 }
 
 export async function insertProjectChunk(

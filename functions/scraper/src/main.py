@@ -4,17 +4,18 @@ import hashlib
 import json
 import logging
 import os
-import re
-import tempfile
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 from uuid import uuid4
 
 import aiohttp
 import fitz  # PyMuPDF
 from flask import Flask, jsonify, request
 from google.cloud import firestore, storage
+
+from src.doc_types import classify_doc_type, is_target_doc_type
+from src.errors import StructuralScrapeError
+from src.scrapers import scrape_for_strategy
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -25,30 +26,7 @@ FS_COUNTIES = "counties"
 CIRCUIT_BREAKER_THRESHOLD = int(os.getenv("CIRCUIT_BREAKER_THRESHOLD", "3"))
 CIRCUIT_BREAKER_COOLDOWN_HOURS = int(os.getenv("CIRCUIT_BREAKER_COOLDOWN_HOURS", "24"))
 
-ALLOWED_DOC_TYPES = {"agenda", "packet", "minutes"}
-DOC_TYPE_PATTERNS = {
-    "agenda": re.compile(r"agenda", re.I),
-    "packet": re.compile(r"packet|staff\s*report", re.I),
-    "minutes": re.compile(r"minutes", re.I),
-    "rfp": re.compile(r"\brfp\b|request\s+for\s+proposal", re.I),
-    "scope_of_work": re.compile(r"scope\s+of\s+work", re.I),
-    "tabulation": re.compile(r"tabulation|bid\s+tab", re.I),
-    "bid_roster": re.compile(r"bid\s+roster|sign[\s-]?in", re.I),
-}
-
 app = Flask(__name__)
-
-
-def classify_doc_type(url: str, title: str = "") -> str:
-    text = f"{url} {title}"
-    for doc_type, pattern in DOC_TYPE_PATTERNS.items():
-        if pattern.search(text):
-            return doc_type
-    return "other"
-
-
-def is_target_doc_type(doc_type: str) -> bool:
-    return doc_type in ALLOWED_DOC_TYPES or doc_type in {"rfp", "scope_of_work", "tabulation", "bid_roster"}
 
 
 def content_hash(data: bytes) -> str:
@@ -76,31 +54,6 @@ def extract_pdf_links(pdf_bytes: bytes) -> list[str]:
     return links
 
 
-async def scrape_civic_scraper(source_urls: list[str]) -> list[dict[str, Any]]:
-    """Route to civic-scraper when platform is known."""
-    # TODO: integrate civic-scraper library when installed
-    logger.info("civic_scraper path — using link extraction fallback until library wired")
-    return await scrape_crawl4ai(source_urls)
-
-
-async def scrape_crawl4ai(source_urls: list[str]) -> list[dict[str, Any]]:
-    """Generic link extraction fallback."""
-    # TODO: integrate crawl4ai when installed; current implementation uses aiohttp heuristics
-    documents: list[dict[str, Any]] = []
-    async with aiohttp.ClientSession() as session:
-        for url in source_urls:
-            try:
-                html = await download_url(session, url)
-                text = html.decode("utf-8", errors="ignore")
-                pdf_links = re.findall(r'href=["\']([^"\']+\.pdf[^"\']*)["\']', text, re.I)
-                for link in pdf_links[:20]:
-                    full_url = link if link.startswith("http") else url.rstrip("/") + "/" + link.lstrip("/")
-                    documents.append({"url": full_url, "title": link})
-            except Exception as e:
-                logger.warning("Failed to crawl %s: %s", url, e)
-    return documents
-
-
 async def scrape_crawl4ai_mock(source_urls: list[str]) -> list[dict[str, Any]]:
     return [{"url": u, "title": "mock-agenda.pdf"} for u in source_urls]
 
@@ -109,14 +62,13 @@ async def process_scrape_job(job: dict[str, Any]) -> dict[str, Any]:
     county_id = job["county_id"]
     strategy = job.get("scraper_strategy", "crawl4ai")
     source_urls = job["source_urls"]
+    platform = job.get("platform")
     trace_id = job.get("trace_id", str(uuid4()))
 
     if MOCK_MODE:
         links = await scrape_crawl4ai_mock(source_urls)
-    elif strategy == "civic_scraper":
-        links = await scrape_civic_scraper(source_urls)
     else:
-        links = await scrape_crawl4ai(source_urls)
+        links = await scrape_for_strategy(strategy, source_urls, platform, county_id)
 
     uploaded: list[str] = []
     seen_hashes: set[str] = set()
@@ -156,8 +108,7 @@ async def process_scrape_job(job: dict[str, Any]) -> dict[str, Any]:
                     }
                     blob.patch()
 
-                # Follow PDF embedded links
-                if not MOCK_MODE and doc_type in ALLOWED_DOC_TYPES:
+                if not MOCK_MODE and doc_type in {"agenda", "packet", "minutes"}:
                     for embedded_url in extract_pdf_links(data)[:5]:
                         try:
                             embedded_data = await download_url(session, embedded_url)
@@ -216,6 +167,7 @@ def health():
 @app.post("/")
 def handle_pubsub():
     envelope = request.get_json(silent=True) or {}
+    county_id = "unknown"
     try:
         if envelope.get("message", {}).get("data"):
             raw = envelope["message"]["data"]
@@ -223,15 +175,18 @@ def handle_pubsub():
         else:
             job = envelope
 
+        county_id = job.get("county_id", "unknown")
+
         import asyncio
         result = asyncio.run(process_scrape_job(job))
         logger.info("Scrape job complete: %s", result)
         return jsonify(result), 200
+    except StructuralScrapeError as e:
+        logger.exception("Structural scrape failure for county %s", county_id)
+        mark_county_broken(county_id, str(e))
+        return jsonify({"error": str(e), "structural": True}), 500
     except Exception as e:
-        county_id = envelope.get("county_id") or "unknown"
         logger.exception("Scrape job failed")
-        if "structural" in str(e).lower() or "404" in str(e):
-            mark_county_broken(county_id, str(e))
         return jsonify({"error": str(e)}), 500
 
 

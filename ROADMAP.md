@@ -57,7 +57,7 @@ Every function exists and boots. **None of them do real work yet** — they all 
 2. **End-to-end verification.** ~~Dispatcher only confirmed booting~~ **Resolved for plumbing path** — PDF upload → F3 → F4 → BQ `projects` → F5 `matches` verified (see TIMELINE.md).
 3. **Secrets not populated.** `LLM_ENDPOINT_URL` / `LLM_API_KEY` still placeholders — F4 uses `LLM_MOCK_MODE=true` until Phase 4.
 
-**One-line status:** *Phase 0 + Phase 1 complete (2026-06-21). Infra wired with Pub/Sub subscriptions + DLQs; real GCS/BQ/PubSub I/O verified end-to-end with Docling/LLM fallbacks. Phase 2 (real scraping) is next.*
+**One-line status:** *Phases 0–1 complete. Phases 2–5 code complete behind feature flags (defaults = safe fallbacks). Plug in outlets per [OUTLETS.md](./OUTLETS.md) to go live. Phases 6–8 deferred.*
 
 ---
 
@@ -125,23 +125,25 @@ Phases are ordered so each unlocks the next. Phase 0 and 1 are prerequisites for
 - **Depends on:** Phase 0.
 - **Status:** Done. Subscriptions were missing from initial deploy — created via Terraform. See [TIMELINE.md](./TIMELINE.md).
 
-### Phase 2 — Real scraping (F2) — **NEXT**
+### Phase 2 — Real scraping (F2) — **CODE COMPLETE (pending outlets)**
 - **Goal:** Replace heuristic fallback with `civic-scraper` + `crawl4ai`.
 - **What gets built:** Library integration, per-strategy scrapers, real document download to GCS,
   circuit-breaker writes to Firestore on structural failure.
-- **Files:** `functions/scraper/src/main.py`, `functions/scraper/requirements.txt`, Dockerfile.
+- **Files:** `functions/scraper/src/main.py`, `functions/scraper/requirements-scraping.txt`, Dockerfile.
 - **Done-when:** A real county URL yields real PDFs in the raw bucket; a forced failure trips the breaker.
 - **Depends on:** Phase 1.
+- **Status:** Code wired behind `SCRAPER_REAL=false`. Flip flag + add counties per [OUTLETS.md](./OUTLETS.md).
 
-### Phase 3 — Real extraction (F3)
+### Phase 3 — Real extraction (F3) — **CODE COMPLETE (pending outlets)**
 - **Goal:** Replace `extract_mock_text()` with Docling.
 - **What gets built:** Docling integration, real parent/child chunking on real documents,
   chunk JSON to staging bucket.
-- **Files:** `functions/analyzer/src/main.py`, `requirements.txt`, Dockerfile.
+- **Files:** `functions/analyzer/src/main.py`, `requirements-extraction.txt`, Dockerfile.
 - **Done-when:** A real PDF produces real chunk JSON in staging; chunk counts are sane.
 - **Depends on:** Phase 2 (needs real raw documents).
+- **Status:** Code wired behind `USE_DOCLING=false`. Flip flag + rebuild image per [OUTLETS.md](./OUTLETS.md).
 
-### Phase 4 — Real classification + LLM (F4)
+### Phase 4 — Real classification + LLM (F4) — **CODE COMPLETE (pending outlets)**
 - **Goal:** Real Llama-3 classification producing real `projects` rows.
 - **What gets built:** Secret Manager wiring for `LLM_ENDPOINT_URL`/`LLM_API_KEY`; real
   tracking-number extraction, niche tagging, stage detection; MERGE upsert on real data.
@@ -149,15 +151,17 @@ Phases are ordered so each unlocks the next. Phase 0 and 1 are prerequisites for
 - **Done-when:** Real chunks yield a real `projects` row keyed by tracking number; re-running
   the same document MERGEs rather than duplicates.
 - **Depends on:** Phase 3 + a reachable LLM endpoint.
+- **Status:** DML MERGE upsert + hardened LLM client. Set LLM secrets + `LLM_MOCK_MODE=false` per [OUTLETS.md](./OUTLETS.md).
 
-### Phase 5 — Per-user matching (F5)
+### Phase 5 — Per-user matching (F5) — **CODE COMPLETE (pending outlets)**
 - **Goal:** Implement the designed two-step matching (niche filter → LLM relevance).
 - **What gets built:** Real niche/geography pre-filter against the projects hub; real
   `scoreRelevance()` LLM call (replacing the hardcoded `0.75`); real `matches` rows.
-- **Files:** `functions/personalization/src/personalization.ts`.
+- **Files:** `functions/personalization/src/personalization.ts`, `llm-client.ts`.
 - **Done-when:** A `projects-created` event yields scored `matches` rows only for niche-overlapping
   users; no global per-user×per-project LLM fan-out.
 - **Depends on:** Phase 4 + real `user_profiles`.
+- **Status:** Two-step matching implemented with env thresholds. LLM secrets + `LLM_MOCK_MODE=false` per [OUTLETS.md](./OUTLETS.md).
 
 ### Phase 6 — Notifier (F6)
 - **Goal:** Promote `stubs/notifier/` to a deployed service.
@@ -183,9 +187,10 @@ Phases are ordered so each unlocks the next. Phase 0 and 1 are prerequisites for
 
 ### Cross-cutting (continuous, not a single phase)
 - **Observability:** trace_id propagation already in contracts — add structured logging dashboards.
-- **Testing:** unit tests per function; one end-to-end integration test through the pipeline.
-- **CI/CD:** automate `build-all.sh` + `deploy.sh`; the amd64 platform flag and single-stage
-  pnpm Dockerfiles (fixed this session) must stay.
+- **Testing:** unit tests per function; integration test script at `scripts/integration-test.mjs`.
+- **CI/CD:** `.github/workflows/ci.yml` (build/test) + `deploy.yml` (manual, needs `GCP_SA_KEY`).
+- **County maintenance:** `config/counties.json`, `pnpm seed:counties`, `pnpm check:county-links`.
+- **Outlets checklist:** [OUTLETS.md](./OUTLETS.md) — credentials, flags, deploy steps.
 - **Security:** least-privilege service accounts (already per-function); secret rotation.
 
 ---

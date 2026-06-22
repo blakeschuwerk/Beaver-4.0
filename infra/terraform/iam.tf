@@ -116,6 +116,18 @@ resource "google_secret_manager_secret_iam_member" "classifier_llm_key" {
   member    = "serviceAccount:${google_service_account.classifier.email}"
 }
 
+resource "google_secret_manager_secret_iam_member" "personalization_llm_url" {
+  secret_id = google_secret_manager_secret.llm_endpoint_url.id
+  role      = "roles/secretmanager.secretAccessor"
+  member    = "serviceAccount:${google_service_account.personalization.email}"
+}
+
+resource "google_secret_manager_secret_iam_member" "personalization_llm_key" {
+  secret_id = google_secret_manager_secret.llm_api_key.id
+  role      = "roles/secretmanager.secretAccessor"
+  member    = "serviceAccount:${google_service_account.personalization.email}"
+}
+
 # Personalization: Firestore read, BQ write, Pub/Sub publish
 resource "google_project_iam_member" "personalization_firestore" {
   project = var.project_id

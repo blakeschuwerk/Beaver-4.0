@@ -3,7 +3,7 @@
 import json
 import logging
 import os
-import re
+import tempfile
 from datetime import datetime, timezone
 from typing import Any
 from uuid import uuid4
@@ -11,38 +11,23 @@ from uuid import uuid4
 from flask import Flask, jsonify, request
 from google.cloud import storage
 
+from src.chunking import hybrid_chunk, hybrid_chunk_from_markdown
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 MOCK_MODE = os.getenv("MOCK_MODE", "false").lower() == "true"
+USE_DOCLING = os.getenv("USE_DOCLING", "false").lower() == "true"
 GCS_RAW_BUCKET = os.getenv("GCS_RAW_BUCKET", "beaver-raw-documents")
 GCS_STAGING_BUCKET = os.getenv("GCS_STAGING_BUCKET", "beaver-staging-extracted")
 
 # TODO: Discovery Engine API integration is UNRESOLVED — purpose never determined.
 # Do not build functionality around it until product direction is clear.
-# Staging GCS bucket may eventually feed Discovery Engine for search/RAG.
 
 app = Flask(__name__)
 
 
-def extract_with_docling(file_bytes: bytes, filename: str) -> str:
-    """Extract text using Docling when available."""
-    try:
-        from docling.document_converter import DocumentConverter  # type: ignore
-        import tempfile
-
-        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tmp:
-            tmp.write(file_bytes)
-            tmp_path = tmp.name
-        converter = DocumentConverter()
-        result = converter.convert(tmp_path)
-        return result.document.export_to_markdown()
-    except ImportError:
-        logger.warning("Docling not installed — using mock text extraction")
-        return extract_mock_text(file_bytes)
-
-
-def extract_mock_text(file_bytes: bytes) -> str:
+def extract_mock_text(_file_bytes: bytes) -> str:
     return (
         "Mock extracted text for municipal infrastructure project. "
         "Tracking Number: CIP-2024-042. "
@@ -51,32 +36,38 @@ def extract_mock_text(file_bytes: bytes) -> str:
     )
 
 
-def hybrid_chunk(text: str, document_id: str) -> list[dict[str, Any]]:
-    """Parent/child hybrid chunking — parent sections, child paragraphs."""
-    paragraphs = [p.strip() for p in re.split(r"\n\s*\n", text) if p.strip()]
-    if not paragraphs:
-        paragraphs = [text]
+def extract_with_docling(file_bytes: bytes, filename: str) -> str:
+    """Extract text using Docling when installed."""
+    from docling.document_converter import DocumentConverter  # type: ignore
 
-    chunks: list[dict[str, Any]] = []
-    parent_id = f"{document_id}-parent-0"
-    chunks.append({
-        "chunk_id": parent_id,
-        "parent_chunk_id": None,
-        "text": text[:2000],
-        "chunk_type": "parent",
-    })
+    suffix = ".pdf" if filename.endswith(".pdf") else ".pdf"
+    with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as tmp:
+        tmp.write(file_bytes)
+        tmp_path = tmp.name
 
-    for i, para in enumerate(paragraphs[:50]):
-        if len(para) < 40:
-            continue
-        chunks.append({
-            "chunk_id": f"{document_id}-child-{i}",
-            "parent_chunk_id": parent_id,
-            "text": para,
-            "chunk_type": "child",
-        })
+    converter = DocumentConverter()
+    result = converter.convert(tmp_path)
+    return result.document.export_to_markdown()
 
-    return chunks
+
+def extract_text(file_bytes: bytes, filename: str) -> tuple[str, bool]:
+    """Return (text, used_docling). Falls back to mock when Docling unavailable or disabled."""
+    if USE_DOCLING:
+        try:
+            text = extract_with_docling(file_bytes, filename)
+            return text, True
+        except ImportError:
+            logger.warning("USE_DOCLING=true but docling not installed — using mock extraction")
+        except Exception as e:
+            logger.warning("Docling extraction failed (%s) — using mock extraction", e)
+
+    return extract_mock_text(file_bytes), False
+
+
+def chunk_text(text: str, document_id: str, used_docling: bool) -> list[dict[str, Any]]:
+    if used_docling:
+        return hybrid_chunk_from_markdown(text, document_id)
+    return hybrid_chunk(text, document_id)
 
 
 def process_document(message: dict[str, Any]) -> dict[str, Any]:
@@ -87,9 +78,7 @@ def process_document(message: dict[str, Any]) -> dict[str, Any]:
 
     if MOCK_MODE:
         file_bytes = b"mock"
-        blob_path = f"{county_id}/{document_id}/extracted.json"
     else:
-        # Parse gs://bucket/path
         parts = gcs_uri.replace("gs://", "").split("/", 1)
         bucket_name = parts[0]
         blob_path_raw = parts[1] if len(parts) > 1 else f"{county_id}/{document_id}"
@@ -99,8 +88,8 @@ def process_document(message: dict[str, Any]) -> dict[str, Any]:
         blob = bucket.blob(blob_path_raw)
         file_bytes = blob.download_as_bytes()
 
-    text = extract_with_docling(file_bytes, document_id)
-    chunks = hybrid_chunk(text, document_id)
+    text, used_docling = extract_text(file_bytes, document_id)
+    chunks = chunk_text(text, document_id, used_docling)
 
     output = {
         "document_id": document_id,
@@ -110,6 +99,7 @@ def process_document(message: dict[str, Any]) -> dict[str, Any]:
         "chunk_count": len(chunks),
         "chunks": chunks,
         "content_hash": message.get("content_hash"),
+        "extraction_method": "docling" if used_docling else "mock",
     }
 
     staging_path = f"{county_id}/{document_id}/chunks.json"

@@ -1,13 +1,5 @@
 /**
- * F5 Personalization — scaffold for per-user project matching.
- *
- * DESIGN (future work — not fully implemented):
- * Step 1: Cheap niche filter — gather projects whose F4 niche_tags overlap
- *         with a user's service_categories / geography (no LLM).
- * Step 2: Llama relevance pass — for each user in the niche bundle, score
- *         "would this project require services of this user?" against their profile.
- *
- * Current scaffold: reads profiles, runs stub matching, writes placeholder matches.
+ * F5 Personalization — per-user project matching (niche filter → LLM relevance).
  */
 
 import { randomUUID } from 'node:crypto';
@@ -24,8 +16,11 @@ import {
 import { BigQuery } from '@google-cloud/bigquery';
 import { Firestore } from '@google-cloud/firestore';
 import { PubSub } from '@google-cloud/pubsub';
+import { scoreProjectRelevance } from './llm-client.js';
 
 const MOCK_MODE = process.env.MOCK_MODE === 'true';
+const MATCH_MIN_RELEVANCE = Number(process.env.MATCH_MIN_RELEVANCE ?? '0.5');
+const MATCH_MAX_PER_PROJECT = Number(process.env.MATCH_MAX_PER_PROJECT ?? '10');
 
 export async function loadUserProfiles(firestore: Firestore): Promise<UserProfile[]> {
   if (MOCK_MODE) {
@@ -43,37 +38,45 @@ export async function loadUserProfiles(firestore: Firestore): Promise<UserProfil
   return snapshot.docs.map((doc) => doc.data() as UserProfile);
 }
 
-/**
- * TODO Step 1: Implement cheap niche filter against projects hub (BQ).
- * Match project niche_tags + geography against user service_categories + geography.
- * Return only users whose niche overlaps with the incoming project.
- */
-export function filterUsersByNiche(
-  users: UserProfile[],
-  project: ProjectCreatedMessage,
-): UserProfile[] {
-  return users.filter((user) => {
-    const categoryOverlap = user.service_categories.some((cat) =>
-      project.niche_tags.some((tag) => tag.toLowerCase().includes(cat.toLowerCase()) || cat.toLowerCase().includes(tag.toLowerCase())),
-    );
-    const geoOverlap = user.geography.some((geo) =>
-      geo.toLowerCase() === project.county_id.toLowerCase() || geo.length <= 3,
-    );
-    return categoryOverlap || geoOverlap;
+function nicheOverlap(userCategories: string[], projectTags: string[]): boolean {
+  return userCategories.some((cat) =>
+    projectTags.some((tag) =>
+      tag.toLowerCase().includes(cat.toLowerCase()) || cat.toLowerCase().includes(tag.toLowerCase()),
+    ),
+  );
+}
+
+function geographyOverlap(userGeography: string[], countyId: string, countyState?: string): boolean {
+  const countyLower = countyId.toLowerCase();
+  return userGeography.some((geo) => {
+    const geoLower = geo.toLowerCase();
+    if (geoLower === countyLower) return true;
+    if (countyState && geoLower === countyState.toLowerCase()) return true;
+    return false;
   });
 }
 
 /**
- * TODO Step 2: Call Llama with user profile + project details to produce
- * relevance_score. Only run for users returned by filterUsersByNiche.
- * Do NOT run per-user LLM for every project × every user globally.
+ * Cheap niche filter — no LLM. Returns users with category OR geography overlap.
  */
+export function filterUsersByNiche(
+  users: UserProfile[],
+  project: ProjectCreatedMessage,
+  countyState?: string,
+): UserProfile[] {
+  return users.filter((user) => {
+    const categoryMatch = nicheOverlap(user.service_categories, project.niche_tags);
+    const geoMatch = geographyOverlap(user.geography, project.county_id, countyState);
+    return categoryMatch && geoMatch;
+  });
+}
+
 export async function scoreRelevance(
-  _user: UserProfile,
-  _project: ProjectCreatedMessage,
+  user: UserProfile,
+  project: ProjectCreatedMessage,
 ): Promise<number> {
-  // STUB: return fixed score until LLM scoring is designed
-  return 0.75;
+  const result = await scoreProjectRelevance(user, project);
+  return result.relevance_score;
 }
 
 export async function writeMatch(
@@ -84,6 +87,7 @@ export async function writeMatch(
     project_id: string;
     county_id: string;
     relevance_score: number;
+    match_method?: string;
   },
 ): Promise<void> {
   if (MOCK_MODE) {
@@ -99,7 +103,7 @@ export async function writeMatch(
     county_id: match.county_id,
     relevance_score: match.relevance_score,
     matched_at: new Date().toISOString(),
-    match_method: 'stub',
+    match_method: match.match_method ?? 'llm',
   }]);
 }
 
@@ -136,7 +140,7 @@ export async function publishMatchCreated(
 export interface PersonalizationResult {
   trace_id: string;
   matches_created: number;
-  status: 'stub';
+  status: 'ok' | 'stub';
 }
 
 export async function runPersonalization(project: ProjectCreatedMessage): Promise<PersonalizationResult> {
@@ -148,10 +152,11 @@ export async function runPersonalization(project: ProjectCreatedMessage): Promis
   const nicheUsers = filterUsersByNiche(users, project);
 
   let matchesCreated = 0;
+  const matchMethod = process.env.LLM_MOCK_MODE === 'true' ? 'heuristic' : 'llm';
 
-  for (const user of nicheUsers) {
+  for (const user of nicheUsers.slice(0, MATCH_MAX_PER_PROJECT)) {
     const relevanceScore = await scoreRelevance(user, project);
-    if (relevanceScore < 0.5) continue;
+    if (relevanceScore < MATCH_MIN_RELEVANCE) continue;
 
     const matchId = `match-${user.user_id}-${project.project_id}`;
     await writeMatch(bigquery, {
@@ -160,6 +165,7 @@ export async function runPersonalization(project: ProjectCreatedMessage): Promis
       project_id: project.project_id,
       county_id: project.county_id,
       relevance_score: relevanceScore,
+      match_method: matchMethod,
     });
 
     await publishMatchCreated(pubsub, {
@@ -177,6 +183,9 @@ export async function runPersonalization(project: ProjectCreatedMessage): Promis
   return {
     trace_id: project.trace_id,
     matches_created: matchesCreated,
-    status: 'stub',
+    status: matchMethod === 'heuristic' ? 'stub' : 'ok',
   };
 }
+
+// Re-export for tests
+export { nicheOverlap, geographyOverlap, MATCH_MIN_RELEVANCE, MATCH_MAX_PER_PROJECT };

@@ -1,0 +1,15 @@
+{
+  "$schema": "County config for Beaver scraper roster. Add real counties here, then run: pnpm seed:counties",
+  "counties": [
+    {
+      "county_id": "test-county",
+      "name": "Plumbing Test County",
+      "state": "CA",
+      "source_urls": ["https://example.gov/agendas"],
+      "scraper_strategy": "crawl4ai",
+      "platform": "test",
+      "priority": 1,
+      "notes": "Synthetic county for pipeline plumbing — replace with real county before production."
+    }
+  ]
+}

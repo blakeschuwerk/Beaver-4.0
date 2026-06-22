@@ -1,0 +1,6 @@
+# Optional heavy scraping dependencies — install for production scraping:
+#   pip install -r requirements.txt -r requirements-scraping.txt
+#
+# Keep out of default Docker image unless SCRAPER_REAL=true and image is rebuilt with these deps.
+civic-scraper>=0.3.0
+crawl4ai>=0.4.0

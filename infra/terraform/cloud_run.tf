@@ -50,6 +50,10 @@ resource "google_cloud_run_v2_service" "scraper" {
         name  = "FIRESTORE_DATABASE"
         value = "beaver-firebase"
       }
+      env {
+        name  = "SCRAPER_REAL"
+        value = "false"
+      }
       resources {
         limits = { cpu = "2", memory = "2Gi" }
       }
@@ -79,6 +83,10 @@ resource "google_cloud_run_v2_service" "analyzer" {
       env {
         name  = "GCS_STAGING_BUCKET"
         value = google_storage_bucket.staging_extracted.name
+      }
+      env {
+        name  = "USE_DOCLING"
+        value = "false"
       }
       resources {
         limits = { cpu = "2", memory = "4Gi" }
@@ -157,6 +165,36 @@ resource "google_cloud_run_v2_service" "personalization" {
       env {
         name  = "FIRESTORE_DATABASE"
         value = "beaver-firebase"
+      }
+      env {
+        name  = "LLM_MOCK_MODE"
+        value = "true"
+      }
+      env {
+        name = "LLM_ENDPOINT_URL"
+        value_source {
+          secret_key_ref {
+            secret  = google_secret_manager_secret.llm_endpoint_url.secret_id
+            version = "latest"
+          }
+        }
+      }
+      env {
+        name = "LLM_API_KEY"
+        value_source {
+          secret_key_ref {
+            secret  = google_secret_manager_secret.llm_api_key.secret_id
+            version = "latest"
+          }
+        }
+      }
+      env {
+        name  = "MATCH_MIN_RELEVANCE"
+        value = "0.5"
+      }
+      env {
+        name  = "MATCH_MAX_PER_PROJECT"
+        value = "10"
       }
       resources {
         limits = { cpu = "1", memory = "512Mi" }

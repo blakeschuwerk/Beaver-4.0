@@ -74,3 +74,15 @@
 | **Decided** | Phase 2: real `civic-scraper` / `crawl4ai` scraping for seeded county URLs. |
 | **Did** | Updated ROADMAP.md Phase 1 status. |
 | **Verified** | Ready for Phase 2. |
+
+---
+
+## 2026-06-22 — Wire the House: Phases 2–5 code + tooling
+
+| Field | Detail |
+|-------|--------|
+| **Phase** | 2–5 + cross-cutting |
+| **Observed** | All pipeline functions ran library fallbacks in production. No unit tests, no CI, no county maintenance tooling, no operator checklist for credentials/flags. |
+| **Decided** | Build all autonomous code behind feature flags (`SCRAPER_REAL`, `USE_DOCLING`, `LLM_MOCK_MODE`) defaulting to safe fallbacks. No deploy this session — commit + push only. Defer Phases 6–8. |
+| **Did** | F2: `scrapers.py`, `StructuralScrapeError`, `requirements-scraping.txt`. F3: `USE_DOCLING`, markdown chunking, `requirements-extraction.txt`. F4: DML MERGE upsert, hardened `llm-client.ts`. F5: relevance `llm-client.ts`, tightened niche/geo filter, env thresholds, Terraform LLM secret wiring for personalization. Cross-cutting: CI workflows, unit tests, `config/counties.json`, `seed-counties.mjs`, `check-county-links.mjs`, `integration-test.mjs`, [OUTLETS.md](OUTLETS.md). |
+| **Verified** | Local `pnpm build` + `pnpm test` + Python pytest pass. No Cloud Run deploy. Next: follow OUTLETS.md bundles A→C. |
