@@ -2,14 +2,36 @@
   "$schema": "County config for Beaver scraper roster. Add real counties here, then run: pnpm seed:counties",
   "counties": [
     {
-      "county_id": "test-county",
-      "name": "Plumbing Test County",
+      "county_id": "sonoma-county",
+      "name": "Sonoma County Board of Supervisors",
       "state": "CA",
-      "source_urls": ["https://example.gov/agendas"],
-      "scraper_strategy": "crawl4ai",
-      "platform": "test",
+      "source_urls": ["https://sonoma-county.legistar.com"],
+      "scraper_strategy": "civic_scraper",
+      "platform": "legistar",
       "priority": 1,
-      "notes": "Synthetic county for pipeline plumbing — replace with real county before production."
+      "notes": "Legistar — civic-scraper LegistarSite"
+    },
+    {
+      "county_id": "nc-nashcounty",
+      "name": "Nash County NC",
+      "state": "NC",
+      "source_urls": ["https://nc-nashcounty.civicplus.com/AgendaCenter"],
+      "scraper_strategy": "civic_scraper",
+      "platform": "civicplus",
+      "priority": 2,
+      "notes": "CivicPlus AgendaCenter — canonical civic-scraper example"
+    },
+    {
+      "county_id": "collier-county-fl",
+      "name": "Collier County FL",
+      "state": "FL",
+      "source_urls": [
+        "https://www.colliercountyfl.gov/government/board-of-county-commissioners/bocc-agenda-minutes-video"
+      ],
+      "scraper_strategy": "crawl4ai",
+      "platform": "custom",
+      "priority": 3,
+      "notes": "Custom county site — crawl4ai + heuristic PDF link extraction"
     }
   ]
 }

@@ -40,7 +40,10 @@ infra/terraform/*.tfstate.*
 infra/terraform/.terraform.lock.hcl
 infra/terraform/crash.log
 
-# Logs & temp
+# Local pipeline outputs
+local-run/
+.playwright-browsers/
+.venv/
 *.log
 tmp/
 /tmp/

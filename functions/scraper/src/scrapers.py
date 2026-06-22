@@ -1,5 +1,6 @@
 """Scraping strategies — real libraries when SCRAPER_REAL=true, heuristic fallback otherwise."""
 
+import asyncio
 import logging
 import os
 import re
@@ -12,8 +13,11 @@ from .errors import StructuralScrapeError, raise_if_structural_http
 
 logger = logging.getLogger(__name__)
 
-SCRAPER_REAL = os.getenv("SCRAPER_REAL", "false").lower() == "true"
 PDF_LINK_PATTERN = re.compile(r'href=["\']([^"\']+\.pdf[^"\']*)["\']', re.I)
+
+
+def _scraper_real_enabled() -> bool:
+    return os.getenv("SCRAPER_REAL", "false").lower() == "true"
 
 
 def _normalize_link(base_url: str, link: str) -> str:
@@ -32,6 +36,64 @@ def _dedupe_documents(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         seen.add(url)
         out.append(item)
     return out
+
+
+def _asset_to_document(asset: Any) -> dict[str, Any] | None:
+    url = (
+        getattr(asset, "url", None)
+        or getattr(asset, "href", None)
+        or getattr(asset, "download_url", None)
+    )
+    if not url:
+        return None
+    title = (
+        getattr(asset, "asset_name", None)
+        or getattr(asset, "title", None)
+        or getattr(asset, "name", None)
+        or str(url)
+    )
+    return {"url": str(url), "title": str(title)}
+
+
+def _scrape_civic_sync(url: str, platform: str | None) -> list[dict[str, Any]]:
+    """Synchronous civic-scraper call (run in thread pool)."""
+    from datetime import date, timedelta
+
+    try:
+        from civic_scraper.platforms import CivicPlusSite, LegistarSite  # type: ignore
+    except ImportError as e:
+        raise ImportError("civic-scraper not installed") from e
+
+    platform_norm = (platform or "").lower().replace("_", "").replace("-", "")
+    site_cls: type | None = None
+
+    if platform_norm in {"legistar"}:
+        site_cls = LegistarSite
+    elif platform_norm in {"civicplus", "civic"}:
+        site_cls = CivicPlusSite
+    else:
+        if "legistar.com" in url.lower():
+            site_cls = LegistarSite
+        elif "civicplus.com" in url.lower() or "AgendaCenter" in url:
+            site_cls = CivicPlusSite
+
+    if site_cls is None:
+        raise ValueError(f"Unknown civic-scraper platform: {platform}")
+
+    site = site_cls(url)
+    end = date.today()
+    start = end - timedelta(days=90)
+    assets = site.scrape(
+        start_date=start.isoformat(),
+        end_date=end.isoformat(),
+        download=False,
+    )
+    documents: list[dict[str, Any]] = []
+    for asset in assets or []:
+        doc = _asset_to_document(asset)
+        if doc:
+            documents.append(doc)
+    return documents
 
 
 async def scrape_heuristic_fallback(
@@ -85,24 +147,16 @@ async def scrape_civic_scraper_real(
     platform: str | None = None,
     county_id: str | None = None,
 ) -> list[dict[str, Any]]:
-    """Use civic-scraper when installed and SCRAPER_REAL=true."""
-    try:
-        from civic_scraper import CivicScraper  # type: ignore
-    except ImportError as e:
-        logger.warning("civic-scraper not installed — falling back to heuristics")
-        return await scrape_heuristic_fallback(source_urls, county_id)
-
+    """Use civic-scraper platform classes when installed and SCRAPER_REAL=true."""
     documents: list[dict[str, Any]] = []
+
     for url in source_urls:
         try:
-            scraper = CivicScraper(url, platform=platform) if platform else CivicScraper(url)
-            assets = scraper.scrape()
-            for asset in assets:
-                asset_url = getattr(asset, "url", None) or getattr(asset, "href", None)
-                if not asset_url:
-                    continue
-                title = getattr(asset, "title", None) or getattr(asset, "name", "") or asset_url
-                documents.append({"url": str(asset_url), "title": str(title)})
+            batch = await asyncio.to_thread(_scrape_civic_sync, url, platform)
+            documents.extend(batch)
+        except ImportError:
+            logger.warning("civic-scraper not installed — falling back to heuristics")
+            return await scrape_heuristic_fallback(source_urls, county_id)
         except Exception as e:
             msg = str(e).lower()
             if "404" in msg or "not found" in msg:
@@ -132,23 +186,30 @@ async def scrape_crawl4ai_real(
         for url in source_urls:
             try:
                 result = await crawler.arun(url=url)
-                if getattr(result, "status_code", 200) in {404, 410, 451}:
+                status = getattr(result, "status_code", None) or getattr(result, "status", 200)
+                if status in {404, 410, 451}:
                     raise StructuralScrapeError(
-                        f"Structural HTTP {result.status_code} for {url}",
+                        f"Structural HTTP {status} for {url}",
                         county_id=county_id,
                         url=url,
                     )
 
                 links: list[str] = []
                 if hasattr(result, "links") and result.links:
-                    internal = result.links.get("internal", []) if isinstance(result.links, dict) else result.links
+                    internal = (
+                        result.links.get("internal", [])
+                        if isinstance(result.links, dict)
+                        else result.links
+                    )
                     for link in internal or []:
                         href = link.get("href") if isinstance(link, dict) else str(link)
-                        if href and (".pdf" in href.lower() or "pdf" in href.lower()):
+                        if href and ".pdf" in href.lower():
                             links.append(_normalize_link(url, href))
 
                 markdown = getattr(result, "markdown", "") or ""
-                links.extend(PDF_LINK_PATTERN.findall(markdown))
+                if hasattr(markdown, "raw_markdown"):
+                    markdown = markdown.raw_markdown or ""
+                links.extend(PDF_LINK_PATTERN.findall(str(markdown)))
 
                 for link in links[:30]:
                     full_url = _normalize_link(url, link)
@@ -179,7 +240,7 @@ async def scrape_for_strategy(
     if not source_urls:
         raise StructuralScrapeError("No source_urls provided", county_id=county_id)
 
-    if SCRAPER_REAL:
+    if _scraper_real_enabled():
         if strategy == "civic_scraper":
             return await scrape_civic_scraper_real(source_urls, platform, county_id)
         return await scrape_crawl4ai_real(source_urls, county_id)

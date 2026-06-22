@@ -1,0 +1,6 @@
+{
+  "user_id": "user-local-test",
+  "company": "Local Test Civil Contractors",
+  "service_categories": ["roadway", "drainage", "civil", "infrastructure"],
+  "geography": ["sonoma-county", "nc-nashcounty", "collier-county-fl", "demo-county", "CA", "NC", "FL"]
+}

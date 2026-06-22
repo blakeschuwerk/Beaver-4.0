@@ -16,7 +16,13 @@
     "seed:counties": "node scripts/seed-counties.mjs",
     "check:county-links": "node scripts/check-county-links.mjs",
     "test:integration": "node scripts/integration-test.mjs",
-    "test:python": "cd functions/scraper && PYTHONPATH=. python -m pytest tests/ -q && cd ../analyzer && PYTHONPATH=. python -m pytest tests/ -q"
+    "test:python": "cd functions/scraper && PYTHONPATH=. python3 -m pytest tests/ -q && cd ../analyzer && PYTHONPATH=. python3 -m pytest tests/ -q",
+    "llama:setup": "bash scripts/setup-llama.sh",
+    "local:scrape-extract": ".venv/bin/python scripts/local_pipeline.py",
+    "local:demo": ".venv/bin/python scripts/local_pipeline.py --demo",
+    "local:classify": "node scripts/local-classify.mjs",
+    "local:run": "pnpm local:scrape-extract && pnpm build && pnpm local:classify",
+    "local:run:demo": "pnpm local:demo && pnpm build && pnpm local:classify"
   },
   "engines": {
     "node": ">=20.0.0",

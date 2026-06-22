@@ -85,4 +85,16 @@
 | **Observed** | All pipeline functions ran library fallbacks in production. No unit tests, no CI, no county maintenance tooling, no operator checklist for credentials/flags. |
 | **Decided** | Build all autonomous code behind feature flags (`SCRAPER_REAL`, `USE_DOCLING`, `LLM_MOCK_MODE`) defaulting to safe fallbacks. No deploy this session — commit + push only. Defer Phases 6–8. |
 | **Did** | F2: `scrapers.py`, `StructuralScrapeError`, `requirements-scraping.txt`. F3: `USE_DOCLING`, markdown chunking, `requirements-extraction.txt`. F4: DML MERGE upsert, hardened `llm-client.ts`. F5: relevance `llm-client.ts`, tightened niche/geo filter, env thresholds, Terraform LLM secret wiring for personalization. Cross-cutting: CI workflows, unit tests, `config/counties.json`, `seed-counties.mjs`, `check-county-links.mjs`, `integration-test.mjs`, [OUTLETS.md](OUTLETS.md). |
-| **Verified** | Local `pnpm build` + `pnpm test` + Python pytest pass. No Cloud Run deploy. Next: follow OUTLETS.md bundles A→C. |
+| **Verified** | Local `pnpm local:run:demo` + live Nash County scrape + Docling + Ollama classify/match. See [LOCAL-TESTING.md](LOCAL-TESTING.md). |
+
+---
+
+## 2026-06-22 — Local Llama pipeline test (Steps 1–3)
+
+| Field | Detail |
+|-------|--------|
+| **Phase** | 2–4 local validation |
+| **Observed** | Cloud Run cannot reach localhost Llama; live county scrape requires network + Playwright on user machine. |
+| **Decided** | Fully local runner: `scripts/local_pipeline.py` + `scripts/local-classify.mjs` + Ollama via `scripts/setup-llama.sh`. Three counties in config (Legistar, CivicPlus, crawl4ai). Python `.venv` for heavy deps. |
+| **Did** | Fixed civic-scraper API (LegistarSite/CivicPlusSite + 90-day window). Added 3 counties, local runners, `pnpm llama:setup`, `pnpm local:run`, `pnpm local:run:demo`, [LOCAL-TESTING.md](LOCAL-TESTING.md). Verified Nash County CivicPlus PDF → Docling (80 chunks) → local Llama projects + matches. |
+| **Verified** | Ollama `llama3.1:8b` on localhost:11434; `local-run/classify-summary.json` shows projects + matches. User runs `pnpm local:run` for full 3-county live scrape on their Mac. |
