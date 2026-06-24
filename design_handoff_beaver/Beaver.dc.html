@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0}
+  ::selection{background:rgba(15,118,110,.18)}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-thumb{background:#d6dade;border-radius:6px;border:3px solid transparent;background-clip:content-box}
+  ::-webkit-scrollbar-thumb:hover{background:#c2c8ce;background-clip:content-box}
+  input,button,select{font-family:inherit}
+  @keyframes bvUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+</style>
+</helmet>
+<div style="{{ rootStyle }}">
+
+  <sc-if value="{{ isAuth }}" hint-placeholder-val="{{ true }}">
+  <div style="display:flex;min-height:100vh">
+    <div style="flex:0 0 42%;background:var(--accent);color:#fff;padding:56px 56px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;gap:3px">
+          <div style="width:5px;height:13px;border-radius:2px;background:#fff"></div>
+          <div style="width:5px;height:13px;border-radius:2px;background:#fff"></div>
+        </div>
+        <span style="font-size:20px;font-weight:700;letter-spacing:-.01em">Beaver</span>
+      </div>
+      <div style="max-width:400px">
+        <div style="font-size:34px;font-weight:700;line-height:1.15;letter-spacing:-.02em">Public infrastructure leads, matched to your trade.</div>
+        <div style="margin-top:28px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85);margin-top:8px;flex-shrink:0"></div><div style="font-size:15px;color:rgba(255,255,255,.88)">Matched opportunities from county and state agencies</div></div>
+          <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85);margin-top:8px;flex-shrink:0"></div><div style="font-size:15px;color:rgba(255,255,255,.88)">Track each project through every stage of the pipeline</div></div>
+          <div style="display:flex;gap:12px;align-items:flex-start"><div style="width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.85);margin-top:8px;flex-shrink:0"></div><div style="font-size:15px;color:rgba(255,255,255,.88)">Know the moment a bid opens — before your competition</div></div>
+        </div>
+      </div>
+      <div style="font-size:12.5px;color:rgba(255,255,255,.6)">Beaver 4.0 · For contractors, estimators &amp; suppliers</div>
+    </div>
+
+    <div style="flex:1;display:flex;align-items:center;justify-content:center;padding:48px;overflow-y:auto">
+      <div style="width:100%;max-width:420px">
+        <div style="font-size:24px;font-weight:700;letter-spacing:-.01em">Create your account</div>
+        <div style="font-size:14px;color:#6b7280;margin-top:6px">Set up your profile so we can match the right projects.</div>
+
+        <button style="margin-top:26px;width:100%;height:44px;border:1px solid #e2e5e9;background:#fff;border-radius:10px;font-size:14px;font-weight:500;color:#16191d;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px" style-hover="background:#fafbfc;border-color:#d4d8dd">
+          <span style="width:16px;height:16px;border-radius:50%;background:conic-gradient(#ea4335,#fbbc05,#34a853,#4285f4,#ea4335)"></span>Continue with SSO
+        </button>
+        <div style="display:flex;align-items:center;gap:12px;margin:20px 0"><div style="flex:1;height:1px;background:#e6e8eb"></div><span style="font-size:12px;color:#9aa3af">or</span><div style="flex:1;height:1px;background:#e6e8eb"></div></div>
+
+        <label style="font-size:12.5px;font-weight:600;color:#374151">Work email</label>
+        <input type="email" placeholder="you@company.com" style="margin-top:6px;margin-bottom:16px;width:100%;height:42px;padding:0 13px;border:1px solid #e2e5e9;border-radius:9px;font-size:14px;outline:none" style-focus="border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-weak)">
+        <label style="font-size:12.5px;font-weight:600;color:#374151">Password</label>
+        <input type="password" placeholder="••••••••" style="margin-top:6px;margin-bottom:16px;width:100%;height:42px;padding:0 13px;border:1px solid #e2e5e9;border-radius:9px;font-size:14px;outline:none" style-focus="border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-weak)">
+
+        <label style="font-size:12.5px;font-weight:600;color:#374151">Company</label>
+        <input type="text" value="{{ companyVal }}" onInput="{{ setCompany }}" placeholder="e.g. Meridian Civil Contractors" style="margin-top:6px;width:100%;height:42px;padding:0 13px;border:1px solid #e2e5e9;border-radius:9px;font-size:14px;outline:none" style-focus="border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-weak)">
+
+        <div style="font-size:12.5px;font-weight:600;color:#374151;margin:18px 0 8px">Service categories</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ catOptions }}" as="c" hint-placeholder-count="9">
+            <button onClick="{{ c.onClick }}" style="{{ c.style }}">{{ c.label }}</button>
+          </sc-for>
+        </div>
+
+        <div style="font-size:12.5px;font-weight:600;color:#374151;margin:18px 0 8px">Geography</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ geoOptions }}" as="g" hint-placeholder-count="6">
+            <button onClick="{{ g.onClick }}" style="{{ g.style }}">{{ g.label }}</button>
+          </sc-for>
+        </div>
+
+        <button onClick="{{ createAccount }}" style="margin-top:26px;width:100%;height:46px;background:var(--accent);color:#fff;border:none;border-radius:10px;font-size:14.5px;font-weight:600;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.05)" style-hover="background:var(--accent-strong)">Create account &amp; continue</button>
+        <div style="text-align:center;font-size:13px;color:#9aa3af;margin-top:14px">Already have an account? <span onClick="{{ createAccount }}" style="color:var(--accent);font-weight:600;cursor:pointer">Log in</span></div>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isApp }}" hint-placeholder-val="{{ true }}">
+  <div style="display:flex;min-height:100vh">
+
+    <aside style="flex:0 0 244px;background:#fff;border-right:1px solid #e9ebee;display:flex;flex-direction:column;position:sticky;top:0;height:100vh">
+      <div style="padding:22px 20px 16px;display:flex;align-items:center;gap:11px">
+        <div style="width:32px;height:32px;border-radius:9px;background:var(--accent);display:flex;align-items:center;justify-content:center;gap:2.5px">
+          <div style="width:4px;height:11px;border-radius:2px;background:#fff"></div>
+          <div style="width:4px;height:11px;border-radius:2px;background:#fff"></div>
+        </div>
+        <span style="font-size:17px;font-weight:700;letter-spacing:-.01em">Beaver</span>
+      </div>
+
+      <nav style="padding:8px 12px;display:flex;flex-direction:column;gap:2px">
+        <button onClick="{{ goDashboard }}" style="{{ navStyleDashboard }}">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-7h6v7"/></svg>Dashboard
+        </button>
+        <button onClick="{{ goFeed }}" style="{{ navStyleFeed }}">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Lead Feed
+        </button>
+        <button onClick="{{ goTracked }}" style="{{ navStyleTracked }}">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Tracked Projects
+          <span style="{{ trackedNavCountStyle }}">{{ trackedCount }}</span>
+        </button>
+        <button onClick="{{ goUpdates }}" style="{{ navStyleUpdates }}">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>Project Updates
+          <span style="{{ updatesDotStyle }}"></span>
+        </button>
+
+        <sc-if value="{{ roleIsAdmin }}" hint-placeholder-val="{{ true }}">
+          <div style="height:1px;background:#eef0f2;margin:10px 8px"></div>
+          <div style="font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#a8b0ba;padding:4px 12px 6px">Admin</div>
+          <button onClick="{{ goAdminInput }}" style="{{ navStyleAdmin }}">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v6.5L4.2 17A2 2 0 0 0 6 20h12a2 2 0 0 0 1.8-3L15 9.5V3"/><path d="M8 3h8"/><path d="M7.5 14h9"/></svg>Testing Console
+          </button>
+        </sc-if>
+      </nav>
+
+      <div style="margin-top:auto;padding:14px 14px 16px;border-top:1px solid #eef0f2">
+        <div style="font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#a8b0ba;margin-bottom:8px;padding:0 2px">Viewing as</div>
+        <div style="display:flex;background:#f1f3f5;border-radius:9px;padding:3px;gap:3px">
+          <button onClick="{{ setRoleUser }}" style="{{ roleUserStyle }}">User</button>
+          <button onClick="{{ setRoleAdmin }}" style="{{ roleAdminStyle }}">Admin</button>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:14px;padding:0 2px">
+          <div style="width:32px;height:32px;border-radius:50%;background:var(--accent-weak);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:600;flex-shrink:0">{{ accountInitials }}</div>
+          <div style="min-width:0">
+            <div style="font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ accountName }}</div>
+            <div style="font-size:11.5px;color:#9aa3af;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ accountCompany }}</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main style="flex:1;min-width:0;display:flex;flex-direction:column">
+      <header style="padding:22px var(--pad) 18px;border-bottom:1px solid #eceef0;background:rgba(246,247,248,.85);backdrop-filter:blur(6px);position:sticky;top:0;z-index:5">
+        <div style="font-size:21px;font-weight:700;letter-spacing:-.015em;line-height:1.2">{{ pageTitle }}</div>
+        <div style="font-size:13.5px;color:#7a828d;margin-top:3px">{{ pageSubtitle }}</div>
+      </header>
+
+      <div style="flex:1;padding:var(--pad);max-width:1180px;width:100%">
+
+        <sc-if value="{{ isDashboard }}" hint-placeholder-val="{{ true }}">
+        <div style="animation:bvUp .28s ease">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px">
+            <div style="display:flex;align-items:baseline;gap:10px"><div style="font-size:16px;font-weight:700">New Matches</div><div style="font-size:13px;color:#9aa3af">{{ newCount }} projects</div></div>
+            <span onClick="{{ goFeed }}" style="font-size:13px;font-weight:600;color:var(--accent);cursor:pointer">View all →</span>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:var(--cardgap)">
+            <sc-for list="{{ newMatches }}" as="p" hint-placeholder-count="6">
+              <div onClick="{{ p.open }}" style="background:#fff;border:1px solid #e8eaed;border-radius:13px;padding:var(--cardpad);cursor:pointer;display:flex;flex-direction:column;gap:11px;transition:box-shadow .15s,border-color .15s,transform .15s" style-hover="box-shadow:0 6px 20px rgba(15,23,42,.08);border-color:#dadee2;transform:translateY(-1px)">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+                  <div style="min-width:0"><div style="font-weight:600;font-size:15px;line-height:1.3">{{ p.name }}</div><div style="font-size:12.5px;color:#7a828d;margin-top:3px">{{ p.agency }}</div></div>
+                  <button onClick="{{ p.toggleTrack }}" style="{{ p.trackStyle }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                  <span style="{{ p.stageStyle }}">{{ p.stageLabel }}</span>
+                  <span style="display:inline-flex;align-items:center;gap:5px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;color:var(--accent);background:var(--accent-weak);padding:2px 8px;border-radius:6px"><span style="width:5px;height:5px;border-radius:50%;background:var(--accent)"></span>{{ p.matchText }}</span>
+                </div>
+                <sc-if value="{{ p.showMeta }}" hint-placeholder-val="{{ true }}">
+                  <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+                    <div style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;font-weight:500;color:#16191d">{{ p.budgetFmt }}</div>
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end">
+                      <sc-for list="{{ p.tags }}" as="t" hint-placeholder-count="2"><span style="font-size:11px;color:#6b7280;background:#f3f4f6;padding:2px 8px;border-radius:5px">{{ t }}</span></sc-for>
+                    </div>
+                  </div>
+                </sc-if>
+                <sc-if value="{{ p.showRationale }}" hint-placeholder-val="{{ true }}">
+                  <div style="font-size:12.5px;color:#7a828d;line-height:1.5;border-top:1px solid #f0f2f4;padding-top:10px">{{ p.rationaleShort }}</div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+
+          <div style="margin:var(--sectiongap) 0 14px;display:flex;align-items:baseline;gap:10px"><div style="font-size:16px;font-weight:700">Tracked Project Updates</div><div style="font-size:13px;color:#9aa3af">{{ changedCount }} changed</div></div>
+          <sc-if value="{{ changedHasItems }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ changedTracked }}" as="p" hint-placeholder-count="2">
+              <div onClick="{{ p.open }}" style="background:#fff;border:1px solid #e8eaed;border-radius:13px;padding:16px var(--cardpad);cursor:pointer;display:flex;align-items:center;gap:14px;transition:border-color .15s,box-shadow .15s" style-hover="box-shadow:0 4px 14px rgba(15,23,42,.06);border-color:#dadee2">
+                <div style="width:8px;height:8px;border-radius:50%;background:var(--accent);flex-shrink:0;box-shadow:0 0 0 4px var(--accent-weak)"></div>
+                <div style="flex:1;min-width:0"><div style="font-weight:600;font-size:14.5px">{{ p.name }}</div><div style="display:flex;align-items:center;gap:7px;margin-top:5px;flex-wrap:wrap"><span style="{{ p.chFromStyle }}">{{ p.chFromLabel }}</span><svg width="15" height="11" viewBox="0 0 15 11" fill="none" stroke="#b6bcc4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M1 5.5h12M9 1.5l4 4-4 4"/></svg><span style="{{ p.chToStyle }}">{{ p.chToLabel }}</span></div></div>
+                <div style="font-size:12px;color:#a8b0ba;white-space:nowrap;font-family:'IBM Plex Mono',monospace">{{ p.ago }}</div>
+              </div>
+            </sc-for>
+          </div>
+          </sc-if>
+        </div>
+        </sc-if>
+
+        <sc-if value="{{ isFeed }}" hint-placeholder-val="{{ true }}">
+        <div style="animation:bvUp .28s ease">
+          <div style="background:#fff;border:1px solid #e8eaed;border-radius:13px;padding:16px;margin-bottom:18px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+              <div style="position:relative;flex:1;min-width:220px">
+                <svg style="position:absolute;left:12px;top:50%;transform:translateY(-50%)" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9aa3af" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+                <input type="text" value="{{ fQuery }}" onInput="{{ setQuery }}" placeholder="Search projects or agencies…" style="width:100%;height:40px;padding:0 13px 0 34px;border:1px solid #e6e8eb;border-radius:9px;font-size:13.5px;outline:none" style-focus="border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-weak)">
+              </div>
+              <div style="position:relative" data-county-drop="1">
+                <div onClick="{{ toggleCountyDrop }}" style="height:40px;padding:0 34px 0 12px;border:1px solid #e6e8eb;border-radius:9px;font-size:13.5px;color:#374151;cursor:pointer;background:#fff;display:flex;align-items:center;white-space:nowrap;min-width:148px;position:relative;user-select:none" style-hover="border-color:#d0d4d9">
+                  {{ countyLabel }}
+                  <svg style="position:absolute;right:10px;top:50%;transform:translateY(-50%);pointer-events:none" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9aa3af" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+                </div>
+                <sc-if value="{{ countyDropOpen }}" hint-placeholder-val="{{ false }}">
+                <div style="position:absolute;top:46px;left:0;min-width:210px;background:#fff;border:1px solid #e8eaed;border-radius:11px;box-shadow:0 8px 28px rgba(15,23,42,.11);z-index:200;overflow:hidden;padding:5px 0">
+                  <div onClick="{{ pickCountyAll }}" style="padding:9px 14px;cursor:pointer;display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:500" style-hover="background:#f5f7f9">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="{{ countyAllCheckStyle }}"><path d="M20 6L9 17l-5-5"/></svg>
+                    <span style="{{ countyAllLabelStyle }}">All counties</span>
+                  </div>
+                  <div style="height:1px;background:#f0f2f4;margin:3px 0"></div>
+                  <div onClick="{{ toggleCountyAdd }}" style="padding:8px 14px;cursor:pointer;display:flex;align-items:center;gap:7px;font-size:13px;color:var(--accent);font-weight:500" style-hover="background:#f5f7f9">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                    Add county
+                  </div>
+                  <sc-if value="{{ countyAddMode }}" hint-placeholder-val="{{ false }}">
+                  <div style="padding:5px 10px 8px" onClick="{{ stopProp }}">
+                    <div style="display:flex;gap:6px">
+                      <input type="text" value="{{ countyInput }}" onInput="{{ setCountyInput }}" onKeyDown="{{ countyKeyDown }}" placeholder="County name…" style="flex:1;height:32px;padding:0 10px;border:1px solid #e6e8eb;border-radius:7px;font-size:13px;outline:none;min-width:0" style-focus="border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-weak)">
+                      <button onClick="{{ submitCounty }}" style="height:32px;padding:0 12px;background:var(--accent);color:#fff;border:none;border-radius:7px;font-size:12.5px;font-weight:600;cursor:pointer;white-space:nowrap">Add</button>
+                    </div>
+                  </div>
+                  </sc-if>
+                  <div style="height:1px;background:#f0f2f4;margin:3px 0"></div>
+                  <sc-for list="{{ countyItems }}" as="ci" hint-placeholder-count="4">
+                  <div onClick="{{ ci.pick }}" style="padding:9px 14px;cursor:pointer;display:flex;align-items:center;gap:8px;font-size:13.5px" style-hover="background:#f5f7f9">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="{{ ci.checkStyle }}"><path d="M20 6L9 17l-5-5"/></svg>
+                    <span style="{{ ci.labelStyle }}">{{ ci.name }}</span>
+                  </div>
+                  </sc-for>
+                </div>
+                </sc-if>
+              </div>
+              <select value="{{ fTag }}" onChange="{{ setTag }}" style="height:40px;padding:0 10px;border:1px solid #e6e8eb;border-radius:9px;font-size:13.5px;color:#374151;outline:none;cursor:pointer;background:#fff">
+                <option value="all">All trades</option>
+                <sc-for list="{{ tagList }}" as="t" hint-placeholder-count="6"><option value="{{ t }}">{{ t }}</option></sc-for>
+              </select>
+            </div>
+            <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:space-between">
+              <div style="display:flex;gap:7px;flex-wrap:wrap">
+                <sc-for list="{{ stageChips }}" as="c" hint-placeholder-count="6"><button onClick="{{ c.onClick }}" style="{{ c.style }}">{{ c.label }}</button></sc-for>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:#6b7280">
+                <span style="white-space:nowrap">Min match</span>
+                <input type="range" min="0" max="95" step="5" value="{{ fMin }}" onInput="{{ setMin }}" style="accent-color:var(--accent);width:120px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;color:var(--accent);min-width:34px">{{ fMinLabel }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="font-size:13px;color:#9aa3af;margin-bottom:12px">{{ feedCount }} matching projects</div>
+          <sc-if value="{{ feedHasResults }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:var(--cardgap)">
+            <sc-for list="{{ feedProjects }}" as="p" hint-placeholder-count="6">
+              <div onClick="{{ p.open }}" style="background:#fff;border:1px solid #e8eaed;border-radius:13px;padding:var(--cardpad);cursor:pointer;display:flex;flex-direction:column;gap:11px;transition:box-shadow .15s,border-color .15s,transform .15s" style-hover="box-shadow:0 6px 20px rgba(15,23,42,.08);border-color:#dadee2;transform:translateY(-1px)">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+                  <div style="min-width:0"><div style="font-weight:600;font-size:15px;line-height:1.3">{{ p.name }}</div><div style="font-size:12.5px;color:#7a828d;margin-top:3px">{{ p.agency }}</div></div>
+                  <button onClick="{{ p.toggleTrack }}" style="{{ p.trackStyle }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></button>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                  <span style="{{ p.stageStyle }}">{{ p.stageLabel }}</span>
+                  <span style="display:inline-flex;align-items:center;gap:5px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;color:var(--accent);background:var(--accent-weak);padding:2px 8px;border-radius:6px"><span style="width:5px;height:5px;border-radius:50%;background:var(--accent)"></span>{{ p.matchText }}</span>
+                </div>
+                <sc-if value="{{ p.showMeta }}" hint-placeholder-val="{{ true }}">
+                  <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+                    <div style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;font-weight:500;color:#16191d">{{ p.budgetFmt }}</div>
+                    <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><sc-for list="{{ p.tags }}" as="t" hint-placeholder-count="2"><span style="font-size:11px;color:#6b7280;background:#f3f4f6;padding:2px 8px;border-radius:5px">{{ t }}</span></sc-for></div>
+                  </div>
+                </sc-if>
+                <sc-if value="{{ p.showRationale }}" hint-placeholder-val="{{ true }}"><div style="font-size:12.5px;color:#7a828d;line-height:1.5;border-top:1px solid #f0f2f4;padding-top:10px">{{ p.rationaleShort }}</div></sc-if>
+              </div>
+            </sc-for>
+          </div>
+          </sc-if>
+          <sc-if value="{{ feedEmpty }}" hint-placeholder-val="{{ false }}">
+            <div style="text-align:center;padding:64px 20px;color:#9aa3af"><div style="font-size:15px;font-weight:600;color:#6b7280">No projects match these filters</div><div style="font-size:13.5px;margin-top:6px">Try lowering the minimum match or clearing a filter.</div></div>
+          </sc-if>
+        </div>
+        </sc-if>
+
+        <sc-if value="{{ isDetails }}" hint-placeholder-val="{{ true }}">
+        <div style="animation:bvUp .28s ease;max-width:920px">
+          <button onClick="{{ goBack }}" style="display:inline-flex;align-items:center;gap:6px;background:none;border:none;color:#7a828d;font-size:13px;font-weight:500;cursor:pointer;padding:0;margin-bottom:18px" style-hover="color:#16191d"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>Back</button>
+
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap">
+            <div style="min-width:0;flex:1">
+              <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:10px">
+                <span style="{{ sel.stageStyle }}">{{ sel.stageLabel }}</span>
+                <span style="display:inline-flex;align-items:center;gap:5px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;color:var(--accent);background:var(--accent-weak);padding:2px 8px;border-radius:6px"><span style="width:5px;height:5px;border-radius:50%;background:var(--accent)"></span>{{ sel.matchText }}</span>
+              </div>
+              <div style="font-size:26px;font-weight:700;letter-spacing:-.02em;line-height:1.2">{{ sel.name }}</div>
+              <div style="font-size:14px;color:#7a828d;margin-top:6px">{{ sel.agency }} · {{ sel.locationFull }}</div>
+            </div>
+            <button onClick="{{ sel.toggleTrack }}" style="{{ sel.detailTrackStyle }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="{{ sel.bookmarkFill }}" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>{{ sel.detailTrackLabel }}</button>
+          </div>
+
+          <div style="background:#fff;border:1px solid #e8eaed;border-radius:13px;padding:22px var(--cardpad);margin-top:22px">
+            <div style="font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#a8b0ba;margin-bottom:18px">Pipeline stage</div>
+            <div style="display:flex;align-items:flex-start">
+              <sc-for list="{{ sel.stageSteps }}" as="st" hint-placeholder-count="5">
+                <sc-if value="{{ st.showLine }}" hint-placeholder-val="{{ false }}"><div style="{{ st.lineStyle }}"></div></sc-if>
+                <div style="display:flex;flex-direction:column;align-items:center;width:84px;flex-shrink:0">
+                  <div style="{{ st.circleStyle }}">{{ st.num }}</div>
+                  <div style="{{ st.labelStyle }}">{{ st.label }}</div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin-top:18px;align-items:start">
+            <div style="display:flex;flex-direction:column;gap:18px">
+              <div style="background:#fff;border:1px solid #e8eaed;border-radius:13px;padding:20px var(--cardpad)">
+                <div style="font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#a8b0ba;margin-bottom:10px">Requirements</div>
+                <div style="font-size:14px;line-height:1.6;color:#374151">{{ sel.requirements }}</div>
+              </div>
+              <div style="background:var(--accent-weak);border:1px solid var(--accent-weak);border-radius:13px;padding:20px var(--cardpad)">
+                <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg><div style="font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--accent)">Why this matched you</div></div>
+                <div style="font-size:14px;line-height:1.6;color:#2a3f3c">{{ sel.rationale }}</div>
+              </div>
+              <div style="background:#fff;border:1px solid #e8eaed;border-radius:13px;padding:20px var(--cardpad)">
+                <div style="font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#a8b0ba;margin-bottom:12px">Niche tags</div>
+                <div style="display:flex;gap:8px;flex-wrap:wrap"><sc-for list="{{ sel.tags }}" as="t" hint-placeholder-count="3"><span style="font-size:12.5px;color:#374151;background:#f3f4f6;padding:5px 11px;border-radius:7px;font-weight:500">{{ t }}</span></sc-for></div>
+              </div>
+            </div>
+
+            <div style="background:#fff;border:1px solid #e8eaed;border-radius:13px;padding:6px var(--cardpad) 8px">
+              <sc-for list="{{ sel.metaRows }}" as="m" hint-placeholder-count="5">
+                <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:13px 0;border-bottom:1px solid #f0f2f4">
+                  <span style="font-size:12.5px;color:#9aa3af">{{ m.label }}</span>
+                  <span style="{{ m.valStyle }}">{{ m.value }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+        </sc-if>
+
+        <sc-if value="{{ isTracked }}" hint-placeholder-val="{{ true }}">
+        <div style="animation:bvUp .28s ease">
+          <sc-if value="{{ trackedHasItems }}" hint-placeholder-val="{{ true }}">
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:var(--cardgap)">
+            <sc-for list="{{ trackedList }}" as="p" hint-placeholder-count="4">
+              <div onClick="{{ p.open }}" style="background:#fff;border:1px solid #e8eaed;border-radius:13px;padding:var(--cardpad);cursor:pointer;display:flex;flex-direction:column;gap:11px;transition:box-shadow .15s,border-color .15s,transform .15s;position:relative" style-hover="box-shadow:0 6px 20px rgba(15,23,42,.08);border-color:#dadee2;transform:translateY(-1px)">
+                <sc-if value="{{ p.changed }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;top:14px;right:14px;display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:600;color:var(--accent);background:var(--accent-weak);padding:3px 8px;border-radius:20px"><span style="width:5px;height:5px;border-radius:50%;background:var(--accent)"></span>Changed</div></sc-if>
+                <div style="min-width:0;padding-right:80px"><div style="font-weight:600;font-size:15px;line-height:1.3">{{ p.name }}</div><div style="font-size:12.5px;color:#7a828d;margin-top:3px">{{ p.agency }}</div></div>
+                <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+                  <span style="{{ p.stageStyle }}">{{ p.stageLabel }}</span>
+                  <span style="display:inline-flex;align-items:center;gap:5px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;color:var(--accent);background:var(--accent-weak);padding:2px 8px;border-radius:6px">{{ p.matchText }}</span>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:8px"><div style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;font-weight:500">{{ p.budgetFmt }}</div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end"><sc-for list="{{ p.tags }}" as="t" hint-placeholder-count="2"><span style="font-size:11px;color:#6b7280;background:#f3f4f6;padding:2px 8px;border-radius:5px">{{ t }}</span></sc-for></div></div>
+              </div>
+            </sc-for>
+          </div>
+          </sc-if>
+          <sc-if value="{{ trackedEmpty }}" hint-placeholder-val="{{ false }}">
+            <div style="text-align:center;padding:72px 20px"><div style="width:48px;height:48px;border-radius:14px;background:var(--accent-weak);color:var(--accent);display:flex;align-items:center;justify-content:center;margin:0 auto 16px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></div><div style="font-size:15px;font-weight:600;color:#16191d">No tracked projects yet</div><div style="font-size:13.5px;color:#9aa3af;margin-top:6px">Bookmark a project from the feed to follow its stage changes.</div><button onClick="{{ goFeed }}" style="margin-top:18px;height:40px;padding:0 18px;background:var(--accent);color:#fff;border:none;border-radius:9px;font-size:13.5px;font-weight:600;cursor:pointer">Browse Lead Feed</button></div>
+          </sc-if>
+        </div>
+        </sc-if>
+
+        <sc-if value="{{ isUpdates }}" hint-placeholder-val="{{ true }}">
+        <div style="animation:bvUp .28s ease;max-width:760px">
+          <sc-if value="{{ updatesHasItems }}" hint-placeholder-val="{{ true }}">
+          <div style="position:relative;padding-left:6px">
+            <sc-for list="{{ updatesList }}" as="u" hint-placeholder-count="3">
+              <div onClick="{{ u.open }}" style="display:flex;gap:16px;cursor:pointer;padding-bottom:8px">
+                <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:14px">
+                  <div style="width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-weak);margin-top:20px"></div>
+                  <div style="{{ u.connectorStyle }}"></div>
+                </div>
+                <div style="flex:1;background:#fff;border:1px solid #e8eaed;border-radius:13px;padding:15px var(--cardpad);margin-bottom:12px;transition:border-color .15s,box-shadow .15s" style-hover="box-shadow:0 4px 14px rgba(15,23,42,.06);border-color:#dadee2">
+                  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><div style="font-weight:600;font-size:14.5px">{{ u.name }}</div><div style="font-size:12px;color:#a8b0ba;white-space:nowrap;font-family:'IBM Plex Mono',monospace">{{ u.ago }}</div></div>
+                  <div style="display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap">
+                    <span style="{{ u.fromStyle }}">{{ u.fromLabel }}</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#c2c8ce" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+                    <span style="{{ u.toStyle }}">{{ u.toLabel }}</span>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+          </sc-if>
+          <sc-if value="{{ updatesEmpty }}" hint-placeholder-val="{{ false }}">
+            <div style="text-align:center;padding:72px 20px;color:#9aa3af"><div style="font-size:15px;font-weight:600;color:#6b7280">No recent updates</div><div style="font-size:13.5px;margin-top:6px">Stage changes on your tracked projects will appear here.</div></div>
+          </sc-if>
+        </div>
+        </sc-if>
+
+        <sc-if value="{{ isAdminInput }}" hint-placeholder-val="{{ true }}">
+        <div style="animation:bvUp .28s ease;max-width:680px">
+          <div style="display:flex;align-items:center;gap:10px;background:#fdf6e8;border:1px solid #f3e3b8;border-radius:11px;padding:12px 16px;margin-bottom:22px">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#b88314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+            <div style="font-size:13px;color:#8a6a18"><strong style="color:#7a5d12">Sandbox</strong> — this calls the real Qwen 2.5 model but writes nothing to BigQuery. Nothing is saved.</div>
+          </div>
+
+          <div style="background:#fff;border:1px solid #e8eaed;border-radius:13px;padding:24px">
+            <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:8px">Document source</div>
+            <input type="text" value="{{ docUrlVal }}" onInput="{{ setDocUrl }}" placeholder="https://county.gov/minutes/2026-06-board-workshop.pdf" style="width:100%;height:42px;padding:0 13px;border:1px solid #e6e8eb;border-radius:9px;font-size:13.5px;outline:none" style-focus="border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-weak)">
+            <div style="display:flex;align-items:center;gap:12px;margin:14px 0"><div style="flex:1;height:1px;background:#eef0f2"></div><span style="font-size:12px;color:#9aa3af">or</span><div style="flex:1;height:1px;background:#eef0f2"></div></div>
+            <div style="border:1.5px dashed #d7dbe0;border-radius:11px;padding:26px;text-align:center;cursor:pointer;transition:border-color .15s,background .15s" style-hover="border-color:var(--accent);background:var(--accent-weak)">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9aa3af" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:8px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5-5 5 5"/><path d="M12 5v12"/></svg>
+              <div style="font-size:13.5px;font-weight:500;color:#6b7280">Upload a sample PDF</div>
+              <div style="font-size:12px;color:#a8b0ba;margin-top:3px">PDF up to 25 MB</div>
+            </div>
+
+            <div style="height:1px;background:#eef0f2;margin:24px 0"></div>
+
+            <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:4px">Test user profile</div>
+            <div style="font-size:12.5px;color:#9aa3af;margin-bottom:12px">Relevance scoring runs against this profile.</div>
+            <div style="font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#a8b0ba;margin-bottom:8px">Service categories</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px"><sc-for list="{{ profileCats }}" as="c" hint-placeholder-count="3"><span style="font-size:12.5px;color:var(--accent);background:var(--accent-weak);padding:5px 11px;border-radius:7px;font-weight:500">{{ c }}</span></sc-for></div>
+            <div style="font-size:11.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#a8b0ba;margin-bottom:8px">Geography</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap"><sc-for list="{{ profileGeos }}" as="g" hint-placeholder-count="2"><span style="font-size:12.5px;color:#374151;background:#f3f4f6;padding:5px 11px;border-radius:7px;font-weight:500">{{ g }}</span></sc-for></div>
+
+            <button onClick="{{ runTest }}" style="margin-top:24px;width:100%;height:46px;background:var(--accent);color:#fff;border:none;border-radius:10px;font-size:14.5px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px" style-hover="background:var(--accent-strong)"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9z"/></svg>Run Test</button>
+            <div style="text-align:center;font-size:12px;color:#a8b0ba;margin-top:10px">Sandbox — nothing is saved</div>
+          </div>
+        </div>
+        </sc-if>
+
+        <sc-if value="{{ isAdminTrace }}" hint-placeholder-val="{{ true }}">
+        <div style="animation:bvUp .28s ease;max-width:780px">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap">
+            <div style="display:flex;align-items:center;gap:10px;background:#fdf6e8;border:1px solid #f3e3b8;border-radius:11px;padding:10px 14px">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#b88314" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+              <div style="font-size:12.5px;color:#8a6a18">Sandbox run · no BigQuery writes</div>
+            </div>
+            <button onClick="{{ goAdminInput }}" style="height:38px;padding:0 16px;background:#fff;border:1px solid #e2e5e9;border-radius:9px;font-size:13px;font-weight:500;color:#374151;cursor:pointer;display:inline-flex;align-items:center;gap:7px" style-hover="border-color:#d4d8dd;background:#fafbfc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>New test</button>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px">
+
+            <div style="background:#fff;border:1px solid #e8eaed;border-radius:13px;overflow:hidden">
+              <div onClick="{{ toggleStep1 }}" style="display:flex;align-items:center;gap:13px;padding:16px 18px;cursor:pointer">
+                <div style="width:26px;height:26px;border-radius:8px;background:var(--accent-weak);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:700;font-family:'IBM Plex Mono',monospace;flex-shrink:0">1</div>
+                <div style="flex:1"><div style="font-size:14.5px;font-weight:600">Scraper</div><div style="font-size:12px;color:#9aa3af">Document discovery &amp; classification</div></div>
+                <span style="display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;color:#15803d;background:#e6f3ea;padding:3px 9px;border-radius:20px"><span style="width:5px;height:5px;border-radius:50%;background:#15803d"></span>healthy</span>
+                <svg style="{{ chev1 }}" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a8b0ba" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <sc-if value="{{ step1Open }}" hint-placeholder-val="{{ true }}">
+              <div style="padding:0 18px 18px 57px;display:flex;flex-direction:column;gap:10px">
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                  <div style="flex:1;min-width:130px;background:#f8f9fa;border-radius:9px;padding:12px 14px"><div style="font-size:11px;color:#9aa3af">Documents discovered</div><div style="font-family:'IBM Plex Mono',monospace;font-size:19px;font-weight:500;margin-top:3px">14</div></div>
+                  <div style="flex:1;min-width:130px;background:#f8f9fa;border-radius:9px;padding:12px 14px"><div style="font-size:11px;color:#9aa3af">Doc-type classification</div><div style="font-size:13.5px;font-weight:500;margin-top:5px">Agenda / Meeting Minutes</div></div>
+                  <div style="flex:1;min-width:130px;background:#f8f9fa;border-radius:9px;padding:12px 14px"><div style="font-size:11px;color:#9aa3af">County circuit-breaker</div><div style="font-size:13.5px;font-weight:500;margin-top:5px;color:#15803d">Healthy</div></div>
+                </div>
+              </div>
+              </sc-if>
+            </div>
+
+            <div style="background:#fff;border:1px solid #e8eaed;border-radius:13px;overflow:hidden">
+              <div onClick="{{ toggleStep2 }}" style="display:flex;align-items:center;gap:13px;padding:16px 18px;cursor:pointer">
+                <div style="width:26px;height:26px;border-radius:8px;background:var(--accent-weak);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:700;font-family:'IBM Plex Mono',monospace;flex-shrink:0">2</div>
+                <div style="flex:1"><div style="font-size:14.5px;font-weight:600">Extraction · Docling</div><div style="font-size:12px;color:#9aa3af">Text + parent/child chunking</div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6b7280;background:#f1f3f5;padding:3px 9px;border-radius:6px">6 / 23 chunks</span>
+                <svg style="{{ chev2 }}" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a8b0ba" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <sc-if value="{{ step2Open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:0 18px 18px 57px;display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;gap:10px"><div style="flex:1;background:#f8f9fa;border-radius:9px;padding:12px 14px"><div style="font-size:11px;color:#9aa3af">Parent chunks</div><div style="font-family:'IBM Plex Mono',monospace;font-size:19px;font-weight:500;margin-top:3px">6</div></div><div style="flex:1;background:#f8f9fa;border-radius:9px;padding:12px 14px"><div style="font-size:11px;color:#9aa3af">Child chunks</div><div style="font-family:'IBM Plex Mono',monospace;font-size:19px;font-weight:500;margin-top:3px">23</div></div></div>
+                <div><div style="font-size:11px;color:#9aa3af;margin-bottom:6px">Extracted text preview</div><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.65;color:#4b5563;background:#f8f9fa;border-radius:9px;padding:13px 14px;max-height:140px;overflow:hidden">…Item 7. The Board considered award of the Twin Lakes Park Renovation. Staff recommends advancing the project to solicitation. Engineer's estimate $4.2M. Scope includes mass grading, stormwater drainage rework, ADA pathways and a new restroom facility. Bids due July 14, 2026…</div></div>
+              </div>
+              </sc-if>
+            </div>
+
+            <div style="background:#fff;border:1px solid #e8eaed;border-radius:13px;overflow:hidden">
+              <div onClick="{{ toggleStep3 }}" style="display:flex;align-items:center;gap:13px;padding:16px 18px;cursor:pointer">
+                <div style="width:26px;height:26px;border-radius:8px;background:var(--accent-weak);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:700;font-family:'IBM Plex Mono',monospace;flex-shrink:0">3</div>
+                <div style="flex:1"><div style="font-size:14.5px;font-weight:600">Classifier · filter</div><div style="font-size:12px;color:#9aa3af">Qwen <span style="font-family:'IBM Plex Mono',monospace">is_project</span> per chunk</div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--accent);background:var(--accent-weak);padding:3px 9px;border-radius:6px">3 passed</span>
+                <svg style="{{ chev3 }}" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a8b0ba" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <sc-if value="{{ step3Open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:0 18px 18px 57px;display:flex;flex-direction:column;gap:7px">
+                <sc-for list="{{ chunkRows }}" as="ch" hint-placeholder-count="6">
+                  <div style="display:flex;align-items:center;gap:12px;background:#f8f9fa;border-radius:8px;padding:9px 12px">
+                    <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#9aa3af;flex-shrink:0">{{ ch.id }}</span>
+                    <span style="flex:1;font-size:12.5px;color:#4b5563;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ ch.text }}</span>
+                    <span style="{{ ch.badgeStyle }}">{{ ch.label }}</span>
+                  </div>
+                </sc-for>
+              </div>
+              </sc-if>
+            </div>
+
+            <div style="background:#fff;border:1px solid #e8eaed;border-radius:13px;overflow:hidden">
+              <div onClick="{{ toggleStep4 }}" style="display:flex;align-items:center;gap:13px;padding:16px 18px;cursor:pointer">
+                <div style="width:26px;height:26px;border-radius:8px;background:var(--accent-weak);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:700;font-family:'IBM Plex Mono',monospace;flex-shrink:0">4</div>
+                <div style="flex:1"><div style="font-size:14.5px;font-weight:600">Classifier · extraction</div><div style="font-size:12px;color:#9aa3af">Structured fields for passed chunks</div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6b7280;background:#f1f3f5;padding:3px 9px;border-radius:6px">conf 0.91</span>
+                <svg style="{{ chev4 }}" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a8b0ba" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <sc-if value="{{ step4Open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:0 18px 18px 57px">
+                <div style="background:#1f2430;border-radius:10px;padding:15px 16px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.75;overflow-x:auto">
+                  <sc-for list="{{ extractFields }}" as="f" hint-placeholder-count="8">
+                    <div style="white-space:nowrap"><span style="color:#7d8aa3">{{ f.k }}</span><span style="color:#5a6478">: </span><span style="{{ f.vStyle }}">{{ f.v }}</span></div>
+                  </sc-for>
+                </div>
+              </div>
+              </sc-if>
+            </div>
+
+            <div style="background:#fff;border:1px solid #e8eaed;border-radius:13px;overflow:hidden">
+              <div onClick="{{ toggleStep5 }}" style="display:flex;align-items:center;gap:13px;padding:16px 18px;cursor:pointer">
+                <div style="width:26px;height:26px;border-radius:8px;background:var(--accent-weak);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:700;font-family:'IBM Plex Mono',monospace;flex-shrink:0">5</div>
+                <div style="flex:1"><div style="font-size:14.5px;font-weight:600">Relevance scoring</div><div style="font-size:12px;color:#9aa3af">Against the test profile</div></div>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;color:var(--accent);background:var(--accent-weak);padding:3px 9px;border-radius:6px">0.86</span>
+                <svg style="{{ chev5 }}" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a8b0ba" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <sc-if value="{{ step5Open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:0 18px 18px 57px;display:flex;flex-direction:column;gap:13px">
+                <div>
+                  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:7px"><span style="font-size:12px;color:#9aa3af">relevance_score</span><span style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;color:var(--accent)">0.86</span></div>
+                  <div style="height:8px;background:#eef0f2;border-radius:5px;overflow:hidden"><div style="width:86%;height:100%;background:var(--accent);border-radius:5px"></div></div>
+                </div>
+                <div style="background:var(--accent-weak);border-radius:10px;padding:13px 15px"><div style="font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:6px">rationale</div><div style="font-size:13px;line-height:1.6;color:#2a3f3c">Strong overlap with the profile's Roadway and Drainage categories. Project is located in Orange County, within the profile's geography. Stormwater and grading scope aligns with typical project size.</div></div>
+              </div>
+              </sc-if>
+            </div>
+
+          </div>
+        </div>
+        </sc-if>
+
+      </div>
+    </main>
+  </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900},&quot;accent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Teal&quot;,&quot;Blue&quot;,&quot;Green&quot;,&quot;Orange&quot;,&quot;Slate&quot;],&quot;default&quot;:&quot;Teal&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;density&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Airy&quot;,&quot;Compact&quot;],&quot;default&quot;:&quot;Airy&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;cardLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Detailed&quot;,&quot;Compact&quot;,&quot;Minimal&quot;],&quot;default&quot;:&quot;Compact&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  constructor(props){
+    super(props);
+    this.state = {
+      screen: 'auth',
+      role: 'admin',
+      selectedId: 'p1',
+      tracked: { p1:true, p4:true, p7:true, p11:true },
+      company: '',
+      onbCats: ['Roadway','Drainage'],
+      onbGeos: ['Orange County','Seminole County'],
+      filters: { stage:'all', county:'all', tag:'all', minMatch:0, query:'' },
+      docUrl: '',
+      openSteps: { 1:true, 2:false, 3:false, 4:false, 5:false },
+      countyDropOpen: false,
+      countyAddMode: false,
+      countyInput: '',
+      addedCounties: [],
+    };
+  }
+
+  allProjects(){
+    return [
+      {id:'p1',name:'Twin Lakes Park Renovation',agency:'Orange County Parks Dept.',county:'Orange County',budget:4200000,stage:'bidding',match:94,type:'Parks & Recreation',tracking:'OC-2026-0417',deadline:'Jul 14, 2026',location:'Apopka, FL · Orange County',requirements:'Mass grading, stormwater drainage rework, ADA pathways, a new restroom facility, and athletic field irrigation across a 22-acre site.',tags:['Roadway','Drainage','Earthwork'],rationale:'Strong overlap with your Roadway and Drainage categories in Orange County. The grading and stormwater scope fits your typical project size.',changed:true,from:'approved',to:'bidding',ago:'2d ago'},
+      {id:'p2',name:'SR-436 Median Resurfacing',agency:'FDOT District 5',county:'Seminole County',budget:11800000,stage:'approved',match:91,type:'Roadway',tracking:'FDOT-5-44120',deadline:'Aug 02, 2026',location:'Casselberry, FL · Seminole County',requirements:'Milling and resurfacing of 4.2 lane-miles, thermoplastic striping, median curb repair, and signal loop replacement.',tags:['Roadway','Striping'],rationale:'Matches your Roadway and Striping focus. FDOT District 5 work falls within your Seminole County geography.',changed:false},
+      {id:'p3',name:'Westfield WTP Pump Station Upgrade',agency:'Seminole County Utilities',county:'Seminole County',budget:7600000,stage:'subcommittee',match:88,type:'Water / Utilities',tracking:'SCU-2026-088',deadline:'Sep 10, 2026',location:'Lake Mary, FL · Seminole County',requirements:'High-service pump replacement, VFD upgrades, HVAC for the control building, and electrical switchgear modernization.',tags:['HVAC','Mechanical','Electrical'],rationale:'Aligns with your HVAC and Mechanical categories, located in your Seminole County service area.',changed:false},
+      {id:'p4',name:'Lake Underhill Stormwater Improvements',agency:'City of Orlando',county:'Orange County',budget:2900000,stage:'bidding',match:86,type:'Drainage',tracking:'COO-SW-2261',deadline:'Jul 28, 2026',location:'Orlando, FL · Orange County',requirements:'Box culvert replacement, baffle box installation, outfall stabilization, and roadway restoration.',tags:['Drainage','Concrete','Roadway'],rationale:'Direct match to your Drainage category in Orange County, with associated roadway restoration scope.',changed:true,from:'subcommittee',to:'bidding',ago:'4d ago'},
+      {id:'p5',name:'County Admin Building HVAC Replacement',agency:'Volusia County Facilities',county:'Volusia County',budget:1400000,stage:'approved',match:83,type:'Mechanical',tracking:'VOL-FAC-1190',deadline:'Aug 19, 2026',location:'DeLand, FL · Volusia County',requirements:'Replacement of two 80-ton chillers, AHU retrofits, and BAS controls integration.',tags:['HVAC','Mechanical'],rationale:'Matches your HVAC and Mechanical categories, adjacent to your core geography in Volusia County.',changed:false},
+      {id:'p6',name:'Pine Hills Sidewalk Connectivity',agency:'Orange County Public Works',county:'Orange County',budget:3100000,stage:'subcommittee',match:79,type:'Roadway',tracking:'OC-PW-3340',deadline:'Oct 05, 2026',location:'Orlando, FL · Orange County',requirements:'5.1 miles of new sidewalk, ADA ramps, drainage tie-ins, and pedestrian signal upgrades.',tags:['Concrete','Roadway','Drainage'],rationale:'Overlaps your Roadway and Drainage categories within Orange County.',changed:false},
+      {id:'p7',name:'Reedy Creek Bridge Rehabilitation',agency:'FDOT District 5',county:'Osceola County',budget:9200000,stage:'awarded',match:76,type:'Structural',tracking:'FDOT-5-50882',deadline:'Closed',location:'Kissimmee, FL · Osceola County',requirements:'Deck rehabilitation, expansion joint replacement, structural steel repair, and scour countermeasures.',tags:['Structural','Concrete'],rationale:'Related to your Concrete category. Structural scope is adjacent to your typical work.',changed:true,from:'bidding',to:'awarded',ago:'1w ago'},
+      {id:'p8',name:'Apopka-Vineland Rd Widening',agency:'Orange County Public Works',county:'Orange County',budget:18500000,stage:'subcommittee',match:72,type:'Roadway',tracking:'OC-PW-2208',deadline:'Nov 12, 2026',location:'Orlando, FL · Orange County',requirements:'Widening from 2 to 4 lanes with new drainage system, retention ponds, and signalization.',tags:['Roadway','Earthwork','Drainage'],rationale:'Large Roadway and Drainage project in Orange County; may exceed your typical contract size.',changed:false},
+      {id:'p9',name:'Central Fire Station No. 12',agency:'City of Kissimmee',county:'Osceola County',budget:6000000,stage:'bidding',match:70,type:'Vertical / Facility',tracking:'COK-FS12-26',deadline:'Aug 30, 2026',location:'Kissimmee, FL · Osceola County',requirements:'New 14,000 sf fire station including mechanical, electrical, plumbing, and site work.',tags:['Mechanical','Electrical'],rationale:'Touches your Mechanical and Electrical categories within your broader geography.',changed:false},
+      {id:'p10',name:'Econ River Trail Extension',agency:'Seminole County',county:'Seminole County',budget:2200000,stage:'approved',match:68,type:'Parks & Recreation',tracking:'SC-TR-0455',deadline:'Sep 22, 2026',location:'Oviedo, FL · Seminole County',requirements:'3.4 miles of multi-use trail, boardwalk, drainage culverts, and trailhead parking.',tags:['Concrete','Drainage'],rationale:'Partial match via your Concrete and Drainage categories in Seminole County.',changed:false},
+      {id:'p11',name:'Sanford Riverwalk Phase IV',agency:'City of Sanford',county:'Seminole County',budget:5500000,stage:'closed',match:61,type:'Parks / Marine',tracking:'COS-RW4-25',deadline:'Closed',location:'Sanford, FL · Seminole County',requirements:'Seawall extension, paver promenade, drainage, lighting, and shoreline amenities.',tags:['Concrete','Drainage'],rationale:'Lower-confidence match on Concrete and Drainage; this project is now closed.',changed:false},
+      {id:'p12',name:'Lake Mary Blvd Signal Upgrades',agency:'Lake County Public Works',county:'Lake County',budget:1900000,stage:'bidding',match:64,type:'Electrical',tracking:'LC-PW-7781',deadline:'Aug 08, 2026',location:'Mount Dora, FL · Lake County',requirements:'Mast-arm signal replacement at 6 intersections, fiber interconnect, and striping.',tags:['Electrical','Striping'],rationale:'Matches your Electrical and Striping categories; Lake County is at the edge of your geography.',changed:false},
+    ];
+  }
+
+  go(screen){ this.setState({ screen }); }
+  openProject(id){ this.setState({ screen:'details', selectedId:id }); }
+  toggleTrack(id){ this.setState(s=>({ tracked:{...s.tracked, [id]:!s.tracked[id]} })); }
+  setFilter(k,v){ this.setState(s=>({ filters:{...s.filters, [k]:v} })); }
+  pickCounty(v){ this.setFilter('county',v); this.setState({countyDropOpen:false,countyAddMode:false}); }
+  submitCounty(){ const v=this.state.countyInput.trim(); if(!v)return; this.setState(s=>({addedCounties:[...s.addedCounties.filter(c=>c!==v),v],countyInput:'',countyAddMode:false,countyDropOpen:false})); this.setFilter('county',v); }
+  componentDidMount(){ this._ccClose=(e)=>{ if(!e.target.closest('[data-county-drop]')) this.setState({countyDropOpen:false,countyAddMode:false}); }; document.addEventListener('mousedown',this._ccClose); }
+  componentWillUnmount(){ document.removeEventListener('mousedown',this._ccClose); }
+  setRole(role){ this.setState(s=>({ role, screen:(role==='user' && (s.screen==='adminInput'||s.screen==='adminTrace'))?'dashboard':s.screen })); }
+  toggleStep(n){ this.setState(s=>({ openSteps:{...s.openSteps, [n]:!s.openSteps[n]} })); }
+  toggleOnb(key,val){ this.setState(s=>{ const arr=s[key]; const has=arr.includes(val); return { [key]: has?arr.filter(x=>x!==val):[...arr,val] }; }); }
+
+  renderVals(){
+    const s=this.state, p=this.props;
+    const accentMap={Teal:['#0f766e','#0c5e57','#e6f2f0'],Blue:['#2563eb','#1d4ed8','#eaf0fe'],Green:['#15803d','#126b33','#e7f3eb'],Orange:['#ea580c','#c2480a','#fdeee6'],Slate:['#334155','#1e293b','#eef1f5']};
+    const acc=accentMap[p.accent]||accentMap.Teal;
+    const airy=(p.density||'Airy')!=='Compact';
+    const layout=p.cardLayout||'Compact';
+    const showMeta=layout!=='Minimal', showRationale=layout==='Detailed';
+    const rootStyle={'--accent':acc[0],'--accent-strong':acc[1],'--accent-weak':acc[2],'--cardpad':airy?'20px':'14px','--cardgap':airy?'16px':'11px','--pad':airy?'32px':'22px','--sectiongap':airy?'44px':'30px',fontFamily:"'Hanken Grotesk',system-ui,-apple-system,sans-serif",color:'#16191d',background:'#f6f7f8',minHeight:'100vh'};
+
+    const stageMeta={subcommittee:{label:'Early Planning',color:'#5b667a',bg:'#eef1f5'},approved:{label:'Approved',color:'#4f46e5',bg:'#ecedfd'},bidding:{label:'Out for Bid',color:'#c2410c',bg:'#fcebe1'},awarded:{label:'Awarded',color:'#15803d',bg:'#e6f3ea'},closed:{label:'Closed',color:'#8a93a0',bg:'#f1f3f5'}};
+    const order=['subcommittee','approved','bidding','awarded','closed'];
+    const fmt=n=> n>=1e6 ? '$'+(n/1e6).toFixed(n%1e6===0?0:1)+'M' : '$'+Math.round(n/1e3)+'k';
+    const badge=(stage)=>{const m=stageMeta[stage];return{display:'inline-flex',alignItems:'center',fontSize:'11.5px',fontWeight:600,padding:'3px 9px',borderRadius:'6px',color:m.color,background:m.bg,whiteSpace:'nowrap'};};
+
+    const data=this.allProjects();
+    const mk=(proj)=>{
+      const tracked=!!s.tracked[proj.id];
+      return {...proj,
+        budgetFmt:fmt(proj.budget),
+        stageLabel:stageMeta[proj.stage].label,
+        stageStyle:badge(proj.stage),
+        matchText:proj.match+'% match',
+        tracked,
+        showMeta, showRationale,
+        rationaleShort:proj.rationale,
+        trackStyle:{display:'inline-flex',alignItems:'center',justifyContent:'center',width:'30px',height:'30px',borderRadius:'8px',border:'none',cursor:'pointer',flexShrink:0,color:tracked?'var(--accent)':'#9aa3af',background:tracked?'var(--accent-weak)':'transparent',transition:'all .12s'},
+        changeLine: proj.changed?('Moved '+stageMeta[proj.from].label+' → '+stageMeta[proj.to].label):'',
+        chFromLabel: proj.changed?stageMeta[proj.from].label:'',
+        chToLabel: proj.changed?stageMeta[proj.to].label:'',
+        chFromStyle: proj.changed?{display:'inline-flex',alignItems:'center',fontSize:'11px',fontWeight:600,padding:'2px 8px',borderRadius:'5px',color:stageMeta[proj.from].color,background:stageMeta[proj.from].bg,whiteSpace:'nowrap',opacity:.6}:{},
+        chToStyle: proj.changed?{display:'inline-flex',alignItems:'center',fontSize:'11px',fontWeight:600,padding:'2px 8px',borderRadius:'5px',color:stageMeta[proj.to].color,background:stageMeta[proj.to].bg,whiteSpace:'nowrap'}:{},
+        open:()=>this.openProject(proj.id),
+        toggleTrack:(e)=>{ if(e&&e.stopPropagation) e.stopPropagation(); this.toggleTrack(proj.id); },
+      };
+    };
+    const all=data.map(mk);
+
+    const newMatches=[...all].sort((a,b)=>b.match-a.match).slice(0,6);
+    const trackedList=all.filter(x=>x.tracked);
+    const changedTracked=trackedList.filter(x=>x.changed);
+
+    // updates timeline
+    const updatesRaw=changedTracked.slice().sort((a,b)=>0);
+    const updatesList=updatesRaw.map((u,i)=>({
+      name:u.name, ago:u.ago, open:u.open,
+      fromLabel:stageMeta[u.from].label, toLabel:stageMeta[u.to].label,
+      fromStyle:badge(u.from), toStyle:badge(u.to),
+      connectorStyle:{width:'2px',flex:1,background:'#eef0f2',minHeight:'8px'}
+    }));
+
+    // selected details
+    const selRaw=data.find(d=>d.id===s.selectedId)||data[0];
+    const sel=mk(selRaw);
+    const curIdx=order.indexOf(selRaw.stage);
+    sel.stageSteps=order.map((k,i)=>{
+      const done=i<curIdx, cur=i===curIdx, on=done||cur;
+      return { label:stageMeta[k].label, num:i+1, showLine:i>0,
+        circleStyle:{width:'30px',height:'30px',borderRadius:'50%',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'12.5px',fontWeight:600,fontFamily:"'IBM Plex Mono',monospace",flexShrink:0,color:on?'#fff':'#aab1ba',background:on?'var(--accent)':'#e6e8eb',boxShadow:cur?'0 0 0 4px var(--accent-weak)':'none'},
+        labelStyle:{fontSize:'11.5px',fontWeight:cur?600:500,color:on?'#16191d':'#aab1ba',marginTop:'9px',textAlign:'center',lineHeight:1.3},
+        lineStyle:{height:'2px',flex:1,marginTop:'14px',background:i<=curIdx?'var(--accent)':'#e6e8eb'} };
+    });
+    sel.locationFull=selRaw.location;
+    sel.detailTrackLabel=sel.tracked?'Tracking':'Track this project';
+    sel.bookmarkFill=sel.tracked?'currentColor':'none';
+    sel.detailTrackStyle=sel.tracked
+      ? {display:'inline-flex',alignItems:'center',gap:'8px',height:'42px',padding:'0 18px',borderRadius:'10px',border:'1px solid var(--accent)',background:'var(--accent-weak)',color:'var(--accent)',fontSize:'13.5px',fontWeight:600,cursor:'pointer',flexShrink:0,whiteSpace:'nowrap'}
+      : {display:'inline-flex',alignItems:'center',gap:'8px',height:'42px',padding:'0 18px',borderRadius:'10px',border:'none',background:'var(--accent)',color:'#fff',fontSize:'13.5px',fontWeight:600,cursor:'pointer',flexShrink:0,whiteSpace:'nowrap',boxShadow:'0 1px 2px rgba(0,0,0,.06)'};
+    const monoVal={fontFamily:"'IBM Plex Mono',monospace",fontSize:'13px',fontWeight:500,color:'#16191d',textAlign:'right'};
+    const txtVal={fontSize:'13px',fontWeight:500,color:'#16191d',textAlign:'right'};
+    sel.metaRows=[
+      {label:'Project type', value:selRaw.type, valStyle:txtVal},
+      {label:'Tracking number', value:selRaw.tracking, valStyle:monoVal},
+      {label:'Estimated budget', value:fmt(selRaw.budget), valStyle:monoVal},
+      {label:'Location', value:selRaw.location.split(' · ')[0], valStyle:txtVal},
+      {label:'Bid deadline', value:selRaw.deadline, valStyle:monoVal},
+    ];
+
+    // feed
+    const f=s.filters;
+    const counties=[...new Set(data.map(d=>d.county))];
+    const tagsAll=[...new Set(data.flatMap(d=>d.tags))].sort();
+    const feed=all.filter(x=>
+      (f.stage==='all'||x.stage===f.stage) &&
+      (f.county==='all'||x.county===f.county) &&
+      (f.tag==='all'||x.tags.includes(f.tag)) &&
+      (x.match>=(f.minMatch||0)) &&
+      (!f.query || (x.name+' '+x.agency).toLowerCase().includes(f.query.toLowerCase()))
+    ).sort((a,b)=>b.match-a.match);
+    const chip=(active)=> active
+      ? {fontSize:'12.5px',fontWeight:600,padding:'6px 12px',borderRadius:'8px',border:'1px solid var(--accent)',background:'var(--accent-weak)',color:'var(--accent)',cursor:'pointer'}
+      : {fontSize:'12.5px',fontWeight:500,padding:'6px 12px',borderRadius:'8px',border:'1px solid #e6e8eb',background:'#fff',color:'#6b7280',cursor:'pointer'};
+    const stageChips=[{k:'all',l:'All'},...order.map(k=>({k,l:stageMeta[k].label}))].map(c=>({
+      label:c.l, style:chip(f.stage===c.k), onClick:()=>this.setFilter('stage',c.k)
+    }));
+
+    // nav
+    const navBase={display:'flex',alignItems:'center',gap:'11px',padding:'9px 12px',borderRadius:'9px',fontSize:'14px',fontWeight:500,cursor:'pointer',border:'none',background:'transparent',color:'#586170',width:'100%',textAlign:'left',transition:'all .12s',position:'relative'};
+    const navActive={...navBase,background:'var(--accent-weak)',color:'var(--accent)',fontWeight:600};
+    const navS=(name)=> s.screen===name?navActive:navBase;
+    const detailsForFeed = (s.screen==='details');
+    const seg=(active)=> active
+      ? {flex:1,height:'30px',borderRadius:'7px',border:'none',background:'#fff',color:'#16191d',fontSize:'12.5px',fontWeight:600,cursor:'pointer',boxShadow:'0 1px 2px rgba(0,0,0,.06)'}
+      : {flex:1,height:'30px',borderRadius:'7px',border:'none',background:'transparent',color:'#7a828d',fontSize:'12.5px',fontWeight:500,cursor:'pointer'};
+
+    // onboarding option chips
+    const catList=['Roadway','Drainage','HVAC','Concrete','Electrical','Earthwork','Structural','Mechanical','Striping'];
+    const geoList=['Orange County','Seminole County','Volusia County','Osceola County','Lake County','Polk County'];
+    const optStyle=(active)=> active
+      ? {fontSize:'12.5px',fontWeight:600,padding:'7px 13px',borderRadius:'20px',border:'1px solid var(--accent)',background:'var(--accent-weak)',color:'var(--accent)',cursor:'pointer'}
+      : {fontSize:'12.5px',fontWeight:500,padding:'7px 13px',borderRadius:'20px',border:'1px solid #e2e5e9',background:'#fff',color:'#6b7280',cursor:'pointer'};
+    const catOptions=catList.map(c=>({label:c, style:optStyle(s.onbCats.includes(c)), onClick:()=>this.toggleOnb('onbCats',c)}));
+    const geoOptions=geoList.map(g=>({label:g, style:optStyle(s.onbGeos.includes(g)), onClick:()=>this.toggleOnb('onbGeos',g)}));
+
+    // admin trace
+    const chunkBadge=(ok)=> ok
+      ? {display:'inline-flex',alignItems:'center',gap:'5px',fontSize:'11px',fontWeight:600,color:'var(--accent)',background:'var(--accent-weak)',padding:'2px 8px',borderRadius:'20px',whiteSpace:'nowrap'}
+      : {display:'inline-flex',alignItems:'center',gap:'5px',fontSize:'11px',fontWeight:600,color:'#a8b0ba',background:'#f1f3f5',padding:'2px 8px',borderRadius:'20px',whiteSpace:'nowrap'};
+    const chunkRows=[
+      {id:'#03',text:'Item 7 — Twin Lakes Park Renovation, award of solicitation…',ok:true},
+      {id:'#04',text:'Engineer\u2019s estimate $4.2M; bids due July 14, 2026…',ok:true},
+      {id:'#05',text:'Scope: mass grading, stormwater drainage, restroom facility…',ok:true},
+      {id:'#08',text:'Minutes approved from the May 12 regular meeting…',ok:false},
+      {id:'#11',text:'Public comment period — three speakers addressed the Board…',ok:false},
+      {id:'#17',text:'Adjournment at 7:42 PM. Next workshop July 9…',ok:false},
+    ].map(c=>({id:c.id,text:c.text,label:c.ok?'is_project ✓':'skipped',badgeStyle:chunkBadge(c.ok)}));
+    const strV={color:'#7fd6a8'}, numV={color:'#e0b974'}, arrV={color:'#9ec5ff'};
+    const extractFields=[
+      {k:'tracking_number',v:'"OC-2026-0417"',vStyle:strV},
+      {k:'project_type',v:'"Parks & Recreation"',vStyle:strV},
+      {k:'niche_tags',v:'["Roadway","Drainage","Earthwork"]',vStyle:arrV},
+      {k:'stage',v:'"bidding"',vStyle:strV},
+      {k:'estimated_budget',v:'4200000',vStyle:numV},
+      {k:'requirements',v:'"Mass grading, drainage rework…"',vStyle:strV},
+      {k:'location',v:'"Apopka, FL"',vStyle:strV},
+      {k:'bid_deadline',v:'"2026-07-14"',vStyle:strV},
+      {k:'confidence',v:'0.91',vStyle:numV},
+    ];
+    const chev=(open)=>({transform:open?'rotate(180deg)':'none',transition:'transform .18s',flexShrink:0});
+
+    const titles={
+      dashboard:['Dashboard','Your matched opportunities at a glance'],
+      feed:['Lead Feed','Browse and filter every matched project'],
+      details:[selRaw.name, selRaw.agency],
+      tracked:['Tracked Projects','Projects you\u2019re following through the pipeline'],
+      updates:['Project Updates','Stage changes on your tracked projects'],
+      adminInput:['Testing Console','Sandbox pipeline runner — nothing is saved'],
+      adminTrace:['Pipeline Trace','Step-by-step run on your test document'],
+    };
+    const t=titles[s.screen]||['',''];
+
+    return {
+      rootStyle,
+      isAuth: s.screen==='auth',
+      isApp: s.screen!=='auth',
+      isDashboard: s.screen==='dashboard',
+      isFeed: s.screen==='feed',
+      isDetails: s.screen==='details',
+      isTracked: s.screen==='tracked',
+      isUpdates: s.screen==='updates',
+      isAdminInput: s.screen==='adminInput',
+      isAdminTrace: s.screen==='adminTrace',
+      pageTitle: t[0], pageSubtitle: t[1],
+
+      // nav
+      roleIsAdmin: s.role==='admin',
+      goDashboard:()=>this.go('dashboard'),
+      goFeed:()=>this.go('feed'),
+      goTracked:()=>this.go('tracked'),
+      goUpdates:()=>this.go('updates'),
+      goAdminInput:()=>this.go('adminInput'),
+      goBack:()=>this.go('feed'),
+      navStyleDashboard: navS('dashboard'),
+      navStyleFeed: (s.screen==='feed'||s.screen==='details')?navActive:navBase,
+      navStyleTracked: navS('tracked'),
+      navStyleUpdates: navS('updates'),
+      navStyleAdmin: (s.screen==='adminInput'||s.screen==='adminTrace')?navActive:navBase,
+      trackedNavCountStyle:{marginLeft:'auto',fontSize:'11px',fontWeight:600,fontFamily:"'IBM Plex Mono',monospace",color:'#aab1ba',background:'#f1f3f5',padding:'1px 7px',borderRadius:'20px'},
+      updatesDotStyle: updatesList.length>0?{marginLeft:'auto',width:'7px',height:'7px',borderRadius:'50%',background:'var(--accent)'}:{display:'none'},
+      setRoleUser:()=>this.setRole('user'),
+      setRoleAdmin:()=>this.setRole('admin'),
+      roleUserStyle: seg(s.role==='user'),
+      roleAdminStyle: seg(s.role==='admin'),
+      accountInitials: s.role==='admin'?'AD':'JC',
+      accountName: s.role==='admin'?'Avery Dial':'Jordan Cole',
+      accountCompany: s.company || 'Meridian Civil Contractors',
+
+      // auth
+      companyVal: s.company,
+      setCompany:(e)=>this.setState({company:e.target.value}),
+      catOptions, geoOptions,
+      createAccount:()=>this.go('dashboard'),
+
+      // dashboard
+      newMatches, newCount:newMatches.length,
+      changedTracked, changedCount:changedTracked.length, changedHasItems:changedTracked.length>0,
+
+      // feed
+      feedProjects:feed, feedCount:feed.length, feedHasResults:feed.length>0, feedEmpty:feed.length===0,
+      stageChips, tagList:tagsAll,
+      fCounty:f.county, fTag:f.tag, fMin:f.minMatch, fMinLabel:(f.minMatch>0?f.minMatch+'%':'0%'), fQuery:f.query,
+      countyDropOpen:s.countyDropOpen,
+      countyAddMode:s.countyAddMode,
+      countyInput:s.countyInput,
+      countyLabel: f.county==='all'?'All counties':f.county,
+      isAllCounty: f.county==='all',
+      countyAllCheckStyle: f.county==='all'?{flexShrink:0}:{flexShrink:0,visibility:'hidden'},
+      countyAllLabelStyle: f.county==='all'?{fontWeight:600,color:'var(--accent)'}:{},
+      countyItems: [...counties,...s.addedCounties].map(c=>({name:c,active:f.county===c,pick:()=>this.pickCounty(c),checkStyle:f.county===c?{flexShrink:0}:{flexShrink:0,visibility:'hidden'},labelStyle:f.county===c?{fontWeight:600,color:'var(--accent)'}:{}})),
+      toggleCountyDrop:()=>this.setState(ps=>({countyDropOpen:!ps.countyDropOpen,countyAddMode:false})),
+      pickCountyAll:()=>{ this.setFilter('county','all'); this.setState({countyDropOpen:false,countyAddMode:false}); },
+      pickCounty:(v)=>this.pickCounty(v),
+      toggleCountyAdd:(e)=>{ if(e&&e.stopPropagation)e.stopPropagation(); this.setState(ps=>({countyAddMode:!ps.countyAddMode,countyInput:''})); },
+      setCountyInput:(e)=>this.setState({countyInput:e.target.value}),
+      countyKeyDown:(e)=>{ if(e.key==='Enter')this.submitCounty(); },
+      submitCounty:()=>this.submitCounty(),
+      stopProp:(e)=>{ if(e&&e.stopPropagation)e.stopPropagation(); },
+      setCounty:(e)=>this.setFilter('county',e.target.value),
+      setTag:(e)=>this.setFilter('tag',e.target.value),
+      setMin:(e)=>this.setFilter('minMatch',Number(e.target.value)),
+      setQuery:(e)=>this.setFilter('query',e.target.value),
+
+      // details
+      sel,
+
+      // tracked
+      trackedList, trackedCount:trackedList.length, trackedHasItems:trackedList.length>0, trackedEmpty:trackedList.length===0,
+
+      // updates
+      updatesList, updatesCount:updatesList.length, updatesHasItems:updatesList.length>0, updatesEmpty:updatesList.length===0,
+
+      // admin
+      docUrlVal:s.docUrl, setDocUrl:(e)=>this.setState({docUrl:e.target.value}),
+      profileCats:s.onbCats, profileGeos:s.onbGeos,
+      runTest:()=>this.go('adminTrace'),
+      step1Open:!!s.openSteps[1], step2Open:!!s.openSteps[2], step3Open:!!s.openSteps[3], step4Open:!!s.openSteps[4], step5Open:!!s.openSteps[5],
+      toggleStep1:()=>this.toggleStep(1), toggleStep2:()=>this.toggleStep(2), toggleStep3:()=>this.toggleStep(3), toggleStep4:()=>this.toggleStep(4), toggleStep5:()=>this.toggleStep(5),
+      chev1:chev(!!s.openSteps[1]), chev2:chev(!!s.openSteps[2]), chev3:chev(!!s.openSteps[3]), chev4:chev(!!s.openSteps[4]), chev5:chev(!!s.openSteps[5]),
+      chunkRows, extractFields,
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -144,7 +144,7 @@ Phases are ordered so each unlocks the next. Phase 0 and 1 are prerequisites for
 - **Status:** Code wired behind `USE_DOCLING=false`. Flip flag + rebuild image per [OUTLETS.md](./OUTLETS.md).
 
 ### Phase 4 — Real classification + LLM (F4) — **CODE COMPLETE (pending outlets)**
-- **Goal:** Real Llama-3 classification producing real `projects` rows.
+- **Goal:** Real Qwen 2.5 7B classification producing real `projects` rows.
 - **What gets built:** Secret Manager wiring for `LLM_ENDPOINT_URL`/`LLM_API_KEY`; real
   tracking-number extraction, niche tagging, stage detection; MERGE upsert on real data.
 - **Files:** `functions/classifier/src/classifier.ts`, `llm-client.ts`; `infra/terraform/secrets.tf`.
@@ -172,12 +172,12 @@ Phases are ordered so each unlocks the next. Phase 0 and 1 are prerequisites for
 - **Depends on:** Phase 5.
 
 ### Phase 7 — Frontend + read API
-- **Goal:** Promote `stubs/frontend/` once a UI design exists (gated — see stub README).
+- **Goal:** Build production app + admin testing console from [FRONTEND-SPEC.md](./FRONTEND-SPEC.md) and [design_handoff_beaver/](./design_handoff_beaver/) (design handoff complete — implementation unblocked).
 - **What gets built:** Read API (Cloud Run or Firebase) over `projects`/`matches`/`user_profiles`;
-  auth + profile management; project feed with filter/search; match display.
+  auth + profile management; project feed with filter/search; match display; admin sandbox console (no BQ writes).
 - **Files:** new `apps/frontend/`, new read-API service; Terraform.
 - **Done-when:** A contractor can sign in, see their matched projects, and filter the hub.
-- **Depends on:** Phase 5 (data to show) + a completed UI design.
+- **Depends on:** Phase 5 (data to show). UI design handoff is complete.
 
 ### Phase 8 — Discovery Engine decision gate (DEFERRED)
 - **Goal:** Decide build-or-kill. **No code until a written purpose exists.**
