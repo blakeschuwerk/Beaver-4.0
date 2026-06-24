@@ -116,7 +116,7 @@ resource "google_cloud_run_v2_service" "classifier" {
       }
       env {
         name  = "LLM_MOCK_MODE"
-        value = "true"
+        value = "false"
       }
       env {
         name = "LLM_ENDPOINT_URL"
@@ -168,7 +168,7 @@ resource "google_cloud_run_v2_service" "personalization" {
       }
       env {
         name  = "LLM_MOCK_MODE"
-        value = "true"
+        value = "false"
       }
       env {
         name = "LLM_ENDPOINT_URL"
