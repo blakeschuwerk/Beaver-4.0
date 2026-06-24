@@ -61,7 +61,7 @@ Cloud Scheduler → dispatcher-tick → F1 Dispatcher
 
 7. **GCS notifications → Pub/Sub**: Raw and staging bucket OBJECT_FINALIZE events trigger F3 and F4.
 
-8. **External LLM**: Llama-3 via RunPod/OpenAI-compatible HTTP endpoint. Secret Manager for credentials. `LLM_MOCK_MODE=true` for local dev.
+8. **External LLM**: Qwen 2.5 7B via RunPod/OpenAI-compatible HTTP endpoint. Secret Manager for credentials. `LLM_MOCK_MODE=true` for local dev.
 
 9. **F5 is scaffold**: Two-step matching (niche filter → LLM relevance) is designed but not fully implemented. See `functions/personalization/src/personalization.ts` TODOs.
 

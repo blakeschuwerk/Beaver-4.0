@@ -1,5 +1,5 @@
 /**
- * External LLM client for Llama-3 (RunPod or OpenAI-compatible endpoint).
+ * External LLM client for Qwen 2.5 7B (RunPod or OpenAI-compatible endpoint).
  * Supports mock mode, timeout, and retry.
  */
 
@@ -117,7 +117,7 @@ async function callLlm(messages: LlmMessage[]): Promise<string> {
           Authorization: `Bearer ${API_KEY}`,
         },
         body: JSON.stringify({
-          model: process.env.LLM_MODEL ?? 'llama-3-8b',
+          model: process.env.LLM_MODEL ?? 'qwen2.5-7b',
           messages,
           temperature: 0.1,
           response_format: { type: 'json_object' },

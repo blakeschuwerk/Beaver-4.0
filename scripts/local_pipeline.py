@@ -6,7 +6,7 @@ Usage (from repo root):
   python3 scripts/local_pipeline.py
   pnpm local:scrape-extract
 
-Requires: .env.local (pnpm llama:setup), heavy Python deps installed.
+Requires: .env.local (pnpm qwen:setup), heavy Python deps installed.
 Outputs: local-run/raw/, local-run/staging/<county>/<doc_id>/chunks.json
 """
 
@@ -39,7 +39,7 @@ _ANALYZER: ModuleType | None = None
 def load_env_local() -> None:
     env_path = ROOT / ".env.local"
     if not env_path.exists():
-        print("WARNING: .env.local not found — run: pnpm llama:setup", file=sys.stderr)
+        print("WARNING: .env.local not found — run: pnpm qwen:setup", file=sys.stderr)
         return
     for line in env_path.read_text().splitlines():
         line = line.strip()

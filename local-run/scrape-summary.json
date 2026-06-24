@@ -1,16 +1,34 @@
 [
   {
-    "county_id": "demo-county",
+    "county_id": "sonoma-county",
+    "documents": [],
+    "errors": []
+  },
+  {
+    "county_id": "nc-nashcounty",
     "documents": [
       {
-        "document_id": "doc-demo-county-c060ab995765775e",
-        "source_url": "local://demo",
-        "chunks_path": "local-run/staging/demo-county/doc-demo-county-c060ab995765775e/chunks.json",
+        "document_id": "doc-nc-nashcounty-51ba028541b7c277",
+        "source_url": "https://nc-nashcounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06242026-731",
+        "chunks_path": "local-run/staging/nc-nashcounty/doc-nc-nashcounty-51ba028541b7c277/chunks.json",
         "chunk_count": 3,
+        "extraction_method": "docling"
+      },
+      {
+        "document_id": "doc-nc-nashcounty-77f809296cbbbdbd",
+        "source_url": "https://nc-nashcounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06152026-728",
+        "chunks_path": "local-run/staging/nc-nashcounty/doc-nc-nashcounty-77f809296cbbbdbd/chunks.json",
+        "chunk_count": 54,
+        "extraction_method": "docling"
+      },
+      {
+        "document_id": "doc-nc-nashcounty-4f6ba14cbc3cdd26",
+        "source_url": "https://nc-nashcounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06012026-727",
+        "chunks_path": "local-run/staging/nc-nashcounty/doc-nc-nashcounty-4f6ba14cbc3cdd26/chunks.json",
+        "chunk_count": 52,
         "extraction_method": "docling"
       }
     ],
-    "errors": [],
-    "demo": true
+    "errors": []
   }
 ]

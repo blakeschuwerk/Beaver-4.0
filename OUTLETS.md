@@ -25,7 +25,7 @@
 
 **Where to get credentials:**
 1. Create a RunPod account: https://www.runpod.io/
-2. Deploy a Llama-3 (or compatible) serverless/pod endpoint
+2. Deploy a Qwen 2.5 7B (or compatible) serverless/pod endpoint
 3. Copy the **OpenAI-compatible URL** (ends in `/v1/chat/completions`) and **API key**
 
 **Where to put them (GCP Secret Manager):**
@@ -166,6 +166,10 @@ Trigger manually: **Actions → Deploy → Run workflow**
 ```bash
 export GCP_PROJECT_ID=beaver4
 export GCP_REGION=us-central1
+
+# 0. Rebuild images BEFORE or immediately AFTER flag flips — SCRAPER_REAL/USE_DOCLING
+#    require requirements-scraping.txt / requirements-extraction.txt in the image.
+#    terraform apply alone does not rebuild containers.
 
 # 1. Apply infra changes (flags, IAM)
 cd infra/terraform && terraform apply && cd ../..

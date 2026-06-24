@@ -1,0 +1,32 @@
+{
+  "document_id": "doc-nc-nashcounty-51ba028541b7c277",
+  "county_id": "nc-nashcounty",
+  "trace_id": "8b4e185f-2023-4596-952d-0d8ba4d8f8d2",
+  "extracted_at": "2026-06-24T13:42:06.028496+00:00",
+  "chunk_count": 3,
+  "chunks": [
+    {
+      "chunk_id": "doc-nc-nashcounty-51ba028541b7c277-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->\n\nNash County Board of Commissioners Recessed Meeting \nWednesday, June 24, 2026, at 6 PM\nNash County Administration Building \n3 rd Floor \u2013 Frederick B. Cooper Jr. Commissioners Room\n120 W. Washington Street\nNashville, NC 27856\n\n1. Call the Board of Commissioners Meeting to Order \u2013 Chairman Marvin C. Arrington\n2. Invocation \u2013 Commissioner Sue Leggett\n3. Pledge of Allegiance \u2013 Commissioner J. Wayne Outlaw\n4. Presentation of Proposed Unified Development Ordinance (UDO) Revisions \u2013 Adam Culpepper, WithersRavenel\n5. Public Comments on Proposed Unified Development Ordinance (UDO) Revisions\n6. Adjournment of Board of County Commissioners \u2013 Chairman Marvin C. Arrington",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-51ba028541b7c277-child-0-0",
+      "parent_chunk_id": "doc-nc-nashcounty-51ba028541b7c277-parent-0",
+      "text": "Nash County Board of Commissioners Recessed Meeting \nWednesday, June 24, 2026, at 6 PM\nNash County Administration Building \n3 rd Floor \u2013 Frederick B. Cooper Jr. Commissioners Room\n120 W. Washington Street\nNashville, NC 27856",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-nc-nashcounty-51ba028541b7c277-child-0-1",
+      "parent_chunk_id": "doc-nc-nashcounty-51ba028541b7c277-parent-0",
+      "text": "1. Call the Board of Commissioners Meeting to Order \u2013 Chairman Marvin C. Arrington\n2. Invocation \u2013 Commissioner Sue Leggett\n3. Pledge of Allegiance \u2013 Commissioner J. Wayne Outlaw\n4. Presentation of Proposed Unified Development Ordinance (UDO) Revisions \u2013 Adam Culpepper, WithersRavenel\n5. Public Comments on Proposed Unified Development Ordinance (UDO) Revisions\n6. Adjournment of Board of County Commissioners \u2013 Chairman Marvin C. Arrington",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "51ba028541b7c27751f88d0fce1830ad3cd0ffe925a33095aa9abe8cf33a4ac7",
+  "extraction_method": "docling",
+  "source_url": "https://nc-nashcounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06242026-731",
+  "doc_type": "agenda"
+}

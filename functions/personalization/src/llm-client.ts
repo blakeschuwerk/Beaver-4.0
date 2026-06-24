@@ -91,7 +91,7 @@ async function callLlm(systemPrompt: string, userContent: string): Promise<strin
           Authorization: `Bearer ${API_KEY}`,
         },
         body: JSON.stringify({
-          model: process.env.LLM_MODEL ?? 'llama-3-8b',
+          model: process.env.LLM_MODEL ?? 'qwen2.5-7b',
           messages: [
             { role: 'system', content: systemPrompt },
             { role: 'user', content: userContent },

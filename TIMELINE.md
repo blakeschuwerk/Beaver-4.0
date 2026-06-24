@@ -98,3 +98,15 @@
 | **Decided** | Fully local runner: `scripts/local_pipeline.py` + `scripts/local-classify.mjs` + Ollama via `scripts/setup-llama.sh`. Three counties in config (Legistar, CivicPlus, crawl4ai). Python `.venv` for heavy deps. |
 | **Did** | Fixed civic-scraper API (LegistarSite/CivicPlusSite + 90-day window). Added 3 counties, local runners, `pnpm llama:setup`, `pnpm local:run`, `pnpm local:run:demo`, [LOCAL-TESTING.md](LOCAL-TESTING.md). Verified Nash County CivicPlus PDF → Docling (80 chunks) → local Llama projects + matches. |
 | **Verified** | Ollama `llama3.1:8b` on localhost:11434; `local-run/classify-summary.json` shows projects + matches. User runs `pnpm local:run` for full 3-county live scrape on their Mac. |
+
+---
+
+## 2026-06-23 — Migrate from Llama-3 to Qwen 2.5 7B
+
+| Field | Detail |
+|-------|--------|
+| **Phase** | 2–5 LLM swap |
+| **Observed** | Llama-3 8B was tested locally but Qwen 2.5 7B offers superior instruction-following for structured extraction (F4 tracking numbers, niche tags, stage) and relevance scoring (F5). Qwen 7B is 10% smaller but faster, optimized for JSON-structured output. |
+| **Decided** | Replace all Llama references with Qwen 2.5 7B. Both use OpenAI-compatible API, so LLM client code requires only model name change. Setup script renamed; all env vars and docs updated. OpenAI-compatible RunPod endpoints work identically. |
+| **Did** | Updated `functions/classifier/src/llm-client.ts` and `functions/personalization/src/llm-client.ts` (model default `'qwen2.5-7b'`). Renamed `scripts/setup-llama.sh` → `scripts/setup-qwen.sh`; updated model detection (12GB RAM threshold for 7B). Updated `package.json` (added `qwen:setup` script; `llama:setup` is now alias). Updated [LOCAL-TESTING.md](LOCAL-TESTING.md), [OUTLETS.md](OUTLETS.md), [CLAUDE.md](CLAUDE.md), [ROADMAP.md](ROADMAP.md), `scripts/local_pipeline.py`. |
+| **Verified** | `pnpm qwen:setup` + `pnpm local:run:demo` + `pnpm local:run` on Mac with `qwen2.5:7b`. Demo: 26 projects / 26 matches (7 docs). Live scrape: 3 Nash County docs + classify; Sonoma still 0 docs. Results in `local-run/classify-summary.json`. |
