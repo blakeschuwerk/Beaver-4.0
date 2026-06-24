@@ -52,7 +52,7 @@ resource "google_cloud_run_v2_service" "scraper" {
       }
       env {
         name  = "SCRAPER_REAL"
-        value = "false"
+        value = "true"
       }
       resources {
         limits = { cpu = "2", memory = "2Gi" }
@@ -86,7 +86,7 @@ resource "google_cloud_run_v2_service" "analyzer" {
       }
       env {
         name  = "USE_DOCLING"
-        value = "false"
+        value = "true"
       }
       resources {
         limits = { cpu = "2", memory = "4Gi" }
