@@ -1,15 +1,15 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { CountyDropdown } from '../components/CountyDropdown';
 import { ProjectCard } from '../components/ProjectCard';
 import { IconSearch } from '../components/Icons';
 import { useProjects, useTrackedIds } from '../hooks/useProjects';
 import { STAGE_FILTERS } from '../types';
 import { api } from '../api/client';
-import { useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
+import { isValidUSCounty } from '../lib/usCounties';
 
 export function FeedPage() {
-  const { user } = useAuth();
+  const { user, refreshProfile } = useAuth();
   const [stage, setStage] = useState('all');
   const [county, setCounty] = useState('all');
   const [tag, setTag] = useState('all');
@@ -29,21 +29,29 @@ export function FeedPage() {
     api.getCounties().then(({ counties: data }) => {
       setCounties(data.map((c) => c.name));
     });
-    if (user?.geography) {
-      setAddedCounties(user.geography.filter((g) => !counties.includes(g)));
-    }
-  }, [user]);
+  }, []);
+
+  useEffect(() => {
+    if (!user?.geography?.length) return;
+    const canonical = user.geography.filter(isValidUSCounty);
+    setAddedCounties((prev) => [...new Set([...prev, ...canonical])]);
+  }, [user?.geography]);
+
+  function handleAddCounty(label: string) {
+    if (!isValidUSCounty(label)) return;
+    setAddedCounties((prev) => [...new Set([...prev, label])]);
+    const nextGeo = [...new Set([...(user?.geography ?? []), label])];
+    api
+      .updateProfile({ geography: nextGeo })
+      .then(() => refreshProfile())
+      .catch(console.error);
+  }
 
   const allTags = useMemo(() => {
     const tags = new Set<string>();
     projects.forEach((p) => p.tags.forEach((t) => tags.add(t)));
     return ['all', ...Array.from(tags)];
   }, [projects]);
-
-  function handleAddCounty(name: string) {
-    setAddedCounties((prev) => [...new Set([...prev, name])]);
-    api.updateProfile({ geography: [...(user?.geography ?? []), name] }).catch(console.error);
-  }
 
   return (
     <div>

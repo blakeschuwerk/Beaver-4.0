@@ -56,6 +56,35 @@
   font-size: 14px;
 }
 
+.admin-examples {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.admin-examples__label {
+  font-size: 12px;
+  color: #9aa3af;
+}
+
+.admin-example-link {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 13px;
+  color: var(--accent);
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.admin-example-link:hover {
+  color: var(--accent-strong);
+}
+
 .admin-divider {
   display: flex;
   align-items: center;

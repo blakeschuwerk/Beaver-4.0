@@ -1,0 +1,46 @@
+.geo-editor__label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.geo-editor__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.geo-editor__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  background: #f3f4f6;
+  color: #374151;
+  padding: 5px 10px 5px 12px;
+  border-radius: 8px;
+}
+
+.geo-editor__chip button {
+  border: none;
+  background: transparent;
+  color: inherit;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 2px;
+}
+
+.geo-editor__chip button:hover {
+  opacity: 1;
+}
+
+.geo-editor__hint {
+  font-size: 12.5px;
+  color: #9aa3af;
+  margin-top: 10px;
+}

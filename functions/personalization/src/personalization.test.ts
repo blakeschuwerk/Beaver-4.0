@@ -52,6 +52,14 @@ describe('geographyOverlap', () => {
   it('does not match arbitrary short strings', () => {
     assert.equal(geographyOverlap(['CA'], 'other-county'), false);
   });
+
+  it('matches canonical US county label against county_id', () => {
+    assert.equal(geographyOverlap(['Nash County, NC'], 'nc-nashcounty', 'NC', 'Nash County'), true);
+  });
+
+  it('matches canonical label with inferred county metadata', () => {
+    assert.equal(geographyOverlap(['Nash County, NC'], 'nc-nashcounty'), true);
+  });
 });
 
 describe('filterUsersByNiche', () => {

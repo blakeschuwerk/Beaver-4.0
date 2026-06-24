@@ -5,6 +5,21 @@ import { IconPlay, IconUpload, IconWarning } from '../components/Icons';
 import { api } from '../api/client';
 import './AdminPage.css';
 
+const EXAMPLE_URLS = [
+  {
+    label: 'Nash County — Agenda (06/24/2026)',
+    url: 'https://nc-nashcounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06242026-731',
+  },
+  {
+    label: 'Nash County — Agenda (06/15/2026)',
+    url: 'https://nc-nashcounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06152026-728',
+  },
+  {
+    label: 'Nash County — Agenda (06/01/2026)',
+    url: 'https://nc-nashcounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06012026-727',
+  },
+];
+
 export function AdminInputPage() {
   const { user } = useAuth();
   const navigate = useNavigate();
@@ -48,6 +63,20 @@ export function AdminInputPage() {
             placeholder="https://example.com/sample.pdf"
           />
         </label>
+
+        <div className="admin-examples">
+          <span className="admin-examples__label">Try an example:</span>
+          {EXAMPLE_URLS.map((ex) => (
+            <button
+              key={ex.url}
+              type="button"
+              className="admin-example-link"
+              onClick={() => setUrl(ex.url)}
+            >
+              {ex.label}
+            </button>
+          ))}
+        </div>
 
         <div className="admin-divider"><span>or</span></div>
 

@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { GeographyEditor } from '../components/GeographyEditor';
 import { SERVICE_CATEGORIES } from '../types';
 import './AuthPage.css';
 
-const DEFAULT_GEOS = ['Nash County', 'nc-nashcounty'];
+const DEFAULT_GEOS = ['Nash County, NC'];
 
 export function AuthPage() {
   const { signUp, signIn } = useAuth();
@@ -24,10 +25,12 @@ export function AuthPage() {
     );
   }
 
-  function toggleGeo(geo: string) {
-    setGeography((prev) =>
-      prev.includes(geo) ? prev.filter((g) => g !== geo) : [...prev, geo],
-    );
+  function addGeo(label: string) {
+    setGeography((prev) => (prev.includes(label) ? prev : [...prev, label]));
+  }
+
+  function removeGeo(label: string) {
+    setGeography((prev) => prev.filter((g) => g !== label));
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -115,20 +118,8 @@ export function AuthPage() {
                 </div>
               </div>
 
-              <div className="auth-card__field">
-                <span className="auth-card__label">Geography</span>
-                <div className="auth-card__chips">
-                  {DEFAULT_GEOS.map((geo) => (
-                    <button
-                      key={geo}
-                      type="button"
-                      className={`auth-chip${geography.includes(geo) ? ' auth-chip--active' : ''}`}
-                      onClick={() => toggleGeo(geo)}
-                    >
-                      {geo}
-                    </button>
-                  ))}
-                </div>
+              <div className="auth-card__field auth-card__field--geography">
+                <GeographyEditor geography={geography} onAdd={addGeo} onRemove={removeGeo} />
               </div>
             </>
           )}

@@ -67,13 +67,18 @@ export function AppShell({ title, subtitle, trackedCount = 0, hasUpdates, childr
         </nav>
 
         <div className="sidebar__footer">
-          <div className="sidebar__account">
+          <NavLink
+            to="/profile"
+            className={({ isActive }) =>
+              `sidebar__account${isActive ? ' sidebar__account--active' : ''}`
+            }
+          >
             <div className="sidebar__avatar">{initials(user?.company ?? 'U')}</div>
             <div>
               <div className="sidebar__name">{user?.company ?? 'User'}</div>
               <div className="sidebar__company">{user?.role === 'admin' ? 'Admin' : 'Contractor'}</div>
             </div>
-          </div>
+          </NavLink>
           <button type="button" className="sidebar__signout" onClick={() => signOut().then(() => navigate('/auth'))}>
             Sign out
           </button>

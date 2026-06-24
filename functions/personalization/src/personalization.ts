@@ -16,6 +16,7 @@ import {
 import { BigQuery } from '@google-cloud/bigquery';
 import { Firestore } from '@google-cloud/firestore';
 import { PubSub } from '@google-cloud/pubsub';
+import { geographyMatchesCounty } from '@beaver/shared/us-counties';
 import { scoreProjectRelevance } from './llm-client.js';
 
 const MOCK_MODE = process.env.MOCK_MODE === 'true';
@@ -46,14 +47,26 @@ function nicheOverlap(userCategories: string[], projectTags: string[]): boolean 
   );
 }
 
-function geographyOverlap(userGeography: string[], countyId: string, countyState?: string): boolean {
-  const countyLower = countyId.toLowerCase();
-  return userGeography.some((geo) => {
-    const geoLower = geo.toLowerCase();
-    if (geoLower === countyLower) return true;
-    if (countyState && geoLower === countyState.toLowerCase()) return true;
-    return false;
-  });
+function countyMetaFromId(countyId: string): { name: string; state: string } {
+  const match = countyId.match(/^([a-z]{2})-(.+)$/i);
+  if (!match) return { name: countyId, state: '' };
+
+  const state = match[1].toUpperCase();
+  const base = match[2].replace(/county$/i, '');
+  const name = `${base.charAt(0).toUpperCase()}${base.slice(1)} County`;
+  return { name, state };
+}
+
+function geographyOverlap(
+  userGeography: string[],
+  countyId: string,
+  countyState?: string,
+  countyName?: string,
+): boolean {
+  const inferred = countyMetaFromId(countyId);
+  const state = countyState ?? inferred.state;
+  const name = countyName ?? inferred.name;
+  return geographyMatchesCounty(userGeography, countyId, name, state);
 }
 
 /**

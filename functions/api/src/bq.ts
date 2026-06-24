@@ -8,8 +8,9 @@ import {
   matchRowSchema,
   projectRowSchema,
 } from '@beaver/shared';
+import { countyLabelMatchesFilter, parseUSCountyLabel } from '@beaver/shared/us-counties';
 import { isMockMode } from './auth.js';
-import { MOCK_MATCHES, MOCK_PROJECTS } from './mock/fixtures.js';
+import { MOCK_COUNTIES, MOCK_MATCHES, MOCK_PROJECTS } from './mock/fixtures.js';
 
 let bigquery: BigQuery | undefined;
 
@@ -73,6 +74,26 @@ function normalizeTimestamp(value: unknown): string {
   return String(value);
 }
 
+function countyMetaFromId(countyId: string): { name: string; state: string } {
+  const fromConfig = MOCK_COUNTIES.find((c) => c.county_id === countyId);
+  if (fromConfig) {
+    return { name: fromConfig.name, state: fromConfig.state };
+  }
+
+  const match = countyId.match(/^([a-z]{2})-(.+)$/i);
+  if (!match) return { name: countyId, state: '' };
+
+  const state = match[1].toUpperCase();
+  const base = match[2].replace(/county$/i, '');
+  const name = `${base.charAt(0).toUpperCase()}${base.slice(1)} County`;
+  return { name, state };
+}
+
+function matchesCountyFilter(project: ProjectRow, filterCounty: string): boolean {
+  const meta = countyMetaFromId(project.county_id);
+  return countyLabelMatchesFilter(filterCounty, project.county_id, meta.name, meta.state);
+}
+
 function filterMockProjects(filters: ProjectFilters): EnrichedProject[] {
   const matches = MOCK_MATCHES.filter((m) => m.user_id === filters.userId);
   const matchByProject = new Map(matches.map((m) => [m.project_id, m]));
@@ -90,11 +111,7 @@ function filterMockProjects(filters: ProjectFilters): EnrichedProject[] {
     results = results.filter((p) => p.stage === filters.stage);
   }
   if (filters.county && filters.county !== 'all') {
-    results = results.filter(
-      (p) =>
-        p.county_id === filters.county ||
-        p.county_id.toLowerCase().includes(filters.county!.toLowerCase()),
-    );
+    results = results.filter((p) => matchesCountyFilter(p, filters.county!));
   }
   if (filters.tag && filters.tag !== 'all') {
     results = results.filter((p) =>
@@ -130,8 +147,24 @@ export async function listProjects(filters: ProjectFilters): Promise<EnrichedPro
     params.stage = filters.stage;
   }
   if (filters.county && filters.county !== 'all') {
-    conditions.push('(p.county_id = @county OR LOWER(p.county_id) LIKE CONCAT("%", LOWER(@county), "%"))');
-    params.county = filters.county;
+    const parsed = parseUSCountyLabel(filters.county);
+    if (parsed) {
+      const namePart = parsed.name.replace(/\s+County$/i, '').toLowerCase().replace(/\s+/g, '');
+      conditions.push(`(
+        p.county_id = @county
+        OR LOWER(p.county_id) LIKE CONCAT("%", LOWER(@county), "%")
+        OR (
+          LOWER(p.county_id) LIKE CONCAT(LOWER(@countyStatePrefix), "%")
+          AND LOWER(p.county_id) LIKE CONCAT("%", LOWER(@countyNamePart), "%")
+        )
+      )`);
+      params.county = filters.county;
+      params.countyStatePrefix = `${parsed.state.toLowerCase()}-`;
+      params.countyNamePart = namePart;
+    } else {
+      conditions.push('(p.county_id = @county OR LOWER(p.county_id) LIKE CONCAT("%", LOWER(@county), "%"))');
+      params.county = filters.county;
+    }
   }
   if (filters.tag && filters.tag !== 'all') {
     conditions.push('EXISTS (SELECT 1 FROM UNNEST(p.niche_tags) t WHERE LOWER(t) = LOWER(@tag))');

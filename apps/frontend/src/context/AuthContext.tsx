@@ -55,7 +55,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             user_id: 'mock-user-001',
             company: 'Demo Civil Contractors',
             service_categories: ['Roadway', 'Drainage', 'Earthwork'],
-            geography: ['nc-nashcounty', 'Nash County'],
+            geography: ['Nash County, NC'],
             role: 'admin',
           });
         }

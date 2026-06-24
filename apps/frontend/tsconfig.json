@@ -15,7 +15,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@beaver/shared-data/*": ["../../packages/shared/data/*"]
+    }
   },
   "include": ["src", "src/vite-env.d.ts"]
 }

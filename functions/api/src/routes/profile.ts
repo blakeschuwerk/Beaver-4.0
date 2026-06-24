@@ -1,18 +1,23 @@
 import { Router } from 'express';
 import { z } from 'zod';
+import { isValidUSCounty } from '@beaver/shared/us-counties';
 import type { AuthenticatedRequest } from '../auth.js';
 import { createProfile, getProfile, updateProfile } from '../firestore.js';
+
+const usCountyLabel = z
+  .string()
+  .refine((value) => isValidUSCounty(value), { message: 'Invalid US county label' });
 
 const createProfileSchema = z.object({
   company: z.string().min(1),
   service_categories: z.array(z.string()).min(1),
-  geography: z.array(z.string()).min(1),
+  geography: z.array(usCountyLabel).min(1),
 });
 
 const patchProfileSchema = z.object({
   company: z.string().min(1).optional(),
   service_categories: z.array(z.string()).optional(),
-  geography: z.array(z.string()).optional(),
+  geography: z.array(usCountyLabel).optional(),
 });
 
 export const profileRouter = Router();

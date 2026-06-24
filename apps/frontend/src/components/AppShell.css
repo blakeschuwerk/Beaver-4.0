@@ -126,6 +126,19 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
+  padding: 6px 8px;
+  border-radius: 9px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.12s;
+}
+
+.sidebar__account:hover {
+  background: #f8f9fa;
+}
+
+.sidebar__account--active {
+  background: var(--accent-weak);
 }
 
 .sidebar__avatar {

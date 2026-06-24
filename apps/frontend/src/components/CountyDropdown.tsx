@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { IconCheck, IconChevronDown, IconPlus } from './Icons';
+import { CountyAutocomplete } from './CountyAutocomplete';
+import { isValidUSCounty } from '../lib/usCounties';
 import './CountyDropdown.css';
 
 interface CountyDropdownProps {
@@ -19,7 +21,6 @@ export function CountyDropdown({
 }: CountyDropdownProps) {
   const [open, setOpen] = useState(false);
   const [addMode, setAddMode] = useState(false);
-  const [input, setInput] = useState('');
   const ref = useRef<HTMLDivElement>(null);
 
   const allCounties = [...new Set([...counties, ...addedCounties])];
@@ -35,12 +36,10 @@ export function CountyDropdown({
     return () => document.removeEventListener('mousedown', handleClick);
   }, []);
 
-  function submitCounty() {
-    const trimmed = input.trim();
-    if (!trimmed) return;
-    onAddCounty(trimmed);
-    onChange(trimmed);
-    setInput('');
+  function handleAddCounty(label: string) {
+    if (!isValidUSCounty(label)) return;
+    onAddCounty(label);
+    onChange(label);
     setAddMode(false);
     setOpen(false);
   }
@@ -82,15 +81,12 @@ export function CountyDropdown({
 
           {addMode && (
             <div className="county-drop__add-form" onClick={(e) => e.stopPropagation()}>
-              <input
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && submitCounty()}
-                placeholder="County name"
+              <CountyAutocomplete
+                exclude={allCounties}
+                onSelect={handleAddCounty}
+                placeholder="Search US counties…"
+                buttonLabel="Add"
               />
-              <button type="button" onClick={submitCounty}>
-                Add
-              </button>
             </div>
           )}
 

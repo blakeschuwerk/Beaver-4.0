@@ -9,6 +9,7 @@ import { TrackedPage } from './pages/TrackedPage';
 import { UpdatesPage } from './pages/UpdatesPage';
 import { AdminInputPage } from './pages/AdminInputPage';
 import { AdminTracePage } from './pages/AdminTracePage';
+import { ProfilePage } from './pages/ProfilePage';
 import { useTrackedIds } from './hooks/useProjects';
 import { useEffect, useState } from 'react';
 import { api } from './api/client';
@@ -33,6 +34,7 @@ const PAGE_META: Record<string, [string, string]> = {
   '/updates': ['Project Updates', 'Stage changes on your tracked projects'],
   '/admin': ['Testing Console', 'Sandbox pipeline runner — nothing is saved'],
   '/admin/trace': ['Pipeline Trace', 'Step-by-step run on your test document'],
+  '/profile': ['Your Profile', 'Company, service categories, and geography'],
 };
 
 function resolveMeta(pathname: string): [string, string] {
@@ -60,6 +62,7 @@ function AppLayout() {
         <Route path="/projects/:id" element={<ProjectDetailsPage />} />
         <Route path="/tracked" element={<TrackedPage />} />
         <Route path="/updates" element={<UpdatesPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
         <Route path="/admin" element={<AdminRoute><AdminInputPage /></AdminRoute>} />
         <Route path="/admin/trace/:jobId" element={<AdminRoute><AdminTracePage /></AdminRoute>} />
       </Routes>
