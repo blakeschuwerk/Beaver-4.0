@@ -20,18 +20,6 @@
       "platform": "civicplus",
       "priority": 2,
       "notes": "CivicPlus AgendaCenter — canonical civic-scraper example"
-    },
-    {
-      "county_id": "collier-county-fl",
-      "name": "Collier County FL",
-      "state": "FL",
-      "source_urls": [
-        "https://www.colliercountyfl.gov/government/board-of-county-commissioners/bocc-agenda-minutes-video"
-      ],
-      "scraper_strategy": "crawl4ai",
-      "platform": "custom",
-      "priority": 3,
-      "notes": "Custom county site — crawl4ai + heuristic PDF link extraction"
     }
   ]
 }

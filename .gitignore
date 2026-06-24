@@ -55,5 +55,8 @@ htmlcov/
 .pytest_cache/
 .coverage
 
+# Design archives (canonical assets live in design_handoff_beaver/)
+*.zip
+
 # Docker
 .docker/
