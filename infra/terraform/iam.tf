@@ -23,6 +23,11 @@ resource "google_service_account" "personalization" {
   display_name = "Beaver Personalization (F5)"
 }
 
+resource "google_service_account" "api" {
+  account_id   = "beaver-api"
+  display_name = "Beaver Read API (Phase 7)"
+}
+
 resource "google_service_account" "scheduler" {
   account_id   = "beaver-scheduler"
   display_name = "Beaver Cloud Scheduler"
@@ -194,4 +199,35 @@ resource "google_cloud_run_v2_service_iam_member" "dispatcher_invoker" {
   name     = google_cloud_run_v2_service.dispatcher.name
   role     = "roles/run.invoker"
   member   = "serviceAccount:${google_service_account.dispatcher.email}"
+}
+
+# Read API: Firestore read/write (profiles + tracked_projects), BQ read, Secret access for admin sandbox LLM
+resource "google_project_iam_member" "api_firestore" {
+  project = var.project_id
+  role    = "roles/datastore.user"
+  member  = "serviceAccount:${google_service_account.api.email}"
+}
+
+resource "google_project_iam_member" "api_bq_viewer" {
+  project = var.project_id
+  role    = "roles/bigquery.dataViewer"
+  member  = "serviceAccount:${google_service_account.api.email}"
+}
+
+resource "google_project_iam_member" "api_bq_job_user" {
+  project = var.project_id
+  role    = "roles/bigquery.jobUser"
+  member  = "serviceAccount:${google_service_account.api.email}"
+}
+
+resource "google_secret_manager_secret_iam_member" "api_llm_url" {
+  secret_id = google_secret_manager_secret.llm_endpoint_url.id
+  role      = "roles/secretmanager.secretAccessor"
+  member    = "serviceAccount:${google_service_account.api.email}"
+}
+
+resource "google_secret_manager_secret_iam_member" "api_llm_key" {
+  secret_id = google_secret_manager_secret.llm_api_key.id
+  role      = "roles/secretmanager.secretAccessor"
+  member    = "serviceAccount:${google_service_account.api.email}"
 }

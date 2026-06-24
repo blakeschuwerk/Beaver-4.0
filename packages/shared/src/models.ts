@@ -21,18 +21,42 @@ export const countyConfigSchema = z.object({
 
 export type CountyConfig = z.infer<typeof countyConfigSchema>;
 
-/** Firestore user_profiles collection document (stub schema) */
+/** User roles for frontend access control */
+export const USER_ROLES = ['user', 'admin'] as const;
+export type UserRole = (typeof USER_ROLES)[number];
+
+/** Cosmetic display labels for canonical project stages (frontend only) */
+export const STAGE_DISPLAY_LABELS: Record<(typeof PROJECT_STAGES)[number], string> = {
+  subcommittee: 'Early Planning',
+  approved: 'Approved',
+  bidding: 'Out for Bid',
+  awarded: 'Awarded',
+  closed: 'Closed',
+};
+
+/** Firestore user_profiles collection document */
 export const userProfileSchema = z.object({
   user_id: z.string(),
   company: z.string(),
   service_categories: z.array(z.string()),
   geography: z.array(z.string()),
+  role: z.enum(USER_ROLES as unknown as [string, ...string[]]).optional(),
   min_project_size: z.number().optional(),
   max_project_size: z.number().optional(),
   updated_at: z.string().datetime().optional(),
 });
 
 export type UserProfile = z.infer<typeof userProfileSchema>;
+
+/** Firestore tracked_projects collection document */
+export const trackedProjectSchema = z.object({
+  user_id: z.string(),
+  project_id: z.string(),
+  tracked_at: z.string().datetime(),
+  last_viewed_stage: z.enum(PROJECT_STAGES as unknown as [string, ...string[]]).optional(),
+});
+
+export type TrackedProject = z.infer<typeof trackedProjectSchema>;
 
 /** BigQuery scrape_roster row */
 export const scrapeRosterRowSchema = z.object({

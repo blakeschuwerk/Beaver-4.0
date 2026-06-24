@@ -198,22 +198,23 @@ pnpm test:integration
 
 ## 7. Bundle checklist (recommended order)
 
-### Bundle A — Real scraping (Phase 2)
-- [ ] Add real counties to [config/counties.json](config/counties.json)
-- [ ] `pnpm seed:counties` + `pnpm check:county-links`
-- [ ] Rebuild scraper with `requirements-scraping.txt`
-- [ ] Set `SCRAPER_REAL=true` → `terraform apply` → `./scripts/deploy.sh`
-- [ ] Trigger dispatcher tick; confirm PDFs in raw bucket
+### Bundle A — Real scraping (Phase 2) — **DONE 2026-06-24, with a caveat**
+- [x] Add real counties to [config/counties.json](config/counties.json) — Sonoma + Nash
+- [x] `pnpm seed:counties` + `pnpm check:county-links` — both URLs returned 200
+- [x] Rebuild scraper with `requirements-scraping.txt`
+- [x] Set `SCRAPER_REAL=true` → `terraform apply` → `./scripts/deploy.sh`
+- [x] Dispatcher tick confirmed via Cloud Scheduler (`0 */6 * * *`); PDFs present in raw bucket
+- [ ] **Caveat: Nash County only.** Sonoma (Legistar) still returns 0 docs in production — same issue as local testing. Raw bucket has zero objects under `sonoma-county/`. Treat as a known open bug, not a blocker for frontend (Nash has real data to build against).
 
-### Bundle B — Real extraction (Phase 3)
-- [ ] Rebuild analyzer with `requirements-extraction.txt`
-- [ ] Set `USE_DOCLING=true` → `terraform apply` → redeploy analyzer
-- [ ] Spot-check chunk quality in staging bucket
+### Bundle B — Real extraction (Phase 3) — **DONE 2026-06-24**
+- [x] Rebuild analyzer with `requirements-extraction.txt`
+- [x] Set `USE_DOCLING=true` → `terraform apply` → redeploy analyzer
+- [x] Spot-check chunk quality in staging bucket — Nash docs chunked successfully
 
-### Bundle C — Real LLM (Phases 4 + 5)
-- [ ] Section 1 (LLM secrets)
-- [ ] Set `LLM_MOCK_MODE=false` on F4 + F5 → `terraform apply` → redeploy
-- [ ] `pnpm test:integration` — review project + match quality
+### Bundle C — Real LLM (Phases 4 + 5) — **DONE 2026-06-24**
+- [x] Section 1 (LLM secrets) — RunPod Qwen 2.5 7B synchronous endpoint + API key in Secret Manager
+- [x] Set `LLM_MOCK_MODE=false` on F4 + F5 → `terraform apply` → redeploy
+- [x] Verified via live scheduled run (not manually run `pnpm test:integration`) — BQ `projects` table has fresh Nash County rows dated 2026-06-24 18:03:59; `matches` table has 3 rows. **Open item: one duplicate-looking row (`proj-nc-nashcounty-2024-042` appears twice with identical timestamp) — worth a quick check before trusting MERGE dedup under load.**
 
 ### Bundle D — Later (Phases 6–8)
 Deferred: Notifier, Frontend, Discovery Engine decision. No outlets yet.

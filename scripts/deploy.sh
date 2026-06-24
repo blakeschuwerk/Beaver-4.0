@@ -45,5 +45,6 @@ deploy_python "beaver-scraper" "functions/scraper"
 deploy_python "beaver-analyzer" "functions/analyzer"
 deploy_node "beaver-classifier" "functions/classifier"
 deploy_node "beaver-personalization" "functions/personalization"
+deploy_node "beaver-api" "functions/api"
 
 echo "Deploy complete."

@@ -12,6 +12,8 @@
     "dev:dispatcher": "pnpm --filter @beaver/dispatcher dev",
     "dev:classifier": "pnpm --filter @beaver/classifier dev",
     "dev:personalization": "pnpm --filter @beaver/personalization dev",
+    "dev:api": "MOCK_MODE=true pnpm --filter @beaver/api dev",
+    "dev:frontend": "VITE_MOCK_MODE=true pnpm --filter @beaver/frontend dev",
     "seed": "node scripts/seed.mjs",
     "seed:counties": "node scripts/seed-counties.mjs",
     "check:county-links": "node scripts/check-county-links.mjs",

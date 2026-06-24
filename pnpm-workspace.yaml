@@ -1,5 +1,7 @@
 packages:
   - 'packages/*'
+  - 'apps/*'
   - 'functions/dispatcher'
   - 'functions/classifier'
   - 'functions/personalization'
+  - 'functions/api'

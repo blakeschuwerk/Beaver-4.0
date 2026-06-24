@@ -208,6 +208,58 @@ resource "google_cloud_run_v2_service" "personalization" {
   }
 }
 
+resource "google_cloud_run_v2_service" "api" {
+  name     = "beaver-api"
+  location = var.region
+  ingress  = "INGRESS_TRAFFIC_ALL"
+
+  template {
+    service_account = google_service_account.api.email
+    containers {
+      image = "${local.image_base}/beaver-api:latest"
+      ports { container_port = 8080 }
+      env {
+        name  = "GCP_PROJECT_ID"
+        value = var.project_id
+      }
+      env {
+        name  = "FIRESTORE_DATABASE"
+        value = "beaver-firebase"
+      }
+      env {
+        name  = "LLM_MOCK_MODE"
+        value = "false"
+      }
+      env {
+        name = "LLM_ENDPOINT_URL"
+        value_source {
+          secret_key_ref {
+            secret  = google_secret_manager_secret.llm_endpoint_url.secret_id
+            version = "latest"
+          }
+        }
+      }
+      env {
+        name = "LLM_API_KEY"
+        value_source {
+          secret_key_ref {
+            secret  = google_secret_manager_secret.llm_api_key.secret_id
+            version = "latest"
+          }
+        }
+      }
+      resources {
+        limits = { cpu = "1", memory = "1Gi" }
+      }
+    }
+    scaling { max_instance_count = 5 }
+  }
+
+  lifecycle {
+    ignore_changes = [template[0].containers[0].image]
+  }
+}
+
 resource "google_cloud_scheduler_job" "dispatcher_tick" {
   name        = "beaver-dispatcher-tick"
   description = "Triggers dispatcher to publish scrape jobs"

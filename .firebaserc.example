@@ -1,0 +1,3 @@
+# Firebase Hosting + Auth (Phase 7)
+# Deploy when ready: firebase deploy --only hosting (after pnpm --filter @beaver/frontend build)
+# Requires Firebase CLI + project alias for beaver4

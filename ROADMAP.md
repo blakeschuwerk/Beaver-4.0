@@ -28,7 +28,7 @@ code and by the deploy session that provisioned the live project `beaver4`.
 | Firestore database | ⚠️ Created **as `beaver-firebase`**, not `(default)` | See Known Issue #1 |
 | Firestore indexes | ✅ Created | Terraform patched to target `beaver-firebase` |
 | Artifact Registry | ✅ Created | `us-central1-docker.pkg.dev/beaver4/beaver` |
-| Cloud Run services (×5) | ✅ Deployed | Images built `linux/amd64`; dispatcher confirmed booting |
+| Cloud Run services (×5 pipeline + read API) | ✅ Pipeline deployed · ⚠️ `beaver-api` defined in Terraform, not yet applied | F1–F5 live; read API code-complete pending deploy outlet |
 | Cloud Scheduler | ✅ Created | `dispatcher-tick` |
 | Billing / APIs | ✅ Enabled | firestore, run, artifactregistry, secretmanager, pubsub, bigquery, storage, cloudscheduler |
 
@@ -39,25 +39,27 @@ Every function exists and boots. **None of them do real work yet** — they all 
 
 | Fn | Service | Real today | Mocked / stubbed today |
 |----|---------|-----------|------------------------|
-| F1 Dispatcher | `beaver-dispatcher` | Express handler, Pub/Sub envelope parsing, roster query shape | Roster read & job publish run as `[MOCK]` unless wired |
-| F2 Scraper | `beaver-scraper` | Flask handler, link-extraction fallback, circuit-breaker shape | `civic-scraper` + `crawl4ai` **not installed** — heuristic fallback only |
-| F3 Analyzer | `beaver-analyzer` | Flask handler, hybrid parent/child chunking | `docling` **not installed** — `extract_mock_text()` returns canned text |
-| F4 Classifier | `beaver-classifier` | MERGE-upsert shape, chunk lineage, `projects-created` publish | LLM calls return mock classification unless `LLM_ENDPOINT_URL` set |
-| F5 Personalization | `beaver-personalization` | Profile load, niche pre-filter heuristic | `scoreRelevance()` returns hardcoded `0.75` — **no LLM** |
+| F1 Dispatcher | `beaver-dispatcher` | Real roster read + job publish (`MOCK_MODE=false`); roster seeded with Sonoma + Nash | — |
+| F2 Scraper | `beaver-scraper` | `SCRAPER_REAL=true` live; `civic-scraper`/`crawl4ai` installed; Nash County producing real PDFs | Sonoma (Legistar) returns 0 docs — open bug, not yet root-caused |
+| F3 Analyzer | `beaver-analyzer` | `USE_DOCLING=true` live; real parent/child chunking on real Nash PDFs | — |
+| F4 Classifier | `beaver-classifier` | `LLM_MOCK_MODE=false` live; real RunPod Qwen 2.5 7B classification; MERGE upsert verified producing fresh `projects` rows | — |
+| F5 Personalization | `beaver-personalization` | `LLM_MOCK_MODE=false` live; real `scoreRelevance()` via RunPod Qwen; producing real `matches` rows | — |
 
-### 1.3 Not started at all
+### 1.3 Not started / code-complete pending deploy
 
 - **F6 Notifier** — `stubs/notifier/` is a README only.
-- **Frontend** — `stubs/frontend/` is a README only.
+- **Frontend + read API (Phase 7)** — **CODE COMPLETE (2026-06-24, pending outlets).** `apps/frontend/` (production app + admin testing console) and `functions/api/` (`beaver-api` read service) built and locally runnable in `MOCK_MODE`. Terraform + Firebase Hosting config written; not deployed to `beaver4` this session. Supersedes stale `stubs/frontend/README.md`.
 - **Discovery Engine** — flagged UNRESOLVED in code + Terraform; no resources, no design.
 
 ### 1.4 Known issues to clear before real traffic
 
 1. **Firestore database name mismatch.** ~~Runtime clients call `new Firestore()` → targets `(default)`~~ **Resolved** — F1/F2/F5 use `FIRESTORE_DATABASE=beaver-firebase`.
-2. **End-to-end verification.** ~~Dispatcher only confirmed booting~~ **Resolved for plumbing path** — PDF upload → F3 → F4 → BQ `projects` → F5 `matches` verified (see TIMELINE.md).
-3. **Secrets not populated.** `LLM_ENDPOINT_URL` / `LLM_API_KEY` still placeholders — F4 uses `LLM_MOCK_MODE=true` until Phase 4.
+2. **End-to-end verification.** ~~Dispatcher only confirmed booting~~ **Resolved** — real PDF → F3 → F4 (real LLM) → BQ `projects` → F5 (real LLM) → BQ `matches` verified live via the scheduled dispatcher tick on 2026-06-24 (see TIMELINE.md).
+3. ~~**Secrets not populated.**~~ **Resolved 2026-06-24** — RunPod Qwen 2.5 7B endpoint + API key in Secret Manager; `LLM_MOCK_MODE=false` on F4 + F5.
+4. **Sonoma County scraping returns 0 docs.** Legistar scraper produces no PDFs for `sonoma-county` in production (matches local test behavior). Not root-caused. Nash County is the only county currently producing real data.
+5. **Possible duplicate project row.** `proj-nc-nashcounty-2024-042` appears twice in BQ `projects` with an identical `last_updated_at` — worth confirming this is a query artifact (streaming buffer) and not a MERGE dedup failure before relying on it heavily.
 
-**One-line status:** *Phases 0–1 complete. Phases 2–5 code complete behind feature flags (defaults = safe fallbacks). Plug in outlets per [OUTLETS.md](./OUTLETS.md) to go live. Phases 6–8 deferred.*
+**One-line status:** *Phases 0–5 are live in production on `beaver4`. Phase 7 (frontend + read API) is code-complete and locally runnable in mock mode — deploy to Cloud Run + Firebase Hosting is the next outlet step. Phase 6 (notifier) and Phase 8 (Discovery Engine gate) remain deferred. Known open issues: Sonoma 0 docs, duplicate BQ project row.*
 
 ---
 
@@ -132,7 +134,7 @@ Phases are ordered so each unlocks the next. Phase 0 and 1 are prerequisites for
 - **Files:** `functions/scraper/src/main.py`, `functions/scraper/requirements-scraping.txt`, Dockerfile.
 - **Done-when:** A real county URL yields real PDFs in the raw bucket; a forced failure trips the breaker.
 - **Depends on:** Phase 1.
-- **Status:** Code wired behind `SCRAPER_REAL=false`. Flip flag + add counties per [OUTLETS.md](./OUTLETS.md).
+- **Status:** **LIVE (2026-06-24).** `SCRAPER_REAL=true` in production; Nash County producing real PDFs. Sonoma still returns 0 docs — open bug.
 
 ### Phase 3 — Real extraction (F3) — **CODE COMPLETE (pending outlets)**
 - **Goal:** Replace `extract_mock_text()` with Docling.
@@ -141,7 +143,7 @@ Phases are ordered so each unlocks the next. Phase 0 and 1 are prerequisites for
 - **Files:** `functions/analyzer/src/main.py`, `requirements-extraction.txt`, Dockerfile.
 - **Done-when:** A real PDF produces real chunk JSON in staging; chunk counts are sane.
 - **Depends on:** Phase 2 (needs real raw documents).
-- **Status:** Code wired behind `USE_DOCLING=false`. Flip flag + rebuild image per [OUTLETS.md](./OUTLETS.md).
+- **Status:** **LIVE (2026-06-24).** `USE_DOCLING=true` in production; real chunk JSON verified in staging bucket for Nash County PDFs.
 
 ### Phase 4 — Real classification + LLM (F4) — **CODE COMPLETE (pending outlets)**
 - **Goal:** Real Qwen 2.5 7B classification producing real `projects` rows.
@@ -151,7 +153,7 @@ Phases are ordered so each unlocks the next. Phase 0 and 1 are prerequisites for
 - **Done-when:** Real chunks yield a real `projects` row keyed by tracking number; re-running
   the same document MERGEs rather than duplicates.
 - **Depends on:** Phase 3 + a reachable LLM endpoint.
-- **Status:** DML MERGE upsert + hardened LLM client. Set LLM secrets + `LLM_MOCK_MODE=false` per [OUTLETS.md](./OUTLETS.md).
+- **Status:** **LIVE (2026-06-24).** `LLM_MOCK_MODE=false`; RunPod Qwen 2.5 7B endpoint + key in Secret Manager. Fresh real `projects` rows confirmed in BQ. One row appeared duplicated — needs a quick look.
 
 ### Phase 5 — Per-user matching (F5) — **CODE COMPLETE (pending outlets)**
 - **Goal:** Implement the designed two-step matching (niche filter → LLM relevance).
@@ -161,7 +163,7 @@ Phases are ordered so each unlocks the next. Phase 0 and 1 are prerequisites for
 - **Done-when:** A `projects-created` event yields scored `matches` rows only for niche-overlapping
   users; no global per-user×per-project LLM fan-out.
 - **Depends on:** Phase 4 + real `user_profiles`.
-- **Status:** Two-step matching implemented with env thresholds. LLM secrets + `LLM_MOCK_MODE=false` per [OUTLETS.md](./OUTLETS.md).
+- **Status:** **LIVE (2026-06-24).** `LLM_MOCK_MODE=false`; real `scoreRelevance()` via RunPod Qwen. 3 real `matches` rows confirmed in BQ.
 
 ### Phase 6 — Notifier (F6)
 - **Goal:** Promote `stubs/notifier/` to a deployed service.
@@ -171,13 +173,14 @@ Phases are ordered so each unlocks the next. Phase 0 and 1 are prerequisites for
 - **Done-when:** A new match produces exactly one notification respecting user preferences.
 - **Depends on:** Phase 5.
 
-### Phase 7 — Frontend + read API
+### Phase 7 — Frontend + read API — **CODE COMPLETE (2026-06-24, pending outlets)**
 - **Goal:** Build production app + admin testing console from [FRONTEND-SPEC.md](./FRONTEND-SPEC.md) and [design_handoff_beaver/](./design_handoff_beaver/) (design handoff complete — implementation unblocked).
 - **What gets built:** Read API (Cloud Run or Firebase) over `projects`/`matches`/`user_profiles`;
   auth + profile management; project feed with filter/search; match display; admin sandbox console (no BQ writes).
 - **Files:** new `apps/frontend/`, new read-API service; Terraform.
 - **Done-when:** A contractor can sign in, see their matched projects, and filter the hub.
 - **Depends on:** Phase 5 (data to show). UI design handoff is complete.
+- **Status:** **CODE COMPLETE (2026-06-24).** `apps/frontend/` + `functions/api/` (`beaver-api`) built; all 9 design screens; read API with BQ dedupe + Firestore tracks/profiles; admin sandbox calls real Qwen via `classifyChunk()`/`scoreProjectRelevance()` with zero BQ writes. Locally verified in `MOCK_MODE` (`pnpm dev:api` + `pnpm dev:frontend`). Terraform for `beaver-api` + `firebase.json` hosting defined; **not deployed** — see [TIMELINE.md](./TIMELINE.md).
 
 ### Phase 8 — Discovery Engine decision gate (DEFERRED)
 - **Goal:** Decide build-or-kill. **No code until a written purpose exists.**

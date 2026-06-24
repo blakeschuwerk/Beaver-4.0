@@ -16,6 +16,7 @@ export const GCS_STAGING_EXTRACTED_BUCKET = 'beaver-staging-extracted';
 /** Firestore collections */
 export const FS_COUNTIES_COLLECTION = 'counties';
 export const FS_USER_PROFILES_COLLECTION = 'user_profiles';
+export const FS_TRACKED_PROJECTS_COLLECTION = 'tracked_projects';
 
 /** BigQuery tables */
 export const BQ_TABLE_SCRAPE_ROSTER = 'scrape_roster';
@@ -40,6 +41,7 @@ export const SERVICE_SCRAPER = 'beaver-scraper';
 export const SERVICE_ANALYZER = 'beaver-analyzer';
 export const SERVICE_CLASSIFIER = 'beaver-classifier';
 export const SERVICE_PERSONALIZATION = 'beaver-personalization';
+export const SERVICE_API = 'beaver-api';
 
 /** Project lifecycle stages (municipal project evolution) */
 export const PROJECT_STAGES = [
