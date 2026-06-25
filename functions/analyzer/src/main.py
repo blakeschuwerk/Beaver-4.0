@@ -12,6 +12,7 @@ from flask import Flask, jsonify, request
 from google.cloud import storage
 
 from src.chunking import hybrid_chunk, hybrid_chunk_from_markdown
+from src.errors import DoclingExtractionError
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -51,16 +52,38 @@ def extract_with_docling(file_bytes: bytes, filename: str) -> str:
 
 
 def extract_text(file_bytes: bytes, filename: str) -> tuple[str, bool]:
-    """Return (text, used_docling). Falls back to mock when Docling unavailable or disabled."""
+    """Return (text, used_docling).
+
+    Mock fallback is a local-dev convenience gated on MOCK_MODE=true — see
+    CLAUDE.md "Failure & Observability Principles". With MOCK_MODE off, a
+    failed Docling extraction must fail loud (DoclingExtractionError) rather
+    than silently writing fabricated text into the pipeline (see DEBUG-LOG.md:
+    a corrupted/undownloadable PDF previously triggered this fallback silently).
+    """
     if USE_DOCLING:
         try:
             text = extract_with_docling(file_bytes, filename)
             return text, True
-        except ImportError:
-            logger.warning("USE_DOCLING=true but docling not installed — using mock extraction")
+        except ImportError as e:
+            if MOCK_MODE:
+                logger.warning("USE_DOCLING=true but docling not installed — using mock extraction")
+                return extract_mock_text(file_bytes), False
+            raise DoclingExtractionError(
+                f"docling not installed for {filename}: {e}", document_id=filename,
+            ) from e
         except Exception as e:
-            logger.warning("Docling extraction failed (%s) — using mock extraction", e)
+            if MOCK_MODE:
+                logger.warning("Docling extraction failed (%s) — using mock extraction", e)
+                return extract_mock_text(file_bytes), False
+            raise DoclingExtractionError(
+                f"Docling extraction failed for {filename}: {e}", document_id=filename,
+            ) from e
 
+    if not MOCK_MODE:
+        raise DoclingExtractionError(
+            f"USE_DOCLING is disabled and MOCK_MODE is off — no real extraction path for {filename}",
+            document_id=filename,
+        )
     return extract_mock_text(file_bytes), False
 
 

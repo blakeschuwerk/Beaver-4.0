@@ -1,0 +1,57 @@
+{
+  "description": "Labeled chunk examples for classifier regression eval (pnpm classify:eval). Add a new entry whenever a real sandbox run surfaces a misclassification — see DEBUG-LOG.md for the false-positive incident these first entries came from.",
+  "examples": [
+    {
+      "id": "nash-2026-06-drainage-real",
+      "text": "Elm Street Drainage Project CDBG - Disaster Recovery Project Ordinance Nikki Stanton, Finance Officer",
+      "expected_is_project": true,
+      "note": "Real candidate — named drainage capital project with a budget officer attached."
+    },
+    {
+      "id": "nash-2026-06-school-capital-real",
+      "text": "Southern Nash Middle School Capital Project Ordinance Amendment Nikki Stanton, Finance Officer",
+      "expected_is_project": true,
+      "note": "Real candidate — named capital project ordinance amendment."
+    },
+    {
+      "id": "nash-2026-06-juneteenth-narrative",
+      "text": "Juneteenth, a combination of the words \"June\" and \"nineteenth,\" commemorates June 19, 1865, when Union Major General Gordon Granger announced General Order No. 3 in Galveston, Texas.",
+      "expected_is_project": false,
+      "note": "Real prose content but not infrastructure/capital work — correctly skipped in the original run, kept as a true-negative regression check."
+    },
+    {
+      "id": "nash-2026-06-header-merged-with-real-project",
+      "text": "## Commissioner's Agenda Information Sheet\n\nElm Street Drainage Project CDBG - Disaster Recovery Project Ordinance Nikki Stanton, Finance Officer",
+      "expected_is_project": true,
+      "note": "What the FIXED chunking pipeline actually produces — boilerplate header merged forward with its real body content. Confirms the merge-forward fix doesn't dilute/suppress a true positive."
+    },
+    {
+      "id": "fragment-only-meeting-title-boilerplate",
+      "text": "## June 15, 2026 Second Regular Monthly Board Meeting",
+      "expected_is_project": false,
+      "regression_layer": "classifier-prompt (not chunking)",
+      "note": "Bare meeting title with zero body — false positive in the original incident. The chunking fix (functions/analyzer/src/chunking.py) now merges this forward in the real pipeline so it should never reach the classifier alone. This entry tests the classifier prompt as a defense-in-depth backstop, not the chunking fix; currently still fails (the prompt has no rule for 'insufficient context, default to false'). Tracked but not yet fixed — see DEBUG-LOG.md."
+    },
+    {
+      "id": "fragment-only-agenda-sheet-header-1",
+      "text": "## Commissioner's Agenda Information Sheet",
+      "expected_is_project": false,
+      "regression_layer": "classifier-prompt (not chunking)",
+      "note": "Same as fragment-only-meeting-title-boilerplate — isolated template header, now unreachable via the fixed chunking path, kept as a classifier-prompt backstop check."
+    },
+    {
+      "id": "fragment-only-agenda-sheet-header-2",
+      "text": "## Nash County Commissioner's Agenda Information Sheet",
+      "expected_is_project": false,
+      "regression_layer": "classifier-prompt (not chunking)",
+      "note": "Same template header, slightly different wording — isolated-fragment backstop check, not the chunking-level fix."
+    },
+    {
+      "id": "fragment-only-underscore-noise",
+      "text": "____________________________________________________________",
+      "expected_is_project": false,
+      "regression_layer": "classifier-prompt (not chunking)",
+      "note": "Pure punctuation signature-line divider. The chunking fix's noise filter (_is_noise_paragraph) now drops this before it ever reaches the classifier in the real pipeline. This entry tests the classifier prompt alone as a backstop; currently still fails."
+    }
+  ]
+}

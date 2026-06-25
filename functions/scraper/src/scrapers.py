@@ -15,6 +15,57 @@ logger = logging.getLogger(__name__)
 
 PDF_LINK_PATTERN = re.compile(r'href=["\']([^"\']+\.pdf[^"\']*)["\']', re.I)
 
+# Some civic-agenda platforms (e.g. NovusAgenda) serve documents through a
+# dynamic handler endpoint with no .pdf extension in the URL at all, e.g.
+# DisplayAgendaPDF.ashx?MinutesMeetingID=1898 — a literal ".pdf" substring
+# check misses these entirely (see DEBUG-LOG.md, Brazos County). Treat a link
+# as document-like if it has a real file extension OR its path contains an
+# agenda/minutes/packet keyword (mirrors doc_types.py's classification terms),
+# since that's the actual signal a handler-style URL gives us. Extensions
+# cover Office formats too — real Legistar packets embed .pptx/.xlsx
+# attachments alongside PDFs (see DEBUG-LOG.md, embedded-link follow-up).
+DOCUMENT_LINK_PATTERN = re.compile(
+    r"\.(?:pdf|docx?|pptx?|xlsx?)(?:[?#]|$)|agenda|minutes|packet",
+    re.I,
+)
+
+# Embedded-link extraction noise: real agenda PDFs are full of non-document
+# hyperlinks (Zoom/Teams meeting joins, calendar pages, county homepage,
+# unrelated reference sites) interleaved with the real attachment links we
+# want. DOCUMENT_LINK_PATTERN's extension check already excludes these (no
+# .pdf/.docx/etc and no agenda/minutes/packet keyword in the URL), so no
+# separate denylist is needed — just apply the same pattern to embedded URIs.
+
+
+def extract_embedded_links(pdf_bytes: bytes, limit: int = 20) -> list[str]:
+    """Extract document-like hyperlinks embedded in a PDF's link annotations.
+
+    Real government packets/agendas commonly link out to the actual
+    attachment documents (e.g. Legistar's gateway.aspx?M=F&ID=...pdf) rather
+    than embedding the content directly — without following these, the
+    pipeline only ever sees the thin agenda shell, not the substantive
+    packet/ordinance/staff-report text (see DEBUG-LOG.md).
+    """
+    import fitz  # PyMuPDF — deferred import, only needed when this runs
+
+    seen: set[str] = set()
+    links: list[str] = []
+    with fitz.open(stream=pdf_bytes, filetype="pdf") as doc:
+        for page in doc:
+            for link in page.get_links():
+                uri = link.get("uri")
+                if not uri or not uri.startswith("http"):
+                    continue
+                if not DOCUMENT_LINK_PATTERN.search(uri):
+                    continue
+                if uri in seen:
+                    continue
+                seen.add(uri)
+                links.append(uri)
+                if len(links) >= limit:
+                    return links
+    return links
+
 
 def _scraper_real_enabled() -> bool:
     return os.getenv("SCRAPER_REAL", "false").lower() == "true"
@@ -93,11 +144,17 @@ def _scrape_civic_sync(url: str, platform: str | None, timezone: str | None = No
         site = site_cls(url)
     end = date.today()
     start = end - timedelta(days=90)
-    assets = site.scrape(
-        start_date=start.isoformat(),
-        end_date=end.isoformat(),
-        download=False,
-    )
+    # LegistarSite.scrape() defaults to asset_list=["Agenda", "Minutes"], wrapping
+    # each lookup in try/except TypeError. Some Legistar instances (e.g. Pima
+    # County) omit the "Minutes" key entirely for events without published
+    # minutes yet, which raises KeyError instead of TypeError and isn't caught
+    # by the library — crashing the whole scrape (see DEBUG-LOG.md). Limiting to
+    # "Agenda" sidesteps the bug and matches Beaver's actual focus: agendas
+    # surface projects in early planning, before minutes exist.
+    scrape_kwargs: dict[str, Any] = {"start_date": start.isoformat(), "end_date": end.isoformat(), "download": False}
+    if site_cls is LegistarSite:
+        scrape_kwargs["asset_list"] = ["Agenda"]
+    assets = site.scrape(**scrape_kwargs)
     documents: list[dict[str, Any]] = []
     for asset in assets or []:
         doc = _asset_to_document(asset)
@@ -214,7 +271,7 @@ async def scrape_crawl4ai_real(
                     )
                     for link in internal or []:
                         href = link.get("href") if isinstance(link, dict) else str(link)
-                        if href and ".pdf" in href.lower():
+                        if href and DOCUMENT_LINK_PATTERN.search(href):
                             links.append(_normalize_link(url, href))
 
                 markdown = getattr(result, "markdown", "") or ""
@@ -224,7 +281,7 @@ async def scrape_crawl4ai_real(
 
                 for link in links[:30]:
                     full_url = _normalize_link(url, link)
-                    if urlparse(full_url).path.lower().endswith(".pdf") or ".pdf" in full_url.lower():
+                    if DOCUMENT_LINK_PATTERN.search(full_url):
                         documents.append({"url": full_url, "title": link})
             except StructuralScrapeError:
                 raise

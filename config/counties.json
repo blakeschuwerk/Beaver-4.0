@@ -21,6 +21,58 @@
       "platform": "civicplus",
       "priority": 2,
       "notes": "CivicPlus AgendaCenter — canonical civic-scraper example"
+    },
+    {
+      "county_id": "tx-dentoncounty",
+      "name": "Denton County TX",
+      "state": "TX",
+      "source_urls": ["https://tx-dentoncounty.civicplus.com/agendacenter"],
+      "scraper_strategy": "civic_scraper",
+      "platform": "civicplus",
+      "priority": 3,
+      "notes": "Second CivicPlus county — diversity test (different state/document layout than Nash)."
+    },
+    {
+      "county_id": "pa-centrecounty",
+      "name": "Centre County PA",
+      "state": "PA",
+      "source_urls": ["https://pa-centrecounty.civicplus.com/AgendaCenter"],
+      "scraper_strategy": "civic_scraper",
+      "platform": "civicplus",
+      "priority": 3,
+      "notes": "Third CivicPlus county — diversity test."
+    },
+    {
+      "county_id": "az-pimacounty",
+      "name": "Pima County AZ",
+      "state": "AZ",
+      "source_urls": ["https://pima.legistar.com"],
+      "scraper_strategy": "civic_scraper",
+      "platform": "legistar",
+      "timezone": "America/Phoenix",
+      "priority": 3,
+      "notes": "Second Legistar county — diversity test. Arizona does not observe DST."
+    },
+    {
+      "county_id": "wi-milwaukeecounty",
+      "name": "Milwaukee County WI",
+      "state": "WI",
+      "source_urls": ["https://milwaukeecounty.legistar.com"],
+      "scraper_strategy": "civic_scraper",
+      "platform": "legistar",
+      "timezone": "America/Chicago",
+      "priority": 3,
+      "notes": "Third Legistar county — diversity test."
+    },
+    {
+      "county_id": "tx-brazoscounty",
+      "name": "Brazos County TX",
+      "state": "TX",
+      "source_urls": ["https://brazos.novusagenda.com/agendapublic/"],
+      "scraper_strategy": "crawl4ai",
+      "platform": "novusagenda",
+      "priority": 4,
+      "notes": "NovusAGENDA platform — NOT supported by civic-scraper (only Legistar/CivicPlus). First real test of the crawl4ai fallback path."
     }
   ]
 }
