@@ -9,6 +9,7 @@ import { TrackedPage } from './pages/TrackedPage';
 import { UpdatesPage } from './pages/UpdatesPage';
 import { AdminInputPage } from './pages/AdminInputPage';
 import { AdminTracePage } from './pages/AdminTracePage';
+import { AdminRunHistoryPage } from './pages/AdminRunHistoryPage';
 import { ProfilePage } from './pages/ProfilePage';
 import { useTrackedIds } from './hooks/useProjects';
 import { useEffect, useState } from 'react';
@@ -33,6 +34,7 @@ const PAGE_META: Record<string, [string, string]> = {
   '/tracked': ['Tracked Projects', "Projects you're following through the pipeline"],
   '/updates': ['Project Updates', 'Stage changes on your tracked projects'],
   '/admin': ['Testing Console', 'Sandbox pipeline runner — nothing is saved'],
+  '/admin/runs': ['Run History', 'Local sandbox run log'],
   '/admin/trace': ['Pipeline Trace', 'Step-by-step run on your test document'],
   '/profile': ['Your Profile', 'Company, service categories, and geography'],
 };
@@ -40,6 +42,7 @@ const PAGE_META: Record<string, [string, string]> = {
 function resolveMeta(pathname: string): [string, string] {
   if (pathname.startsWith('/projects/')) return ['Project Details', ''];
   if (pathname.startsWith('/admin/trace')) return PAGE_META['/admin/trace'];
+  if (pathname.startsWith('/admin/runs')) return PAGE_META['/admin/runs'];
   return PAGE_META[pathname] ?? ['Beaver', ''];
 }
 
@@ -64,6 +67,7 @@ function AppLayout() {
         <Route path="/updates" element={<UpdatesPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/admin" element={<AdminRoute><AdminInputPage /></AdminRoute>} />
+        <Route path="/admin/runs" element={<AdminRoute><AdminRunHistoryPage /></AdminRoute>} />
         <Route path="/admin/trace/:jobId" element={<AdminRoute><AdminTracePage /></AdminRoute>} />
       </Routes>
     </AppShell>

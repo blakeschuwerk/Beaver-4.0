@@ -50,6 +50,7 @@ tmp/
 
 # Local pipeline error sink (see pnpm logs:errors)
 local-run/errors.ndjson
+local-run/sandbox-runs.ndjson
 
 # Test coverage
 coverage/

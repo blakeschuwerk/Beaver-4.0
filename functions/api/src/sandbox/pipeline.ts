@@ -7,12 +7,30 @@ import { promisify } from 'node:util';
 import type { ProjectCreatedMessage, UserProfile } from '@beaver/shared';
 import { classifyChunk } from '@beaver/classifier/dist/llm-client.js';
 import { scoreProjectRelevance } from '@beaver/personalization/dist/llm-client.js';
+import { appendRunLog } from './runLog.js';
 
 const execFileAsync = promisify(execFile);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '../../../..');
 const PYTHON_BIN = path.join(REPO_ROOT, '.venv', 'bin', 'python3');
 const SANDBOX_EXTRACT_SCRIPT = path.join(REPO_ROOT, 'functions', 'analyzer', 'src', 'sandbox_extract.py');
+
+export class LocalOnlyViolationError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'LocalOnlyViolationError';
+  }
+}
+
+function assertLocalLlmOnly(): void {
+  if (process.env.LLM_LOCAL_ONLY !== 'true') return;
+  const url = process.env.LLM_ENDPOINT_URL ?? '';
+  if (!url.startsWith('http://localhost') && !url.startsWith('http://127.0.0.1')) {
+    throw new LocalOnlyViolationError(
+      `LLM_ENDPOINT_URL points to a remote host while LLM_LOCAL_ONLY=true (got: ${url || '(unset)'})`,
+    );
+  }
+}
 
 export interface SandboxChunk {
   chunk_id: string;
@@ -30,6 +48,7 @@ export interface PipelineTrace {
       documents_discovered: number;
       doc_type: string;
       circuit_breaker: string;
+      duration_ms: number;
     };
     extraction: {
       method: 'docling' | 'mock-text' | 'approximate-html';
@@ -39,11 +58,13 @@ export interface PipelineTrace {
       chunks_total: number;
       text_preview: string;
       chunks: SandboxChunk[];
+      duration_ms: number;
     };
     classifier_filter: Array<{
       chunk_id: string;
       text_preview: string;
       is_project: boolean;
+      duration_ms: number;
     }>;
     classifier_extraction: Array<Record<string, unknown>>;
     relevance: Array<{
@@ -51,6 +72,7 @@ export interface PipelineTrace {
       relevance_score: number;
       match_percent: number;
       rationale?: string;
+      duration_ms: number;
     }>;
   };
 }
@@ -156,12 +178,24 @@ export async function runSandboxPipeline(options: {
   pdfBuffer?: Buffer;
   profile: UserProfile;
 }): Promise<PipelineTrace> {
+  const startedAt = Date.now();
+  const docSource = options.url ?? 'upload.pdf';
+
   const trace: PipelineTrace = {
     job_id: options.jobId,
     status: 'running',
     steps: {
-      scraper: { documents_discovered: 0, doc_type: 'other', circuit_breaker: 'n/a (sandbox)' },
-      extraction: { method: 'mock-text', parent_chunks: 0, child_chunks: 0, chunks_classified: 0, chunks_total: 0, text_preview: '', chunks: [] },
+      scraper: { documents_discovered: 0, doc_type: 'other', circuit_breaker: 'n/a (sandbox)', duration_ms: 0 },
+      extraction: {
+        method: 'mock-text',
+        parent_chunks: 0,
+        child_chunks: 0,
+        chunks_classified: 0,
+        chunks_total: 0,
+        text_preview: '',
+        chunks: [],
+        duration_ms: 0,
+      },
       classifier_filter: [],
       classifier_extraction: [],
       relevance: [],
@@ -171,18 +205,26 @@ export async function runSandboxPipeline(options: {
   traceCache.set(options.jobId, trace);
 
   try {
+    assertLocalLlmOnly();
+
     let text: string;
     let chunks: SandboxChunk[];
     let method: PipelineTrace['steps']['extraction']['method'];
 
     if (options.pdfBuffer) {
+      trace.steps.scraper.doc_type = guessDocType(undefined, 'upload.pdf');
+      const extractionStart = Date.now();
       const result = await runRealChunking(options.pdfBuffer, options.jobId);
+      trace.steps.extraction.duration_ms = Date.now() - extractionStart;
       text = result.text;
       chunks = result.chunks;
       method = result.usedDocling ? 'docling' : 'mock-text';
-      trace.steps.scraper.doc_type = guessDocType(undefined, 'upload.pdf');
     } else if (options.url) {
+      const scraperStart = Date.now();
       const fetched = await fetchDocument(options.url);
+      trace.steps.scraper.duration_ms = Date.now() - scraperStart;
+
+      const extractionStart = Date.now();
       if ('bytes' in fetched) {
         const result = await runRealChunking(fetched.bytes, options.jobId);
         text = result.text;
@@ -193,6 +235,7 @@ export async function runSandboxPipeline(options: {
         chunks = chunkPlainText(text);
         method = 'approximate-html';
       }
+      trace.steps.extraction.duration_ms = Date.now() - extractionStart;
       trace.steps.scraper.doc_type = guessDocType(options.url);
     } else {
       throw new Error('Provide url or PDF upload');
@@ -211,18 +254,23 @@ export async function runSandboxPipeline(options: {
       chunks_total: children.length,
       text_preview: text.slice(0, 500),
       chunks: children.slice(0, 10),
+      duration_ms: trace.steps.extraction.duration_ms,
     };
 
-    const filterResults = [];
+    const filterResults: PipelineTrace['steps']['classifier_filter'] = [];
     const extractions: Array<Record<string, unknown>> = [];
     const relevances: PipelineTrace['steps']['relevance'] = [];
 
     for (const chunk of children) {
+      const classifyStart = Date.now();
       const result = await classifyChunk(chunk.text);
+      const classifyDuration = Date.now() - classifyStart;
+
       filterResults.push({
         chunk_id: chunk.chunk_id,
         text_preview: chunk.text.slice(0, 120),
         is_project: result.is_project,
+        duration_ms: classifyDuration,
       });
 
       if (result.is_project) {
@@ -237,6 +285,7 @@ export async function runSandboxPipeline(options: {
           location: result.location,
           bid_deadline: result.bid_deadline,
           confidence: result.confidence,
+          duration_ms: classifyDuration,
         });
 
         const projectMsg: ProjectCreatedMessage = {
@@ -252,12 +301,14 @@ export async function runSandboxPipeline(options: {
           chunk_ids: [chunk.chunk_id],
         };
 
+        const relevanceStart = Date.now();
         const relevance = await scoreProjectRelevance(options.profile, projectMsg);
         relevances.push({
           chunk_id: chunk.chunk_id,
           relevance_score: relevance.relevance_score,
           match_percent: Math.round(relevance.relevance_score * 100),
           rationale: relevance.rationale,
+          duration_ms: Date.now() - relevanceStart,
         });
       }
     }
@@ -272,5 +323,6 @@ export async function runSandboxPipeline(options: {
   }
 
   traceCache.set(options.jobId, trace);
+  appendRunLog(trace, docSource, startedAt);
   return trace;
 }

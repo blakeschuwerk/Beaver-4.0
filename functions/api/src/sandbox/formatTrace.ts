@@ -34,6 +34,7 @@ export function formatPipelineTraceAsText(trace: PipelineTrace): string {
       `Documents discovered: ${scraper.documents_discovered}`,
       `Doc type: ${scraper.doc_type}`,
       `Circuit breaker: ${scraper.circuit_breaker}`,
+      `Duration: ${scraper.duration_ms}ms`,
     ]),
   );
 
@@ -42,6 +43,7 @@ export function formatPipelineTraceAsText(trace: PipelineTrace): string {
       `Parent chunks: ${extraction.parent_chunks}`,
       `Child chunks: ${extraction.child_chunks}`,
       `Classified: ${extraction.chunks_classified} of ${extraction.chunks_total}`,
+      `Duration: ${extraction.duration_ms}ms`,
       '',
       'Text preview:',
       extraction.text_preview || '(empty)',
@@ -62,6 +64,7 @@ export function formatPipelineTraceAsText(trace: PipelineTrace): string {
     return [
       `Chunk: ${c.chunk_id}`,
       `Result: ${c.is_project ? 'is_project ✓' : 'skipped'}`,
+      `Duration: ${c.duration_ms}ms`,
       `Preview: ${c.text_preview}`,
       ...(fullText && fullText !== c.text_preview ? [`Full text:\n${fullText}`] : []),
       '',
@@ -92,6 +95,7 @@ export function formatPipelineTraceAsText(trace: PipelineTrace): string {
     const relevanceLines = relevance.flatMap((r, idx) => [
       `--- Project ${idx + 1} (${r.chunk_id}) ---`,
       `Match: ${r.match_percent}% (raw score ${r.relevance_score})`,
+      `Duration: ${r.duration_ms}ms`,
       'Rationale:',
       r.rationale ?? '(none)',
       '',

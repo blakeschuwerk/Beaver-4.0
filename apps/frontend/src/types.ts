@@ -63,6 +63,7 @@ export interface PipelineTrace {
       documents_discovered: number;
       doc_type: string;
       circuit_breaker: string;
+      duration_ms: number;
     };
     extraction: {
       method: 'docling' | 'mock-text' | 'approximate-html';
@@ -72,11 +73,13 @@ export interface PipelineTrace {
       chunks_total: number;
       text_preview: string;
       chunks: Array<{ chunk_id: string; text: string }>;
+      duration_ms: number;
     };
     classifier_filter: Array<{
       chunk_id: string;
       text_preview: string;
       is_project: boolean;
+      duration_ms: number;
     }>;
     classifier_extraction: Array<Record<string, unknown>>;
     relevance: Array<{
@@ -84,8 +87,20 @@ export interface PipelineTrace {
       relevance_score: number;
       match_percent: number;
       rationale?: string;
+      duration_ms: number;
     }>;
   };
+}
+
+export interface SandboxRunSummary {
+  job_id: string;
+  status: 'running' | 'complete' | 'error';
+  timestamp: string;
+  doc_source: string;
+  total_duration_ms: number;
+  projects_count: number;
+  top_relevance_score: number;
+  trace_available?: boolean;
 }
 
 export const SERVICE_CATEGORIES = [

@@ -1,5 +1,5 @@
 import type { UserProfile, CountyConfig } from '../types';
-import type { Project, PipelineTrace, StageUpdate } from '../types';
+import type { Project, PipelineTrace, StageUpdate, SandboxRunSummary } from '../types';
 
 const API_BASE = import.meta.env.VITE_API_URL ?? '';
 
@@ -97,4 +97,6 @@ export const api = {
 
   getPipelineTrace: (jobId: string) =>
     request<{ trace: PipelineTrace }>(`/api/admin/pipeline/trace/${jobId}`),
+
+  getSandboxRuns: () => request<{ runs: SandboxRunSummary[] }>('/api/admin/sandbox/runs'),
 };

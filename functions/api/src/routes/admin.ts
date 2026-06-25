@@ -6,6 +6,7 @@ import type { AuthenticatedRequest } from '../auth.js';
 import { requireAdmin } from '../auth.js';
 import { getTrace, runSandboxPipeline } from '../sandbox/pipeline.js';
 import { formatPipelineTraceAsText } from '../sandbox/formatTrace.js';
+import { listRunLog } from '../sandbox/runLog.js';
 
 const upload = multer({
   storage: multer.memoryStorage(),
@@ -61,6 +62,14 @@ adminRouter.post('/pipeline/test', upload.single('pdf'), async (req: Authenticat
     console.error('POST /api/admin/pipeline/test error:', error);
     res.status(400).json({ error: String(error) });
   }
+});
+
+adminRouter.get('/sandbox/runs', (_req, res) => {
+  const runs = listRunLog().map((run) => ({
+    ...run,
+    trace_available: getTrace(run.job_id) !== undefined,
+  }));
+  res.json({ runs });
 });
 
 adminRouter.get('/pipeline/trace/:jobId', (req: AuthenticatedRequest, res) => {

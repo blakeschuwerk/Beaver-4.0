@@ -64,12 +64,18 @@ export function AdminTracePage() {
       n: 1,
       title: 'Scraper',
       subtitle: 'Document discovery',
-      badge: `${trace.steps.scraper.documents_discovered} docs`,
+      badge: (
+        <>
+          {trace.steps.scraper.documents_discovered} docs
+          <span className="admin-step__badge" style={{ marginLeft: 6 }}>{trace.steps.scraper.duration_ms}ms</span>
+        </>
+      ),
       content: (
         <div className="admin-metrics">
           <div className="admin-metric"><span>Documents</span><strong>{trace.steps.scraper.documents_discovered}</strong></div>
           <div className="admin-metric"><span>Doc type</span><strong>{trace.steps.scraper.doc_type}</strong></div>
           <div className="admin-metric"><span>Circuit breaker</span><strong>{trace.steps.scraper.circuit_breaker}</strong></div>
+          <div className="admin-metric"><span>Duration</span><strong>{trace.steps.scraper.duration_ms}ms</strong></div>
         </div>
       ),
     },
@@ -77,12 +83,18 @@ export function AdminTracePage() {
       n: 2,
       title: EXTRACTION_METHOD_LABEL[trace.steps.extraction.method] ?? 'Extraction',
       subtitle: 'Text extraction + chunking',
-      badge: `${trace.steps.extraction.chunks_classified} of ${trace.steps.extraction.chunks_total} classified`,
+      badge: (
+        <>
+          {trace.steps.extraction.chunks_classified} of {trace.steps.extraction.chunks_total} classified
+          <span className="admin-step__badge" style={{ marginLeft: 6 }}>{trace.steps.extraction.duration_ms}ms</span>
+        </>
+      ),
       content: (
         <>
           <div className="admin-metrics">
             <div className="admin-metric"><span>Parent chunks</span><strong>{trace.steps.extraction.parent_chunks}</strong></div>
             <div className="admin-metric"><span>Child chunks</span><strong>{trace.steps.extraction.child_chunks}</strong></div>
+            <div className="admin-metric"><span>Duration</span><strong>{trace.steps.extraction.duration_ms}ms</strong></div>
           </div>
           <pre className="admin-preview mono">{trace.steps.extraction.text_preview}</pre>
         </>
@@ -95,13 +107,14 @@ export function AdminTracePage() {
       badge: `${trace.steps.classifier_filter.filter((c) => c.is_project).length} passed`,
       content: (
         <table className="admin-table">
-          <thead><tr><th>Chunk</th><th>Preview</th><th>Result</th></tr></thead>
+          <thead><tr><th>Chunk</th><th>Preview</th><th>Result</th><th>Duration</th></tr></thead>
           <tbody>
             {trace.steps.classifier_filter.map((c) => (
               <tr key={c.chunk_id}>
                 <td className="mono">{c.chunk_id}</td>
                 <td>{c.text_preview}</td>
                 <td><span className={c.is_project ? 'admin-pass' : 'admin-skip'}>{c.is_project ? 'is_project ✓' : 'skipped'}</span></td>
+                <td><span className="admin-step__badge">{c.duration_ms}ms</span></td>
               </tr>
             ))}
           </tbody>
@@ -141,7 +154,10 @@ export function AdminTracePage() {
               <div className="admin-score-bar">
                 <div style={{ width: `${r.match_percent}%` }} />
               </div>
-              <div className="admin-score-value mono">{r.match_percent}%</div>
+              <div className="admin-score-value mono">
+                {r.match_percent}%
+                <span className="admin-step__badge" style={{ marginLeft: 8 }}>{r.duration_ms}ms</span>
+              </div>
               <div className="admin-rationale">{r.rationale}</div>
             </div>
           ))}

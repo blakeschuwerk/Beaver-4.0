@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { IconPlay, IconUpload, IconWarning } from '../components/Icons';
 import { api } from '../api/client';
@@ -52,6 +52,9 @@ export function AdminInputPage() {
       <div className="admin-banner">
         <IconWarning size={18} />
         <span>Sandbox mode — nothing is saved to BigQuery or production data stores.</span>
+        <div className="admin-banner__actions">
+          <Link to="/admin/runs" className="admin-new-test">Run history</Link>
+        </div>
       </div>
 
       <div className="admin-card">

@@ -234,6 +234,7 @@ BigQuery and report success for hours, undetected, while billing for GPU time (s
 | `MOCK_MODE` | All | Skip GCP calls, use fixtures |
 | `LLM_MOCK_MODE` | F4, F5 | Mock LLM responses |
 | `LLM_ENDPOINT_URL` | F4 | RunPod/OpenAI-compatible URL |
+| `LLM_LOCAL_ONLY` | API sandbox | When true, sandbox refuses to run unless `LLM_ENDPOINT_URL` is localhost/127.0.0.1 |
 | `LLM_API_KEY` | F4 | API key for LLM endpoint |
 | `GCS_RAW_BUCKET` | F2, F3 | Raw documents bucket name |
 | `GCS_STAGING_BUCKET` | F3, F4 | Staging bucket name |
