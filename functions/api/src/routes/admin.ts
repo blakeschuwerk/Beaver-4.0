@@ -5,6 +5,7 @@ import { z } from 'zod';
 import type { AuthenticatedRequest } from '../auth.js';
 import { requireAdmin } from '../auth.js';
 import { getTrace, runSandboxPipeline } from '../sandbox/pipeline.js';
+import { formatPipelineTraceAsText } from '../sandbox/formatTrace.js';
 
 const upload = multer({
   storage: multer.memoryStorage(),
@@ -69,4 +70,13 @@ adminRouter.get('/pipeline/trace/:jobId', (req: AuthenticatedRequest, res) => {
     return;
   }
   res.json({ trace });
+});
+
+adminRouter.get('/pipeline/trace/:jobId/text', (req: AuthenticatedRequest, res) => {
+  const trace = getTrace(String(req.params.jobId));
+  if (!trace) {
+    res.status(404).type('text/plain').send('Trace not found\n');
+    return;
+  }
+  res.type('text/plain').send(formatPipelineTraceAsText(trace));
 });

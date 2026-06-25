@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "dev": "node --import tsx --watch src/index.ts",
+    "dev": "node --import ./preload-env.mjs --import tsx --watch src/index.ts",
     "start": "node dist/index.js",
     "lint": "echo 'no lint configured'",
     "test": "node --import tsx --test src/**/*.test.ts"

@@ -20,6 +20,7 @@ Read these three documents in sequence *before touching any code*:
 
 | Document | Triggers | Why This Tier |
 |----------|----------|---------------|
+| **DEBUG-LOG.md** | Task involves: debugging an error, investigating a failure, or checking whether something has already been seen before. | Discrete, numbered bug entries — faster to scan than TIMELINE.md's full narrative entries. Skip if you're not actively debugging. |
 | **OUTLETS.md** | Task involves: feature flags (SCRAPER_REAL, USE_DOCLING, LLM_MOCK_MODE), secrets, or moving fallback/mock behavior to production. | Critical for feature flag state and production toggles. Conditional because most tasks don't touch feature flags. |
 | **architecture-notes.md** | Task touches: scraper county configs, platform-specific scraping quirks (Legistar, CivicPlus, custom sites), or outlet-specific parsing logic. | Prevents re-discovery of outlet-specific bugs. Only read if your files are in that category. |
 | **LOCAL-TESTING.md** | Task involves: running the pipeline locally (pnpm local:run), testing with Ollama or local LLM, or debug workflows for classifier/personalization. | Documents local environment setup and common gotchas. Skip if you're only writing code; read if you're running it. |
@@ -42,8 +43,11 @@ When a new markdown or text document is created in Beaver 4.0:
    └─ NO → Go to step 2.
 
 2. Is this a bug report, fix log, or execution record?
-   ├─ YES → Append to TIMELINE.md as a dated entry. Do not create a new file.
-   └─ NO → Go to step 3.
+   ├─ Discrete bug/issue (a specific symptom + root cause + fix, or still open)?
+   │   → Append a numbered entry to DEBUG-LOG.md. Do not create a new file.
+   ├─ Broader session narrative (multiple decisions, architecture choices, a deploy)?
+   │   → Append a dated entry to TIMELINE.md. Do not create a new file.
+   └─ Neither → Go to step 3.
 
 3. Does this describe a decision that could conflict with CLAUDE.md or ROADMAP.md?
    ├─ YES → Merge it into CLAUDE.md or ROADMAP.md instead. Beaver 4.0 has one source of truth per category.

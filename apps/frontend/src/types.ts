@@ -65,8 +65,11 @@ export interface PipelineTrace {
       circuit_breaker: string;
     };
     extraction: {
+      method: 'docling' | 'mock-text' | 'approximate-html';
       parent_chunks: number;
       child_chunks: number;
+      chunks_classified: number;
+      chunks_total: number;
       text_preview: string;
       chunks: Array<{ chunk_id: string; text: string }>;
     };
@@ -75,12 +78,13 @@ export interface PipelineTrace {
       text_preview: string;
       is_project: boolean;
     }>;
-    classifier_extraction: Record<string, unknown> | null;
-    relevance: {
+    classifier_extraction: Array<Record<string, unknown>>;
+    relevance: Array<{
+      chunk_id: string;
       relevance_score: number;
       match_percent: number;
       rationale?: string;
-    } | null;
+    }>;
   };
 }
 

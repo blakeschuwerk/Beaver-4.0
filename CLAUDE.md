@@ -184,6 +184,37 @@ docker build -f functions/scraper/Dockerfile functions/scraper
 docker build -f functions/analyzer/Dockerfile functions/analyzer
 ```
 
+## Debug Log
+
+[DEBUG-LOG.md](DEBUG-LOG.md) is a quick-reference list of discrete bugs/issues — narrower
+and faster to scan than TIMELINE.md's full session narratives. When debugging something
+that feels like it might be a known issue, check it. When you identify a real issue, add
+a numbered entry. When you fix it, strike through the symptom and append
+**Resolved [date]** with a one-line fix summary. Not a mandatory pre-check on every task —
+use it when it's actually relevant to what you're debugging.
+
+## Failure & Observability Principles
+
+These are design rules for *all* Beaver work, learned from a real incident: a silent
+mock fallback in the classifier let a failing RunPod endpoint write fabricated data to
+BigQuery and report success for hours, undetected, while billing for GPU time (see
+[DEBUG-LOG.md](DEBUG-LOG.md) #1). Apply them whenever you add or change a component.
+
+1. **No silent fallbacks in production.** Mock/heuristic paths are a local-dev
+   convenience gated on an explicit flag (`LLM_MOCK_MODE=true`, `MOCK_MODE=true`). When
+   the flag is off, a failed dependency must fail visibly — never substitute fake data
+   for a real result.
+2. **Every external call is observable.** Log the outcome (status, latency, attempt) in
+   the shared structured shape via `logEvent()` from `@beaver/shared`, so a failure is
+   diagnosable from logs alone — no RunPod or GCP console required. Read them with
+   `pnpm logs:errors` (local) or `pnpm logs:errors --prod` (Cloud Logging).
+3. **Contain the blast radius.** A single failing item should fail that item (let the
+   Pub/Sub message dead-letter for retry), not corrupt the datastore or silently poison
+   a whole run. Throw a typed error (e.g. `LlmUnavailableError`) and let the HTTP handler
+   return non-2xx so the message redelivers.
+4. **Make it loud before you make it graceful.** Add visibility first. Only add
+   degradation/retry tuning once you can actually see the failure happening.
+
 ## Unresolved / Stubs
 
 | Component | Location | Status |

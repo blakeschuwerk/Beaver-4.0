@@ -48,6 +48,9 @@ infra/terraform/crash.log
 tmp/
 /tmp/
 
+# Local pipeline error sink (see pnpm logs:errors)
+local-run/errors.ndjson
+
 # Test coverage
 coverage/
 .nyc_output/

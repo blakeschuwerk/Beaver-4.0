@@ -2,13 +2,21 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { IconChevronDown, IconWarning } from '../components/Icons';
 import { api } from '../api/client';
+import { formatPipelineTraceAsText } from '../lib/formatPipelineTrace';
 import type { PipelineTrace } from '../types';
 import './AdminPage.css';
+
+const EXTRACTION_METHOD_LABEL: Record<string, string> = {
+  docling: 'Extraction (Docling)',
+  'mock-text': 'Extraction (mock text — Docling unavailable)',
+  'approximate-html': 'Extraction (approximate — non-PDF)',
+};
 
 export function AdminTracePage() {
   const { jobId } = useParams<{ jobId: string }>();
   const [trace, setTrace] = useState<PipelineTrace | null>(null);
   const [openSteps, setOpenSteps] = useState<Record<number, boolean>>({ 1: true, 2: true, 3: true, 4: true, 5: true });
+  const [copyStatus, setCopyStatus] = useState<string | null>(null);
 
   useEffect(() => {
     if (!jobId) return;
@@ -36,6 +44,19 @@ export function AdminTracePage() {
     setOpenSteps((prev) => ({ ...prev, [n]: !prev[n] }));
   }
 
+  async function copyTraceText() {
+    if (!trace) return;
+    const text = formatPipelineTraceAsText(trace);
+    console.log('\n=== Beaver pipeline trace ===\n\n' + text);
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopyStatus('Copied + logged to browser console');
+    } catch {
+      setCopyStatus('Logged to browser console (clipboard blocked)');
+    }
+    setTimeout(() => setCopyStatus(null), 3000);
+  }
+
   if (!trace) return <p className="results-count">Loading trace…</p>;
 
   const steps = [
@@ -54,9 +75,9 @@ export function AdminTracePage() {
     },
     {
       n: 2,
-      title: 'Extraction (Docling)',
+      title: EXTRACTION_METHOD_LABEL[trace.steps.extraction.method] ?? 'Extraction',
       subtitle: 'Text extraction + chunking',
-      badge: `${trace.steps.extraction.child_chunks} chunks`,
+      badge: `${trace.steps.extraction.chunks_classified} of ${trace.steps.extraction.chunks_total} classified`,
       content: (
         <>
           <div className="admin-metrics">
@@ -91,27 +112,39 @@ export function AdminTracePage() {
       n: 4,
       title: 'Classifier / extraction',
       subtitle: 'Structured project fields',
-      badge: trace.steps.classifier_extraction ? 'extracted' : 'none',
-      content: trace.steps.classifier_extraction ? (
-        <pre className="admin-code">
-          {Object.entries(trace.steps.classifier_extraction).map(([k, v]) => (
-            <div key={k}><span className="admin-code__key">{k}</span>: <span className="admin-code__val">{JSON.stringify(v)}</span></div>
+      badge: trace.steps.classifier_extraction.length > 0 ? `${trace.steps.classifier_extraction.length} extracted` : 'none',
+      content: trace.steps.classifier_extraction.length > 0 ? (
+        <>
+          {trace.steps.classifier_extraction.map((extraction, idx) => (
+            <div key={String(extraction.chunk_id)} className="admin-project-block">
+              <div className="admin-profile__label">Project {idx + 1} · {String(extraction.chunk_id)}</div>
+              <pre className="admin-code">
+                {Object.entries(extraction).filter(([k]) => k !== 'chunk_id').map(([k, v]) => (
+                  <div key={k}><span className="admin-code__key">{k}</span>: <span className="admin-code__val">{JSON.stringify(v)}</span></div>
+                ))}
+              </pre>
+            </div>
           ))}
-        </pre>
+        </>
       ) : <p>No project chunks passed the filter.</p>,
     },
     {
       n: 5,
       title: 'Relevance scoring',
       subtitle: 'Match against test profile',
-      badge: trace.steps.relevance ? `${trace.steps.relevance.match_percent}%` : '—',
-      content: trace.steps.relevance ? (
+      badge: trace.steps.relevance.length > 0 ? `${trace.steps.relevance.length} scored` : '—',
+      content: trace.steps.relevance.length > 0 ? (
         <>
-          <div className="admin-score-bar">
-            <div style={{ width: `${trace.steps.relevance.match_percent}%` }} />
-          </div>
-          <div className="admin-score-value mono">{trace.steps.relevance.match_percent}%</div>
-          <div className="admin-rationale">{trace.steps.relevance.rationale}</div>
+          {trace.steps.relevance.map((r, idx) => (
+            <div key={r.chunk_id} className="admin-project-block">
+              <div className="admin-profile__label">Project {idx + 1} · {r.chunk_id}</div>
+              <div className="admin-score-bar">
+                <div style={{ width: `${r.match_percent}%` }} />
+              </div>
+              <div className="admin-score-value mono">{r.match_percent}%</div>
+              <div className="admin-rationale">{r.rationale}</div>
+            </div>
+          ))}
         </>
       ) : <p>No relevance score — no project extracted.</p>,
     },
@@ -122,8 +155,19 @@ export function AdminTracePage() {
       <div className="admin-banner admin-banner--compact">
         <IconWarning size={16} />
         <span>Sandbox trace · {trace.status}</span>
-        <Link to="/admin" className="admin-new-test">New test</Link>
+        <div className="admin-banner__actions">
+          <button type="button" className="admin-copy-trace" onClick={copyTraceText}>
+            Copy trace text
+          </button>
+          <Link to="/admin" className="admin-new-test">New test</Link>
+        </div>
       </div>
+
+      {copyStatus && <p className="admin-copy-status">{copyStatus}</p>}
+
+      <p className="admin-terminal-hint mono">
+        Terminal: curl http://localhost:8080/api/admin/pipeline/trace/{trace.job_id}/text
+      </p>
 
       {trace.error && <p className="admin-error">{trace.error}</p>}
 

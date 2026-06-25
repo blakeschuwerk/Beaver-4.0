@@ -34,3 +34,13 @@ const MOCK_MODE = process.env.MOCK_MODE === 'true';
 ## Health check
 
 Every service exposes `GET /health` returning `{ status: 'ok', service: 'beaver-{name}' }`.
+
+## Failure & observability
+
+- **No silent fallbacks in production.** Mock/heuristic paths run only when the explicit
+  flag is set (`LLM_MOCK_MODE=true` / `MOCK_MODE=true`). With the flag off, a failed
+  dependency must throw (e.g. `LlmUnavailableError` from `@beaver/shared`) so the handler
+  returns non-2xx and the Pub/Sub message dead-letters for retry — never write fake data.
+- **Log outcomes structurally** with `logEvent()` from `@beaver/shared` (status, latency,
+  attempt). Read with `pnpm logs:errors`. Full rationale: CLAUDE.md "Failure &
+  Observability Principles".

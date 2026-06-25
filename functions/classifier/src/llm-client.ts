@@ -1,7 +1,16 @@
 /**
  * External LLM client for Qwen 2.5 7B (RunPod or OpenAI-compatible endpoint).
  * Supports mock mode, timeout, and retry.
+ *
+ * Failure policy (see CLAUDE.md "Failure & Observability Principles"):
+ * mock fallback is ONLY used when LLM_MOCK_MODE=true (local dev). In production
+ * (LLM_MOCK_MODE=false), a call that fails every retry throws LlmUnavailableError
+ * so the caller dead-letters the message instead of writing fake data to BigQuery.
  */
+
+import { LlmUnavailableError, logEvent } from '@beaver/shared';
+
+const SERVICE = 'beaver-classifier';
 
 export interface LlmMessage {
   role: 'system' | 'user' | 'assistant';
@@ -23,7 +32,7 @@ export interface ClassificationResult {
 
 const VALID_STAGES = new Set(['subcommittee', 'approved', 'bidding', 'awarded', 'closed']);
 
-const MOCK_MODE = process.env.LLM_MOCK_MODE === 'true' || process.env.MOCK_MODE === 'true';
+const MOCK_MODE = process.env.LLM_MOCK_MODE !== 'false';
 const ENDPOINT = process.env.LLM_ENDPOINT_URL ?? '';
 const API_KEY = process.env.LLM_API_KEY ?? '';
 const TIMEOUT_MS = Number(process.env.LLM_TIMEOUT_MS ?? 30000);
@@ -105,7 +114,9 @@ async function callLlm(messages: LlmMessage[]): Promise<string> {
   }
 
   let lastError: Error | undefined;
+  let lastStatus: number | undefined;
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    const startedAt = Date.now();
     try {
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), TIMEOUT_MS);
@@ -126,22 +137,54 @@ async function callLlm(messages: LlmMessage[]): Promise<string> {
       });
 
       clearTimeout(timeout);
+      lastStatus = response.status;
 
       if (!response.ok) {
         throw new Error(`LLM request failed: ${response.status} ${response.statusText}`);
       }
 
       const data = await response.json() as { choices?: Array<{ message?: { content?: string } }> };
+      logEvent({
+        level: 'info',
+        service: SERVICE,
+        event: 'llm_call_ok',
+        status: response.status,
+        latency_ms: Date.now() - startedAt,
+        attempt,
+      });
       return data.choices?.[0]?.message?.content ?? '{}';
     } catch (error) {
       lastError = error instanceof Error ? error : new Error(String(error));
+      const aborted = lastError.name === 'AbortError' || /abort/i.test(lastError.message);
+      logEvent({
+        level: 'warn',
+        service: SERVICE,
+        event: aborted ? 'llm_call_timeout' : 'llm_call_error',
+        status: lastStatus,
+        latency_ms: Date.now() - startedAt,
+        attempt,
+        message: aborted ? `aborted after ${TIMEOUT_MS}ms` : lastError.message,
+      });
       if (attempt < MAX_RETRIES) {
         await new Promise((r) => setTimeout(r, 1000 * (attempt + 1)));
       }
     }
   }
-  console.warn('LLM call failed, falling back to mock classification:', lastError?.message);
-  return JSON.stringify(mockClassification(messages[1]?.content ?? ''));
+
+  // All retries exhausted. In production we fail loud — never write fake data.
+  logEvent({
+    level: 'error',
+    service: SERVICE,
+    event: 'llm_unavailable',
+    error_code: 'LLM_UNAVAILABLE',
+    status: lastStatus,
+    attempt: MAX_RETRIES,
+    message: lastError?.message,
+  });
+  throw new LlmUnavailableError(SERVICE, lastError?.message ?? 'LLM call failed', {
+    attempts: MAX_RETRIES + 1,
+    lastStatus,
+  });
 }
 
 export async function classifyChunk(text: string): Promise<ClassificationResult> {
