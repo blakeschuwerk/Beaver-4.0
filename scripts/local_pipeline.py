@@ -103,15 +103,18 @@ def setup_modules() -> tuple[ModuleType, ModuleType]:
         if spec is None or spec.loader is None:
             raise ImportError("Cannot load analyzer main")
         analyzer_main = importlib.util.module_from_spec(spec)
-        # Ensure chunking submodule resolves under analyzer
-        chunking_spec = importlib.util.spec_from_file_location(
-            "src.chunking",
-            ANALYZER_ROOT / "src" / "chunking.py",
-        )
-        if chunking_spec and chunking_spec.loader:
-            chunking_mod = importlib.util.module_from_spec(chunking_spec)
-            sys.modules["src.chunking"] = chunking_mod
-            chunking_spec.loader.exec_module(chunking_mod)
+        # Ensure chunking/errors submodules resolve under analyzer, not scraper's
+        # same-named src.chunking/src.errors already cached in sys.modules from
+        # the _SCRAPER load above (both packages use the generic "src" name).
+        for submodule_name, filename in (("chunking", "chunking.py"), ("errors", "errors.py")):
+            sub_spec = importlib.util.spec_from_file_location(
+                f"src.{submodule_name}",
+                ANALYZER_ROOT / "src" / filename,
+            )
+            if sub_spec and sub_spec.loader:
+                sub_mod = importlib.util.module_from_spec(sub_spec)
+                sys.modules[f"src.{submodule_name}"] = sub_mod
+                sub_spec.loader.exec_module(sub_mod)
         spec.loader.exec_module(analyzer_main)
         _ANALYZER = analyzer_main
 
@@ -136,14 +139,122 @@ async def download_url(session: aiohttp.ClientSession, url: str) -> bytes:
         return await resp.read()
 
 
+async def _process_one_document(
+    session: aiohttp.ClientSession,
+    analyzer_mod: ModuleType,
+    county_id: str,
+    url: str,
+    doc_type: str,
+    seen_hashes: set[str],
+    result: dict,
+    source_document_id: str | None = None,
+) -> bytes | None:
+    """Download, validate, extract, chunk, and save one document. Returns the
+    raw bytes on success (so the caller can chase embedded links inside it),
+    or None if it was skipped/failed. Shared by top-level scrape links and
+    embedded links found inside an already-downloaded document — see
+    DEBUG-LOG.md on why embedded links need following at all."""
+    extract_text = analyzer_mod.extract_text
+    chunk_text = analyzer_mod.chunk_text
+
+    try:
+        data = await download_url(session, url)
+    except Exception as e:
+        logger.warning("Download failed %s: %s", url, e)
+        return None
+
+    # Some platforms (e.g. NovusAgenda) return HTTP 200 + content-type
+    # application/pdf but stall mid-stream, so aiohttp's .read() can
+    # return a truncated body. Feeding that into Docling produces a
+    # confusing "Data format error" deep in a third-party traceback
+    # instead of a clear, fast, attributable failure. Check the file
+    # signature before extraction (PDF: %PDF-, Office: PK\x03\x04 — both
+    # are real doc_type targets, see DEBUG-LOG.md).
+    if not data.startswith((b"%PDF-", b"PK\x03\x04", b"\xd0\xcf\x11\xe0")):
+        logger.warning(
+            "Downloaded data for %s is not a valid PDF/Office doc (got %d bytes, starts with %r) — likely a stalled/truncated response, skipping",
+            url, len(data), data[:12],
+        )
+        result["errors"].append(f"{url}: invalid file signature, {len(data)} bytes")
+        return None
+
+    hash_hex = content_hash(data)
+    if hash_hex in seen_hashes:
+        return None
+    seen_hashes.add(hash_hex)
+
+    doc_id = make_document_id(county_id, hash_hex)
+    ext = url.split("?")[0].rsplit(".", 1)[-1].lower()
+    if ext not in {"pdf", "doc", "docx", "ppt", "pptx", "xls", "xlsx"}:
+        ext = "pdf"
+    raw_dir = LOCAL_RUN / "raw" / county_id / doc_id
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    (raw_dir / f"{doc_id}.{ext}").write_bytes(data)
+
+    try:
+        # Hard timeout: Docling has been observed to hang indefinitely
+        # on some inputs (16+ min, no progress, zero network activity —
+        # a genuine pathological case, not a slow-but-legitimate OCR
+        # pass, which tops out around 300s on the largest real
+        # documents seen so far). Bound it so one bad file can't stall
+        # the whole multi-county run.
+        text, used_docling = await asyncio.wait_for(
+            asyncio.to_thread(extract_text, data, doc_id), timeout=240,
+        )
+        chunks = chunk_text(text, doc_id, used_docling)
+    except TimeoutError:
+        logger.warning("Extraction timed out after 240s for %s (%s) — skipping", doc_id, url)
+        result["errors"].append(f"{doc_id}: extraction timed out after 240s")
+        return None
+    except Exception as e:
+        # Contain the blast radius (CLAUDE.md): one bad document (e.g.
+        # a link that 200s but returns an HTML error page instead of a
+        # real PDF) must not crash the whole county or run — skip it
+        # and keep trying other candidate links instead.
+        logger.warning("Extraction failed for %s (%s): %s", doc_id, url, e)
+        result["errors"].append(f"{doc_id}: {e}")
+        return None
+
+    staging_dir = LOCAL_RUN / "staging" / county_id / doc_id
+    staging_dir.mkdir(parents=True, exist_ok=True)
+    output = {
+        "document_id": doc_id,
+        "county_id": county_id,
+        "trace_id": str(uuid4()),
+        "extracted_at": datetime.now(timezone.utc).isoformat(),
+        "chunk_count": len(chunks),
+        "chunks": chunks,
+        "content_hash": hash_hex,
+        "extraction_method": "docling" if used_docling else "mock",
+        "source_url": url,
+        "doc_type": doc_type,
+        "source_document_id": source_document_id,
+    }
+    chunks_path = staging_dir / "chunks.json"
+    chunks_path.write_text(json.dumps(output, indent=2))
+
+    result["documents"].append({
+        "document_id": doc_id,
+        "source_url": url,
+        "chunks_path": str(chunks_path.relative_to(ROOT)),
+        "chunk_count": len(chunks),
+        "extraction_method": output["extraction_method"],
+        "embedded_in": source_document_id,
+    })
+    logger.info(
+        "%s: saved %s (%d chunks, %s)%s",
+        county_id, doc_id, len(chunks), output["extraction_method"],
+        f" [embedded in {source_document_id}]" if source_document_id else "",
+    )
+    return data
+
+
 async def process_county(scraper_mod: ModuleType, analyzer_mod: ModuleType, county: dict, max_docs: int) -> dict:
     scrape_for_strategy = scraper_mod.scrapers.scrape_for_strategy
     classify_doc_type = scraper_mod.doc_types.classify_doc_type
     is_target_doc_type = scraper_mod.doc_types.is_target_doc_type
+    extract_embedded_links = scraper_mod.scrapers.extract_embedded_links
     StructuralScrapeError = scraper_mod.errors.StructuralScrapeError
-    extract_text = analyzer_mod.extract_text
-    chunk_text = analyzer_mod.chunk_text
-    chunk_text = analyzer_mod.chunk_text
 
     county_id = county["county_id"]
     strategy = county.get("scraper_strategy", "crawl4ai")
@@ -178,57 +289,33 @@ async def process_county(scraper_mod: ModuleType, analyzer_mod: ModuleType, coun
             if not is_target_doc_type(doc_type):
                 continue
 
-            try:
-                data = await download_url(session, url)
-            except Exception as e:
-                logger.warning("Download failed %s: %s", url, e)
-                continue
-
-            hash_hex = content_hash(data)
-            if hash_hex in seen_hashes:
-                continue
-            seen_hashes.add(hash_hex)
-
-            doc_id = make_document_id(county_id, hash_hex)
-            raw_dir = LOCAL_RUN / "raw" / county_id / doc_id
-            raw_dir.mkdir(parents=True, exist_ok=True)
-            (raw_dir / f"{doc_id}.pdf").write_bytes(data)
-
-            text, used_docling = extract_text(data, doc_id)
-            chunks = chunk_text(text, doc_id, used_docling)
-
-            staging_dir = LOCAL_RUN / "staging" / county_id / doc_id
-            staging_dir.mkdir(parents=True, exist_ok=True)
-            output = {
-                "document_id": doc_id,
-                "county_id": county_id,
-                "trace_id": str(uuid4()),
-                "extracted_at": datetime.now(timezone.utc).isoformat(),
-                "chunk_count": len(chunks),
-                "chunks": chunks,
-                "content_hash": hash_hex,
-                "extraction_method": "docling" if used_docling else "mock",
-                "source_url": url,
-                "doc_type": doc_type,
-            }
-            chunks_path = staging_dir / "chunks.json"
-            chunks_path.write_text(json.dumps(output, indent=2))
-
-            downloaded += 1
-            result["documents"].append({
-                "document_id": doc_id,
-                "source_url": url,
-                "chunks_path": str(chunks_path.relative_to(ROOT)),
-                "chunk_count": len(chunks),
-                "extraction_method": output["extraction_method"],
-            })
-            logger.info(
-                "%s: saved %s (%d chunks, %s)",
-                county_id,
-                doc_id,
-                len(chunks),
-                output["extraction_method"],
+            data = await _process_one_document(
+                session, analyzer_mod, county_id, url, doc_type, seen_hashes, result,
             )
+            if data is None:
+                continue
+            downloaded += 1
+
+            # Real agendas/packets typically link out to the actual attachment
+            # documents (e.g. Legistar's gateway.aspx?M=F&ID=...pdf) rather than
+            # embedding the content directly — without following these, we
+            # only ever see the thin agenda shell, never the substantive
+            # ordinance/staff-report/RFP text (see DEBUG-LOG.md). One level
+            # deep only — an embedded attachment's own embedded links aren't
+            # chased, matching production's scope.
+            if doc_type in {"agenda", "packet", "minutes"}:
+                doc_id_for_log = make_document_id(county_id, content_hash(data))
+                for embedded_url in extract_embedded_links(data):
+                    if downloaded >= max_docs:
+                        break
+                    embedded_doc_type = classify_doc_type(embedded_url)
+                    embedded_data = await _process_one_document(
+                        session, analyzer_mod, county_id, embedded_url,
+                        embedded_doc_type, seen_hashes, result,
+                        source_document_id=doc_id_for_log,
+                    )
+                    if embedded_data is not None:
+                        downloaded += 1
 
     return result
 

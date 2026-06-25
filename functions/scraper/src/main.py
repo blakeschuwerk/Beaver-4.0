@@ -9,13 +9,12 @@ from typing import Any
 from uuid import uuid4
 
 import aiohttp
-import fitz  # PyMuPDF
 from flask import Flask, jsonify, request
 from google.cloud import firestore, storage
 
 from src.doc_types import classify_doc_type, is_target_doc_type
 from src.errors import StructuralScrapeError
-from src.scrapers import scrape_for_strategy
+from src.scrapers import extract_embedded_links, scrape_for_strategy
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -43,15 +42,26 @@ async def download_url(session: aiohttp.ClientSession, url: str) -> bytes:
         return await resp.read()
 
 
-def extract_pdf_links(pdf_bytes: bytes) -> list[str]:
-    links: list[str] = []
-    with fitz.open(stream=pdf_bytes, filetype="pdf") as doc:
-        for page in doc:
-            for link in page.get_links():
-                uri = link.get("uri")
-                if uri and uri.startswith("http"):
-                    links.append(uri)
-    return links
+# File signatures for the document types we follow embedded links into.
+# PDF: %PDF-. Office (docx/pptx/xlsx) and legacy .doc/.ppt/.xls binaries are
+# both real attachment formats seen in real Legistar packets (DEBUG-LOG.md).
+_DOCUMENT_SIGNATURES = (b"%PDF-", b"PK\x03\x04", b"\xd0\xcf\x11\xe0")
+_CONTENT_TYPES = {
+    "pdf": "application/pdf",
+    "doc": "application/msword",
+    "docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "ppt": "application/vnd.ms-powerpoint",
+    "pptx": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "xls": "application/vnd.ms-excel",
+    "xlsx": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+}
+
+
+def _looks_like_document(data: bytes) -> bool:
+    """Some servers 200 OK with the right content-type but stall mid-stream,
+    returning a truncated/garbage body (see DEBUG-LOG.md). Check the file
+    signature before trusting a download is real."""
+    return any(data.startswith(sig) for sig in _DOCUMENT_SIGNATURES)
 
 
 async def scrape_crawl4ai_mock(source_urls: list[str]) -> list[dict[str, Any]]:
@@ -86,6 +96,12 @@ async def process_scrape_job(job: dict[str, Any]) -> dict[str, Any]:
                     data = b"mock-pdf-content"
                 else:
                     data = await download_url(session, url)
+                    if not _looks_like_document(data):
+                        logger.warning(
+                            "Download %s did not return a valid document (%d bytes) — skipping",
+                            url, len(data),
+                        )
+                        continue
 
                 hash_hex = content_hash(data)
                 if hash_hex in seen_hashes:
@@ -110,21 +126,44 @@ async def process_scrape_job(job: dict[str, Any]) -> dict[str, Any]:
                     blob.patch()
 
                 if not MOCK_MODE and doc_type in {"agenda", "packet", "minutes"}:
-                    for embedded_url in extract_pdf_links(data)[:5]:
+                    # Real agendas/packets typically link out to the actual
+                    # attachment documents (e.g. Legistar's
+                    # gateway.aspx?M=F&ID=...pdf) rather than embedding the
+                    # content directly — without following these, we only
+                    # ever see the thin agenda shell, never the substantive
+                    # ordinance/staff-report/RFP text (see DEBUG-LOG.md).
+                    for embedded_url in extract_embedded_links(data):
                         try:
                             embedded_data = await download_url(session, embedded_url)
+                            if not _looks_like_document(embedded_data):
+                                logger.warning(
+                                    "Embedded link %s did not return a valid document (%d bytes) — skipping",
+                                    embedded_url, len(embedded_data),
+                                )
+                                continue
                             embedded_hash = content_hash(embedded_data)
                             if embedded_hash in seen_hashes:
                                 continue
                             seen_hashes.add(embedded_hash)
                             embedded_id = document_id(county_id, embedded_hash)
-                            embedded_path = f"{county_id}/{embedded_id}/{embedded_id}.pdf"
+                            embedded_doc_type = classify_doc_type(embedded_url)
+                            embedded_ext = embedded_url.split("?")[0].rsplit(".", 1)[-1].lower()
+                            embedded_path = f"{county_id}/{embedded_id}/{embedded_id}.{embedded_ext}"
                             bucket = storage.Client().bucket(GCS_BUCKET)
                             blob = bucket.blob(embedded_path)
-                            blob.upload_from_string(embedded_data, content_type="application/pdf")
+                            blob.upload_from_string(embedded_data, content_type=_CONTENT_TYPES.get(embedded_ext, "application/octet-stream"))
+                            blob.metadata = {
+                                "county_id": county_id,
+                                "document_id": embedded_id,
+                                "content_hash": embedded_hash,
+                                "doc_type": embedded_doc_type,
+                                "trace_id": trace_id,
+                                "source_document_id": doc_id,
+                            }
+                            blob.patch()
                             uploaded.append(embedded_id)
                         except Exception as e:
-                            logger.warning("Embedded PDF download failed: %s", e)
+                            logger.warning("Embedded document download failed for %s: %s", embedded_url, e)
 
                 uploaded.append(doc_id)
             except Exception as e:
