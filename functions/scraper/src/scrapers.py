@@ -55,7 +55,7 @@ def _asset_to_document(asset: Any) -> dict[str, Any] | None:
     return {"url": str(url), "title": str(title)}
 
 
-def _scrape_civic_sync(url: str, platform: str | None) -> list[dict[str, Any]]:
+def _scrape_civic_sync(url: str, platform: str | None, timezone: str | None = None) -> list[dict[str, Any]]:
     """Synchronous civic-scraper call (run in thread pool)."""
     from datetime import date, timedelta
 
@@ -80,7 +80,17 @@ def _scrape_civic_sync(url: str, platform: str | None) -> list[dict[str, Any]]:
     if site_cls is None:
         raise ValueError(f"Unknown civic-scraper platform: {platform}")
 
-    site = site_cls(url)
+    # LegistarSite requires an explicit timezone — without one it passes None
+    # straight into pytz.timezone(None), which raises UnknownTimeZoneError on
+    # every single event (see DEBUG-LOG.md). CivicPlusSite has no such param.
+    if site_cls is LegistarSite:
+        if not timezone:
+            raise ValueError(
+                f"LegistarSite requires a timezone (county config missing 'timezone' for {url})",
+            )
+        site = site_cls(url, timezone=timezone)
+    else:
+        site = site_cls(url)
     end = date.today()
     start = end - timedelta(days=90)
     assets = site.scrape(
@@ -146,13 +156,14 @@ async def scrape_civic_scraper_real(
     source_urls: list[str],
     platform: str | None = None,
     county_id: str | None = None,
+    timezone: str | None = None,
 ) -> list[dict[str, Any]]:
     """Use civic-scraper platform classes when installed and SCRAPER_REAL=true."""
     documents: list[dict[str, Any]] = []
 
     for url in source_urls:
         try:
-            batch = await asyncio.to_thread(_scrape_civic_sync, url, platform)
+            batch = await asyncio.to_thread(_scrape_civic_sync, url, platform, timezone)
             documents.extend(batch)
         except ImportError:
             logger.warning("civic-scraper not installed — falling back to heuristics")
@@ -235,6 +246,7 @@ async def scrape_for_strategy(
     source_urls: list[str],
     platform: str | None = None,
     county_id: str | None = None,
+    timezone: str | None = None,
 ) -> list[dict[str, Any]]:
     """Route to real or fallback scraper based on SCRAPER_REAL flag."""
     if not source_urls:
@@ -242,7 +254,7 @@ async def scrape_for_strategy(
 
     if _scraper_real_enabled():
         if strategy == "civic_scraper":
-            return await scrape_civic_scraper_real(source_urls, platform, county_id)
+            return await scrape_civic_scraper_real(source_urls, platform, county_id, timezone)
         return await scrape_crawl4ai_real(source_urls, county_id)
 
     return await scrape_heuristic_fallback(source_urls, county_id)

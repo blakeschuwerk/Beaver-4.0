@@ -11,10 +11,16 @@ import { join } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { loadEnvLocal, REPO_ROOT } from './load-env-local.mjs';
 import { createProjectId } from '../packages/shared/dist/utils.js';
-import { classifyChunk } from '../functions/classifier/dist/llm-client.js';
-import { filterUsersByNiche, scoreRelevance } from '../functions/personalization/dist/personalization.js';
 
 loadEnvLocal();
+
+// Dynamic imports AFTER loadEnvLocal(): llm-client.js and personalization.js
+// both read LLM_MOCK_MODE/MOCK_MODE into module-level consts at import time,
+// so static imports here (hoisted before this file's own statements run)
+// would freeze mock mode on regardless of .env.local — silently faking every
+// classification and match. See DEBUG-LOG.md.
+const { classifyChunk } = await import('../functions/classifier/dist/llm-client.js');
+const { filterUsersByNiche, scoreRelevance } = await import('../functions/personalization/dist/personalization.js');
 
 const LOCAL_RUN = join(REPO_ROOT, 'local-run');
 const STAGING = join(LOCAL_RUN, 'staging');

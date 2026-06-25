@@ -63,12 +63,13 @@ async def process_scrape_job(job: dict[str, Any]) -> dict[str, Any]:
     strategy = job.get("scraper_strategy", "crawl4ai")
     source_urls = job["source_urls"]
     platform = job.get("platform")
+    timezone = job.get("timezone")
     trace_id = job.get("trace_id", str(uuid4()))
 
     if MOCK_MODE:
         links = await scrape_crawl4ai_mock(source_urls)
     else:
-        links = await scrape_for_strategy(strategy, source_urls, platform, county_id)
+        links = await scrape_for_strategy(strategy, source_urls, platform, county_id, timezone)
 
     uploaded: list[str] = []
     seen_hashes: set[str] = set()

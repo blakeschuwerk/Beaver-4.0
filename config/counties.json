@@ -8,8 +8,9 @@
       "source_urls": ["https://sonoma-county.legistar.com"],
       "scraper_strategy": "civic_scraper",
       "platform": "legistar",
+      "timezone": "America/Los_Angeles",
       "priority": 1,
-      "notes": "Legistar — civic-scraper LegistarSite"
+      "notes": "Legistar — civic-scraper LegistarSite. timezone is required: LegistarSite passes it straight into pytz.timezone() with no default, so omitting it raises UnknownTimeZoneError on every event (see DEBUG-LOG.md)."
     },
     {
       "county_id": "nc-nashcounty",

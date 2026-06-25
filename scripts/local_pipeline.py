@@ -148,12 +148,13 @@ async def process_county(scraper_mod: ModuleType, analyzer_mod: ModuleType, coun
     county_id = county["county_id"]
     strategy = county.get("scraper_strategy", "crawl4ai")
     platform = county.get("platform")
+    tz_name = county.get("timezone")
     source_urls = county["source_urls"]
 
     result: dict = {"county_id": county_id, "documents": [], "errors": []}
 
     try:
-        links = await scrape_for_strategy(strategy, source_urls, platform, county_id)
+        links = await scrape_for_strategy(strategy, source_urls, platform, county_id, tz_name)
     except StructuralScrapeError as e:
         result["errors"].append(str(e))
         logger.error("Structural scrape failure for %s: %s", county_id, e)

@@ -20,6 +20,8 @@
     "test:integration": "node scripts/integration-test.mjs",
     "test:python": "cd functions/scraper && PYTHONPATH=. python3 -m pytest tests/ -q && cd ../analyzer && PYTHONPATH=. python3 -m pytest tests/ -q",
     "logs:errors": "node scripts/logs-errors.mjs",
+    "classify:one": "node scripts/classify-one.mjs",
+    "classify:eval": "node scripts/classify-eval.mjs",
     "cron:pause": "bash scripts/pause-cron.sh",
     "cron:resume": "bash scripts/resume-cron.sh",
     "qwen:setup": "bash scripts/setup-qwen.sh",
