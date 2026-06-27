@@ -12,7 +12,8 @@
     "county_id": { "type": "string" },
     "scraper_strategy": { "type": "string", "enum": ["civic_scraper", "crawl4ai", "custom"] },
     "source_urls": { "type": "array", "items": { "type": "string", "format": "uri" } },
-    "platform": { "type": "string" }
+    "platform": { "type": "string" },
+    "timezone": { "type": "string" }
   },
   "additionalProperties": false
 }

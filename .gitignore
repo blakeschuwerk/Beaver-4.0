@@ -52,6 +52,14 @@ tmp/
 local-run/errors.ndjson
 local-run/sandbox-runs.ndjson
 local-run/extract-cache/
+local-run/county-discovery/results.ndjson
+local-run/county-discovery/summary.json
+local-run/county-discovery/validation-report.json
+local-run/county-discovery/run.log
+local-run/county-discovery/verify-results.ndjson
+local-run/county-discovery/verify-summary.json
+local-run/discovered-counties.json
+local-run/verified-counties.json
 
 # Test coverage
 coverage/

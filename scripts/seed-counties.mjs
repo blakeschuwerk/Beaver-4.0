@@ -28,6 +28,7 @@ async function seedCounty(db, bigquery, county) {
     source_urls: county.source_urls,
     scraper_strategy: county.scraper_strategy,
     platform: county.platform ?? null,
+    timezone: county.timezone ?? null,
     broken: false,
     failure_count: 0,
     updated_at: new Date().toISOString(),

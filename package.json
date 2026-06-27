@@ -30,7 +30,11 @@
     "local:demo": ".venv/bin/python scripts/local_pipeline.py --demo",
     "local:classify": "node scripts/local-classify.mjs",
     "local:run": "pnpm local:scrape-extract && pnpm build && pnpm local:classify",
-    "local:run:demo": "pnpm local:demo && pnpm build && pnpm local:classify"
+    "local:run:demo": "pnpm local:demo && pnpm build && pnpm local:classify",
+    "discover:counties": ".venv/bin/python -m scripts.county_discovery.main --full",
+    "discover:counties:sample": ".venv/bin/python -m scripts.county_discovery.main --sample 30",
+    "discover:counties:validate": ".venv/bin/python -m scripts.county_discovery.main --validate",
+    "discover:counties:verify": ".venv/bin/python -m scripts.county_discovery.main --verify"
   },
   "engines": {
     "node": ">=20.0.0",

@@ -13,6 +13,7 @@ class CountyConfig(BaseModel):
     source_urls: list[str]
     scraper_strategy: Literal["civic_scraper", "crawl4ai", "custom"]
     platform: Optional[str] = None
+    timezone: Optional[str] = None
     broken: bool = False
     failure_count: int = Field(default=0, ge=0)
     last_error: Optional[str] = None

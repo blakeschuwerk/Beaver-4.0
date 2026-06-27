@@ -78,20 +78,26 @@ export async function loadScrapeRoster(deps: DispatcherDeps): Promise<ScrapeRost
   return rows as ScrapeRosterRow[];
 }
 
-export async function publishScrapeJob(
-  deps: DispatcherDeps,
-  county: CountyConfig,
-  traceId: string,
-): Promise<string> {
+export function buildScrapeJobMessage(county: CountyConfig, traceId: string) {
   const jobId = createJobId(county.county_id);
-  const message = scrapeJobSchema.parse({
+  return scrapeJobSchema.parse({
     ...createBaseMessage(traceId),
     job_id: jobId,
     county_id: county.county_id,
     scraper_strategy: county.scraper_strategy,
     source_urls: county.source_urls,
     platform: county.platform,
+    timezone: county.timezone,
   });
+}
+
+export async function publishScrapeJob(
+  deps: DispatcherDeps,
+  county: CountyConfig,
+  traceId: string,
+): Promise<string> {
+  const message = buildScrapeJobMessage(county, traceId);
+  const jobId = message.job_id;
 
   if (MOCK_MODE) {
     console.log('[MOCK] Published scrape job:', JSON.stringify(message));

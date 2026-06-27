@@ -64,12 +64,23 @@ assuming.
    zero documents; the underlying exception was swallowed down to a bare
    `"None"` by a generic handler. Real traceback: `pytz.timezone(self.TIMEZONE)`
    where `TIMEZONE` was never set, since `LegistarSite(url)` was constructed
-   with no `timezone` kwarg. ~~Open~~ **Resolved 2026-06-24** — added
+   with no `timezone` kwarg. ~~Open~~ ~~**Resolved 2026-06-24**~~ — added
    `timezone` to county config, threaded it through
    `scrape_for_strategy()` → `scrape_civic_scraper_real()` → `_scrape_civic_sync()`
    in [functions/scraper/src/scrapers.py](functions/scraper/src/scrapers.py),
    and raise a clear `ValueError` if a Legistar county is configured without
-   one (fail loud instead of a bare library exception).
+   one (fail loud instead of a bare library exception). ~~**Follow-up (still open
+   2026-06-24):** that fix only reached the scraper via
+   `scripts/local_pipeline.py`, which reads `timezone` directly from
+   `config/counties.json`. The production path still dropped it:
+   `countyConfigSchema` / `scrapeJobSchema` had no `timezone` field,
+   `scripts/seed-counties.mjs` omitted it from Firestore docs, and
+   `dispatcher.ts` never put it in Pub/Sub scrape-jobs — so every real Legistar
+   county still crashed in production.~~ **Resolved 2026-06-27** — added
+   `timezone` to shared zod/pydantic schemas + `scrape-job.json` contract,
+   threaded through `seed-counties.mjs` and `publishScrapeJob()` /
+   `buildScrapeJobMessage()` in [functions/dispatcher/src/dispatcher.ts](functions/dispatcher/src/dispatcher.ts);
+   dispatcher test asserts Legistar counties publish `timezone` in scrape-jobs.
 
 5. **Same `civic_scraper` Legistar library raises `KeyError: 'Minutes'` on
    counties where some events have no minutes published yet.** Pima County AZ

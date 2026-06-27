@@ -25,6 +25,7 @@ export const scrapeJobSchema = baseMessageSchema.extend({
   scraper_strategy: z.enum(['civic_scraper', 'crawl4ai', 'custom']),
   source_urls: z.array(z.string().url()),
   platform: z.string().optional(),
+  timezone: z.string().optional(),
 });
 
 export type ScrapeJobMessage = z.infer<typeof scrapeJobSchema>;

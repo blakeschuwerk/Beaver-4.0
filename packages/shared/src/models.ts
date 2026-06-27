@@ -12,6 +12,7 @@ export const countyConfigSchema = z.object({
   source_urls: z.array(z.string().url()),
   scraper_strategy: z.enum(SCRAPER_STRATEGIES as unknown as [string, ...string[]]),
   platform: z.string().optional(),
+  timezone: z.string().optional(),
   broken: z.boolean().default(false),
   failure_count: z.number().int().nonnegative().default(0),
   last_error: z.string().optional(),

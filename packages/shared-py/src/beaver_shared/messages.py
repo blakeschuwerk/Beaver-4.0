@@ -26,6 +26,7 @@ class ScrapeJobMessage(BaseMessage):
     scraper_strategy: Literal["civic_scraper", "crawl4ai", "custom"]
     source_urls: list[str]
     platform: Optional[str] = None
+    timezone: Optional[str] = None
 
 
 class RawDocumentMessage(BaseMessage):
