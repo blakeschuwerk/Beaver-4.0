@@ -2,6 +2,13 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { IconPlay, IconUpload, IconWarning } from '../components/Icons';
+import { CountyAutocomplete } from '../components/CountyAutocomplete';
+import {
+  VERIFIED_COUNTY_COUNT,
+  isVerifiedCounty,
+  searchVerifiedCounties,
+  verifiedCountyUrl,
+} from '../lib/verifiedCounties';
 import { api } from '../api/client';
 import './AdminPage.css';
 
@@ -26,6 +33,14 @@ export function AdminInputPage() {
   const [url, setUrl] = useState('');
   const [pdf, setPdf] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
+  const [selectedCounty, setSelectedCounty] = useState<string | null>(null);
+
+  function selectCounty(label: string) {
+    const portal = verifiedCountyUrl(label);
+    if (!portal) return;
+    setSelectedCounty(label);
+    setUrl(portal);
+  }
 
   async function runTest() {
     if (!user) return;
@@ -62,7 +77,10 @@ export function AdminInputPage() {
           Document URL
           <input
             value={url}
-            onChange={(e) => setUrl(e.target.value)}
+            onChange={(e) => {
+              setUrl(e.target.value);
+              setSelectedCounty(null);
+            }}
             placeholder="https://example.com/sample.pdf"
           />
         </label>
@@ -74,11 +92,36 @@ export function AdminInputPage() {
               key={ex.url}
               type="button"
               className="admin-example-link"
-              onClick={() => setUrl(ex.url)}
+              onClick={() => {
+                setUrl(ex.url);
+                setSelectedCounty(null);
+              }}
             >
               {ex.label}
             </button>
           ))}
+        </div>
+
+        <div className="admin-county">
+          <label className="admin-county__label" htmlFor="verified-county-search">
+            Or pick a verified county
+            <span className="admin-county__count">{VERIFIED_COUNTY_COUNT} verified portals</span>
+          </label>
+          <CountyAutocomplete
+            search={searchVerifiedCounties}
+            isValid={isVerifiedCounty}
+            onSelect={selectCounty}
+            placeholder="Type a county… (only verified counties appear)"
+            buttonLabel="Use"
+          />
+          {selectedCounty && (
+            <p className="admin-county__selected">
+              Loaded portal for <strong>{selectedCounty}</strong>
+            </p>
+          )}
+          <p className="admin-county__hint">
+            If a county doesn’t appear, it hasn’t been verified as scrapable yet.
+          </p>
         </div>
 
         <div className="admin-divider"><span>or</span></div>

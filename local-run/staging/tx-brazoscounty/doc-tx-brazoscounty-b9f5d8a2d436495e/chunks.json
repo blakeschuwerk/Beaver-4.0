@@ -1,0 +1,382 @@
+{
+  "document_id": "doc-tx-brazoscounty-b9f5d8a2d436495e",
+  "county_id": "tx-brazoscounty",
+  "trace_id": "b3624a4b-d15f-4687-975f-fd5bfef14b40",
+  "extracted_at": "2026-06-25T16:36:14.844701+00:00",
+  "chunk_count": 58,
+  "chunks": [
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-1",
+      "parent_chunk_id": null,
+      "text": "## MINUTES",
+      "chunk_type": "parent",
+      "heading": "MINUTES"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-2",
+      "parent_chunk_id": null,
+      "text": "## JUNE 9, 2026",
+      "chunk_type": "parent",
+      "heading": "JUNE 9, 2026"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-3",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY COMMISSIONERS COURT",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY COMMISSIONERS COURT"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-4",
+      "parent_chunk_id": null,
+      "text": "## WORKSHOP SESSION",
+      "chunk_type": "parent",
+      "heading": "WORKSHOP SESSION"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "parent_chunk_id": null,
+      "text": "## 1. Call to Order\n\nA workshop session of the Commissioners' Court of Brazos County, Texas was held in the Brazos County Commissioners Courtroom in the Administration Building, 200 South Texas Avenue, in Bryan, Brazos County, Texas, beginning at 2:00 p.m. on Tuesday, June 9, 2026 with the following members of the Court present:\n\nDuane Peters, County Judge, Presiding; Bentley Nettles, Commissioner of Precinct 1; Chuck Konderla, Commissioner of Precinct 2, Absent; Fred Brown, Commissioner of Precinct 3; Wanda J. Watson, Commissioner of Precinct 4; Karen McQueen, County Clerk; The attached sheets contain the names of the citizens and officials that were in attendance.\n\n2. Compensation and Benefits Study - Final Proposed Results\n- A. Presentation and review of the final proposed countywide classification and compensation structure\n- B. Discussion of proposed implementation options, funding strategies, and budget considerations\n\nHuman Resources Director Jennifer Salazar discussed the process of the county-wide Compensation and Benefits Study. The study reviewed 998 positions over approximately nine months, consolidated job titles into standardized classifications, and evaluated positions using internal and external market comparisons. She emphasized that the study was intended to create a structured compensation system that improves internal equity, addresses salary compression, and provides a sustainable framework for future compensation decisions. Ms. Salazar noted that the study was not a performance evaluation and would not result in employee pay reductions. She then invited Former Acting County Judge Kyle Kacal to share about the study.\n\nMr. Kacal provided historical context for commissioning the study and stated that the purpose is to create a sustainable framework for future budgeting.\n\nMs. Salazar then presented the results of the Compensation and Benefits Study. The study showed that 173 positions are below the midpoint, 825 positions are above the midpoint, an",
+      "chunk_type": "parent",
+      "heading": "1. Call to Order"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "## 1. Call to Order\n\nA workshop session of the Commissioners' Court of Brazos County, Texas was held in the Brazos County Commissioners Courtroom in the Administration Building, 200 South Texas Avenue, in Bryan, Brazos County, Texas, beginning at 2:00 p.m. on Tuesday, June 9, 2026 with the following members of the Court present:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "Duane Peters, County Judge, Presiding; Bentley Nettles, Commissioner of Precinct 1; Chuck Konderla, Commissioner of Precinct 2, Absent; Fred Brown, Commissioner of Precinct 3; Wanda J. Watson, Commissioner of Precinct 4; Karen McQueen, County Clerk; The attached sheets contain the names of the citizens and officials that were in attendance.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-2",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "2. Compensation and Benefits Study - Final Proposed Results\n- A. Presentation and review of the final proposed countywide classification and compensation structure\n- B. Discussion of proposed implementation options, funding strategies, and budget considerations",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-3",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "Human Resources Director Jennifer Salazar discussed the process of the county-wide Compensation and Benefits Study. The study reviewed 998 positions over approximately nine months, consolidated job titles into standardized classifications, and evaluated positions using internal and external market comparisons. She emphasized that the study was intended to create a structured compensation system that improves internal equity, addresses salary compression, and provides a sustainable framework for future compensation decisions. Ms. Salazar noted that the study was not a performance evaluation and would not result in employee pay reductions. She then invited Former Acting County Judge Kyle Kacal to share about the study.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-4",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "Mr. Kacal provided historical context for commissioning the study and stated that the purpose is to create a sustainable framework for future budgeting.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-5",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "Ms. Salazar then presented the results of the Compensation and Benefits Study. The study showed that 173 positions are below the midpoint, 825 positions are above the midpoint, and 392 positions are above the maximum. She shared with the Court two implementation options to bring employees up to the midpoint.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-6",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "- Option 1: Fully fund all positions below midpoint and bring them to midpoint.\n- Option 2: Implement a phased approach with limited increases for employees below midpoint.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-7",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "Mr. Kacal reiterated the need to end the antiquated group-and-step system and move toward a more sustainable compensation structure.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-8",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "The Court entered into discussion regarding the challenges in making fair and equitable decisions to set the County up for better success in the future. They also shared about the financial limitations as it relates to the implementation of the new compensation structure.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-9",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "The Court then heard from County Staff and Elected Officials regarding the impact on their departments.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-10",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "Judge David Hilburn, 361st District Court, expressed support for compensation reform but requested additional review of market data before implementation. He noted concerns regarding recruitment challenges and the accuracy of certain salary benchmarks.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-11",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "District Attorney Jarvis Parsons spoke in favor of investing in county employees to improve recruitment and retention. He expressed concerns that midpoint-based compensation may not adequately reflect current labor market conditions.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-12",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "Brian Baker, District Attorney's Office, questioned the long-term effects of midpoint budgeting and raised concerns regarding recruitment flexibility and salary compression.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-13",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "County Clerk Karen McQueen requested further review of clerical classifications and compensation levels. She emphasized the importance of retaining qualified employees and maintaining competitive wages.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-14",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "Collections Director Tanya Skinner, expressed concerns that job descriptions used in the study did not fully reflect employee responsibilities.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-15",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "Auditor Marci Turner questioned the methodology for positions not included in external market comparisons. She recommended further market analysis before implementing salary adjustments for those positions.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-16",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "Budget Officer Nina Payne spoke in support of the study. She emphasized the need for direction on implementation from the Court in order to prepare the FY 2027 Budget. Ms. Payne stated that she would not propose a COLA for FY27 given the number of positions above the midpoint.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-5-17",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-5",
+      "text": "Following discussion, the Court generally indicated support for moving forward with the new compensation framework. They provided direction to move forward with the phased implementation approach while preserving flexibility to address department-specific concerns and future compensation requests during the budget process.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-6",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY BRYAN, TEXAS",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY BRYAN, TEXAS"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-7",
+      "parent_chunk_id": null,
+      "text": "## NOTICE OF MEETING AND AGENDA",
+      "chunk_type": "parent",
+      "heading": "NOTICE OF MEETING AND AGENDA"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-8",
+      "parent_chunk_id": null,
+      "text": "## WORKSHOP SESSION",
+      "chunk_type": "parent",
+      "heading": "WORKSHOP SESSION"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-9",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY COMMISSIONERS COURT\n\nBRAZOS COUNTY COMMISSIONERS WILL MEET IN A WORKSHOP SESSION AS FOLLOWS:\n\nMEETING DATE:\n\nJune 9, 2026\n\nMEETING TIME:\n\n1:30 PM\n\nMEETING PLACE:\n\nCommissioners Courtroom of the Brazos County Administration Building, 200 S. Texas Avenue, Suite 106, Bryan, TX 77803\n\n1. Call to Order\n2. Compensation and Benefits Study - Final Proposed Results\n- A. Presentation and review of the final proposed countywide classification and compensation structure\n- B. Discussion of proposed implementation options, funding strategies, and budget considerations\n3. Adjourn\n\nThe Commissioners Courtroom of the Brazos County Administration Building, 200 S. Texas Avenue, Suite 106, Bryan, TX 77803 is wheelchair accessible. Handicap parking spaces are available. Any request for sign interpretive services must be made two working days before the meeting. To make arrangements, please call (979) 361-4102.",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY COMMISSIONERS COURT"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-9-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-9",
+      "text": "## BRAZOS COUNTY COMMISSIONERS COURT\n\nBRAZOS COUNTY COMMISSIONERS WILL MEET IN A WORKSHOP SESSION AS FOLLOWS:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-9-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-9",
+      "text": "Commissioners Courtroom of the Brazos County Administration Building, 200 S. Texas Avenue, Suite 106, Bryan, TX 77803",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-9-2",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-9",
+      "text": "1. Call to Order\n2. Compensation and Benefits Study - Final Proposed Results\n- A. Presentation and review of the final proposed countywide classification and compensation structure\n- B. Discussion of proposed implementation options, funding strategies, and budget considerations\n3. Adjourn",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-9-3",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-9",
+      "text": "The Commissioners Courtroom of the Brazos County Administration Building, 200 S. Texas Avenue, Suite 106, Bryan, TX 77803 is wheelchair accessible. Handicap parking spaces are available. Any request for sign interpretive services must be made two working days before the meeting. To make arrangements, please call (979) 361-4102.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-10",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\nDAY OF\n\npm\n\n, 20lo\n\nAM(PM) Wlor K Shop\n\nName\n\nOrganization\n\n(PLEASE PRINT)\n\n(PLEASE PRINT)\n\necion\n\ninner\n\nGhl\n\nLU\n\nLna\n\nN7J\n\nAcscec--\n\nReeves\n\n\u2014~\n\nCa\n\nSuttMaror\n\nBCSD\n\nVosh Hearer\n\nPe+ I Cosf\n\nHhlus a\n\n36(+DCT\n\nLomPiccol\n\nPe+b(ossl&lt;++;ce\n\nRiekesson. -INDA\n\nJuv.\n\n[A DKe\n\nKaspera Stacey\n\nJureni'le Semies\n\n<!-- image -->\n\nun\n\n<!-- image -->\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY COMMISSIONER'S COURT"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-10-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-10",
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\nDAY OF",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-11",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\n<!-- image -->\n\n<!-- image -->\n\nDAY OF Y ,20\n\nAM(PM) Workshop\n\nName\n\nOrganization (PLEASE PRINT)\n\n(PLEASE PRINT)\n\nSeaN WeCaredre\n\nR-1\n\nSG\n\nDsK AYNS\n\nMegan Sullivan\n\nBC EM\n\nJason nare\n\nBillu melzo\n\nEric Caidnel1\n\nBCJT\n\nKm pusuu\n\nRe(kHhil1\n\nJP3\n\nLesie Conhrens\n\nRisk\n\nR+R\n\nJoESAuAt\n\nBuutmoer\n\nR+IR\n\nCo .CLk\n\nlek\n\nBrozr Cealer\n\neme\n\nMAMAGCMENT D Teevsc\n\nleevor\n\n<!-- image -->\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY COMMISSIONER'S COURT"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-11-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-11",
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\n<!-- image -->",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-12",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\nDAY OF 20 2\n\nAM/RM,\n\nocs",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY COMMISSIONER'S COURT"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-12-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-12",
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\nDAY OF 20 2",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-13",
+      "parent_chunk_id": null,
+      "text": "## Name\n\nOrganization (PLEASE PRINT)\n\n(PLEASE PRINT)\n\nAshibe Reters-Bowmen\n\nCo Clert\n\nVcboraLMC\n\n1\n\nhraleun-l\n\norg\n\nCh MOnmolY\n\nfPv.\n\nmeame\n\nCouyAvhe\n\nlempo\n\nConst?ef\n\nhs show\n\nBudge+\n\nKarunBaHus\n\nhurilasina\n\nWm.CiareWuelt\n\nPuhaoing\n\nBobLamk\n\nFacrlittes\n\nMaff\n\nFacilikee  Ser Jrces\n\nCart Comm\n\naul gmg\n\nCart QiMM\n\nAobregQoagatf\n\nBeaSnn\n\n<!-- image -->\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Name"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-14",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\n<!-- image -->\n\nDAY OF ,20\\_2\n\nAM(PM)\n\nLaloslesko",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY COMMISSIONER'S COURT"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-14-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-14",
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\n<!-- image -->",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-15",
+      "parent_chunk_id": null,
+      "text": "## Name\n\nOrganization\n\n(PLEASE PRINT)\n\n(PLEASE PRINT)\n\nmcwhany Koehna\n\nJenniferSYa2cur\n\nHe\n\nHorathounsihert\n\nDiana niils\n\nveerans\n\nHYLEKACAL\n\nsef\n\nMAHNNALO\n\nCS\n\nAncecsu lnaelaLaa Anlrew Wipke\n\nDC\n\nCo. Jusc\n\nCisha-Ullarre-\n\nrees\n\nCora#N\n\nMN 40\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Name"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-16",
+      "parent_chunk_id": null,
+      "text": "## Brazos County Commissioners Court",
+      "chunk_type": "parent",
+      "heading": "Brazos County Commissioners Court"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-17",
+      "parent_chunk_id": null,
+      "text": "## ICOUNTY-STAFF SPEAKERS FOR WORKSHOP\n\nTIME: 1:3\n\nDATE:\n\n<!-- image -->\n\nDopartment -Precinet.\n\nName:\n\nCircle One:\n\nHlwrn 1. a0\n\n36 1\n\n7 7 For/ Against/ Concerning\n\n\u2605\n\nFor/ Against/ Concerning\n\n- 2.\n\n- BZIAN 3.\\_\n\nFor/ Against/ Concerning\n\n- XARsNMCQUEEN\n\nFor/ Against/ Concerning\n\nFor/ Against/ Concerning\n\n5. \\_/q ya\n\nhinner\n\nolediouz\n\nFor/ Against/ Concerning\n\n- marciturne 6.\n\nauhrh\n\nFor/ Against/ Concerning\n\n7.\n\nFor/ Against/ Concerning\n\n8\n\nLaca -ul\n\nFor/ Against/ Concerning\n\n10. Mra Payne\n\nBudg!\n\nFor/ Against/ Concerning\n\nDEPARTMENT:\n\nDATE OF COURT MEETING:\n\nITEM:\n\n6/9/2026\n\nCompensation and Benefits Study - Final Proposed Results\n\n- A. Presentation and review of the final proposed countywide classification and compensation structure\n- B. Discussion of proposed implementation options, funding strategies, and budget considerations\n\nTO:\n\nCommissioners Court\n\nDATE:\n\n06/01/2026\n\nFISCAL IMPACT:\n\nFalse\n\nBUDGETED:\n\nFalse\n\nDOLLAR AMOUNT:\n\n$0.00\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "ICOUNTY-STAFF SPEAKERS FOR WORKSHOP"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-17-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-17",
+      "text": "## ICOUNTY-STAFF SPEAKERS FOR WORKSHOP\n\nTIME: 1:3",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-17-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-17",
+      "text": "Compensation and Benefits Study - Final Proposed Results",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-17-2",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-17",
+      "text": "- A. Presentation and review of the final proposed countywide classification and compensation structure\n- B. Discussion of proposed implementation options, funding strategies, and budget considerations",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-18",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY BRYAN, TEXAS\n\nNUMBER:",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY BRYAN, TEXAS"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-19",
+      "parent_chunk_id": null,
+      "text": "## Brazos County Compensation &amp; Benefits Study\n\nFinal Proposed Results &amp; Implementation Options\n\nCommissioners Court Workshop  |  June 2026\n\nPresented by Human Resources This study was made possible through the collaboration and commitment of:\n\n<!-- image -->\n\n<!-- image -->\n\nCounty Employees\n\nCompleted Job Description Questionnaires and helped ensure study accuracy.\n\n<!-- image -->\n\n<!-- image -->\n\nHR Team\n\nManaged this countywide project while continuing to support daily operations.\n\nThe County initiated this study with clear and strategic goals:\n\n<!-- image -->\n\nEvaluate internal equity across departments\n\n<!-- image -->\n\n<!-- image -->\n\nCompare positions to the external labor market\n\nModernize an outdated classification structure Establish a consistent compensation philosophy Create a sustainable framework for future pay decisions Improve recruitment, retention, and career progression\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n- 1",
+      "chunk_type": "parent",
+      "heading": "Brazos County Compensation &amp; Benefits Study"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-19-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-19",
+      "text": "## Brazos County Compensation &amp; Benefits Study\n\nFinal Proposed Results &amp; Implementation Options",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-19-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-19",
+      "text": "Commissioners Court Workshop  |  June 2026",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-19-2",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-19",
+      "text": "Presented by Human Resources This study was made possible through the collaboration and commitment of:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-19-3",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-19",
+      "text": "Completed Job Description Questionnaires and helped ensure study accuracy.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-19-4",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-19",
+      "text": "Managed this countywide project while continuing to support daily operations.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-19-5",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-19",
+      "text": "The County initiated this study with clear and strategic goals:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-19-6",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-19",
+      "text": "Evaluate internal equity across departments",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-19-7",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-19",
+      "text": "Compare positions to the external labor market",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-child-19-8",
+      "parent_chunk_id": "doc-tx-brazoscounty-b9f5d8a2d436495e-parent-19",
+      "text": "Modernize an outdated classification structure Establish a consistent compensation philosophy Create a sustainable framework for future pay decisions Improve recruitment, retention, and career progression",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "b9f5d8a2d436495e976d8b896eb2c731ab9f059991069f1cec095802acaf6faf",
+  "extraction_method": "docling",
+  "source_url": "https://brazos.novusagenda.com/agendapublic/DisplayAgendaPDF.ashx?MinutesMeetingID=1897",
+  "doc_type": "agenda",
+  "source_document_id": null
+}

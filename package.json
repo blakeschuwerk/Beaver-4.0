@@ -26,6 +26,8 @@
     "cron:resume": "bash scripts/resume-cron.sh",
     "qwen:setup": "bash scripts/setup-qwen.sh",
     "llama:setup": "bash scripts/setup-qwen.sh",
+    "app": "bash scripts/run-local.sh",
+    "demo": "bash scripts/run-demo.sh",
     "local:scrape-extract": ".venv/bin/python scripts/local_pipeline.py",
     "local:demo": ".venv/bin/python scripts/local_pipeline.py --demo",
     "local:classify": "node scripts/local-classify.mjs",
@@ -34,7 +36,9 @@
     "discover:counties": ".venv/bin/python -m scripts.county_discovery.main --full",
     "discover:counties:sample": ".venv/bin/python -m scripts.county_discovery.main --sample 30",
     "discover:counties:validate": ".venv/bin/python -m scripts.county_discovery.main --validate",
-    "discover:counties:verify": ".venv/bin/python -m scripts.county_discovery.main --verify"
+    "discover:counties:verify": ".venv/bin/python -m scripts.county_discovery.main --verify",
+    "petals:bootstrap": "bash scripts/petals/run_bootstrap.sh",
+    "petals:gateway": "cd functions/classifier/petals-gateway && .venv/bin/uvicorn main:app --port 8000"
   },
   "engines": {
     "node": ">=20.0.0",

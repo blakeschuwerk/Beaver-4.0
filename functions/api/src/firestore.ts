@@ -10,7 +10,7 @@ import {
   trackedProjectSchema,
   userProfileSchema,
 } from '@beaver/shared';
-import { isMockMode } from './auth.js';
+import { isMockMode, isReadOnly } from './auth.js';
 import {
   MOCK_COUNTIES,
   MOCK_TRACKS,
@@ -44,6 +44,10 @@ export async function createProfile(profile: UserProfile): Promise<UserProfile> 
     Object.assign(MOCK_USER, parsed);
     return { ...MOCK_USER };
   }
+  if (isReadOnly()) {
+    console.log(`[read-only] skip Firestore write: createProfile ${parsed.user_id}`);
+    return parsed;
+  }
 
   await getFirestore()
     .collection(FS_USER_PROFILES_COLLECTION)
@@ -69,6 +73,10 @@ export async function updateProfile(
   if (isMockMode()) {
     Object.assign(MOCK_USER, merged);
     return { ...MOCK_USER };
+  }
+  if (isReadOnly()) {
+    console.log(`[read-only] skip Firestore write: updateProfile ${userId}`);
+    return merged;
   }
 
   await getFirestore()
@@ -111,6 +119,10 @@ export async function addTrack(userId: string, projectId: string): Promise<Track
     MOCK_TRACKS.push(track);
     return { ...track };
   }
+  if (isReadOnly()) {
+    console.log(`[read-only] skip Firestore write: addTrack ${userId}/${projectId}`);
+    return track;
+  }
 
   const docId = `${userId}_${projectId}`;
   await getFirestore().collection(FS_TRACKED_PROJECTS_COLLECTION).doc(docId).set(track);
@@ -121,6 +133,10 @@ export async function removeTrack(userId: string, projectId: string): Promise<vo
   if (isMockMode()) {
     const idx = MOCK_TRACKS.findIndex((t) => t.user_id === userId && t.project_id === projectId);
     if (idx >= 0) MOCK_TRACKS.splice(idx, 1);
+    return;
+  }
+  if (isReadOnly()) {
+    console.log(`[read-only] skip Firestore write: removeTrack ${userId}/${projectId}`);
     return;
   }
 
@@ -136,6 +152,10 @@ export async function updateTrackStage(
   if (isMockMode()) {
     const track = MOCK_TRACKS.find((t) => t.user_id === userId && t.project_id === projectId);
     if (track) track.last_viewed_stage = stage as TrackedProject['last_viewed_stage'];
+    return;
+  }
+  if (isReadOnly()) {
+    console.log(`[read-only] skip Firestore write: updateTrackStage ${userId}/${projectId}`);
     return;
   }
 

@@ -1,0 +1,580 @@
+{
+  "document_id": "doc-sonoma-county-c67631151308963a",
+  "county_id": "sonoma-county",
+  "trace_id": "a86df4f1-b598-4567-87a6-8b35e5ac72bc",
+  "extracted_at": "2026-06-25T16:25:55.833275+00:00",
+  "chunk_count": 91,
+  "chunks": [
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->\n\nRebecca Hermosillo, First District David Rabbitt, Second District Chris Coursey, Third District James Gore, Fourth District Lynda Hopkins, Fifth District\n\n575 ADMINISTRATION DRIVE, ROOM 102A SANTA ROSA, CA 95403\n\nDavid Guhin, County Executive Joshua Myers, County Counsel\n\n| Tuesday, June 2, 2026   | 9:00AM   | Virtual/Board of Supervisors Chambers   |\n|-------------------------|----------|-----------------------------------------|\n|                         |          | 575 Administration Drive 102A           |\n\nThis is a simultaneous meeting of the Board of Supervisors of Sonoma County, the Board of Directors of the Sonoma County Water Agency, the Board of Commissioners of the Community Development Commission, the Board of Directors of the Sonoma County Agricultural Preservation and Open Space District, County of Sonoma Public Financing Authority, and County of Sonoma Public Financing Corporation, and as the governing board of all special districts having business on the agenda to be heard this date.  The five District Supervisors also serve as the Board of Directors of the Sonoma County Water Agency, the Sonoma County Agricultural Preservation and Open Space District, County of Sonoma Public Financing Authority, and County of Sonoma Public Financing Corporation, and as the Board of Commissioners of the Community Development Commission. Each of the foregoing entities is a separate and distinct legal entity.  The Board welcomes you to attend its meetings which are regularly scheduled each Tuesday at 9:00 a.m. Your interest is encouraged and appreciated.\n\nMeetings are held in person in the Board of Supervisors chambers, located at 575 Administration Drive, Room 102A, Santa Rosa, California.  The County will broadcast most meetings via Zoom with Spanish translation and closed captioning provided. Please note that the County cannot guarantee that the Zoom system will be available for the entirety of every meeting.\n\nCOMMITMENT TO CIVILITY: The Board of Su",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-0-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-0",
+      "text": "Rebecca Hermosillo, First District David Rabbitt, Second District Chris Coursey, Third District James Gore, Fourth District Lynda Hopkins, Fifth District",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-0-1",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-0",
+      "text": "575 ADMINISTRATION DRIVE, ROOM 102A SANTA ROSA, CA 95403",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-0-2",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-0",
+      "text": "David Guhin, County Executive Joshua Myers, County Counsel",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-0-3",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-0",
+      "text": "| Tuesday, June 2, 2026   | 9:00AM   | Virtual/Board of Supervisors Chambers   |\n|-------------------------|----------|-----------------------------------------|\n|                         |          | 575 Administration Drive 102A           |",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-0-4",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-0",
+      "text": "This is a simultaneous meeting of the Board of Supervisors of Sonoma County, the Board of Directors of the Sonoma County Water Agency, the Board of Commissioners of the Community Development Commission, the Board of Directors of the Sonoma County Agricultural Preservation and Open Space District, County of Sonoma Public Financing Authority, and County of Sonoma Public Financing Corporation, and as the governing board of all special districts having business on the agenda to be heard this date.  The five District Supervisors also serve as the Board of Directors of the Sonoma County Water Agency, the Sonoma County Agricultural Preservation and Open Space District, County of Sonoma Public Financing Authority, and County of Sonoma Public Financing Corporation, and as the Board of Commissioners of the Community Development Commission. Each of the foregoing entities is a separate and distinct legal entity.  The Board welcomes you to attend its meetings which are regularly scheduled each Tuesday at 9:00 a.m. Your interest is encouraged and appreciated.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-0-5",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-0",
+      "text": "Meetings are held in person in the Board of Supervisors chambers, located at 575 Administration Drive, Room 102A, Santa Rosa, California.  The County will broadcast most meetings via Zoom with Spanish translation and closed captioning provided. Please note that the County cannot guarantee that the Zoom system will be available for the entirety of every meeting.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-0-6",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-0",
+      "text": "COMMITMENT TO CIVILITY: The Board of Supervisors has adopted rules of procedures which include a commitment to civility.  To assure civility in its public meetings, the public is encouraged to engage in respectful dialog that supports freedom of speech and values diversity of opinion. Board Members, staff and members of the public are expected to establish and maintain a cordial and respectful atmosphere during discussions; and foster meaningful dialogue free of personal attacks. Members of the public must also adhere to the speaking time limit.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-0-7",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-0",
+      "text": "The Board welcomes comments, including criticism, about the policies, procedures, programs, or services of the County, or of the acts or omissions of the Board.  Speakers shall not use threatening, profane, or abusive language which disrupts, disturbs, or otherwise impedes the orderly conduct of a Board meeting.  The County is committed to maintaining a workplace free of unlawful harassment and is mindful that County staff regularly attend Board meetings. Discriminatory statements or conduct that would potentially violate the Fair Employment and Housing Act - i.e., statements or conduct that is hostile, intimidating, oppressive, or abusive - is per se disruptive to a meeting and will not be tolerated.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-0-8",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-0",
+      "text": "Members of the public can watch or listen to the meeting using one of the three following methods:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-1",
+      "parent_chunk_id": null,
+      "text": "## 1. WATCH LIVESTREAM:\n\n[https://sonoma-county.legistar.com/Calendar.aspx](https://sonoma-county.legistar.com/Calendar.aspx)\n\nOnce the meeting has started, click the 'In Progress' hyperlink to begin viewing.",
+      "chunk_type": "parent",
+      "heading": "1. WATCH LIVESTREAM:"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-1-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-1",
+      "text": "## 1. WATCH LIVESTREAM:\n\n[https://sonoma-county.legistar.com/Calendar.aspx](https://sonoma-county.legistar.com/Calendar.aspx)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-1-1",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-1",
+      "text": "Once the meeting has started, click the 'In Progress' hyperlink to begin viewing.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-2",
+      "parent_chunk_id": null,
+      "text": "## 2. LISTEN TO MEETING IN ZOOM:\n\nParticipate by computer, tablet, or smartphone application: Go to: https://sonomacounty.zoom.us/j/81946991227?pwd=MdjboPqs8NI5LtBtATtAcf8DYcOdD1.1 Enter meeting ID: 819 4699 1227 Enter Password: 919371\n\nListen through Zoom by phone: Dial +1 (669) 900 9128 Enter meeting ID: 819 4699 1227 Enter password: 919371",
+      "chunk_type": "parent",
+      "heading": "2. LISTEN TO MEETING IN ZOOM:"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-2-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-2",
+      "text": "## 2. LISTEN TO MEETING IN ZOOM:\n\nParticipate by computer, tablet, or smartphone application: Go to: https://sonomacounty.zoom.us/j/81946991227?pwd=MdjboPqs8NI5LtBtATtAcf8DYcOdD1.1 Enter meeting ID: 819 4699 1227 Enter Password: 919371",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-2-1",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-2",
+      "text": "Listen through Zoom by phone: Dial +1 (669) 900 9128 Enter meeting ID: 819 4699 1227 Enter password: 919371",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "parent_chunk_id": null,
+      "text": "## SONOMA COUNTY BOARD OF SUPERVISORS AGENDA\n\n3. LISTEN AND ATTEND IN PERSON: Members of the public may attend the meeting in person in the Board of Supervisors Chambers located at 575 Administration, Room 100A, Santa Rosa, CA 95403. Members of the public may also listen to the Board meeting in the Administration Building hall or outside the main entrance. Overflow seating will be available in the building hall, if necessary.\n\nPUBLIC COMMENT: Public Comment may be made live, in person, in the Board Chambers. Available time for comments is determined by the Board Chair based on agenda scheduling demands and total number of speakers. In order to guarantee that your comment is received and considered by the County, attend the meeting in person or submit your comment in writing in advance of the meeting to bos@sonomacounty.gov.\n\nIn Board Chambers: Members of the public who wish to comment in the Board Chambers may do so according to the following procedure. Commenters will be requested to line up in the rear of the Chambers when the Board Chair announces Public Comment to commence. Upon completion of a comment, the individual would be asked to exit the Chambers or take a seat.  No standing unless in queue to speak.  This process is to be repeated to comment on any subsequent items.\n\nAGENDAS AND MATERIALS: Agendas and most supporting materials are available on the Board's website at https://www.sonoma-county.legistar.com/. Due to legal, copyright, privacy or policy considerations, not all materials are posted online.  Materials that are not posted are available for public inspection between 8:00 a.m. and 5:00 p.m., Monday through Friday, at 575 Administration Drive, Room 100A, Santa Rosa, CA.\n\nSUPPLEMENTAL MATERIALS: Materials related to an item on this agenda submitted to the Board after distribution of the agenda packet are available for public inspection in the Board of Supervisors office at 575 Administration Drive, Room 100A, Santa Rosa, CA, during normal business h",
+      "chunk_type": "parent",
+      "heading": "SONOMA COUNTY BOARD OF SUPERVISORS AGENDA"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-3-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "text": "## SONOMA COUNTY BOARD OF SUPERVISORS AGENDA\n\n3. LISTEN AND ATTEND IN PERSON: Members of the public may attend the meeting in person in the Board of Supervisors Chambers located at 575 Administration, Room 100A, Santa Rosa, CA 95403. Members of the public may also listen to the Board meeting in the Administration Building hall or outside the main entrance. Overflow seating will be available in the building hall, if necessary.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-3-1",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "text": "PUBLIC COMMENT: Public Comment may be made live, in person, in the Board Chambers. Available time for comments is determined by the Board Chair based on agenda scheduling demands and total number of speakers. In order to guarantee that your comment is received and considered by the County, attend the meeting in person or submit your comment in writing in advance of the meeting to bos@sonomacounty.gov.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-3-2",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "text": "In Board Chambers: Members of the public who wish to comment in the Board Chambers may do so according to the following procedure. Commenters will be requested to line up in the rear of the Chambers when the Board Chair announces Public Comment to commence. Upon completion of a comment, the individual would be asked to exit the Chambers or take a seat.  No standing unless in queue to speak.  This process is to be repeated to comment on any subsequent items.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-3-3",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "text": "AGENDAS AND MATERIALS: Agendas and most supporting materials are available on the Board's website at https://www.sonoma-county.legistar.com/. Due to legal, copyright, privacy or policy considerations, not all materials are posted online.  Materials that are not posted are available for public inspection between 8:00 a.m. and 5:00 p.m., Monday through Friday, at 575 Administration Drive, Room 100A, Santa Rosa, CA.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-3-4",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "text": "SUPPLEMENTAL MATERIALS: Materials related to an item on this agenda submitted to the Board after distribution of the agenda packet are available for public inspection in the Board of Supervisors office at 575 Administration Drive, Room 100A, Santa Rosa, CA, during normal business hours.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-3-5",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "text": "APPROVAL OF THE CONSENT CALENDAR: The Consent Calendar includes routine financial and administrative actions that are usually approved by a single majority vote.  There will be no discussion on these items prior to voting on the motion unless Board Members request specific items be discussed and/or removed from the Consent Calendar. There will be an opportunity for the public to comment on the consent calendar prior to it being voted upon.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-3-6",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "text": "PUBLIC TRANSIT ACCESS TO THE COUNTY ADMINISTRATION CENTER: Sonoma County Transit: Rt. 20, 30, 44, 48, 60, 62; Santa Rosa CityBus: Rt. 14; Golden Gate Transit: Rt. 80. For transit information call (707) 576-RIDE or 1-800-345-RIDE or visit or http://www.sctransit.com/",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-3-7",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "text": "ACCOMMODATION REQUEST: If you need an accommodation, an alternative format, or required another person to assist you while attending this meeting, please contact the Clerk of the Board at (707) 565-2241 or bos@sonomacounty.gov within 72 hours of the meeting to ensure arrangements for accommodation.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-3-8",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "text": "LANGUAGE INTERPRETERS: Spanish Translation is available through Zoom for Regular Board Meetings. Any additional language services are available at all regular and special Board and Committee meetings if made at least 48 hours in advance of the meeting to help ensure availability. For more information or to request services: Contact (707) 565-2241.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-3-9",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "text": "AVISO EN ESPA\u00d1OL: Traducci n al espa\u00e6ol para las reuniones regulares de la junta est\u00e1 disponible a trav\u00e9s de Zoom. Servicios de traduccci n a otros idiomas est\u00e1n disponibles en todas las reuniones regulares y especiales de la Junta y el Comit\u00e9 si se piden al menos 48 horas antes de la reuni n para ayudar a garantizar la disponibilidad. Para m\u00e1s informaci n o para solicitar servicios: Comun\u00edquese al (707) 565-2241.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-3-10",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-3",
+      "text": "BOARD CHAMBERS SECURITY SCREENING: Security screening is conducted for all individuals attending Board meetings in the Board Chambers and for those making public comment in the Board Chambers. Individuals planning to participate in Board meetings are advised to allow extra time to complete the screening process. The full policy can be found at http://sonomacounty.ca.gov/Board-of-Supervisors/",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-4",
+      "parent_chunk_id": null,
+      "text": "## DISCLOSURE OF CAMPAIGN CONTRIBUTIONS\n\nPursuant to Government Code section 84308, members of the Board of Supervisors are disqualified and not able to participate in any agenda item involving contracts (other than competitively bid, labor, or personal employment contracts), franchises, discretionary land use permits and other entitlements if the Board member received more than $500 in campaign contributions from the applicant or contractor, an agent of the applicant or contractor, or any financially interested participant who actively supports or opposes the County's decision on the agenda item since January 1, 2023. Members of the Board of Supervisors who have received, and applicants, contractors or their agents who have made, campaign contributions totaling more than $500 to a Board member since January 1, 2023, are required to disclose that fact for the official record of the subject proceeding. Disclosures must include the amount of the campaign contribution and identify the recipient Board member and may be made either in writing to the Clerk of the Board of Supervisors prior to the subject hearing or by verbal disclosure at the time of the hearing.\n\nEsta es una reuni n simult\u00e1nea de la Junta de Supervisores del Condado de Sonoma, la Junta Directiva de Sonoma County Water Agency (Agencia de Agua del Condado de Sonoma), la Junta Directiva de Community Development Commission (Comisi n de Desarrollo Comunitario), la Junta Directiva de Sonoma County Agricultural Preservation and Open Space Distric (Distrito de Preservaci n Agr\u00edcola y Espacios Abiertos del Condado de Sonoma), County of Sonoma Public Financing Authority (Autoridad de Finanzas P\u0153blicas del Condado de Sonoma) y  County of Sonoma Public Financing Corporation (Corporaci n de Financiaci n P\u0153blica del Condado de Sonoma)   y el Consejo Directivo de todos los distritos especiales que tengan asuntos en el orden del d\u00eda a escucharse en esta fecha. Los cinco supervisores distritales tambi\u00e9n sirven como la Ju",
+      "chunk_type": "parent",
+      "heading": "DISCLOSURE OF CAMPAIGN CONTRIBUTIONS"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-4-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-4",
+      "text": "## DISCLOSURE OF CAMPAIGN CONTRIBUTIONS\n\nPursuant to Government Code section 84308, members of the Board of Supervisors are disqualified and not able to participate in any agenda item involving contracts (other than competitively bid, labor, or personal employment contracts), franchises, discretionary land use permits and other entitlements if the Board member received more than $500 in campaign contributions from the applicant or contractor, an agent of the applicant or contractor, or any financially interested participant who actively supports or opposes the County's decision on the agenda item since January 1, 2023. Members of the Board of Supervisors who have received, and applicants, contractors or their agents who have made, campaign contributions totaling more than $500 to a Board member since January 1, 2023, are required to disclose that fact for the official record of the subject proceeding. Disclosures must include the amount of the campaign contribution and identify the recipient Board member and may be made either in writing to the Clerk of the Board of Supervisors prior to the subject hearing or by verbal disclosure at the time of the hearing.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-4-1",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-4",
+      "text": "Esta es una reuni n simult\u00e1nea de la Junta de Supervisores del Condado de Sonoma, la Junta Directiva de Sonoma County Water Agency (Agencia de Agua del Condado de Sonoma), la Junta Directiva de Community Development Commission (Comisi n de Desarrollo Comunitario), la Junta Directiva de Sonoma County Agricultural Preservation and Open Space Distric (Distrito de Preservaci n Agr\u00edcola y Espacios Abiertos del Condado de Sonoma), County of Sonoma Public Financing Authority (Autoridad de Finanzas P\u0153blicas del Condado de Sonoma) y  County of Sonoma Public Financing Corporation (Corporaci n de Financiaci n P\u0153blica del Condado de Sonoma)   y el Consejo Directivo de todos los distritos especiales que tengan asuntos en el orden del d\u00eda a escucharse en esta fecha. Los cinco supervisores distritales tambi\u00e9n sirven como la Junta Directiva de la Agencia de Agua del Condado de Sonoma, del Distrito de Preservaci n Agr\u00edcola y Espacios Abiertos del Condado de Sonoma, de la Autoridad de Finanzas P\u0153blicas del Condado de Sonoma, de la Corporaci n de Financiaci n P\u0153blica del Condado de Sonoma y como la Junta de Comisionados de la Comisi n de Desarrollo Comunitario. Cada una de las entidades anteriores es una entidad legal independiente.  La Junta le invita a asistir a sus reuniones, las cuales se programan regularmente cada martes a las 9:00 de la ma\u00e6ana. Alentamos y apreciamos su inter\u00e9s.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-4-2",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-4",
+      "text": "Las reuniones se llevan a cabo en persona en las c\u00e1maras de la Junta de Supervisores, ubicadas en 575 Administration Drive, Sala 102A, Santa Rosa, California.  El Condado retransmitir\u00e1 la mayor\u00eda de las reuniones a trav\u00e9s de Zoom con interpretaci n al espa\u00e6ol y subtitulado. Tenga en cuenta que el Condado no puede garantizar que el sistema Zoom est\u00e9 disponible durante la totalidad de cada reuni n.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-4-3",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-4",
+      "text": "COMPROMISO CON LA CORTES\u00cdA: La Junta de Supervisores ha adoptado reglas de procedimientos que incluyen un compromiso con la cortes\u00eda. Para asegurar la cortes\u00eda en las reuniones p\u0153blicas, se anima el p\u0153blico a participar en di\u00e1logo respetuoso que apoye la libertad de expresi n y que valore la diversidad de opiniones. Se espera que los miembros de la Junta, el personal y los miembros del p\u0153blico establezcan y mantengan una atm sfera cordial y respetuosa durante las discusiones y que fomenten un di\u00e1logo significativo libre de ataques personales. Los miembros del p\u0153blico tambi\u00e9n deben acatar el l\u00edmite de tiempo para sus comentarios.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-4-4",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-4",
+      "text": "La Junta agradece y valora sus comentarios, incluyendo las cr\u00edticas, sobre las pol\u00edticas, los procedimientos, los programas o los servicios del Condado o sobre los actos u omisiones de la Junta. Los oradores no deben usar lenguaje amenazante, profano o abusivo que interrumpa, perturbe o de otra manera impida la conducta ordenada de una reuni n de la Junta.   El Condado se compromete a mantener un lugar de trabajo libre de acoso ilegal y est\u00e1 consciente de que el personal del Condado asiste regularmente a las reuniones de la Junta. Las declaraciones o conductas discriminatorias que puedan infringir la Ley de Vivienda y Empleo Justo, como aquellas de car\u00e1cter hostil, intimidante, opresivo o abusivo son, en s\u00ed mismas, un perturbaci n para la reuni n y no ser\u00e1n toleradas.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-4-5",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-4",
+      "text": "Los miembros del p\u0153blico pueden ver o conectarse a la reuni n usando uno de los tres siguientes m\u00e9todos:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "parent_chunk_id": null,
+      "text": "## 1. VER LA TRANSMISI\u00d3N EN VIVO:\n\n[https://sonoma-county.legistar.com/Calendar.aspx](https://sonoma-county.legistar.com/Calendar.aspx)\n\nUna vez comience la reuni n, haga clic en el hiperenlace 'In Progress' para comenzar a ver.\n\n2. ESCUCHAR LA REUNI\u00d3N EN ZOOM: (solamente para escuchar e interpretaci n al espa\u00e6ol) Participe por computadora, tableta o aplicaci n de tel\u00e9fono inteligente:\n\n[Vaya a: https://sonomacounty.zoom.us/j/81946991227?pwd=MdjboPqs8NI5LtBtATtAcf8DYcOdD1.1](https://sonomacounty.zoom.us/j/81946991227?pwd=MdjboPqs8NI5LtBtATtAcf8DYcOdD1.1)\n\nEscriba el ID de la reuni n: 819 4699 1227\n\nEscriba la contrase\u00e6a: 919371\n\nEscuche en Zoom por tel\u00e9fono: Marque +1 (669) 900 9128 Escriba el ID de la reuni n: 819 4699 1227 Escriba la contrase\u00e6a:  919371\n\n3. ESCUCHE Y ASISTA EN PERSONA: Los miembros del p\u0153blico pueden asistir en persona a las C\u00e1maras de la Junta de Supervisores. Los miembros del p\u0153blico tambi\u00e9n pueden escuchar la reuni n de la Junta en el vest\u00edbulo del edificio administrativo o fuera de la entrada principal. En caso necesario, tambi\u00e9n hay m\u00e1s asientos en el vest\u00edbulo del edificio.\n\nCOMENTARIO P\u00daBLICO: Los comentarios p\u0153blicos se pueden hacer en vivo,  en persona, en las c\u00e1maras de la Junta. El presidente de la Junta determina el tiempo disponible para los comentarios con base en las necesidades de programaci n del orden del d\u00eda y el n\u0153mero total de participantes. Para garantizar que su comentario sea recibido y considerado por el Condado, asista a la reuni n en persona o envi\u00e9 su comentario por escrito antes de la reuni n a bos@sonomacounty.gov.\n\nEN LAS C\u00c1MARAS DE LA JUNTA: Los miembros del p\u0153blico que deseen hacer comentarios en la c\u00e1mara de la junta pueden hacerlo de acuerdo con el siguiente procedimiento. Se pedir\u00e1 a los comentaristas que se pongan en fila en la parte de atr\u00e1s de la c\u00e1mara cuando el presidente de la junta anuncie el comienzo de los comentarios p\u0153blicos. Una vez finalizado el comentario, se le pedir\u00e1 a la persona que deje la sala",
+      "chunk_type": "parent",
+      "heading": "1. VER LA TRANSMISI\u00d3N EN VIVO:"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "## 1. VER LA TRANSMISI\u00d3N EN VIVO:\n\n[https://sonoma-county.legistar.com/Calendar.aspx](https://sonoma-county.legistar.com/Calendar.aspx)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-1",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "Una vez comience la reuni n, haga clic en el hiperenlace 'In Progress' para comenzar a ver.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-2",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "2. ESCUCHAR LA REUNI\u00d3N EN ZOOM: (solamente para escuchar e interpretaci n al espa\u00e6ol) Participe por computadora, tableta o aplicaci n de tel\u00e9fono inteligente:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-3",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "[Vaya a: https://sonomacounty.zoom.us/j/81946991227?pwd=MdjboPqs8NI5LtBtATtAcf8DYcOdD1.1](https://sonomacounty.zoom.us/j/81946991227?pwd=MdjboPqs8NI5LtBtATtAcf8DYcOdD1.1)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-4",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "Escriba el ID de la reuni n: 819 4699 1227",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-5",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "Escuche en Zoom por tel\u00e9fono: Marque +1 (669) 900 9128 Escriba el ID de la reuni n: 819 4699 1227 Escriba la contrase\u00e6a:  919371",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-6",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "3. ESCUCHE Y ASISTA EN PERSONA: Los miembros del p\u0153blico pueden asistir en persona a las C\u00e1maras de la Junta de Supervisores. Los miembros del p\u0153blico tambi\u00e9n pueden escuchar la reuni n de la Junta en el vest\u00edbulo del edificio administrativo o fuera de la entrada principal. En caso necesario, tambi\u00e9n hay m\u00e1s asientos en el vest\u00edbulo del edificio.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-7",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "COMENTARIO P\u00daBLICO: Los comentarios p\u0153blicos se pueden hacer en vivo,  en persona, en las c\u00e1maras de la Junta. El presidente de la Junta determina el tiempo disponible para los comentarios con base en las necesidades de programaci n del orden del d\u00eda y el n\u0153mero total de participantes. Para garantizar que su comentario sea recibido y considerado por el Condado, asista a la reuni n en persona o envi\u00e9 su comentario por escrito antes de la reuni n a bos@sonomacounty.gov.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-8",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "EN LAS C\u00c1MARAS DE LA JUNTA: Los miembros del p\u0153blico que deseen hacer comentarios en la c\u00e1mara de la junta pueden hacerlo de acuerdo con el siguiente procedimiento. Se pedir\u00e1 a los comentaristas que se pongan en fila en la parte de atr\u00e1s de la c\u00e1mara cuando el presidente de la junta anuncie el comienzo de los comentarios p\u0153blicos. Una vez finalizado el comentario, se le pedir\u00e1 a la persona que deje la sala o tome asiento.  No se permite estar de pie a menos que se est\u00e9 en la fila para hablar.  Este proceso se repetir\u00e1 para comentar cualquier tema posterior.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-9",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "POR FAVOR TOME EN CUENTA: No habr\u00e1 asientos p\u0153blicos en las c\u00e1maras de la Junta. Miembros del p\u0153blico que deseen hacer comentarios p\u0153blicos en persona pueden observar la reuni n en las estaciones de observaci n y escucha afuera de las c\u00e1maras de la Junta y ser\u00e1n admitidos a las c\u00e1maras de la Junta \u0153nicamente para proveer comentario p\u0153blico.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-10",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "\u00d3RDENES DEL D\u00cdA Y MATERIALES: Las  rdenes del d\u00eda y la mayor\u00eda de los materiales de apoyo est\u00e1n disponibles en la p\u00e1gina web de la junta en https://www.sonoma-county.legistar.com/. Debido a consideraciones legales, derecho de autor, privacidad o pol\u00edtica, no se publican todos los materiales en l\u00ednea. Los materiales no publicados est\u00e1n disponibles para la inspecci n p\u0153blica entre 8:00 a.m. y 5:00 p.m., de lunes a viernes en 575 Administration Drive, Sala 100A, Santa Rosa, CA.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-11",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "MATERIALES SUPLEMENTARIOS: Los materiales relacionados a un asunto de este orden del d\u00eda entregados a la Junta despu\u00e9s de la distribuci n del mismo est\u00e1n disponibles para la inspecci n p\u0153blica en la oficina de la Junta de Supervisores en 575 Administration Drive, Sala 100A, Santa Rosa, CA, durante horas h\u00e1biles.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-12",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "APROBACI\u00d3N DEL CALENDARIO ACORDADO: El calendario acordado incluye acciones rutinarias financieras y administrativas que generalmente se aprueban con votaci n por mayor\u00eda simple.  No se debatir\u00e1n estos puntos antes de la votaci n de la moci n, salvo que los miembros de la Junta soliciten discutir temas espec\u00edficos o que se excluyan del calendario acordado. Habr\u00e1 una oportunidad para comentarios del p\u0153blico sobre el calendario acordado antes del voto.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-13",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "ACCESO POR TRANSPORTE P\u00daBLICO AL CENTRO DE ADMINISTRACI\u00d3N DEL CONDADO: Transporte del condado de Sonoma: Rutas 20, 30, 44, 48, 60, 62; Santa Rosa CityBus: Ruta 14; Golden Gate Transit: Ruta 80 Para informaci n de transporte llame al (707) 576-RIDE or 1-800-345-RIDE o visite http://www.sctransit.com/",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-5-14",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-5",
+      "text": "SOLICITUD DE ADAPTACI\u00d3N:   Si necesita una adaptaci n, un formato alternativo o requiere que otra persona le ayude mientras asiste a esta reuni n, por favor contacte a la secretaria de la Junta al (707) 565-2241 o  a bos@sonomacounty.gov en un plazo de 72 horas de la reuni n para garantizar los arreglos para la adaptaci n.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-6",
+      "parent_chunk_id": null,
+      "text": "## REVELACI\u00d3N DE CONTRIBUCIONES DE CAMPA\u00d1A\n\nDe conformidad con la secci n 84308 del C digo de Gobierno, los miembros de la Junta de Supervisores est\u00e1n descalificados y no pueden participar en ning\u0153n punto del orden del d\u00eda que implique contratos (que no sean de licitaci n, laborales o de empleo personal), franquicias, permisos discrecionales de uso del suelo y otros derechos si el miembro de la Junta recibi  m\u00e1s de $500 en contribuciones de campa\u00e6a del solicitante o contratista, un agente del solicitante o contratista, o cualquier participante financieramente interesado que apoye o se oponga activamente a la decisi n del Condado sobre el punto del orden del d\u00eda desde el 1 de enero de 2023. Los miembros de la Junta de Supervisores que hayan recibido, y los solicitantes, contratistas o sus agentes que hayan hecho contribuciones de campa\u00e6a por un total de m\u00e1s de $500 a un miembro de la Junta desde el 1 de enero de 2023, est\u00e1n obligados a declarar el hecho para el registro oficial del procedimiento en cuesti n. Las divulgaciones deben especificar el monto de la contribuci n de campa\u00e6a e identificar al miembro destinatario de la Junta y pueden presentarse por escrito a la Secretar\u00eda de la Junta de Supervisores antes de la audiencia en cuesti n o mediante revelaci n verbal al momento de la audiencia.",
+      "chunk_type": "parent",
+      "heading": "REVELACI\u00d3N DE CONTRIBUCIONES DE CAMPA\u00d1A"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-6-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-6",
+      "text": "## REVELACI\u00d3N DE CONTRIBUCIONES DE CAMPA\u00d1A\n\nDe conformidad con la secci n 84308 del C digo de Gobierno, los miembros de la Junta de Supervisores est\u00e1n descalificados y no pueden participar en ning\u0153n punto del orden del d\u00eda que implique contratos (que no sean de licitaci n, laborales o de empleo personal), franquicias, permisos discrecionales de uso del suelo y otros derechos si el miembro de la Junta recibi  m\u00e1s de $500 en contribuciones de campa\u00e6a del solicitante o contratista, un agente del solicitante o contratista, o cualquier participante financieramente interesado que apoye o se oponga activamente a la decisi n del Condado sobre el punto del orden del d\u00eda desde el 1 de enero de 2023. Los miembros de la Junta de Supervisores que hayan recibido, y los solicitantes, contratistas o sus agentes que hayan hecho contribuciones de campa\u00e6a por un total de m\u00e1s de $500 a un miembro de la Junta desde el 1 de enero de 2023, est\u00e1n obligados a declarar el hecho para el registro oficial del procedimiento en cuesti n. Las divulgaciones deben especificar el monto de la contribuci n de campa\u00e6a e identificar al miembro destinatario de la Junta y pueden presentarse por escrito a la Secretar\u00eda de la Junta de Supervisores antes de la audiencia en cuesti n o mediante revelaci n verbal al momento de la audiencia.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-7",
+      "parent_chunk_id": null,
+      "text": "## 9:00 A.M. CALL TO ORDER\n\n- I. ROLL CALL / BOARD MEMBER TELECONFERENCE DISCLOSURE OR VOTE, IF APPLICABLE",
+      "chunk_type": "parent",
+      "heading": "9:00 A.M. CALL TO ORDER"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-7-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-7",
+      "text": "## 9:00 A.M. CALL TO ORDER\n\n- I. ROLL CALL / BOARD MEMBER TELECONFERENCE DISCLOSURE OR VOTE, IF APPLICABLE",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-8",
+      "parent_chunk_id": null,
+      "text": "## II. PUBLIC COMMENT ON CLOSED SESSION ITEMS",
+      "chunk_type": "parent",
+      "heading": "II. PUBLIC COMMENT ON CLOSED SESSION ITEMS"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-9",
+      "parent_chunk_id": null,
+      "text": "## III. CLOSED SESSION CALENDAR",
+      "chunk_type": "parent",
+      "heading": "III. CLOSED SESSION CALENDAR"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-10",
+      "parent_chunk_id": null,
+      "text": "## ITEMS #1 &amp; 2 CONTINUED TO JULY 7, 2026 BY ADDENDUM\n\n- negotiator: Johannes Hoevertsz, Director of Sonoma County Public Infrastructure, and 2026-0584\n1. The Board of Supervisors will consider in closed session: Conference with Real Property Negotiator - 400 Aviation Boulevard, Santa Rosa, CA 95403. Agency Warren Sattler, Real Estate Manager. Negotiating parties County of Sonoma and American Ag Credit FLCA. Under Negotiation: Price, terms and conditions of a proposed acquisition. (Government Code Section 54956.8.)\n2. The Board of Supervisors will consider the following in closed session: Conference with Legal Counsel - Existing Litigation - Trevor Baxter v. County of Sonoma, et al. Sonoma County Superior Court Case 24CV02524 (Gov. Code section 54956.9(d)(1).) 2026-0601\n3. The Board of Supervisors will consider the following in closed session: Public Employee Performance Evaluation  - County Executive  (Government Code section \u00a754957(b)(1)) 2026-0626\n4. The Board of Supervisors will consider the following in closed session: Conference with Legal Counsel - Existing Litigation -Christina Lile v. County of Sonoma, et al., Sonoma County Superior Court Case No. 24-CV-05464 (Government Code Section 54956.9(d)(1).) 2026-0631\n5. The Board of Directors of the Sonoma County Water Agency and the Board of Directors of the Sonoma Valley County Sanitation District will consider the following in closed session: Conference with Legal Counsel - Anticipated Litigation - Potential initiation of litigation pursuant to Government Code Section 54956.9 subdivision (d) (4). 1 case. 2026-0648",
+      "chunk_type": "parent",
+      "heading": "ITEMS #1 &amp; 2 CONTINUED TO JULY 7, 2026 BY ADDENDUM"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-10-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-10",
+      "text": "## ITEMS #1 &amp; 2 CONTINUED TO JULY 7, 2026 BY ADDENDUM\n\n- negotiator: Johannes Hoevertsz, Director of Sonoma County Public Infrastructure, and 2026-0584\n1. The Board of Supervisors will consider in closed session: Conference with Real Property Negotiator - 400 Aviation Boulevard, Santa Rosa, CA 95403. Agency Warren Sattler, Real Estate Manager. Negotiating parties County of Sonoma and American Ag Credit FLCA. Under Negotiation: Price, terms and conditions of a proposed acquisition. (Government Code Section 54956.8.)\n2. The Board of Supervisors will consider the following in closed session: Conference with Legal Counsel - Existing Litigation - Trevor Baxter v. County of Sonoma, et al. Sonoma County Superior Court Case 24CV02524 (Gov. Code section 54956.9(d)(1).) 2026-0601\n3. The Board of Supervisors will consider the following in closed session: Public Employee Performance Evaluation  - County Executive  (Government Code section \u00a754957(b)(1)) 2026-0626\n4. The Board of Supervisors will consider the following in closed session: Conference with Legal Counsel - Existing Litigation -Christina Lile v. County of Sonoma, et al., Sonoma County Superior Court Case No. 24-CV-05464 (Government Code Section 54956.9(d)(1).) 2026-0631\n5. The Board of Directors of the Sonoma County Water Agency and the Board of Directors of the Sonoma Valley County Sanitation District will consider the following in closed session: Conference with Legal Counsel - Anticipated Litigation - Potential initiation of litigation pursuant to Government Code Section 54956.9 subdivision (d) (4). 1 case. 2026-0648",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-11",
+      "parent_chunk_id": null,
+      "text": "## ITEM #5A ADDED BY ADDENDUM\n\n- 5A. The Board of Supervisors, the Board of Directors of the Water Agency, the Board of Commissioners of the Community Development Commission, and the Board of Directors of the Agricultural Preservation And Open Space District will consider the following in closed session: Conference with Labor Negotiators: Agency Negotiators: Janell Crane/Ashley Nolan, County of Sonoma. Employee Organizations: All. Unrepresented employees: All, including retired employees. (Government Code Section \u00a754957.6.) 2026-0663",
+      "chunk_type": "parent",
+      "heading": "ITEM #5A ADDED BY ADDENDUM"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-11-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-11",
+      "text": "## ITEM #5A ADDED BY ADDENDUM\n\n- 5A. The Board of Supervisors, the Board of Directors of the Water Agency, the Board of Commissioners of the Community Development Commission, and the Board of Directors of the Agricultural Preservation And Open Space District will consider the following in closed session: Conference with Labor Negotiators: Agency Negotiators: Janell Crane/Ashley Nolan, County of Sonoma. Employee Organizations: All. Unrepresented employees: All, including retired employees. (Government Code Section \u00a754957.6.) 2026-0663",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-12",
+      "parent_chunk_id": null,
+      "text": "## IV. 10:00 A.M. RECONVENE FROM CLOSED SESSION",
+      "chunk_type": "parent",
+      "heading": "IV. 10:00 A.M. RECONVENE FROM CLOSED SESSION"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-13",
+      "parent_chunk_id": null,
+      "text": "## PLEDGE OF ALLEGIANCE",
+      "chunk_type": "parent",
+      "heading": "PLEDGE OF ALLEGIANCE"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-14",
+      "parent_chunk_id": null,
+      "text": "## V. APPROVAL OF THE AGENDA\n\n(Items may be added or withdrawn from the agenda consistent with State law)",
+      "chunk_type": "parent",
+      "heading": "V. APPROVAL OF THE AGENDA"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-14-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-14",
+      "text": "## V. APPROVAL OF THE AGENDA\n\n(Items may be added or withdrawn from the agenda consistent with State law)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-15",
+      "parent_chunk_id": null,
+      "text": "## VI. 10:00 A.M. CONSENT CALENDAR\n\n6. Delegated Authority for State and Federal Revenue Agreements\n\n[2026-0576](https://sonoma-county.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=14840)\n\nAdopt a resolution delegating authority to the Agricultural Commissioner/Sealer of Weights &amp; Measures, or designee, to accept funding allocations for the County of Sonoma and execute revenue agreements, in a form approved by County Counsel, from state and federal agencies through June 30, 2031.\n\nDepartment or Agency Name(s):\n\nAgricultural Commissioner",
+      "chunk_type": "parent",
+      "heading": "VI. 10:00 A.M. CONSENT CALENDAR"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-15-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-15",
+      "text": "## VI. 10:00 A.M. CONSENT CALENDAR\n\n6. Delegated Authority for State and Federal Revenue Agreements",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-15-1",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-15",
+      "text": "[2026-0576](https://sonoma-county.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=14840)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-15-2",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-15",
+      "text": "Adopt a resolution delegating authority to the Agricultural Commissioner/Sealer of Weights &amp; Measures, or designee, to accept funding allocations for the County of Sonoma and execute revenue agreements, in a form approved by County Counsel, from state and federal agencies through June 30, 2031.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-16",
+      "parent_chunk_id": null,
+      "text": "## ITEM #7 WITHDRAWN BY ADDENDUM\n\n7. Subordination Agreement for City of Santa Rosa Farms Mitigation Preserve\n\n[2026-0629](https://sonoma-county.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=14893)\n\nAuthorize the Board President to execute an agreement with City of Santa Rosa and Center for Natural Lands Management to subordinate a 99-acre portion of the Ag + Open Space's City of Santa Rosa Farms Conservation Easement to a mitigation bank easement to be held by the Center for Natural Lands Management to enable the City of Santa Rosa to establish a mitigation preserve for City projects.\n\nDepartment or Agency Name(s):\n\nAgricultural Preservation And Open Space District",
+      "chunk_type": "parent",
+      "heading": "ITEM #7 WITHDRAWN BY ADDENDUM"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-16-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-16",
+      "text": "## ITEM #7 WITHDRAWN BY ADDENDUM\n\n7. Subordination Agreement for City of Santa Rosa Farms Mitigation Preserve",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-16-1",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-16",
+      "text": "[2026-0629](https://sonoma-county.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=14893)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-16-2",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-16",
+      "text": "Authorize the Board President to execute an agreement with City of Santa Rosa and Center for Natural Lands Management to subordinate a 99-acre portion of the Ag + Open Space's City of Santa Rosa Farms Conservation Easement to a mitigation bank easement to be held by the Center for Natural Lands Management to enable the City of Santa Rosa to establish a mitigation preserve for City projects.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-16-3",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-16",
+      "text": "Agricultural Preservation And Open Space District",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-17",
+      "parent_chunk_id": null,
+      "text": "## Sustainable Agricultural Lands Conservation Program Grant and Resolution for Deniz 2026-0598\n\n8. Family Farm\n\n<!-- image -->\n\nAdopt a Resolution of the Directors of the Sonoma County Agricultural Preservation and Open Space District (\"Ag + Open Space\"):\n\n- A)  Authorize the submission of an application to the State of California Department of Conservation under the Sustainable Agricultural Lands Conservation Program to be used towards acquisition of a conservation easement for the Deniz Family Farm property (Project) with a grant request of $1 million;\n- B) Authorize the Ag + Open Space General Manager to execute a grant agreement with the State of California in substantially the same form as on file with the Clerk if the project is awarded funding, with minor modifications as may be approved by County Counsel and committing to match of Ag + Open Space and potential other public and private funds of approximately $1 . 2 million;\n- C) Certify that no known conflict of interest or appearance of conflict of interest exists as to any member of the Ag + Open Space Board of Directors as related to the Deniz Family Farm Project; and\n- D)  Authorize the Ag + Open Space General Manager to execute and implement grant agreements, including signing applications, agreements, invoices, and other documents related to the application and grant agreement, if awarded funding .\n\nDepartment or Agency Name(s): Agricultural Preservation And Open Space District\n\n9. Dissolution of the Treasury Oversight Committee\n\n[2026-0357](https://sonoma-county.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=14621)\n\n- A)  Adopt a Resolution to dissolve the Treasury Oversight Committee due to its limited and non-substantive oversight responsibilities, associated administrative requirements, and to improve operational efficiency , and;\n- B) Approve revisions to the Sonoma County Statement of Investment Policy to remove references to the Treasury Oversight Committee.\n10. Fee Waiver\n\nDepartment or Agen",
+      "chunk_type": "parent",
+      "heading": "Sustainable Agricultural Lands Conservation Program Grant and Resolution for Deniz 2026-0598"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-17-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-17",
+      "text": "## Sustainable Agricultural Lands Conservation Program Grant and Resolution for Deniz 2026-0598\n\n8. Family Farm",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-17-1",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-17",
+      "text": "Adopt a Resolution of the Directors of the Sonoma County Agricultural Preservation and Open Space District (\"Ag + Open Space\"):",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-17-2",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-17",
+      "text": "- A)  Authorize the submission of an application to the State of California Department of Conservation under the Sustainable Agricultural Lands Conservation Program to be used towards acquisition of a conservation easement for the Deniz Family Farm property (Project) with a grant request of $1 million;\n- B) Authorize the Ag + Open Space General Manager to execute a grant agreement with the State of California in substantially the same form as on file with the Clerk if the project is awarded funding, with minor modifications as may be approved by County Counsel and committing to match of Ag + Open Space and potential other public and private funds of approximately $1 . 2 million;\n- C) Certify that no known conflict of interest or appearance of conflict of interest exists as to any member of the Ag + Open Space Board of Directors as related to the Deniz Family Farm Project; and\n- D)  Authorize the Ag + Open Space General Manager to execute and implement grant agreements, including signing applications, agreements, invoices, and other documents related to the application and grant agreement, if awarded funding .",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-17-3",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-17",
+      "text": "Department or Agency Name(s): Agricultural Preservation And Open Space District",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-17-4",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-17",
+      "text": "9. Dissolution of the Treasury Oversight Committee",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-17-5",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-17",
+      "text": "[2026-0357](https://sonoma-county.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=14621)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-17-6",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-17",
+      "text": "- A)  Adopt a Resolution to dissolve the Treasury Oversight Committee due to its limited and non-substantive oversight responsibilities, associated administrative requirements, and to improve operational efficiency , and;\n- B) Approve revisions to the Sonoma County Statement of Investment Policy to remove references to the Treasury Oversight Committee.\n10. Fee Waiver",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-17-7",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-17",
+      "text": "Department or Agency Name(s): Auditor-Controller-Treasurer-Tax Collector",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-17-8",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-17",
+      "text": "[2026-0468](https://sonoma-county.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=14732)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-17-9",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-17",
+      "text": "Approve a Permit &amp; Resource Management Department fee waiver in the amount of $309.98 for the Penngrove Social Firemen's 4th of July Parade to be held on July 5, 2026. (Second District)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-18",
+      "parent_chunk_id": null,
+      "text": "## 11.\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "11."
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-parent-19",
+      "parent_chunk_id": null,
+      "text": "## Disbursement of Fiscal Year 25-26 Second District Community Investment Fund Grant 2026-0514 Awards\n\n- A) Approve Community Investment Fund grant awards and authorize the County Executive, or designee, to execute an agreement with the following entities: ALFA Community Health Workers LLC (fiscal agent: Bienestar Collective), $2,000; Entrepreneurs of Tomorrow, $2,000; LandPaths, $2,000; North Coast Ballet California, $1,500; Petaluma Area Chamber of Commerce, $5,000; Petaluma Gap Winegrowers Alliance, $10,000; Petaluma People Services Center, $5,000; Petaluma Quilt Guild, $350, Santa Rosa Urban Arts Partnership , $500; and Secure Families Collaborative, $2,000.\n- B) Authorize the County Executive, or designee, to amend these agreements to lengthen the time schedules and make minor modifications to the allowed uses that do not increase the amount awarded under the agreements.\n- C) Make a finding that the proposed expenditures are necessary to meet the social needs of the population of the County pursuant to Government Code Section 26277. (Second District)\n12. Adopt a Resolution Authorizing Execution of Agreements for Administration of Mobilehome Rent Stabilization Programs for the Cities of Petaluma, Cotati, Sebastopol, and the Town of Windsor\n\nDepartment or Agency Name(s):\n\nBoard of Supervisors\n\n[2026-0578](https://sonoma-county.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=14842)\n\nAdopt a Resolution to authorize the Executive Director of the Sonoma County Community Development Commission (Commission), or designee, to execute agreements with the City of Petaluma, the City of Cotati, the City of Sebastopol, and the Town of Windsor for the continued administration of their respective Mobilehome Rent Stabilization Programs for an additional term of three (3) years, with revenue from the cities and town of up to $50,000 per year for all agreements combined, and an option to extend for an additional three (3) years; authorize adjustments to the administrative fee as",
+      "chunk_type": "parent",
+      "heading": "Disbursement of Fiscal Year 25-26 Second District Community Investment Fund Grant 2026-0514 Awards"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-19-0",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-19",
+      "text": "## Disbursement of Fiscal Year 25-26 Second District Community Investment Fund Grant 2026-0514 Awards\n\n- A) Approve Community Investment Fund grant awards and authorize the County Executive, or designee, to execute an agreement with the following entities: ALFA Community Health Workers LLC (fiscal agent: Bienestar Collective), $2,000; Entrepreneurs of Tomorrow, $2,000; LandPaths, $2,000; North Coast Ballet California, $1,500; Petaluma Area Chamber of Commerce, $5,000; Petaluma Gap Winegrowers Alliance, $10,000; Petaluma People Services Center, $5,000; Petaluma Quilt Guild, $350, Santa Rosa Urban Arts Partnership , $500; and Secure Families Collaborative, $2,000.\n- B) Authorize the County Executive, or designee, to amend these agreements to lengthen the time schedules and make minor modifications to the allowed uses that do not increase the amount awarded under the agreements.\n- C) Make a finding that the proposed expenditures are necessary to meet the social needs of the population of the County pursuant to Government Code Section 26277. (Second District)\n12. Adopt a Resolution Authorizing Execution of Agreements for Administration of Mobilehome Rent Stabilization Programs for the Cities of Petaluma, Cotati, Sebastopol, and the Town of Windsor",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-19-1",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-19",
+      "text": "[2026-0578](https://sonoma-county.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=14842)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-19-2",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-19",
+      "text": "Adopt a Resolution to authorize the Executive Director of the Sonoma County Community Development Commission (Commission), or designee, to execute agreements with the City of Petaluma, the City of Cotati, the City of Sebastopol, and the Town of Windsor for the continued administration of their respective Mobilehome Rent Stabilization Programs for an additional term of three (3) years, with revenue from the cities and town of up to $50,000 per year for all agreements combined, and an option to extend for an additional three (3) years; authorize adjustments to the administrative fee as necessary to reflect the Commission's actual costs of providing these services; and to execute any amendments necessary and consistent with the scope of services.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-sonoma-county-c67631151308963a-child-19-3",
+      "parent_chunk_id": "doc-sonoma-county-c67631151308963a-parent-19",
+      "text": "13. Conservation Works Grant Funding Agreement and Funding for Mark West Creek Preserve Trail Access and Signage.\n- A)  Authorize the County Executive or designee to execute an Agreement for Grant Funding with Conservation Works, in a form approved by County Counsel, to support ongoing regional convening and capacity building related to the Russian River Confluence in a total amount not to exceed $100,000, between April 1, 2026, and June 1, 2027.\n- B) Make a finding that the proposed expenditures are necessary to meet the social needs of the population of the county pursuant to Government Code section 26227.\n- C) Adopt Concurrent Budget Resolution to transfer $50,000 from Sonoma Water and $50,000 from the Water Security Fund to the County Executive's Office. (4/5th Vote Required)\n- D)  Authorize Sonoma County Water Agency's General Manager to receive Water Security funding for trail access and informational signs at Mark West Creek Preserve in the amount of $42,000.\n- E) Adopt a Concurrent Budget Resolution to transfer $42,000 from the Water Security fund to the Sonoma Water Facilities Fund for trail access and signage at Mark West Creek Preserve. (4/5th Vote Required)",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "c67631151308963ab016ccea236dd62977a4f6eabc29c32e03ffb0fae51151a9",
+  "extraction_method": "docling",
+  "source_url": "https://sonoma-county.legistar.com/View.ashx?M=A&ID=1351011&GUID=8A413A62-357F-4F0F-B3DC-5087ED093760",
+  "doc_type": "agenda",
+  "source_document_id": null
+}

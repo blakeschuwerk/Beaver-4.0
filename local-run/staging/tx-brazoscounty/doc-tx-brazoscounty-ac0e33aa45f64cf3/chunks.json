@@ -1,0 +1,520 @@
+{
+  "document_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3",
+  "county_id": "tx-brazoscounty",
+  "trace_id": "74d28fef-b553-4d16-ac23-e00ae868a9a0",
+  "extracted_at": "2026-06-25T16:35:34.272960+00:00",
+  "chunk_count": 81,
+  "chunks": [
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-1",
+      "parent_chunk_id": null,
+      "text": "## MINUTES JUNE 18, 2026",
+      "chunk_type": "parent",
+      "heading": "MINUTES JUNE 18, 2026"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-2",
+      "parent_chunk_id": null,
+      "text": "## PUBLIC DEFENDER'S OVERSIGHT BOARD MEETING",
+      "chunk_type": "parent",
+      "heading": "PUBLIC DEFENDER'S OVERSIGHT BOARD MEETING"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "parent_chunk_id": null,
+      "text": "## 1. Call to Order\n\nA meeting of the Brazos County Public Defender's Office Oversight Board was held on Thursday, June 18, 2026 at 10:00 a.m. in Suite 310 of the Brazos County Administration Building, 200 South Texas Avenue, Bryan, Texas. The following members of the Board were present:\n\nCounty Judge Duane Peters; Judge Willie Blackmon (retired), Absent; Commissioner Wanda J. Watson; Michele Esparza; Fran Duane; Jim James, Absent;\n\nJamie Martin, Absent.\n\nThe attached sheet contains the names of officials and citizens that were in attendance.\n\n2. Approval of Minutes from the March 6, 2026 Public Defender's Oversight Board Meeting.\n\nThe Board voted unanimously to approve the minutes for the meeting held on March 6, 2026.\n\nMotion: Approve, Moved by Fran Duane, Seconded by Judge Duane Peters. Passed. 4-0.  Ayes: Duane, Esparza, Peters, Watson.  Absent: Blackmon, James, Martin.\n\n3. Approval to nominate and approve of appointments to the Public Defender's Office Oversight Board, including the determination of their terms of office (4 positions):\n2. Michele Esparza\n3. Fran Duane\n4. Judge Willie Blackmon\n5. Jamie Martin\n\nMichele Esparza nominated Jim Locke to replace her when her term expires. The Board voted unanimously to approve the appointment of Jim Locke to the PDO Board effective August 15, 2026.\n\nMotion: Approve, Moved by Commissioner Wanda J. Watson, Seconded by Fran Duane. Passed. 4-0.  Ayes: Duane, Esparza, Peters, Watson.  Absent: Blackmon, James, Martin.\n\nThe Board voted unanimously to approve the reappointment of Fran Duane for a term of two years, effective August 15, 2026.\n\nMotion: Approve, Moved by Commissioner Wanda J. Watson, Seconded by Judge Duane Peters. Passed. 4-0.  Ayes: Duane, Esparza, Peters, Watson.  Absent: Blackmon, James, Martin.\n\nThe Board thanked Judge Willie Blackmon for his years of service to the Public Defender's Oversight Board. Ms. Esparza then nominated Robert Orozco to serve in Judge Blackmon's position once his term expires.\n\nThe B",
+      "chunk_type": "parent",
+      "heading": "1. Call to Order"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "## 1. Call to Order\n\nA meeting of the Brazos County Public Defender's Office Oversight Board was held on Thursday, June 18, 2026 at 10:00 a.m. in Suite 310 of the Brazos County Administration Building, 200 South Texas Avenue, Bryan, Texas. The following members of the Board were present:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "County Judge Duane Peters; Judge Willie Blackmon (retired), Absent; Commissioner Wanda J. Watson; Michele Esparza; Fran Duane; Jim James, Absent;",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-2",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "The attached sheet contains the names of officials and citizens that were in attendance.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-3",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "2. Approval of Minutes from the March 6, 2026 Public Defender's Oversight Board Meeting.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-4",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "The Board voted unanimously to approve the minutes for the meeting held on March 6, 2026.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-5",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Motion: Approve, Moved by Fran Duane, Seconded by Judge Duane Peters. Passed. 4-0.  Ayes: Duane, Esparza, Peters, Watson.  Absent: Blackmon, James, Martin.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-6",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "3. Approval to nominate and approve of appointments to the Public Defender's Office Oversight Board, including the determination of their terms of office (4 positions):\n2. Michele Esparza\n3. Fran Duane\n4. Judge Willie Blackmon\n5. Jamie Martin",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-7",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Michele Esparza nominated Jim Locke to replace her when her term expires. The Board voted unanimously to approve the appointment of Jim Locke to the PDO Board effective August 15, 2026.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-8",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Motion: Approve, Moved by Commissioner Wanda J. Watson, Seconded by Fran Duane. Passed. 4-0.  Ayes: Duane, Esparza, Peters, Watson.  Absent: Blackmon, James, Martin.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-9",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "The Board voted unanimously to approve the reappointment of Fran Duane for a term of two years, effective August 15, 2026.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-10",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Motion: Approve, Moved by Commissioner Wanda J. Watson, Seconded by Judge Duane Peters. Passed. 4-0.  Ayes: Duane, Esparza, Peters, Watson.  Absent: Blackmon, James, Martin.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-11",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "The Board thanked Judge Willie Blackmon for his years of service to the Public Defender's Oversight Board. Ms. Esparza then nominated Robert Orozco to serve in Judge Blackmon's position once his term expires.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-12",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "The Board voted unanimously to approve the appointment of Robert Orozco to the Oversight Board, effective August 15, 2026.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-13",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Motion: Approve, Moved by Commissioner Wanda J. Watson, Seconded by Judge Duane Peters. Passed. 4-0.  Ayes: Duane, Esparza, Peters, Watson.  Absent: Blackmon, James, Martin.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-14",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "The Board voted unanimously to approve the appointment of Ann Boney to the Public Defender's Oversight Board to replace Jamie Martin when her term expires. Ms. Boney will serve a term of three years, effective August 15, 2026.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-15",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Motion: Approve, Moved by Commissioner Wanda J. Watson, Seconded by Judge Duane Peters. Passed. 4-0.  Ayes: Duane, Esparza, Peters, Watson.  Absent: Blackmon, James, Martin.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-16",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "4. Review and discuss the Quarterly Progress Report for January, February, and March 2026.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-17",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Mr. Wood presented the adult misdemeanor and felony case statistics and the office's progress in moving cases through the system efficiently. He reported that the average time between appointment of counsel and the initial client interview is being maintained at fewer than ten business days.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-18",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Mr. Wood also reviewed data regarding the average number of days clients spend in jail prior to case resolution. He informed the Board that he has been looking into opportunities to further analyze and quantify the office's performance data. The Board entered into discussion regarding the implications of monetizing the report data and how such efforts align with the mission and objectives of the Public Defender's Office.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-19",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Mr. Wood presented the Juvenile Division Report and commended Juvenile Defender Amanda Buenger for her outstanding work. He explained that the report represents the division's first formal reporting period and includes juvenile cases assigned between January and March. Mr. Wood stated that the Public Defender's Office has made a concerted effort to handle as much of the juvenile caseload as possible and reported that the division has received significant positive feedback.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-20",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Ms. Duane questioned whether another attorney would be capable of managing a caseload comparable to that of Ms. Buenger. Mr. Wood responded that recruiting another highly qualified candidate to work with Ms. Buenger is a top priority. He expressed confidence that the juvenile caseload can be effectively managed through the efforts of two attorneys supported by a paralegal, investigator, and caseworker.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-21",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Mr. Wood presented the Mental Health Division Report, noting that the division is staffed by one full-time attorney and one full-time caseworker. He explained that the division primarily serves indigent clients who have been deemed incompetent to stand trial. Mr. Wood also discussed matters related to the RESTART Specialty Court Program and reviewed challenges associated with the program's operation. Following discussion, Board members recommended improving communication and public understanding regarding the RESTART Program.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-22",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "5. Review and discuss the status/update of FY 2027 grants.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-23",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Mr. Wood reported that the FY 2027 grant requests were approved by the Texas Indigent Defense Commission (TIDC) Board. He provided an overview of the Public Defender's Office budget needs and discussed future planning initiatives. Mr. Wood stated that he continues to envision the Public Defender's Office evolving into a regional office and indicated that he anticipates exploring regionalization opportunities as part of the FY 2028 planning process.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-24",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "The Board entered into discussion regarding how grant funds could support efforts to regionalize the Public Defender's Office and expand services to surrounding jurisdictions.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-25",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "6. Review and discuss changes to the Advisory Board Bylaws.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-26",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "The Board discussed the need for several additional modifications to the bylaws. The recommendations included noting the ex-officio Board Members and naming a Secretary. Ms. Esparza stated that she would assemble a committee to review the bylaws and will have the final draft ready for approval at the September Board Meeting.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-27",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "7. Review and discuss an update on staffing for open positions with the Public Defender's Office.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-28",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Mr. Wood stated that he currently has four vacant positions in his office that he is looking to fill. The Board asked that Mr. Wood prioritize the hiring process, while they assist in other areas such as finalizing the PDO Board Bylaws.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-29",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "8. Report from the Chief Public Defender concerning PDO access to Odyssey.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-30",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Mr. Wood stated that the Public Defender's Office has been granted access to Odyssey. The Board expressed excitement over this development.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-31",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "9. Announcement of interest items and possible future agenda topics.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-32",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "Ms. Esparza stated that the Board would make recommendations for modifying the bylaws by August 15, 2026. She also announced that the new Board Chair selection will occur at the September meeting.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-3-33",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-3",
+      "text": "10. Upcoming Public Defender's Office Oversight Board Meeting Dates for 2026:\n2. September 3, 2026 at 2:00pm\n3. December 3, 2026 at 2:00pm\n11. Adjourn",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-4",
+      "parent_chunk_id": null,
+      "text": "## BRAZOSCOUNTY BRYAN, TEXAS",
+      "chunk_type": "parent",
+      "heading": "BRAZOSCOUNTY BRYAN, TEXAS"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-5",
+      "parent_chunk_id": null,
+      "text": "## NOTICEOFMEETINGANDAGENDA",
+      "chunk_type": "parent",
+      "heading": "NOTICEOFMEETINGANDAGENDA"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-6",
+      "parent_chunk_id": null,
+      "text": "## PUBLICDEFENDER'SOVERSIGHTBOARDMEETING\n\nTHISNOTICEISPOSTEDPURSUANTTOTHETEXASOPENMEETINGS ACT(TEXASGOVERNMENTCODESECTION551)\n\nMEETINGDATE:\n\nJune 18, 2026\n\nMEETINGTIME:\n\n10:00AM\n\nBrazosCountyAdministrationBuilding,200S.Texas Avenue,Suite332,Bryan,TX77803\n\nMEETINGPLACE:\n\n1. Call to Order\n2. ApprovalofMinutesfromtheMarch6,2026PublicDefender'sOversightBoard Meeting.\n3. Approval tonominateand approveofappointmentstothePublicDefender'sOffice OversightBoard,including thedeterminationof theirtermsofoffice(4positions):\n4. \u00b7MicheleEsparza\n5. \u00b7FranDuane\n6. \u00b7JudgeWillieBlackmon\n7. \u00b7JamieMartin\n4. Reviewand discuss theQuarterlyProgressReport forJanuary,February,andMarch 2026.\n5. Review anddiscussthestatus/updateofFY2027grants.\n6. Reviewanddiscusschanges totheAdvisoryBoardBylaws.\n7. Review and discuss an update on staffing for open positions with thePublic Defender's Office.\n8. Report from the ChiefPublicDefender concerningPDOaccess to Odyssey.\n9. Announcementof interest itemsandpossiblefutureagenda topics.",
+      "chunk_type": "parent",
+      "heading": "PUBLICDEFENDER'SOVERSIGHTBOARDMEETING"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-6-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-6",
+      "text": "## PUBLICDEFENDER'SOVERSIGHTBOARDMEETING\n\nTHISNOTICEISPOSTEDPURSUANTTOTHETEXASOPENMEETINGS ACT(TEXASGOVERNMENTCODESECTION551)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-6-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-6",
+      "text": "BrazosCountyAdministrationBuilding,200S.Texas Avenue,Suite332,Bryan,TX77803",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-6-2",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-6",
+      "text": "1. Call to Order\n2. ApprovalofMinutesfromtheMarch6,2026PublicDefender'sOversightBoard Meeting.\n3. Approval tonominateand approveofappointmentstothePublicDefender'sOffice OversightBoard,including thedeterminationof theirtermsofoffice(4positions):\n4. \u00b7MicheleEsparza\n5. \u00b7FranDuane\n6. \u00b7JudgeWillieBlackmon\n7. \u00b7JamieMartin\n4. Reviewand discuss theQuarterlyProgressReport forJanuary,February,andMarch 2026.\n5. Review anddiscussthestatus/updateofFY2027grants.\n6. Reviewanddiscusschanges totheAdvisoryBoardBylaws.\n7. Review and discuss an update on staffing for open positions with thePublic Defender's Office.\n8. Report from the ChiefPublicDefender concerningPDOaccess to Odyssey.\n9. Announcementof interest itemsandpossiblefutureagenda topics.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-7",
+      "parent_chunk_id": null,
+      "text": "## Acknowledgement(s)\n\n10. Upcoming Public Defender's Office Oversight Board Meeting Dates for 2026:\n2. \u00b7September 3,2026 at 2:00pm\n3. \u00b7December3,2026 at2:00pm\n4. 11.Adjoum\n\nThe Brazos County Administration Building,200 S.Texas Avenue, Suite 332, Bryan,TX77803 is wheelchair working days before the meeting.To make arrangements,please call(979) 361-4102.\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Acknowledgement(s)"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-7-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-7",
+      "text": "## Acknowledgement(s)\n\n10. Upcoming Public Defender's Office Oversight Board Meeting Dates for 2026:\n2. \u00b7September 3,2026 at 2:00pm\n3. \u00b7December3,2026 at2:00pm\n4. 11.Adjoum",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-7-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-7",
+      "text": "The Brazos County Administration Building,200 S.Texas Avenue, Suite 332, Bryan,TX77803 is wheelchair working days before the meeting.To make arrangements,please call(979) 361-4102.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-8",
+      "parent_chunk_id": null,
+      "text": "## PUBLIC DEFENDER'S OFFICE OVERSIGHT BOARD MEETING\n\n<!-- image -->\n\nSune 1@,262%\n\n@Gam\n\n<!-- image -->\n\nName\n\nOrganization\n\nComm Caurt\n\n\uff08\n\nCcurt Lomm\n\nAa are\n\nmuhate.\n\nMahuilu Danue\n\nPDO\n\nBu&amp;f\n\nCo.JudpkHranstio\n\nesfic Connev\n\nMict Fuim\n\nPD0\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "PUBLIC DEFENDER'S OFFICE OVERSIGHT BOARD MEETING"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-8-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-8",
+      "text": "## PUBLIC DEFENDER'S OFFICE OVERSIGHT BOARD MEETING\n\n<!-- image -->",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-9",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY BRYAN, TEXAS\n\nDEPARTMENT:\n\nNUMBER:\n\nDATE OF COURT MEETING:\n\n6/18/2026\n\nITEM:\n\nApproval of Minutes from the March 6, 2026 Public Defender's Oversight Board Meeting.\n\nTO:\n\nCommissioners Court\n\nDATE:\n\n06/09/2026\n\nFISCAL IMPACT:\n\nFalse\n\nBUDGETED:\n\nFalse\n\nDOLLAR AMOUNT:\n\n$0.00\n\nATTACHMENTS:\n\nFile Name\n\nDescription\n\nType\n\nPDO\\_Board\\_Meeting\\_Minutes\\_3.6.2026.pdf\n\nPDO Board Meeting Minutes 3.6.2026\n\nBackup Material\n\n/25\n\n/26\n\n/60\n\n/26\n\n/16\n\n/3 /17\n\n/18 /1\n\n/10\n\n/19\n\n/5 /20\n\n/i255\n\n/34\n\n/32\n\n/54\n\n/26\n\n/36\n\n/i255\n\n/i255\n\n/5 /2\n\n/i255\n\n/55\n\n/19\n\n/5 /9\n\n/77\n\n/i255\n\n/27 /32\n\n/46\n\n/62\n\n/i255\n\n/40\n\n/35\n\n/52 /47\n\n/21\n\n/6 /i255\n\n/0 /8\n\n<!-- image -->\n\n/27 /28 /29 /29 /i255 /31 /32 /i255 /33 /34 /35 /36 /34 /i255 /49 /47 /50 /29 /39 /51 /i255 /52 /36 /42 /36 /40 /35 /36 /34 /53 /46 /i255 /33 /42 /42 /39 /51 /36 /i255 /33 /54 /36 /34 /46 /39 /41 /43 /31 /i255 /44 /32 /28 /34 /35 /i255 /55 /28 /46 /i255 /43 /36 /29 /35 /i255 /32 /38 /26 /i255 /39 /40 /i255 /46 /47 /39 /31 /36 /i255 /64 /64 /60 /i255 /32 /42 /i255 /31 /43 /36 /i255 /44 /34 /28 /45 /32 /46 /i255 /27 /32 /47 /40 /31 /48 /i255 /37 /35 /38 /39 /40 /39 /46 /31 /34 /28 /31 /39 /32 /40 /36 /57 /i255 /44 /34 /48 /28 /40 /57 /i255 /66 /36 /67 /28 /46 /26 /i255 /66 /43 /36 /i255 /42 /32 /29 /29 /32 /55 /39 /40 /41 /i255 /38 /36 /38 /50 /36 /34 /46 /i255 /32 /42 /i255 /31 /43 /36 /i255 /44 /32 /28 /34 /35 /69\n\n/39\n\n/31\n\n/39\n\n/32\n\n/36\n\n/40\n\n/46\n\n/57\n\n/i255\n\n/0 /1\n\n/57\n\n/i255\n\n/9 /10\n\n/12\n\n/11\n\n/i255\n\n/i255\n\n/4 /5 /6\n\n/2 /3\n\n/28\n\n/14\n\n/i255\n\n/13\n\n/38 /36\n\n/46\n\n/i255\n\n/22 /23\n\n/5 /9\n\n/36\n\n/38 /50\n\n/63\n\n/63\n\n/35\n\n/34\n\n/6 /1\n\n/36\n\n/24 /11\n\n/15\n\n/32\n\n/42\n\n/12\n\n/14\n\n/i255\n\n/32\n\n/42\n\n/42\n\n/57\n\n/31\n\n/28\n\n/39\n\n/4 /i255\n\n/i255\n\n/60\n\n/61\n\n/43\n\n/17\n\n/22 /8\n\n/60\n\n/75\n\n/43\n\n/i255\n\n/49\n\n/38 /39\n\n/40\n\n/58 /36\n\n/36\n\n/49\n\n/9 /19\n\n/47\n\n/50\n\n/31\n\n/36\n\n/29\n\n/38 /50\n\n/39\n\n/51\n\n/46\n\n/i255\n\n/34\n\n/i255\n\n/i255\n\n/74\n\n/0 /5\n\n/i255\n\n/52 /36\n\n/5 /4 /1\n\n/42\n\n/36\n\n/40\n\n/36\n\n/35\n\n/i255\n\n/43\n\n/36\n\n/29\n\n/57\n\n/i255\n\n/65\n\n/32\n\n/2 /24\n\n/36\n\n/34\n\n/76",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY BRYAN, TEXAS"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-9-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-9",
+      "text": "## BRAZOS COUNTY BRYAN, TEXAS\n\nDEPARTMENT:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-9-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-9",
+      "text": "Approval of Minutes from the March 6, 2026 Public Defender's Oversight Board Meeting.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-9-2",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-9",
+      "text": "PDO\\_Board\\_Meeting\\_Minutes\\_3.6.2026.pdf",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-9-3",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-9",
+      "text": "/27 /28 /29 /29 /i255 /31 /32 /i255 /33 /34 /35 /36 /34 /i255 /49 /47 /50 /29 /39 /51 /i255 /52 /36 /42 /36 /40 /35 /36 /34 /53 /46 /i255 /33 /42 /42 /39 /51 /36 /i255 /33 /54 /36 /34 /46 /39 /41 /43 /31 /i255 /44 /32 /28 /34 /35 /i255 /55 /28 /46 /i255 /43 /36 /29 /35 /i255 /32 /38 /26 /i255 /39 /40 /i255 /46 /47 /39 /31 /36 /i255 /64 /64 /60 /i255 /32 /42 /i255 /31 /43 /36 /i255 /44 /34 /28 /45 /32 /46 /i255 /27 /32 /47 /40 /31 /48 /i255 /37 /35 /38 /39 /40 /39 /46 /31 /34 /28 /31 /39 /32 /40 /36 /57 /i255 /44 /34 /48 /28 /40 /57 /i255 /66 /36 /67 /28 /46 /26 /i255 /66 /43 /36 /i255 /42 /32 /29 /29 /32 /55 /39 /40 /41 /i255 /38 /36 /38 /50 /36 /34 /46 /i255 /32 /42 /i255 /31 /43 /36 /i255 /44 /32 /28 /34 /35 /69",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-9-4",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-9",
+      "text": "/37 /i255 /38 /36 /36 /31 /39 /40 /41 /i255 /32 /42 /i255 /31 /43 /36 /i255 /44 /34 /28 /45 /32 /46 /i255 /27 /32 /47 /40 /31 /48 /56 /34 /39 /35 /28 /48 /57 /i255 /58 /28 /34 /51 /43 /i255 /59 /57 /i255 /60 /61 /60 /59 /i255 /28 /31 /i255 /60 /62 /61 /61 /i255 /63 /26 /44 /47 /39 /29 /35 /39 /40 /41 /57 /i255 /60 /61 /61 /i255 /65 /32 /47 /31 /43 /i255 /66 /36 /67 /28 /46 /i255 /37 /54 /36 /40 /47 /55 /36 /34 /36 /i255 /63 /34 /36 /46 /36 /40 /31 /62 /i255 /27 /32 /47 /40 /31 /48 /i255 /68 /47 /35 /41 /36 /i255 /52 /47 /28 /40 /36 /i255 /49 /36 /31 /36 /34 /46 /69 /i255 /68 /47 /35 /41 /36 /i255 /70/39 /29 /29 /39 /36 /i255 /44 /29 /28 /51 /71 /38 /32 /40 /i255 /72 /34 /36 /31 /39 /34 /36 /35 /73 /69 /27 /32 /38 /38 /39 /46 /46 /39 /32 /40 /36 /34 /i255 /70 /28 /40 /35 /28 /i255 /68 /26 /i255 /70 /28 /31 /46 /32 /40 /58 /39 /51 /43 /36 /29 /36 /i255 /74 /46 /63 /28 /34 /45 /28 /69 /56 /34 /28 /40 /i255 /52 /47 /28 /40 /36 /69 /i255 /68 /39 /38 /i255 /68 /28 /38 /36 /46 /69 /i255 /68 /28 /38 /39 /36 /i255 /58 /28 /34 /31 /39 /40 /57 /i255 /37 /50 /46 /36 /40 /31 /26 /i255 /i255 /66 /43 /36 /i255 /28 /31 /31 /28 /51 /43 /36 /35 /i255 /46 /43 /36 /36 /31 /i255 /51 /32 /40 /31 /28 /39 /40 /46 /i255 /31 /43 /36 /i255 /40 /37 /63 /63 /34 /32 /54 /28 /29 /i255 /32 /42 /i255 /58 /39 /40 /47 /31 /36 /46 /i255 /42 /34 /32 /38 /i255 /31 /43 /36 /i255 /52 /36 /51 /58 /36 /36 /31 /39 /40 /41 /26 /66 /43 /36 /i255 /44 /32 /28 /34 /35 /i255 /54 /32 /31 /36 /35 /i255 /47 /40 /28 /40 /39 /38 /32 /47 /46 /29 /48 /i255 /31 /32 /i255 /28 /52 /36 /51 /36 /38 /50 /36 /34 /i255 /75 /57 /i255 /60 /61 /60 /75 /i255 /55 /39 /31 /43 /i255 /28 /i255 /51 /32 /34 /34 /36 /51 /31 /39 /32 /32 /42 /i255 /31 /43 /36 /i255 /51 /32 /34 /34 /36 /51 /31 /36 /35 /i255 /38 /39 /40 /47 /31 /36 /46 /i255 /39 /46 /i255 /28 /31 /31 /28 /51 /43 /36 /58 /32 /31 /39 /32 /40 /62 /i255 /37 /63 /63 /49 /28 /46 /46 /36 /35 /26 /i255 /75 /78 /61 /58 /28 /34 /31 /39 /40 /26",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-9-5",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-9",
+      "text": "/3 /5 /14 /15 /10 /15 /5 /17 /14 /1 /28 /4 /1 /i255 /29 /5 /5 /21 /i255 /14 /10 /7 /10 /12 /21 /i255 /10 /13 /7 /10 /i255 /10 /13 /12 /24 /i255 /13 /7 /6 /12 /i255 /18 /15 /8 /8 /12 /21 /i255 /10 /13 /12 /i255 /49 /38 /i255 /17 /12 /47 /i255 /3 /5 /14 /15 /10 /15 /5 /17 /14 /i255 /15 /17 /i255 /10 /13 /12 /i255 /28 /12 /17 /10 /7 /8 /i255 /52 /12 /7 /8 /10 /13 /i255 /33 /15 /6 /15 /14 /15 /5 /17 /7 /17 /21 /i255 /10 /13 /12 /24 /i255 /7 /4 /12 /i255 /17 /5 /47 /i255 /10 /7 /46 /15 /17 /16 /i255 /19 /20 /6 /12 /17 /15 /8 /12 /i255 /11 /7 /14 /12 /14 /1 /i255 /22 /13 /12 /24 /i255 /11 /20 /4 /4 /12 /17 /10 /8 /24 /i255 /13 /7 /6 /12 /i255 /10 /47 /5 /i255 /6 /7 /11 /7 /17 /10 /i255 /7 /10 /10 /5 /4 /17 /12 /24 /3 /5 /14 /15 /10 /15 /5 /17 /14 /1 /i255 /28 /14 /1 /i255 /33 /20 /7 /17 /12 /i255 /14 /20 /16 /16 /12 /14 /10 /12 /21 /i255 /10 /13 /7 /10 /i255 /10 /13 /12 /i255 /32 /33 /35 /i255 /13 /5 /14 /10 /i255 /7 /17 /i255 /5 /3 /12 /17 /i255 /13 /5 /20 /14 /12 /i255 /10 /5 /i255 /13 /12 /8 /3 /i255 /15 /17 /i255 /10 /13 /12 /i255 /13 /15 /4 /15 /17 /16 /3 /4 /5 /11 /12 /14 /14 /1 /i255 /42 /13 /12 /i255 /17 /5 /10 /12 /21 /i255 /10 /13 /7 /10 /i255 /3 /5 /14 /15 /10 /15 /6 /12 /i255 /3 /4 /12 /14 /14 /i255 /15 /14 /i255 /7 /8 /47 /7 /24 /14 /i255 /13 /12 /8 /3 /18 /20 /8 /1 /i255 /28 /4 /1 /i255 /29 /5 /5 /21 /i255 /14 /10 /7 /10 /12 /21 /i255 /10 /13 /7 /10 /i255 /13 /12 /i255 /47 /5 /20 /8 /21 /30 /12 /12 /10 /i255 /47 /15 /10 /13 /i255 /10 /13 /12 /i255 /27 /5 /20 /17 /10 /24 /34 /14 /i255 /32 /20 /31 /8 /15 /11 /i255 /27 /5 /30 /30 /20 /17 /15 /11 /7 /10 /15 /5 /17 /14 /i255 /35 /18 /18 /15 /11 /12 /4 /i255 /10 /5 /i255 /21 /15 /14 /11 /20 /14 /14 /i255 /10 /13 /15 /14 /i255 /5 /3 /10 /15 /5 /17 /1 /i255",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-9-6",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-9",
+      "text": "/28 /5 /10 /15 /5 /17 /40 /i255 /2 /3 /3 /4 /5 /6 /12 /25 /i255 /28 /5 /6 /12 /21 /i255 /31 /24 /i255 /41 /4 /7 /17 /i255 /33 /20 /7 /17 /12 /25 /i255 /42 /12 /11 /5 /17 /21 /12 /21 /i255 /31 /24 /i255 /28 /15 /11 /13 /12 /8 /12 /i255 /43 /14 /3 /7 /4 /44 /7 /1 /i255 /32 /7 /14 /14 /12 /21 /1 /i255 /39 /45 /38 /2 /24 /12 /14 /40 /i255 /33 /20 /7 /17 /12 /25 /i255 /43 /14 /3 /7 /4 /44 /7 /25 /i255 /19 /7 /30 /12 /14 /25 /i255 /32 /12 /10 /12 /4 /14 /25 /i255 /29 /7 /10 /14 /5 /17 /1 /i255 /i255 /2 /31 /14 /12 /17 /10 /40 /i255 /23 /8 /7 /11 /46 /30 /5 /17 /25 /i255 /28 /7 /4 /10 /15 /17 /1 /3 /4 /5 /6 /7 /8 /i255 /10 /5 /i255 /17 /5 /30 /15 /17 /7 /10 /12 /i255 /7 /17 /21 /i255 /7 /3 /3 /4 /5 /6 /12 /i255 /5 /18 /i255 /17 /12 /47 /i255 /23 /5 /7 /4 /21 /i255 /27 /13 /7 /15 /4 /1 /19 /20 /21 /16 /12 /i255 /29/15 /8 /8 /15 /12 /i255 /23 /8 /7 /11 /46 /30 /5 /17 /i255 /12 /17 /10 /12 /4 /12 /21 /i255 /10 /13 /12 /i255 /30 /12 /12 /10 /15 /17 /16 /i255 /7 /10 /i255 /10 /13 /15 /14 /i255 /10 /15 /30 /12 /1 /i255 /41 /4 /7 /17 /i255 /33 /20 /7 /17 /12 /i255 /17 /5 /30 /15 /17 /7 /10 /12 /21 /i255 /23 /5 /7 /4 /21 /i255 /28 /12 /30 /31 /12 /4 /i255 /28 /15 /11 /13 /12 /8 /12 /i255 /43 /14 /3 /7 /4 /44 /7 /i255 /7 /14 /i255 /10 /13 /12 /i255 /27 /13 /7 /15 /4 /30 /7 /17 /i255 /5 /18 /i255 /10 /13 /12 /i255 /32 /20 /31 /8 /15 /11 /33 /12 /18 /12 /17 /21 /12 /4 /34 /14 /i255 /35 /6 /12 /4 /14 /15 /16 /13 /10 /i255 /23 /5 /7 /4 /21 /1 /i255 /22 /13 /12 /i255 /17 /5 /30 /15 /17 /7 /10 /15 /5 /17 /i255 /47 /7 /14 /i255 /14 /12 /11 /5 /17 /21 /12 /21 /i255 /31 /24 /i255 /19 /15 /30 /i255 /19 /7 /30 /12 /14 /i255 /7 /17 /21 /i255 /10 /13 /12 /23 /5 /7 /4 /21 /i255 /6 /5 /10 /12 /21 /i255 /20 /17 /7 /17 /15 /30 /5 /20 /14 /8 /24 /i255 /10 /5 /i255 /7 /3 /3 /5 /15 /17 /10 /i255 /28 /15 /11 /13 /12 /8 /12 /i255 /43 /14 /3 /7 /4 /44 /7 /i255 /7 /14 /i255 /10 /13 /12 /i255 /27 /13 /7 /15 /4 /30 /7 /17 /i255 /i255 /18 /5 /4 /i255 /7 /i255 /10 /12 /4 /30 /i255 /10 /13 /7 /10 /12 /48 /3 /15 /4 /12 /14 /i255 /5 /17 /i255 /2 /20 /16 /20 /14 /10 /i255 /49 /39 /25 /i255 /37 /38 /37 /36 /1 /i255 /2 /i255 /17 /12 /47 /i255 /27 /13 /7 /15 /4 /30 /7 /17 /i255 /47 /15 /8 /8 /i255 /31 /12 /i255 /14 /12 /8 /12 /11 /10 /12 /21 /i255 /7 /10 /i255 /10 /13 /12 /i255 /42 /12 /3 /10 /12 /30 /31 /12 /4 /30 /12 /12 /10 /15 /17 /16 /1 /i255 /28 /14 /1 /i255 /43 /14 /3 /7 /4 /44 /7 /i255 /14 /12 /4 /6 /12 /21 /i255 /7 /14 /i255 /32 /4 /12 /14 /15 /21 /15 /17 /16 /i255 /35 /18 /18 /15 /11 /12 /4 /i255 /18 /5 /4 /i255 /10 /13 /12 /i255 /4 /12 /30 /7 /15 /17 /21 /12 /4 /i255 /5 /18 /i255 /10 /13 /12 /i255 /30 /12 /12 /10 /15 /17 /16 /1 /i255 /28 /5 /10 /15 /5 /17 /40 /i255 /2 /3 /3 /4 /5 /6 /12 /25 /i255 /28 /5 /6 /12 /21 /i255 /31 /24 /i255 /41 /4 /7 /17 /i255 /33 /20 /7 /17 /12 /25 /i255 /42 /12 /11 /5 /17 /21 /12 /21 /i255 /31 /24 /i255 /19 /15 /30 /i255 /19 /7 /30 /12 /14 /1 /i255 /32 /7 /14 /14 /12 /21 /1 /i255 /36 /45 /38 /1 /i255 /i255 /2 /24 /12",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-9-7",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-9",
+      "text": "/14 /23 /8 /7 /11 /46 /30 /5 /17 /25 /i255 /33 /20 /7 /17 /12 /25 /i255 /43 /14 /3 /7 /4 /44 /7 /25 /i255 /19 /7 /30 /12 /14 /25 /i255 /32 /12 /10 /12 /4 /14 /25 /i255 /29 /7 /10 /14 /5 /17 /1 /i255 /i255 /2 /31 /14 /12 /17 /10 /40 /i255 /28 /7 /4 /10 /15 /17 /1 /3 /4 /5 /6 /7 /8 /i255 /10 /5 /i255 /47 /15 /10 /13 /21 /4 /7 /47 /i255 /31 /5 /7 /4 /21 /i255 /7 /11 /10 /15 /5 /17 /i255 /10 /7 /46 /12 /17 /i255 /5 /17 /i255 /42 /12 /3 /10 /12 /30 /31 /12 /4 /i255 /39 /25 /i255 /37 /38 /37 /39 /i255 /32 /20 /31 /8 /15 /11 /i255 /33 /12 /18 /12 /17 /21 /12 /4 /34 /14 /35 /6 /12 /4 /14 /15 /16 /13 /10 /i255 /23 /5 /7 /4 /21 /i255 /28 /12 /12 /10 /15 /17 /16 /i255 /10 /5 /i255 /7 /30 /12 /17 /21 /i255 /10 /13 /12 /i255 /35 /6 /12 /4 /14 /15 /16 /13 /10 /i255 /23 /5 /7 /4 /21 /i255 /28 /12 /30 /31 /12 /4 /14 /13 /15 /3 /i255 /7 /17 /21 /i255 /32 /5 /8 /15 /11 /15 /12 /14 /i255 /10 /5 /4 /12 /18 /12 /8 /11 /10 /i255 /12 /15 /16 /13 /10 /i255 /6 /5 /10 /15 /17 /16 /i255 /30 /12 /30 /31 /12 /4 /14 /1 /28 /14 /1 /i255 /43 /14 /3 /7 /4 /44 /7 /i255 /12 /48 /3 /8 /7 /15 /17 /12 /21 /i255 /10 /13 /7 /10 /i255 /5 /17 /i255 /42 /12 /3 /10 /12 /30 /31 /12 /4 /i255 /39 /25 /i255 /37 /38 /37 /39 /i255 /10 /13 /12 /i255 /23 /5 /7 /4 /21 /i255 /10 /5 /5 /46 /i255 /7 /11 /10 /15 /5 /17 /i255 /10 /5 /i255 /7 /3 /3 /4 /5 /6 /12 /i255 /7 /17 /12 /15 /16 /13 /10 /13 /i255 /23 /5 /7 /4 /21 /i255 /28 /12 /30 /31 /12 /4 /i255 /3 /5 /14 /15 /10 /15 /5 /17 /i255 /15 /17 /i255 /7 /17 /i255 /12 /18 /18 /5 /4 /10 /i255 /10 /5 /i255 /30 /15 /10 /15 /16 /7 /10 /12 /i255 /10 /13 /12 /i255 /5 /17 /16 /5 /15 /17 /16 /i255 /15 /14 /14 /20 /12 /14 /i255 /5 /18 /i255 /7 /31 /14 /12 /17 /10 /12 /12 /23 /5 /7 /4 /21 /i255 /28 /12 /30 /31 /12 /4 /14 /1 /i255 /2 /10 /i255 /10 /13 /15 /14 /i255 /10 /15 /30 /12 /25 /i255 /30 /7 /15 /17 /10 /7 /15 /17 /15 /17 /16 /i255 /7 /i255 /23 /5 /7 /4 /21 /i255 /5 /18 /i255 /14 /12 /6 /12 /17 /i255 /30 /12 /30 /31 /12 /4 /14 /i255 /15 /14 /i255 /30 /5 /4 /12 /7 /3 /3 /4 /5 /3 /4 /15 /7 /10 /12 /i255 /7 /17 /21 /i255 /15 /10 /i255 /15 /14 /i255 /13 /12 /4 /i255 /4 /12 /11 /5 /30 /30 /12 /17 /21 /7 /10 /15 /5 /17 /i255 /10 /5 /i255 /47 /15 /10 /13 /21 /4 /7 /47 /i255 /10 /13 /12 /i255 /7 /11 /10 /15 /5 /17 /i255 /10 /7 /46 /12 /17 /i255 /10 /5 /i255 /15 /17 /11 /4 /12 /7 /14 /12 /i255 /10 /13 /12 /17 /20 /30 /31 /12 /4 /i255 /5 /18 /i255 /30 /12 /30 /31 /12 /4 /14 /1 /i255 /22 /13 /12 /i255 /23 /5 /7 /4 /21 /i255 /12 /17 /10 /12 /4 /12 /21 /i255 /15 /17 /10 /5 /i255 /21 /15 /14 /11 /20 /14 /14 /15 /5 /17 /i255 /5 /17 /i255 /10 /13 /12 /i255 /30 /7 /10 /10 /12 /4 /i255 /7 /17 /21 /i255 /20 /8 /10 /15 /30 /7 /10 /12 /8 /24 /7 /16 /4 /12 /12 /21 /i255 /10 /13 /7 /10 /i255 /15 /14 /i255 /47 /7 /14 /i255 /4 /12 /7 /14 /5 /17 /7 /31 /8 /12 /i255 /10 /5 /i255 /30 /7 /15 /17 /10 /7 /15 /17 /i255 /7 /i255 /23 /5 /7 /4 /21 /i255 /5 /18 /i255 /14 /12 /6 /12 /17 /i255 /30 /12 /30 /31 /12 /4 /14 /1 /i255 /22 /13 /12 /i255 /23 /5 /7 /4 /21 /i255 /6 /5 /10 /12 /21 /20 /17 /7 /17 /15 /30 /5 /20 /14 /8 /24 /i255 /10 /5 /i255 /47 /15 /10 /13 /21 /4 /7 /47 /i255 /10 /13 /12 /i255 /7 /11 /10 /15 /5 /17 /i255 /10 /7 /46 /12 /17 /i255 /10 /5 /i255 /15 /17 /11 /4 /12 /7 /14 /12 /i255 /10 /13 /12 /i255 /23 /5 /7 /4 /21 /i255 /10 /5 /i255 /12 /15 /16 /13 /10 /i255 /30 /12 /30 /31 /12 /4 /14 /1 /i255 /28 /5 /10 /15 /5 /17 /40 /i255 /2 /3 /3 /4 /5 /6 /12 /25 /i255 /28 /5 /6 /12 /21 /i255 /31 /24 /i255 /19 /15 /30 /i255 /19 /7 /30 /12 /14 /25 /i255 /42 /12 /11 /5 /17 /21 /12 /21 /i255 /31 /24 /i255 /19 /20 /21 /16 /12 /i255 /33 /20 /7 /17 /12 /i255 /32 /12 /10 /12 /4 /14 /1 /i255 /32 /7 /14 /14 /12 /21 /1 /i255 /36 /38 /1 /i255 /i255 /2 /24 /12 /14 /40 /i255 /23 /8 /7 /11 /46 /30 /5 /17 /25 /i255 /33 /20 /7 /17 /12 /25 /i255 /43 /14 /3 /7 /4 /44 /7 /25 /i255 /19 /7 /30 /12 /14 /25 /i255 /32 /12 /10 /12 /4 /14 /25 /i255 /29 /7 /10 /14 /5 /17 /1 /i255 /i255 /2 /31 /14 /12 /17 /10 /40 /i255 /28 /7 /4 /10 /15 /17 /1 /3 /5 /4 /10 /i255 /18 /4 /5 /30 /i255 /27 /13 /15 /12 /18 /i255 /32 /20 /31 /8 /15 /11 /i255 /33 /12 /18 /12 /17 /21 /12 /4 /i255 /11 /5 /17 /11 /12 /4 /17 /15 /17 /16 /i255 /10 /13 /12 /i255 /13 /15 /4 /15 /17 /16 /i255 /5 /18 /i255 /3 /12 /4 /14 /5 /17 /17 /12 /8 /i255 /10 /5 /i255 /18 /15 /8 /8 /i255 /17 /12 /47 /i255 /16 /4 /7 /17 /10",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-9-8",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-9",
+      "text": "/0 /1 /15 /13 /14 /8 /9 /11 /3 /i255 /22 /8 /9 /i255 /13 /14 /3 /18 /9 /i255 /8 /22 /22 /18 /25 /3 /i255 /13 /8 /i255 /9 /3 /25 /3 /18 /17 /3 /i255 /13 /14 /3 /i255 /1 /25 /25 /3 /5 /5 /20 /i255 /39 /4 /12 /33 /3 /i255 /0 /1 /15 /13 /14 /8 /9 /11 /3 /i255 /12 /18 /12 /i255 /10 /9 /8 /17 /18 /12 /3 /i255 /15 /9 /18 /13 /13 /3 /11 /1 /10 /10 /9 /8 /17 /1 /16 /i255 /1 /11 /12 /i255 /13 /14 /1 /13 /i255 /14 /1 /5 /i255 /2 /3 /3 /11 /i255 /5 /4 /2 /23 /18 /13 /13 /3 /12 /i255 /13 /8 /i255 /36 /37 /20 /i255 /39 /4 /17 /3 /11 /18 /16 /3 /i255 /32 /18 /17 /18 /5 /18 /8 /11 /i255 /24 /13 /13 /8 /9 /11 /3 /26 /i255 /24 /23 /1 /11 /12 /1 /i255 /41 /4 /3 /11 /33 /3 /9 /9 /3 /18 /13 /3 /9 /1 /13 /3 /12 /i255 /13 /14 /3 /i255 /18 /23 /10 /8 /9 /13 /1 /11 /25 /3 /i255 /8 /22 /i255 /13 /14 /3 /i255 /31 /32 /34 /i255 /14 /1 /17 /18 /11 /33 /i255 /34 /12 /26 /5 /5 /3 /26 /i255 /1 /25 /25 /3 /5 /5 /i255 /13 /8 /i255 /12 /8 /i255 /13 /14 /3 /18 /9 /i255 /42 /8 /2 /i255 /3 /22 /22 /3 /25 /13 /18 /17 /3 /16 /26 /20 /i255 /20/32 /18 /5 /25 /4 /5 /5 /i255 /25 /14 /1 /11 /33 /3 /5 /i255 /13 /8 /i255 /24 /12 /17 /18 /5 /8 /9 /26 /i255 /41 /8 /1 /9 /12 /i255 /2 /26 /16 /1 /15 /5 /20 /37 /14 /3 /i255 /41 /8 /1 /9 /12 /i255 /9 /3 /18 /13 /3 /9 /1 /13 /3 /12 /i255 /13 /14 /3 /18 /9 /i255 /12 /3 /25 /18 /5 /18 /8 /11 /i255 /13 /8 /i255 /14 /1 /17 /3 /i255 /1 /i255 /13 /8 /13 /1 /16 /i255 /8 /22 /i255 /5 /3 /17 /3 /11 /i255 /41 /8 /1 /9 /12 /i255 /19 /3 /23 /2 /3 /9 /5 /45 /i255 /1 /11 /12 /12 /18 /5 /25 /4 /5 /5 /3 /12 /i255 /9 /3 /11 /1 /23 /18 /11 /33 /i255 /13 /14 /3 /i255 /12 /8 /25 /4 /23 /3 /11 /13 /i255 /22 /9 /8 /23 /i255 /46 /19 /3 /23 /2 /3 /9 /5 /14 /18 /10 /i255 /1 /11 /12 /i255 /31 /8 /16 /18 /25 /18 /3 /5 /46 /i255 /13 /8 /i255 /46 /31 /4 /2 /16 /18 /25 /32 /3 /22 /3 /11 /12 /3 /9 /38 /5 /i255 /34 /17 /3 /9 /5 /18 /33 /14 /13 /i255 /41 /8 /1 /9 /12 /i255 /41 /26 /16 /1 /15 /5 /46 /20 /i255 /37 /14 /3 /26 /i255 /13 /14 /3 /11 /i255 /12 /18 /5 /25 /4 /5 /5 /3 /12 /i255 /13 /14 /3 /i255 /1 /13 /13 /3 /11 /12 /1 /11 /25 /3 /i255 /8 /22 /i255 /41 /8 /1 /9 /12 /19 /3 /23 /2 /3 /9 /5 /20 /i255 /37 /14 /3 /i255 /25 /4 /9 /9 /3 /11 /13 /i255 /10 /8 /16 /18 /25 /26 /i255 /12 /8 /3 /5 /i255 /11 /8 /13 /i255 /18 /11 /25 /16 /4 /12 /3 /i255 /1 /i255 /10 /9 /8 /25 /3 /5 /5 /i255 /13 /8 /i255 /9 /3 /10 /16 /1 /25 /3 /i255 /1 /2 /5 /3 /11 /13 /3 /3 /i255 /23 /3 /23 /2 /3 /9 /5 /8 /22 /i255 /13 /14 /3 /i255 /41 /8 /1 /9 /12 /20 /i255 /19 /5 /20 /i255 /47 /5 /10 /1 /9 /48 /1 /i255 /10 /9 /8 /10 /8 /5 /3 /12 /i255 /13 /14 /1 /13 /i255 /41 /8 /1 /9 /12 /i255 /19 /3 /23 /2 /3 /9 /5 /i255 /23 /4 /5 /13 /i255 /1 /13 /13 /3 /11 /12 /i255 /1 /13 /i255 /16 /3 /1 /5 /13 /i255 /22 /18 /22 /13 /26 /10 /3 /9 /25 /3 /11 /13 /i255 /8 /22 /i255 /13 /14 /3 /i255 /23 /3 /3 /13 /18 /11 /33 /5 /i255 /3 /1 /25 /14 /i255 /26 /3 /1 /9 /20 /i255 /19 /5 /20 /i255 /32 /4 /1 /11 /3 /i255 /5 /4 /33 /33 /3 /5 /13 /3 /12 /i255 /13 /14 /3 /i255 /16 /1 /11 /33 /4 /1 /33 /3 /i255 /2 /3 /i255 /5 /8 /23 /3 /13 /14 /18 /11 /33 /i255 /13 /8 /13 /14 /3 /i255 /3 /22 /22 /3 /25 /13 /i255 /8 /22 /45 /i255 /46 /37 /8 /i255 /5 /4 /5 /13 /1 /18 /11 /i255 /23 /3 /23 /2 /3 /9 /5 /14 /18 /10 /i255 /8 /11 /i255 /13 /14 /3 /i255 /41 /8 /1 /9 /12 /45 /i255 /8 /11 /3 /i255 /23 /4 /5 /13 /i255 /25 /8 /23 /10 /16 /3 /13 /3 /i255 /49 /44 /i255 /10 /3 /9 /25 /3 /11 /13 /i255 /8 /22 /1 /16 /16 /i255 /5 /25 /14 /3 /12 /4 /16 /3 /12 /i255 /23 /3 /3 /13 /18 /11 /33 /5 /i255 /10 /3 /9 /i255 /25 /1 /16 /3 /11 /12 /1 /9 /i255 /26 /3 /1 /9 /20 /i255 /27 /1 /18 /16 /4 /9 /3 /i255 /13 /8 /i255 /12 /8 /i255 /5 /8 /i255 /23 /1 /26 /i255 /1 /16 /16 /8 /15 /i255 /13 /14 /3 /i255 /41 /8 /1 /9 /12 /i255 /13 /8 /9 /3 /10 /16 /1 /25 /3 /i255 /26 /8 /4 /20 /46 /i255 /19 /9 /20 /i255 /21 /8 /8 /12 /i255 /5 /13 /1 /13 /3 /12 /i255 /13 /14 /1 /13 /i255 /14 /3 /i255 /15 /8 /4 /16 /12 /i255 /23 /1 /35 /3 /i255 /13 /14 /3 /i255 /23 /8 /12 /18 /22 /18 /25 /1 /13 /18 /8 /11 /5 /i255 /13 /8 /i255 /13 /14 /3 /i255 /2 /26 /16 /1 /15 /5 /i255 /1 /11 /12 /14 /1 /17 /3 /i255 /13 /14 /3 /23 /i255 /9 /3 /1 /12 /26 /i255 /22 /8 /9 /i255 /13 /14 /3 /i255 /11 /3 /50 /13 /i255 /34 /17 /3 /9 /5 /18 /33 /14 /13 /i255 /41 /8 /1 /9 /12 /i255 /23 /3 /3 /13 /18 /11 /33 /20 /i255 /37 /14 /3 /i255 /41 /8 /1 /9 /12 /i255 /13 /14 /3 /11 /i255 /1 /12 /12 /9 /3 /5 /5 /3 /12 /15 /14 /18 /25 /14 /i255 /41 /8 /1 /9 /12 /i255 /19 /3 /23 /2 /3 /9 /38 /5 /i255 /13 /3 /9 /23 /5 /i255 /1 /9 /3 /i255 /3 /50 /10 /18 /9 /18 /11 /33 /i255 /13 /14 /18 /5 /i255 /26 /3 /1 /9 /20 /i255 /20/24 /11 /11 /8 /4 /11 /25 /3 /23 /3 /11 /13 /i255 /8 /22 /i255 /18 /11 /13 /3 /9 /3 /5 /13 /i255 /18 /13 /3 /23 /5 /i255 /1 /11 /12 /i255 /10 /8 /5 /5 /18 /2 /16 /3 /i255 /22 /4 /13 /4 /9 /3 /i255 /1 /33 /3 /11 /12 /1 /i255 /13 /8 /10 /18 /25 /5 /20 /19 /9 /20 /i255 /21 /8 /8 /12 /i255 /5 /13 /1 /13 /3 /12 /i255 /13 /14 /1 /13 /i255 /1 /13 /i255 /13 /14 /3 /i255 /11 /3 /50 /13 /i255 /41 /8 /1 /9 /12 /i255 /23 /3 /3 /13 /18 /11 /33 /45 /i255 /14 /3 /i255 /15 /18 /16 /16 /i255 /10 /9 /3 /5 /3 /11 /13 /i255 /13 /14 /3 /i255 /31 /32 /34 /i255 /34 /10 /3 /9 /1 /13 /18 /11 /33 /i255 /31 /16 /1 /11 /1 /11 /12 /i255 /41 /4 /12 /33 /3 /13 /i255 /9 /3 /51 /4 /3 /5 /13 /5 /20 /i255 /24 /11 /11 /8 /4 /11 /25 /3 /23 /3 /11 /13 /5 /20/53 /10 /25 /8 /23 /18 /11 /33 /i255 /31 /4 /2 /16 /18 /25 /i255 /32 /3 /22 /3 /11 /12 /3 /9 /38 /5 /i255 /34 /22 /22 /18 /25 /3 /i255 /34 /17 /3 /9 /5 /18 /33 /14 /13 /i255 /41 /8 /1 /9 /12 /i255 /19 /3 /3 /13 /18 /11 /33 /i255 /32 /1 /13 /3 /5 /i255 /22 /8 /9 /i255 /52 /44 /52 /54 /55 /1 /20 /i255 /i255 /39 /4 /11 /3 /i255 /49 /45 /i255 /52 /44 /52 /54 /i255 /1 /13 /i255 /52 /55 /44 /44 /10 /23 /2 /20 /i255 /i255 /56 /3 /10 /13 /3 /23 /2 /25 /20 /i255 /i255 /32 /3 /25 /3 /23 /2 /19 /5 /20 /i255 /47 /5 /10 /1 /9 /48 /1 /i255 /10 /9 /8 /41 /8 /1 /9 /12 /i255 /3 /11 /13 /3 /9 /3 /12 /i255 /12 /18 /1 /13 /i255 /43 /55 /58 /44 /i255 /10 /20 /23 /20 /i255 /20/24 /12 /42 /8 /4 /9 /11",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-9-9",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-9",
+      "text": "RE: Approval of March 6, 2026, Meeting Minutes",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-10",
+      "parent_chunk_id": null,
+      "text": "## Approval Item:\n\nOn March 6, 2026, the Public Defenders Oversight Board met for its quarterly meeting.",
+      "chunk_type": "parent",
+      "heading": "Approval Item:"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-10-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-10",
+      "text": "## Approval Item:\n\nOn March 6, 2026, the Public Defenders Oversight Board met for its quarterly meeting.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-11",
+      "parent_chunk_id": null,
+      "text": "## Recommendation:\n\nMove to approve the Minutes for March 6, 2026, Oversight Board Meeting.\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\nb-8-2b\n\nNathah Wood, Chi&amp;f Public Defender\n\nDate\n\nBoard Approval:\n\n-17-36\n\nersightBoardMember\n\nDate\n\n-18+2lo\n\ny\n\nOversight BoardMember\n\nDate\n\nYyuhit.\n\nlo -18-24\n\nOversight Board Membet\n\nDate\n\nfOversightBoard Membcr\n\nDate\n\nOversight Board Member\n\nDate\n\nOversight Board Member\n\nDate\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Recommendation:"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-11-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-11",
+      "text": "## Recommendation:\n\nMove to approve the Minutes for March 6, 2026, Oversight Board Meeting.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-12",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY BRYAN, TEXAS\n\nDEPARTMENT:\n\nNUMBER:\n\nDATE OF COURT MEETING:\n\n6/18/2026\n\nITEM:\n\nApproval to nominate and approve of appointments to the Public Defender's Office Oversight Board, including the determination of their terms of office (4 positions):\n\n- Michele Esparza\n\n- Fran Duane\n\n- Judge Willie Blackmon\n\n- Jamie Martin\n\nTO:\n\nCommissioners Court\n\nDATE:\n\n06/09/2026\n\nFISCAL IMPACT:\n\nFalse\n\nBUDGETED:\n\nFalse\n\nDOLLAR AMOUNT:\n\n$0.00\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY BRYAN, TEXAS"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-12-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-12",
+      "text": "## BRAZOS COUNTY BRYAN, TEXAS\n\nDEPARTMENT:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-12-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-12",
+      "text": "Approval to nominate and approve of appointments to the Public Defender's Office Oversight Board, including the determination of their terms of office (4 positions):",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-13",
+      "parent_chunk_id": null,
+      "text": "## Action Item #3\n\nDate: June 18, 2026\n\nRE: Nomination and approval of Oversight Board Membership",
+      "chunk_type": "parent",
+      "heading": "Action Item #3"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-13-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-13",
+      "text": "RE: Nomination and approval of Oversight Board Membership",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-14",
+      "parent_chunk_id": null,
+      "text": "## Approval Item:\n\nThe position which Michele Esparza serves as a Member of the Public Defender Oversight Board is scheduled to cxpire August 15, 2026. This position is currently schcduled for nomination.",
+      "chunk_type": "parent",
+      "heading": "Approval Item:"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-14-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-14",
+      "text": "## Approval Item:\n\nThe position which Michele Esparza serves as a Member of the Public Defender Oversight Board is scheduled to cxpire August 15, 2026. This position is currently schcduled for nomination.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-15",
+      "parent_chunk_id": null,
+      "text": "## Recommendation:\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\nIt is my recommendation that JimLOCk be appointed to the position of Oversight Board Menber to scrve a term of years, fromuust.10- Avqust 15,2029\n\nl-18-Zlo\n\nNathain Wood, ChiefPublic Defender\n\nDate\n\nBoard Approval:\n\n6-18-26\n\nOxersight Board Member\n\nDate\n\nWaudeX\n\nle -18- 2o\n\neltn\n\nOversighit Boayd Member\n\nDate\n\nmuriu\n\n7-81-7\n\nOversight Board Member\n\nDate\n\n10118126\n\nOversight Board Member\n\nDate\n\nOversight Board Membcr\n\nDate\n\nOversight Board Member\n\nDate\n\nOversight Board Mermber\n\nDate\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Recommendation:"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-15-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-15",
+      "text": "It is my recommendation that JimLOCk be appointed to the position of Oversight Board Menber to scrve a term of years, fromuust.10- Avqust 15,2029",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-16",
+      "parent_chunk_id": null,
+      "text": "## Action Item #3\n\nDatc: June 18, 2026 RE: Nomination and approval of Oversight Board Membcrship",
+      "chunk_type": "parent",
+      "heading": "Action Item #3"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-16-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-16",
+      "text": "## Action Item #3\n\nDatc: June 18, 2026 RE: Nomination and approval of Oversight Board Membcrship",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-17",
+      "parent_chunk_id": null,
+      "text": "## Approval Item:\n\nThe position Fran Duane serves as a Member of the Public Defender Oversight Board as the mental hcalth'representative is scheduled to expire'August 15, 2026. This posilion is curtently scheduled for nomination.\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Approval Item:"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-17-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-17",
+      "text": "## Approval Item:\n\nThe position Fran Duane serves as a Member of the Public Defender Oversight Board as the mental hcalth'representative is scheduled to expire'August 15, 2026. This posilion is curtently scheduled for nomination.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-18",
+      "parent_chunk_id": null,
+      "text": "## Recommcndation:\n\nIt is my rcommendation that Fran DoXint be appointed to the position of Oversight Board Member as the mental health representative to serve a tcrm of years, from fuuit 1s,g0ay-fugust 15,a0as\n\n-18r26\n\n4444\n\nNatffan Wood, ChfiefPublic Defender\n\nDate\n\nBoard Approvall\n\nG- 18-26\n\nOversightBoard Member\n\nDate\n\nWurh\n\nMatzn\n\n-18-2o\n\nOversight BoardMember\n\nDate\n\nyyichule 6\n\nt-8!-!\n\nOversight Board Member\n\nDate\n\n1e118/21e\n\nMane\n\nOversight Board Member\n\nDate\n\nOversight Board Member\n\nDate\n\nOversight Board Membcr\n\nDatc\n\nOversight Board Mermber\n\nDate\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Recommcndation:"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-18-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-18",
+      "text": "## Recommcndation:\n\nIt is my rcommendation that Fran DoXint be appointed to the position of Oversight Board Member as the mental health representative to serve a tcrm of years, from fuuit 1s,g0ay-fugust 15,a0as",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-19",
+      "parent_chunk_id": null,
+      "text": "## Action Itcm #3\n\nDate: June 18, 2026\n\nRE: Nomination and approval of Oversight Board Membership",
+      "chunk_type": "parent",
+      "heading": "Action Itcm #3"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-child-19-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-ac0e33aa45f64cf3-parent-19",
+      "text": "RE: Nomination and approval of Oversight Board Membership",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "ac0e33aa45f64cf38d776d9ed56bac2132b36c6d0b0cea0a9c9738cab2d5ce49",
+  "extraction_method": "docling",
+  "source_url": "https://brazos.novusagenda.com/agendapublic/DisplayAgendaPDF.ashx?MinutesMeetingID=1901",
+  "doc_type": "agenda",
+  "source_document_id": null
+}

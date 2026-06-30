@@ -1,0 +1,79 @@
+{
+  "document_id": "doc-pa-centrecounty-188428314b55f72d",
+  "county_id": "pa-centrecounty",
+  "trace_id": "f9a9033f-ac74-478b-8a7f-66aa1acb527e",
+  "extracted_at": "2026-06-25T16:30:03.618435+00:00",
+  "chunk_count": 10,
+  "chunks": [
+    {
+      "chunk_id": "doc-pa-centrecounty-188428314b55f72d-parent-0",
+      "parent_chunk_id": null,
+      "text": "## CENTRE COUNTY BOARD OF ASSESSMENT AND REVISION OF TAXES AGENDA\n\nJune 16, 2026\n\nOPENING\n\nCALL TO ORDER",
+      "chunk_type": "parent",
+      "heading": "CENTRE COUNTY BOARD OF ASSESSMENT AND REVISION OF TAXES AGENDA"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-188428314b55f72d-child-0-0",
+      "parent_chunk_id": "doc-pa-centrecounty-188428314b55f72d-parent-0",
+      "text": "## CENTRE COUNTY BOARD OF ASSESSMENT AND REVISION OF TAXES AGENDA\n\nJune 16, 2026",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-188428314b55f72d-parent-1",
+      "parent_chunk_id": null,
+      "text": "## PUBLIC COMMENT\n\nIn accordance with the Sunshine Act, attendees will be given the opportunity to comment on matters of concern, official action, or deliberation before the Board of Assessment and Revision of Taxes.  For items not on the agenda, the Board will accept public comment at the beginning of each meeting.  For items that are on the agenda, the Board will accept public comment prior to each official action.  Persons desiring to comment should raise their hand to be recognized by the Chair.  Anyone addressing the Board will be given a five-minute time period in which to do so.",
+      "chunk_type": "parent",
+      "heading": "PUBLIC COMMENT"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-188428314b55f72d-child-1-0",
+      "parent_chunk_id": "doc-pa-centrecounty-188428314b55f72d-parent-1",
+      "text": "## PUBLIC COMMENT\n\nIn accordance with the Sunshine Act, attendees will be given the opportunity to comment on matters of concern, official action, or deliberation before the Board of Assessment and Revision of Taxes.  For items not on the agenda, the Board will accept public comment at the beginning of each meeting.  For items that are on the agenda, the Board will accept public comment prior to each official action.  Persons desiring to comment should raise their hand to be recognized by the Chair.  Anyone addressing the Board will be given a five-minute time period in which to do so.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-188428314b55f72d-parent-2",
+      "parent_chunk_id": null,
+      "text": "## ADDITIONS TO THE AGENDA\n\nIn accordance with ACT 65 of 2021, no discussion or action will be allowed for any item not included on the published agenda unless the item is on of an emergency nature or is de minimus in scope and does not require funding authorization and/or a contract or agreement.  A majority vote of the Board is required to add an item to the agenda.  All provisions of Act 65 regarding requirements for updating a published agenda after the meeting are in effect.",
+      "chunk_type": "parent",
+      "heading": "ADDITIONS TO THE AGENDA"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-188428314b55f72d-child-2-0",
+      "parent_chunk_id": "doc-pa-centrecounty-188428314b55f72d-parent-2",
+      "text": "## ADDITIONS TO THE AGENDA\n\nIn accordance with ACT 65 of 2021, no discussion or action will be allowed for any item not included on the published agenda unless the item is on of an emergency nature or is de minimus in scope and does not require funding authorization and/or a contract or agreement.  A majority vote of the Board is required to add an item to the agenda.  All provisions of Act 65 regarding requirements for updating a published agenda after the meeting are in effect.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-188428314b55f72d-parent-3",
+      "parent_chunk_id": null,
+      "text": "## OLD BUSINESS:\n\n- (1) APPROVAL OF MINUTES OF JANUARY 22, 2026",
+      "chunk_type": "parent",
+      "heading": "OLD BUSINESS:"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-188428314b55f72d-child-3-0",
+      "parent_chunk_id": "doc-pa-centrecounty-188428314b55f72d-parent-3",
+      "text": "## OLD BUSINESS:\n\n- (1) APPROVAL OF MINUTES OF JANUARY 22, 2026",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-188428314b55f72d-parent-4",
+      "parent_chunk_id": null,
+      "text": "## NEW BUSINESS:\n\n- (1) APPROVAL OF REAL ESTATE CHANGES FOR THE PERIOD JANUARY 27, 2026 THROUGH JUNE 3, 2026\n- (2) APPROVAL OF ATTACHED LIST OF REAL ESTATE RESOLUTIONS\n- (3) APPROVAL OF ASSESSMENT ROLL FOR 2027\n\nOPEN DISCUSSION\n\nADJOURN",
+      "chunk_type": "parent",
+      "heading": "NEW BUSINESS:"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-188428314b55f72d-child-4-0",
+      "parent_chunk_id": "doc-pa-centrecounty-188428314b55f72d-parent-4",
+      "text": "## NEW BUSINESS:\n\n- (1) APPROVAL OF REAL ESTATE CHANGES FOR THE PERIOD JANUARY 27, 2026 THROUGH JUNE 3, 2026\n- (2) APPROVAL OF ATTACHED LIST OF REAL ESTATE RESOLUTIONS\n- (3) APPROVAL OF ASSESSMENT ROLL FOR 2027",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "188428314b55f72de8ed6863eaef069f92cac83666fa2eb6f8e124bf27679135",
+  "extraction_method": "docling",
+  "source_url": "https://pa-centrecounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06162026-2353",
+  "doc_type": "agenda",
+  "source_document_id": null
+}

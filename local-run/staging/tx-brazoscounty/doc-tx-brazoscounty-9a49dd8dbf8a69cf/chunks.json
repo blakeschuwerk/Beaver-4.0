@@ -1,0 +1,328 @@
+{
+  "document_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf",
+  "county_id": "tx-brazoscounty",
+  "trace_id": "b1579d31-29bb-4bfc-906b-d2a12df96127",
+  "extracted_at": "2026-06-25T16:34:01.947061+00:00",
+  "chunk_count": 49,
+  "chunks": [
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-1",
+      "parent_chunk_id": null,
+      "text": "## MINUTES",
+      "chunk_type": "parent",
+      "heading": "MINUTES"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-2",
+      "parent_chunk_id": null,
+      "text": "## JUNE 23, 2026",
+      "chunk_type": "parent",
+      "heading": "JUNE 23, 2026"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-3",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY COMMISSIONERS COURT",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY COMMISSIONERS COURT"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-4",
+      "parent_chunk_id": null,
+      "text": "## WORKSHOP SESSION",
+      "chunk_type": "parent",
+      "heading": "WORKSHOP SESSION"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "parent_chunk_id": null,
+      "text": "## 1. Call to Order\n\nA workshop session of the Commissioners' Court of Brazos County, Texas was held in the Brazos County Commissioners Courtroom in the Administration Building, 200 South Texas Avenue, in Bryan, Brazos County, Texas, beginning at 9:02 a.m. on Tuesday, June 23, 2026 with the following members of the Court present:\n\nThe attached sheets contain the names of the citizens and officials that were in\n\nDuane Peters, County Judge, Presiding; Bentley Nettles, Commissioner of Precinct 1; Chuck Konderla, Commissioner of Precinct 2, Fred Brown, Commissioner of Precinct 3; Wanda J. Watson, Commissioner of Precinct 4; Karen McQueen, County Clerk, Absent; attendance.\n\n2. Presentation and Discussion of the FY 2026-2027 County Budget regarding Retirement Plan Rate (TCDRS)\n\nPresentation and Discussion of the FY 2026-2027 County Budget regarding Insurance Premiums and Contributions (USI)\n\nTCDRS Representative Tim Krause provided an overview of the County's retirement plan and employee retirement eligibility. He explained that the Commissioners Court has the opportunity each year to review the plan and determine whether any modifications are necessary. Mr. Krause reported on the current cost of the plan to the County and noted that it remains a strong, conservatively funded retirement program.\n\nCommissioner Brown inquired about survivor benefits and how the plan applies to spouses. In response, Mr. Krause outlined the four retirement benefit options available to employees and explained the provisions associated with each option.\n\nFollowing the presentation, Human Resources Director Jennifer Salazar requested direction from the Court regarding the County's elected contribution rate. After discussion, the Court expressed its desire to continue the current elected rate.\n\nUSI Representatives Bobby Anderson and Brenda Cos then presented information regarding budget considerations for the FY 2027 employee health insurance plan. Mr. Anderson provided an overview of the County'",
+      "chunk_type": "parent",
+      "heading": "1. Call to Order"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "## 1. Call to Order\n\nA workshop session of the Commissioners' Court of Brazos County, Texas was held in the Brazos County Commissioners Courtroom in the Administration Building, 200 South Texas Avenue, in Bryan, Brazos County, Texas, beginning at 9:02 a.m. on Tuesday, June 23, 2026 with the following members of the Court present:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "The attached sheets contain the names of the citizens and officials that were in",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-2",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "Duane Peters, County Judge, Presiding; Bentley Nettles, Commissioner of Precinct 1; Chuck Konderla, Commissioner of Precinct 2, Fred Brown, Commissioner of Precinct 3; Wanda J. Watson, Commissioner of Precinct 4; Karen McQueen, County Clerk, Absent; attendance.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-3",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "2. Presentation and Discussion of the FY 2026-2027 County Budget regarding Retirement Plan Rate (TCDRS)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-4",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "Presentation and Discussion of the FY 2026-2027 County Budget regarding Insurance Premiums and Contributions (USI)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-5",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "TCDRS Representative Tim Krause provided an overview of the County's retirement plan and employee retirement eligibility. He explained that the Commissioners Court has the opportunity each year to review the plan and determine whether any modifications are necessary. Mr. Krause reported on the current cost of the plan to the County and noted that it remains a strong, conservatively funded retirement program.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-6",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "Commissioner Brown inquired about survivor benefits and how the plan applies to spouses. In response, Mr. Krause outlined the four retirement benefit options available to employees and explained the provisions associated with each option.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-7",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "Following the presentation, Human Resources Director Jennifer Salazar requested direction from the Court regarding the County's elected contribution rate. After discussion, the Court expressed its desire to continue the current elected rate.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-8",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "USI Representatives Bobby Anderson and Brenda Cos then presented information regarding budget considerations for the FY 2027 employee health insurance plan. Mr. Anderson provided an overview of the County's significant medical claims and prescription drug expenditures during FY 2026. Ms. Cos reviewed the health plan cost summary and current enrollment trends.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-9",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "The Court discussed the increasing cost of prescription medications and the impact on the overall health insurance program.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-10",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "Ms. Salazar advised the Court that direction was needed regarding healthcare premiums and employer contributions for FY 2027. She presented the following options for consideration:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-11",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "- Option 1: Increase both County and employee contributions by 11.25 percent.\n- Option 2: Increase employee contributions by 5 percent, with the County absorbing the remaining increase in costs.\n- Option 3: The increase absorbed solely by the County.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-12",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "Commissioner Brown inquired about providing employees with a 2.5 percent cost-ofliving adjustment (COLA) to help offset higher health insurance premiums. Budget Officer Nina Payne discussed the projected budgetary impact of implementing a 2.5 percent COLA.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-13",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "The Court engaged in further discussion regarding the proposed healthcare contribution options and the potential COLA adjustment. Following deliberation, the Court directed Ms. Salazar and Ms. Payne to prepare additional information outlining the total fiscal impact of each option for further consideration.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-5-14",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-5",
+      "text": "Ms. Payne requested additional time to complete the necessary calculations and recommended scheduling another budget workshop on July 7, 2026, to present the information. The Court agreed to hold a workshop on that date.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-6",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY BRYAN, TEXAS",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY BRYAN, TEXAS"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-7",
+      "parent_chunk_id": null,
+      "text": "## NOTICE OF MEETING AND AGENDA WORKSHOP SESSION",
+      "chunk_type": "parent",
+      "heading": "NOTICE OF MEETING AND AGENDA WORKSHOP SESSION"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-8",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY COMMISSIONERS COURT\n\nBRAZOS COUNTY COMMISSIONERS WILL MEET IN A WORKSHOP SESSION AS FOLLOWS:\n\nMEETING DATE:\n\nJune 23, 2026\n\nMEETING TIME:\n\n9:00 AM\n\nMEETING PLACE:\n\nCommissioners Courtroom of the Brazos County Administration Building, 200 S. Texas Avenue, Suite 106, Bryan, TX 77803\n\n1. Call to Order\n2. Presentation and Discussion of the FY 2026-2027 County Budget regarding Retirement Plan Rate (TCDRS)\n\nPresentation and Discussion of the FY 2026-2027 County Budget regarding Insurance Premiums and Contributions (USI)\n\n3. Adjourn\n\nThe Commissioners Courtroom of the Brazos County Administration Building, 200 S. Texas Avenue, Suite 106, Bryan, TX 77803 is wheelchair accessible. Handicap parking spaces are available. Any request for sign interpretive services must be made two working days before the meeting. To make arrangements, please call (979) 361-4102.",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY COMMISSIONERS COURT"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-8-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-8",
+      "text": "## BRAZOS COUNTY COMMISSIONERS COURT\n\nBRAZOS COUNTY COMMISSIONERS WILL MEET IN A WORKSHOP SESSION AS FOLLOWS:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-8-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-8",
+      "text": "Commissioners Courtroom of the Brazos County Administration Building, 200 S. Texas Avenue, Suite 106, Bryan, TX 77803",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-8-2",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-8",
+      "text": "1. Call to Order\n2. Presentation and Discussion of the FY 2026-2027 County Budget regarding Retirement Plan Rate (TCDRS)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-8-3",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-8",
+      "text": "Presentation and Discussion of the FY 2026-2027 County Budget regarding Insurance Premiums and Contributions (USI)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-8-4",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-8",
+      "text": "The Commissioners Courtroom of the Brazos County Administration Building, 200 S. Texas Avenue, Suite 106, Bryan, TX 77803 is wheelchair accessible. Handicap parking spaces are available. Any request for sign interpretive services must be made two working days before the meeting. To make arrangements, please call (979) 361-4102.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-9",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\n<!-- image -->\n\n,20 26\n\n23\n\nSone\n\nDAY OF\n\n9:00\n\nAMyPM, \\_Worhshqp",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY COMMISSIONER'S COURT"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-9-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-9",
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\n<!-- image -->",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-10",
+      "parent_chunk_id": null,
+      "text": "## Name\n\nOrganization (PLEASE PRINT)\n\n(PLEASE PRINT)\n\nCart Omm\n\n00\n\nomm Court\n\nusH\n\nBobby Anolerson\n\nUST\n\nKraust Charles 5Cuebler\n\nteoRs.\n\nHT\n\nKaitnBatles\n\nPurcheging L\n\nWm. Churtes Wuet\n\nNuna Peuge\n\nBud&amp;\n\nSpencur shpw\n\nIbu dget.\n\nFleer\n\nHR\n\nHR\n\nFemriferSalaucer TonPa\n\nPc+ 2\n\nJosSikarSIi\n\nFcct",
+      "chunk_type": "parent",
+      "heading": "Name"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-11",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\n23 DAY OF June 20Q\n\n9:00 AM/PM, \\_Wor k Shop\n\n<!-- image -->\n\nName\n\nOrganization\n\n(PLEASE PRINT)\n\n(PLEASE PRINT)\n\nMixE Sree+\n\nEnka GarcrG\n\nBarbaraOnl\n\nLoduda\n\nleSanl\n\nCobb\n\nllefon\n\nERIcCALDWeLL\n\nBeIt\n\nBill Melzow\n\nBCIT\n\nChimcne\n\nM CoarubePr\n\nCnfae#N\n\nConstbe#2\n\nDereld\n\nors\n\n3\u221a aht tonn\n\ndce as sf-\n\nJery Morares\n\nLeslieContrens",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY COMMISSIONER'S COURT"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-11-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-11",
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\n23 DAY OF June 20Q",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-12",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\n23\\_1 DAY OF June 20. 26\n\n0:00\n\n<!-- image -->\n\nAM/PM,\\_ Worxshoe\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY COMMISSIONER'S COURT"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-12-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-12",
+      "text": "## BRAZOS COUNTY COMMISSIONER'S COURT\n\n23\\_1 DAY OF June 20. 26",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-13",
+      "parent_chunk_id": null,
+      "text": "## Name",
+      "chunk_type": "parent",
+      "heading": "Name"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-14",
+      "parent_chunk_id": null,
+      "text": "## Organization\n\n(PLEASE PRINT)\n\n(PLEASE PRINT)\n\nAshlie Peters-Bowman\n\nClerk\n\nKaren McQveen\n\nClerL\n\nViCtoriaLimon MeCoy\n\nCo Cler k\n\nTefag\n\nJe\n\nWESSERENG\u00b7GSURNEYING\n\nQitizen\n\nLiNhA Ricketsoh\n\nTov.SvC.\n\nCo.Fdsc\n\nAndaubiphe\n\n\u03b2CHust. Comm.\n\nLENRYMAEO\n\nParis Pavlas\n\nRep.Paul Dysen\n\nVeans\n\nDela Sandoval\n\nComm. Court\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Organization"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-15",
+      "parent_chunk_id": null,
+      "text": "## BRAZOS COUNTY BRYAN, TEXAS\n\nDEPARTMENT:\n\nNUMBER:\n\nDATE OF COURT MEETING:\n\n6/23/2026\n\nITEM:\n\nPresentation and Discussion of the FY 2026-2027 County Budget regarding Retirement Plan Rate (TCDRS)\n\nPresentation and Discussion of the FY 2026-2027 County Budget regarding Insurance Premiums and Contributions (USI)\n\nTO:\n\nCommissioners Court\n\nDATE:\n\n04/27/2026\n\nFISCAL IMPACT:\n\nFalse\n\nBUDGETED:\n\nFalse\n\nDOLLAR AMOUNT:\n\n$0.00",
+      "chunk_type": "parent",
+      "heading": "BRAZOS COUNTY BRYAN, TEXAS"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-15-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-15",
+      "text": "## BRAZOS COUNTY BRYAN, TEXAS\n\nDEPARTMENT:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-15-1",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-15",
+      "text": "Presentation and Discussion of the FY 2026-2027 County Budget regarding Retirement Plan Rate (TCDRS)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-15-2",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-15",
+      "text": "Presentation and Discussion of the FY 2026-2027 County Budget regarding Insurance Premiums and Contributions (USI)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-16",
+      "parent_chunk_id": null,
+      "text": "## ATTACHMENTS:",
+      "chunk_type": "parent",
+      "heading": "ATTACHMENTS:"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-17",
+      "parent_chunk_id": null,
+      "text": "## File Name\n\nCounty\\_Budget\\_Workshop\\_-\\_Retirement\\_Plan\\_Rate\\_ (TCDRS\\_and\\_Insurance\\_Premiums\\_and\\_Contributions\\_ (USI).pdf",
+      "chunk_type": "parent",
+      "heading": "File Name"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-17-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-17",
+      "text": "## File Name\n\nCounty\\_Budget\\_Workshop\\_-\\_Retirement\\_Plan\\_Rate\\_ (TCDRS\\_and\\_Insurance\\_Premiums\\_and\\_Contributions\\_ (USI).pdf",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-18",
+      "parent_chunk_id": null,
+      "text": "## Description\n\nCounty Budget - Retirement Plan Rate (TCDRS and Insurance Premiums and Contributions (USI)\n\nType\n\nCover Memo\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Description"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-18-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-18",
+      "text": "## Description\n\nCounty Budget - Retirement Plan Rate (TCDRS and Insurance Premiums and Contributions (USI)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-19",
+      "parent_chunk_id": null,
+      "text": "## Plan Assessment for Plan Year 2027 Brazos County -120 Participation Date -1/1/1968\n\nIt's that time of year again time to look at your TCDRS retirement plan and decide whether or not your benefits are adequate and affordable. This plan assessment will give you an overview of the benefits you provide as well as how much it will cost to provide these benefits in the upcoming plan year.",
+      "chunk_type": "parent",
+      "heading": "Plan Assessment for Plan Year 2027 Brazos County -120 Participation Date -1/1/1968"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-child-19-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-9a49dd8dbf8a69cf-parent-19",
+      "text": "## Plan Assessment for Plan Year 2027 Brazos County -120 Participation Date -1/1/1968\n\nIt's that time of year again time to look at your TCDRS retirement plan and decide whether or not your benefits are adequate and affordable. This plan assessment will give you an overview of the benefits you provide as well as how much it will cost to provide these benefits in the upcoming plan year.",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "9a49dd8dbf8a69cf2f0e98dc3fdf3a0bdd2de361da8c0fad5bd654f5e3ea6ada",
+  "extraction_method": "docling",
+  "source_url": "https://brazos.novusagenda.com/agendapublic/DisplayAgendaPDF.ashx?MinutesMeetingID=1902",
+  "doc_type": "agenda",
+  "source_document_id": null
+}

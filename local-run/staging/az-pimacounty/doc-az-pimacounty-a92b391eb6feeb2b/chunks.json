@@ -1,0 +1,334 @@
+{
+  "document_id": "doc-az-pimacounty-a92b391eb6feeb2b",
+  "county_id": "az-pimacounty",
+  "trace_id": "cd5a08ae-784d-434f-8966-dfb88c03985e",
+  "extracted_at": "2026-06-25T16:30:14.276279+00:00",
+  "chunk_count": 50,
+  "chunks": [
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-1",
+      "parent_chunk_id": null,
+      "text": "## Pima County",
+      "chunk_type": "parent",
+      "heading": "Pima County"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-2",
+      "parent_chunk_id": null,
+      "text": "## Board of Supervisors Meeting Agenda\n\nMEETING LOCATION Administration Bldg - East 130 W. Congress Street 1st Floor Tucson, AZ 85701\n\nPublic Access to Hearing Room at 4:40 p.m.\n\nBoard of Supervisors' Hearing Room\n\n5:00 PM\n\nTuesday, June 23, 2026",
+      "chunk_type": "parent",
+      "heading": "Board of Supervisors Meeting Agenda"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-2-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-2",
+      "text": "## Board of Supervisors Meeting Agenda\n\nMEETING LOCATION Administration Bldg - East 130 W. Congress Street 1st Floor Tucson, AZ 85701",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-2-1",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-2",
+      "text": "Public Access to Hearing Room at 4:40 p.m.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-3",
+      "parent_chunk_id": null,
+      "text": "## PIMA COUNTY BOARD OF SUPERVISORS\n\nJennifer Allen, Chair, District 3 Dr. Matt Heinz, Vice Chair, District 2 Rex Scott, Member, District 1 Steve Christy, Member, District 4 Andr\u00e9s Cano, Member, District 5",
+      "chunk_type": "parent",
+      "heading": "PIMA COUNTY BOARD OF SUPERVISORS"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-3-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-3",
+      "text": "## PIMA COUNTY BOARD OF SUPERVISORS\n\nJennifer Allen, Chair, District 3 Dr. Matt Heinz, Vice Chair, District 2 Rex Scott, Member, District 1 Steve Christy, Member, District 4 Andr\u00e9s Cano, Member, District 5",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-4",
+      "parent_chunk_id": null,
+      "text": "## AGENDA/ADDENDUM AND BROADCAST INFORMATION\n\nAt least 24 hours before each scheduled meeting, the agenda/addendum is available online at www.pima.gov and in the Clerk of the Board s Office, 130 W. Congress Street, 1st Floor, Tucson, AZ 85701, Mon-Fri, 8am to 5pm. Cable Channels: Cox 96 Webcast: www.pima.gov",
+      "chunk_type": "parent",
+      "heading": "AGENDA/ADDENDUM AND BROADCAST INFORMATION"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-4-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-4",
+      "text": "## AGENDA/ADDENDUM AND BROADCAST INFORMATION\n\nAt least 24 hours before each scheduled meeting, the agenda/addendum is available online at www.pima.gov and in the Clerk of the Board s Office, 130 W. Congress Street, 1st Floor, Tucson, AZ 85701, Mon-Fri, 8am to 5pm. Cable Channels: Cox 96 Webcast: www.pima.gov",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-5",
+      "parent_chunk_id": null,
+      "text": "## PUBLIC PARTICIPATION SPEAKERS ARE LIMITED UP TO 3 MINUTES\n\nTo address the Board of Supervisors, please complete a Speaker s Card. Clearly print your name/address, the item number and other requested information. Speaker Card(s) are required for Call to the Public and Public Hearing Items. Once completed submit your Speaker Card(s) to Clerk staff. When the Chair announces your name, step forward to the podium and state your name for the record.\n\nThe Chair reserves the right to ensure all testimony is pertinent or non-repetitive so matters are handled fairly and expeditiously. All attendees are advised that the Board of Supervisors strongly adhere to the Board of Supervisors Rules and Regulations. Outbursts, breaches of peace, boisterous conduct or other unlawful interference will result in that individual being asked to leave the meeting room. Any questions pertaining to the meeting can be directed to Melissa Manriquez, Clerk of the Board.",
+      "chunk_type": "parent",
+      "heading": "PUBLIC PARTICIPATION SPEAKERS ARE LIMITED UP TO 3 MINUTES"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-5-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-5",
+      "text": "## PUBLIC PARTICIPATION SPEAKERS ARE LIMITED UP TO 3 MINUTES\n\nTo address the Board of Supervisors, please complete a Speaker s Card. Clearly print your name/address, the item number and other requested information. Speaker Card(s) are required for Call to the Public and Public Hearing Items. Once completed submit your Speaker Card(s) to Clerk staff. When the Chair announces your name, step forward to the podium and state your name for the record.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-5-1",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-5",
+      "text": "The Chair reserves the right to ensure all testimony is pertinent or non-repetitive so matters are handled fairly and expeditiously. All attendees are advised that the Board of Supervisors strongly adhere to the Board of Supervisors Rules and Regulations. Outbursts, breaches of peace, boisterous conduct or other unlawful interference will result in that individual being asked to leave the meeting room. Any questions pertaining to the meeting can be directed to Melissa Manriquez, Clerk of the Board.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-6",
+      "parent_chunk_id": null,
+      "text": "## HEARING ROOM NOTICE\n\nLaw permits that a video and/or audio recording of all or part of this meeting may be made if doing so does not interfere with the conduct of the meeting.  Pima County has no control over the use and distribution of any such recordings.  In addition to the official meeting proceedings, these recordings may include images of and comments made by the public prior to the start, during a recess and after adjournment of the meeting, and may be posted on social media or other internet sites.\n\nThe Board Hearing Room is wheelchair and handicapped accessible. Any person who is in need of special services (e.g., assistive listening device, Braille or large print agenda material, signer for hearing impaired, accessible parking, etc.) due to any disability will be accommodated. Please contact the Clerk of the Board at (520) 724-8449 for these services at least three (3) business days prior to the Board Meeting.",
+      "chunk_type": "parent",
+      "heading": "HEARING ROOM NOTICE"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-6-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-6",
+      "text": "## HEARING ROOM NOTICE\n\nLaw permits that a video and/or audio recording of all or part of this meeting may be made if doing so does not interfere with the conduct of the meeting.  Pima County has no control over the use and distribution of any such recordings.  In addition to the official meeting proceedings, these recordings may include images of and comments made by the public prior to the start, during a recess and after adjournment of the meeting, and may be posted on social media or other internet sites.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-6-1",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-6",
+      "text": "The Board Hearing Room is wheelchair and handicapped accessible. Any person who is in need of special services (e.g., assistive listening device, Braille or large print agenda material, signer for hearing impaired, accessible parking, etc.) due to any disability will be accommodated. Please contact the Clerk of the Board at (520) 724-8449 for these services at least three (3) business days prior to the Board Meeting.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-7",
+      "parent_chunk_id": null,
+      "text": "## ACCESSIBILITY\n\nClerk's Note:  Members of the Pima County Board of Supervisors will attend either in person or by telephone, video or internet conferencing.\n\nThe meeting can be streamed via the following links:  BOS Agenda June 23, 2026 (http://pima.granicus.com/ViewPublisher.php?view\\_id=3), on YouTube (https://www.youtube.com/c/PimaCountyArizona/), or via Cox Cable Channel 96. Television viewing will be available in the lobby at 130 West Congress, 1st Floor.\n\n1. ROLL CALL\n2. PLEDGE OF ALLEGIANCE\n3. LAND ACKNOWLEDGEMENT STATEMENT\n\nTo be offered by Nora Navarro Hernandez, Casa de Los Ninos.\n\n4. CURRENT EVENTS/PUBLIC ACKNOWLEDGEMENTS\n5. AGENDA ADJUSTMENTS",
+      "chunk_type": "parent",
+      "heading": "ACCESSIBILITY"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-7-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-7",
+      "text": "## ACCESSIBILITY\n\nClerk's Note:  Members of the Pima County Board of Supervisors will attend either in person or by telephone, video or internet conferencing.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-7-1",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-7",
+      "text": "The meeting can be streamed via the following links:  BOS Agenda June 23, 2026 (http://pima.granicus.com/ViewPublisher.php?view\\_id=3), on YouTube (https://www.youtube.com/c/PimaCountyArizona/), or via Cox Cable Channel 96. Television viewing will be available in the lobby at 130 West Congress, 1st Floor.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-7-2",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-7",
+      "text": "1. ROLL CALL\n2. PLEDGE OF ALLEGIANCE\n3. LAND ACKNOWLEDGEMENT STATEMENT",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-7-3",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-7",
+      "text": "To be offered by Nora Navarro Hernandez, Casa de Los Ninos.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-7-4",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-7",
+      "text": "4. CURRENT EVENTS/PUBLIC ACKNOWLEDGEMENTS\n5. AGENDA ADJUSTMENTS",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-8",
+      "parent_chunk_id": null,
+      "text": "## PRESENTATION/PROCLAMATION\n\n- 6.\n\nPresentation of a proclamation to the Honorable Gabrielle Giffords, Co-Founder, Joni Jones, Board President, Kym Olsen, Executive Director, and Clare McNamara, Clinical Director, Friends of Aphasia, proclaiming the month of June 2026 to be:  \"NATIONAL APHASIA AWARENESS MONTH\"\n\nPROC\\_NationalAphasiaAwarenessMonth Attachments:\n\n7. CALL TO THE PUBLIC\n\nIndividuals wishing to participate telephonically at Call to the Public must contact the Clerk of the Board's Office at 520-724-8449, to register their request and obtain remote access information, by the deadline of Monday, June 22, 2026 at 5:00 p.m. Call to the Public shall be scheduled for one hour each meeting unless extended by a majority vote of the Board of Supervisors. Speakers shall have up to three minutes to speak. However, for any meeting where 20 or more individuals have submitted speaker cards, each speaker's time shall be limited to two minutes. Please be aware that you may not be called upon to speak if the time for Call to the Public expires and is not extended by a majority vote of the Board of Supervisors. eComments can also be submitted to COB\\_mail@pima.gov.\n\nCalltothePublic\\_DiGenova\\_6-23-26\\_Redacted\n\nAttachments:\n\n*     *     *",
+      "chunk_type": "parent",
+      "heading": "PRESENTATION/PROCLAMATION"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-8-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-8",
+      "text": "## PRESENTATION/PROCLAMATION\n\nPresentation of a proclamation to the Honorable Gabrielle Giffords, Co-Founder, Joni Jones, Board President, Kym Olsen, Executive Director, and Clare McNamara, Clinical Director, Friends of Aphasia, proclaiming the month of June 2026 to be:  \"NATIONAL APHASIA AWARENESS MONTH\"",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-8-1",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-8",
+      "text": "PROC\\_NationalAphasiaAwarenessMonth Attachments:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-8-2",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-8",
+      "text": "Individuals wishing to participate telephonically at Call to the Public must contact the Clerk of the Board's Office at 520-724-8449, to register their request and obtain remote access information, by the deadline of Monday, June 22, 2026 at 5:00 p.m. Call to the Public shall be scheduled for one hour each meeting unless extended by a majority vote of the Board of Supervisors. Speakers shall have up to three minutes to speak. However, for any meeting where 20 or more individuals have submitted speaker cards, each speaker's time shall be limited to two minutes. Please be aware that you may not be called upon to speak if the time for Call to the Public expires and is not extended by a majority vote of the Board of Supervisors. eComments can also be submitted to COB\\_mail@pima.gov.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-8-3",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-8",
+      "text": "CalltothePublic\\_DiGenova\\_6-23-26\\_Redacted",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-9",
+      "parent_chunk_id": null,
+      "text": "## SPECIAL FINAL BUDGET ADOPTION MEETING",
+      "chunk_type": "parent",
+      "heading": "SPECIAL FINAL BUDGET ADOPTION MEETING"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-10",
+      "parent_chunk_id": null,
+      "text": "## *** HEARINGS ***\n\nIndividuals wishing to address the Board on a Public Hearing item, but wish to participate remotely, can contact the Clerk of the Board's Office at 520-724-8449, to obtain remote access information.",
+      "chunk_type": "parent",
+      "heading": "*** HEARINGS ***"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-10-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-10",
+      "text": "## *** HEARINGS ***\n\nIndividuals wishing to address the Board on a Public Hearing item, but wish to participate remotely, can contact the Clerk of the Board's Office at 520-724-8449, to obtain remote access information.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-11",
+      "parent_chunk_id": null,
+      "text": "## FINAL BUDGET HEARINGS AND TRUTH IN TAXATION HEARINGS",
+      "chunk_type": "parent",
+      "heading": "FINAL BUDGET HEARINGS AND TRUTH IN TAXATION HEARINGS"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-12",
+      "parent_chunk_id": null,
+      "text": "## 8. Hearing\n\nPursuant to A.R.S. \u00a742-17104 and \u00a742-17107, the Board of Supervisors will conduct a public hearing on proposed expenditures and Pima County's intent to raise the primary property taxes over last year's level.\n\n(Clerk's Note: The Board of Supervisors will also be sitting as the Board of Directors of the Other Boards listed below for the public hearing.)\n\nCA\\_FY2026-27FinalBudget\\_Slides\\_6-19-26\n\nAttachments:\n\n[CA\\_CAMemo\\_FY2026-27FinalBudgetAdoption\\_6-22-26](https://pima.legistar.com/gateway.aspx?M=F&ID=a93833f7-c607-48fe-90c7-b39d0c3b0e09.pdf)",
+      "chunk_type": "parent",
+      "heading": "8. Hearing"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-12-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-12",
+      "text": "## 8. Hearing\n\nPursuant to A.R.S. \u00a742-17104 and \u00a742-17107, the Board of Supervisors will conduct a public hearing on proposed expenditures and Pima County's intent to raise the primary property taxes over last year's level.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-12-1",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-12",
+      "text": "(Clerk's Note: The Board of Supervisors will also be sitting as the Board of Directors of the Other Boards listed below for the public hearing.)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-12-2",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-12",
+      "text": "CA\\_FY2026-27FinalBudget\\_Slides\\_6-19-26",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-12-3",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-12",
+      "text": "[CA\\_CAMemo\\_FY2026-27FinalBudgetAdoption\\_6-22-26](https://pima.legistar.com/gateway.aspx?M=F&ID=a93833f7-c607-48fe-90c7-b39d0c3b0e09.pdf)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-13",
+      "parent_chunk_id": null,
+      "text": "## BOARD OF SUPERVISORS SITTING AS OTHER BOARDS",
+      "chunk_type": "parent",
+      "heading": "BOARD OF SUPERVISORS SITTING AS OTHER BOARDS"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-14",
+      "parent_chunk_id": null,
+      "text": "## FLOOD CONTROL DISTRICT BOARD\n\n9. Hearing\n\nPursuant to A.R.S. \u00a748-254, conduct a public hearing on proposed expenditures and the District's intent to raise the secondary property taxes over last year's level.",
+      "chunk_type": "parent",
+      "heading": "FLOOD CONTROL DISTRICT BOARD"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-14-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-14",
+      "text": "## FLOOD CONTROL DISTRICT BOARD\n\n9. Hearing",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-14-1",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-14",
+      "text": "Pursuant to A.R.S. \u00a748-254, conduct a public hearing on proposed expenditures and the District's intent to raise the secondary property taxes over last year's level.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-15",
+      "parent_chunk_id": null,
+      "text": "## 10. Hearing\n\nFlood Control District Final Budget for Fiscal Year 2026/2027. If approved, pass and adopt: RESOLUTION NO. 2026 - FC 1\n\nFC\\_ResoFY26-27BudgetAdoption\n\nCA\\_2026/2027CountyBudget\n\nAttachments:",
+      "chunk_type": "parent",
+      "heading": "10. Hearing"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-15-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-15",
+      "text": "## 10. Hearing\n\nFlood Control District Final Budget for Fiscal Year 2026/2027. If approved, pass and adopt: RESOLUTION NO. 2026 - FC 1",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-16",
+      "parent_chunk_id": null,
+      "text": "## IMPROVEMENT DISTRICT BOARD",
+      "chunk_type": "parent",
+      "heading": "IMPROVEMENT DISTRICT BOARD"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-17",
+      "parent_chunk_id": null,
+      "text": "## 11. Hearing\n\nImprovement District Final Budgets for Fiscal Year 2026/2027, as follows.\n\nIf approved, pass and adopt:\n\nResolution No. 26 in the amount of $45,000.00 for Hayhook Ranch.\n\nResolution No. 30 in the amount of $40,589.00 for Mortimore Addition.\n\nResolution No. 33 for the following districts:",
+      "chunk_type": "parent",
+      "heading": "11. Hearing"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-17-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-17",
+      "text": "## 11. Hearing\n\nImprovement District Final Budgets for Fiscal Year 2026/2027, as follows.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-17-1",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-17",
+      "text": "Resolution No. 26 in the amount of $45,000.00 for Hayhook Ranch.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-17-2",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-17",
+      "text": "Resolution No. 30 in the amount of $40,589.00 for Mortimore Addition.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-17-3",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-17",
+      "text": "Resolution No. 33 for the following districts:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-18",
+      "parent_chunk_id": null,
+      "text": "## Street Lighting Improvement District\n\n| CARDINAL ESTATES       | $17,563   |\n|------------------------|-----------|\n| CARRIAGE HILLS NO. 1   | $9,667    |\n| CARRIAGE HILLS NO. 3   | $3,316    |\n| DESERT STEPPES         | $5,801    |\n| HERMOSA HILLS ESTATES  | $4,972    |\n| LAKESIDE NO. 1         | $7,732    |\n| LITTLETOWN             | $28,696   |\n| LONGVIEW ESTATES NO. 1 | $10,495   |\n| LONGVIEW ESTATES NO. 2 | $12,154   |\n| MA\u00d1ANA GRANDE B        | $8,285    |\n| MA\u00d1ANA GRANDE C        | $13,534   |\n| MIDVALE PARK           | $17,945   |\n| OAKTREE NO. 1          | $30,671   |\n| OAKTREE NO. 2          | $23,915   |\n| OAKTREE NO. 3          | $31,353   |\n| ORANGE GROVE VALLEY    | $8,316    |\n| PEACH VALLEY           | $4,675    |\n| PEPPERTREE RANCH       | $13,093   |\n| ROLLING HILLS          | $19,886   |\n| SALIDA DEL SOL         | $19,582   |\n\nID\\_ResoFY26-27BudgetAdoption\n\nAttachments:",
+      "chunk_type": "parent",
+      "heading": "Street Lighting Improvement District"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-child-18-0",
+      "parent_chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-18",
+      "text": "## Street Lighting Improvement District\n\n| CARDINAL ESTATES       | $17,563   |\n|------------------------|-----------|\n| CARRIAGE HILLS NO. 1   | $9,667    |\n| CARRIAGE HILLS NO. 3   | $3,316    |\n| DESERT STEPPES         | $5,801    |\n| HERMOSA HILLS ESTATES  | $4,972    |\n| LAKESIDE NO. 1         | $7,732    |\n| LITTLETOWN             | $28,696   |\n| LONGVIEW ESTATES NO. 1 | $10,495   |\n| LONGVIEW ESTATES NO. 2 | $12,154   |\n| MA\u00d1ANA GRANDE B        | $8,285    |\n| MA\u00d1ANA GRANDE C        | $13,534   |\n| MIDVALE PARK           | $17,945   |\n| OAKTREE NO. 1          | $30,671   |\n| OAKTREE NO. 2          | $23,915   |\n| OAKTREE NO. 3          | $31,353   |\n| ORANGE GROVE VALLEY    | $8,316    |\n| PEACH VALLEY           | $4,675    |\n| PEPPERTREE RANCH       | $13,093   |\n| ROLLING HILLS          | $19,886   |\n| SALIDA DEL SOL         | $19,582   |",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-a92b391eb6feeb2b-parent-19",
+      "parent_chunk_id": null,
+      "text": "## LIBRARY DISTRICT BOARD",
+      "chunk_type": "parent",
+      "heading": "LIBRARY DISTRICT BOARD"
+    }
+  ],
+  "content_hash": "a92b391eb6feeb2b43af1069c82eaf5766b27bf44794c8ce467bd57f68812d93",
+  "extraction_method": "docling",
+  "source_url": "https://pima.legistar.com/View.ashx?M=A&ID=1375254&GUID=056BFFB7-04A7-4148-8AD9-67163640111E",
+  "doc_type": "agenda",
+  "source_document_id": null
+}

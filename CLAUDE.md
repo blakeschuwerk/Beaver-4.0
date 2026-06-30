@@ -61,7 +61,7 @@ Cloud Scheduler → dispatcher-tick → F1 Dispatcher
 
 7. **GCS notifications → Pub/Sub**: Raw and staging bucket OBJECT_FINALIZE events trigger F3 and F4.
 
-8. **External LLM**: Qwen 2.5 7B via RunPod/OpenAI-compatible HTTP endpoint. Secret Manager for credentials. `LLM_MOCK_MODE=true` for local dev.
+8. **External LLM**: Qwen 2.5 7B via RunPod/OpenAI-compatible HTTP endpoint. Secret Manager for credentials in prod. Always called for real — local dev points `LLM_ENDPOINT_URL` at a local model server instead of RunPod, guarded by `LLM_LOCAL_ONLY=true`.
 
 9. **F5 is scaffold**: Two-step matching (niche filter → LLM relevance) is designed but not fully implemented. See `functions/personalization/src/personalization.ts` TODOs.
 
@@ -139,25 +139,68 @@ pnpm install
 pnpm build
 ```
 
-### Local dev (mock mode — no GCP credentials)
+### Run the app locally (the dashboard UI) — `pnpm app`
+
+**"Run my app" / "see my app" means the frontend dashboard at `apps/frontend`**, not
+the F1–F5 pipeline. One command:
+
+```bash
+pnpm app    # backend API on :8080 + UI on http://localhost:5173
+```
+
+This is the **local read-only** contract: the full real backend runs, the LLM runs
+**locally** (Ollama) instead of RunPod, the API **reads real BigQuery/Firestore**, and
+**every write is suppressed** (nothing is persisted). It is NOT mock/fixture mode —
+you see your real data, you just can't change it.
+
+One-time setup:
+
+```bash
+pnpm qwen:setup                          # installs Ollama + pulls the model, writes .env.local
+gcloud auth application-default login    # ADC creds so the API can read BigQuery/Firestore
+# then edit .env.local: set GCP_PROJECT_ID and LOCAL_USER_ID (your real user id)
+```
+
+After that, just `pnpm app`. Env knobs (all live in `.env.local`, auto-loaded — no
+manual `export` needed):
+
+| Var | Meaning |
+|-----|---------|
+| `LOCAL_NO_WRITES=true` | Real reads, all writes become no-ops (the read-only contract). |
+| `LOCAL_USER_ID` | Real user id to impersonate, so the dashboard shows your projects/matches without a Firebase login. |
+| `LLM_ENDPOINT_URL` + `LLM_LOCAL_ONLY=true` | Local model server; guardrail refuses any non-localhost endpoint. |
+| `GCP_PROJECT_ID` | Project whose BigQuery/Firestore is read. |
+
+> ⚠️ **`MOCK_MODE` means two different things in this repo — don't conflate them:**
+> - In the **API** (`functions/api`), `MOCK_MODE=true` serves canned **fixtures** and runs
+>   no real logic. `LOCAL_NO_WRITES=true` (used by `pnpm app`) is the opposite: real
+>   reads, real local LLM, only writes suppressed.
+> - In the **pipeline functions** (dispatcher/scraper/analyzer), `MOCK_MODE=true` means
+>   "run the real logic but skip GCS/Pub-Sub/BigQuery/Firestore."
+
+### Run the backend pipeline locally (F1–F5, no UI)
+
+Separate from the UI. `MOCK_MODE=true` skips GCS/Pub-Sub/BigQuery/Firestore (no GCP
+creds needed); the LLM is **always called for real** against your local model server.
 
 ```bash
 export MOCK_MODE=true
-export LLM_MOCK_MODE=true
+export LLM_LOCAL_ONLY=true
+export LLM_ENDPOINT_URL=http://localhost:11434/v1/chat/completions  # local model server
 
 pnpm dev:dispatcher      # http://localhost:8080
 pnpm dev:classifier      # separate terminal
 pnpm dev:personalization # separate terminal
-
 cd functions/scraper && MOCK_MODE=true python -m src.main
 cd functions/analyzer && MOCK_MODE=true python -m src.main
+
+curl -X POST http://localhost:8080/ -d '{}'   # trigger dispatcher
 ```
 
-Trigger dispatcher manually:
-
-```bash
-curl -X POST http://localhost:8080/ -d '{}'
-```
+There is no more `LLM_MOCK_MODE` — removed. The classifier and personalization LLM
+clients always call `LLM_ENDPOINT_URL` for real; the only heuristic fallback left is
+parse recovery when the LLM returns malformed JSON (see `mockClassification` /
+`mockRelevance` in each `llm-client.ts`), never a substitute for the call itself.
 
 ### Deploy
 
@@ -200,10 +243,12 @@ mock fallback in the classifier let a failing RunPod endpoint write fabricated d
 BigQuery and report success for hours, undetected, while billing for GPU time (see
 [DEBUG-LOG.md](DEBUG-LOG.md) #1). Apply them whenever you add or change a component.
 
-1. **No silent fallbacks in production.** Mock/heuristic paths are a local-dev
-   convenience gated on an explicit flag (`LLM_MOCK_MODE=true`, `MOCK_MODE=true`). When
-   the flag is off, a failed dependency must fail visibly — never substitute fake data
-   for a real result.
+1. **No silent fallbacks in production.** `MOCK_MODE=true` is the only mock-data
+   convenience, and it's local-dev-only (skips GCS/Pub-Sub/BigQuery/Firestore so no GCP
+   credentials are needed). The LLM is never mocked — local dev calls a real local model
+   server instead of RunPod (see "Local dev" above), so an LLM failure surfaces the same
+   way in dev and prod. When `MOCK_MODE` is off, a failed dependency must fail visibly —
+   never substitute fake data for a real result.
 2. **Every external call is observable.** Log the outcome (status, latency, attempt) in
    the shared structured shape via `logEvent()` from `@beaver/shared`, so a failure is
    diagnosable from logs alone — no RunPod or GCP console required. Read them with
@@ -231,11 +276,12 @@ BigQuery and report success for hours, undetected, while billing for GPU time (s
 | Variable | Used By | Description |
 |----------|---------|-------------|
 | `GCP_PROJECT_ID` | All | GCP project |
-| `MOCK_MODE` | All | Skip GCP calls, use fixtures |
-| `LLM_MOCK_MODE` | F4, F5 | Mock LLM responses |
-| `LLM_ENDPOINT_URL` | F4 | RunPod/OpenAI-compatible URL |
-| `LLM_LOCAL_ONLY` | API sandbox | When true, sandbox refuses to run unless `LLM_ENDPOINT_URL` is localhost/127.0.0.1 |
-| `LLM_API_KEY` | F4 | API key for LLM endpoint |
+| `MOCK_MODE` | All | Pipeline funcs: skip GCS/Pub-Sub/BQ/Firestore. API: serve canned fixtures. Never affects the LLM call. |
+| `LOCAL_NO_WRITES` | API | `pnpm app` mode: real reads, all writes suppressed. Opposite of API `MOCK_MODE`. |
+| `LOCAL_USER_ID` | API | Real user id to impersonate in read-only mode (skips Firebase login locally). |
+| `LLM_ENDPOINT_URL` | F4, F5, API sandbox | RunPod URL (prod) or local model server URL (dev) — always called for real |
+| `LLM_LOCAL_ONLY` | F4, F5, API sandbox | When true, refuses to run unless `LLM_ENDPOINT_URL` is localhost/127.0.0.1. Set in local dev to avoid hitting prod RunPod by accident. |
+| `LLM_API_KEY` | F4, F5 | API key for LLM endpoint |
 | `GCS_RAW_BUCKET` | F2, F3 | Raw documents bucket name |
 | `GCS_STAGING_BUCKET` | F3, F4 | Staging bucket name |
 | `PORT` | All | HTTP port (default 8080) |

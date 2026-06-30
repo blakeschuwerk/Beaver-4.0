@@ -2,13 +2,16 @@
  * LLM relevance scoring for F5 personalization (RunPod / OpenAI-compatible).
  *
  * Failure policy (see CLAUDE.md "Failure & Observability Principles"):
- * the heuristic `mockRelevance` is ONLY used when LLM_MOCK_MODE=true (local dev).
- * In production, a failed LLM call throws LlmUnavailableError so the caller
+ * the real endpoint is always called — local dev points LLM_ENDPOINT_URL at a
+ * local model server (LLM_LOCAL_ONLY=true enforces it stays local) instead of
+ * RunPod. A failed LLM call throws LlmUnavailableError so the caller
  * dead-letters the message rather than writing a fabricated relevance score.
+ * `mockRelevance` is only a parse-failure fallback when the LLM responds with
+ * non-JSON content — never a substitute for the call itself.
  */
 
 import type { ProjectCreatedMessage, UserProfile } from '@beaver/shared';
-import { LlmUnavailableError, logEvent } from '@beaver/shared';
+import { assertLlmLocalOnly, LlmUnavailableError, logEvent } from '@beaver/shared';
 
 const SERVICE = 'beaver-personalization';
 
@@ -17,7 +20,6 @@ export interface RelevanceResult {
   rationale?: string;
 }
 
-const MOCK_MODE = process.env.LLM_MOCK_MODE !== 'false';
 const ENDPOINT = process.env.LLM_ENDPOINT_URL ?? '';
 const API_KEY = process.env.LLM_API_KEY ?? '';
 const TIMEOUT_MS = Number(process.env.LLM_TIMEOUT_MS ?? 30000);
@@ -163,9 +165,13 @@ export async function scoreProjectRelevance(
   user: UserProfile,
   project: ProjectCreatedMessage,
 ): Promise<RelevanceResult> {
-  if (MOCK_MODE || !ENDPOINT || ENDPOINT.includes('your-runpod-endpoint')) {
-    return mockRelevance(user, project);
+  if (!ENDPOINT || ENDPOINT.includes('your-runpod-endpoint')) {
+    throw new Error(
+      'LLM_ENDPOINT_URL is not configured. Set it to your RunPod endpoint (prod) or a local model ' +
+      'server (dev), e.g. LLM_ENDPOINT_URL=http://localhost:8000/v1/chat/completions with LLM_LOCAL_ONLY=true.',
+    );
   }
+  assertLlmLocalOnly(ENDPOINT);
 
   const userContent = JSON.stringify({
     contractor: {

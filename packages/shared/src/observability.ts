@@ -30,6 +30,28 @@ export class LlmUnavailableError extends Error {
   }
 }
 
+/**
+ * Thrown when LLM_LOCAL_ONLY=true and LLM_ENDPOINT_URL does not point at
+ * localhost/127.0.0.1. Local dev calls the real LLM (never a heuristic
+ * fallback) but must never reach RunPod by accident.
+ */
+export class LocalOnlyViolationError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'LocalOnlyViolationError';
+  }
+}
+
+/** Throws LocalOnlyViolationError if LLM_LOCAL_ONLY=true and endpoint isn't local. */
+export function assertLlmLocalOnly(endpoint: string): void {
+  if (process.env.LLM_LOCAL_ONLY !== 'true') return;
+  if (!endpoint.startsWith('http://localhost') && !endpoint.startsWith('http://127.0.0.1')) {
+    throw new LocalOnlyViolationError(
+      `LLM_ENDPOINT_URL points to a remote host while LLM_LOCAL_ONLY=true (got: ${endpoint || '(unset)'})`,
+    );
+  }
+}
+
 export type LogLevel = 'info' | 'warn' | 'error';
 
 export interface LogEvent {

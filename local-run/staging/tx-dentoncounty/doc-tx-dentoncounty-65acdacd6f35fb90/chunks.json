@@ -1,0 +1,145 @@
+{
+  "document_id": "doc-tx-dentoncounty-65acdacd6f35fb90",
+  "county_id": "tx-dentoncounty",
+  "trace_id": "60604cf6-7d06-4c2d-9308-d272fc648fc1",
+  "extracted_at": "2026-06-25T16:29:26.712519+00:00",
+  "chunk_count": 20,
+  "chunks": [
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-1",
+      "parent_chunk_id": null,
+      "text": "## Denton County",
+      "chunk_type": "parent",
+      "heading": "Denton County"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-2",
+      "parent_chunk_id": null,
+      "text": "## Bail Bond Board Agenda\n\nCourtroom\n\n8:30 AM\n\nThursday, June 25, 2026\n\nTHE DENTON COUNTY BAIL BOND BOARD SHALL MEET IN REGULAR SESSION AT THE ADMINISTRATIVE COURTHOUSE, 1 COURTHOUSE DRIVE, 3RD FLOOR, DENTON, TEXAS, IN THE COURTROOM, TO CONSIDER AND POSSIBLY TAKE ACTION ON THE FOLLOWING MATTERS:\n\n*TO JOIN THIS MEETING BY ZOOM, REQUEST THE LINK BY EMAILING: TERESA.SWANER@DENTONCOUNTY.GOV*",
+      "chunk_type": "parent",
+      "heading": "Bail Bond Board Agenda"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-child-2-0",
+      "parent_chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-2",
+      "text": "THE DENTON COUNTY BAIL BOND BOARD SHALL MEET IN REGULAR SESSION AT THE ADMINISTRATIVE COURTHOUSE, 1 COURTHOUSE DRIVE, 3RD FLOOR, DENTON, TEXAS, IN THE COURTROOM, TO CONSIDER AND POSSIBLY TAKE ACTION ON THE FOLLOWING MATTERS:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-child-2-1",
+      "parent_chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-2",
+      "text": "*TO JOIN THIS MEETING BY ZOOM, REQUEST THE LINK BY EMAILING: TERESA.SWANER@DENTONCOUNTY.GOV*",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-3",
+      "parent_chunk_id": null,
+      "text": "## I. CALL TO ORDER &amp; ATTENDANCE VERIFICATION",
+      "chunk_type": "parent",
+      "heading": "I. CALL TO ORDER &amp; ATTENDANCE VERIFICATION"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-4",
+      "parent_chunk_id": null,
+      "text": "## II. PUBLIC INPUT FOR ITEMS NOT LISTED ON THE AGENDA\n\nCitizens should complete a witness form located on the side table.  Pursuant to state open meetings law the Denton County Bail Bond Board is restricted in discussion or taking action on items not posted on the agenda. Action on your statement can only be taken at a future meeting.",
+      "chunk_type": "parent",
+      "heading": "II. PUBLIC INPUT FOR ITEMS NOT LISTED ON THE AGENDA"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-child-4-0",
+      "parent_chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-4",
+      "text": "## II. PUBLIC INPUT FOR ITEMS NOT LISTED ON THE AGENDA\n\nCitizens should complete a witness form located on the side table.  Pursuant to state open meetings law the Denton County Bail Bond Board is restricted in discussion or taking action on items not posted on the agenda. Action on your statement can only be taken at a future meeting.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-5",
+      "parent_chunk_id": null,
+      "text": "## III. REPORTS AND MINUTES\n\n| III. A.   | Outstanding bond report and re-arrest fee report by Sheriff's office. (consent)                        |\n|-----------|--------------------------------------------------------------------------------------------------------|\n| III. B.   | NISI report by County & District Clerks. (consent)                                                     |\n| III. C.   | Report including bonding companies, total bonding power, license number and expiration date. (consent) |\n| III. D.   | Discuss and approve the minutes from the May 28, 2026, meeting and any appropriate action.             |",
+      "chunk_type": "parent",
+      "heading": "III. REPORTS AND MINUTES"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-child-5-0",
+      "parent_chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-5",
+      "text": "## III. REPORTS AND MINUTES\n\n| III. A.   | Outstanding bond report and re-arrest fee report by Sheriff's office. (consent)                        |\n|-----------|--------------------------------------------------------------------------------------------------------|\n| III. B.   | NISI report by County & District Clerks. (consent)                                                     |\n| III. C.   | Report including bonding companies, total bonding power, license number and expiration date. (consent) |\n| III. D.   | Discuss and approve the minutes from the May 28, 2026, meeting and any appropriate action.             |",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-6",
+      "parent_chunk_id": null,
+      "text": "## IV. POLICIES AND PROCEDURES\n\n- Discussion and approval to schedule a Bail Bond Board training class with Roger Moore in 2026; funds to pay for this course have been approved by the Commissioners Court and are within the 2025-2026 Bail Bond Board's budget. IV.  A.",
+      "chunk_type": "parent",
+      "heading": "IV. POLICIES AND PROCEDURES"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-child-6-0",
+      "parent_chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-6",
+      "text": "## IV. POLICIES AND PROCEDURES\n\n- Discussion and approval to schedule a Bail Bond Board training class with Roger Moore in 2026; funds to pay for this course have been approved by the Commissioners Court and are within the 2025-2026 Bail Bond Board's budget. IV.  A.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-7",
+      "parent_chunk_id": null,
+      "text": "## V. APPLICATIONS AND HEARINGS\n\n- V. A. Approval of the new application for Melinda Webb d/b/a Alley Katz Credit Bail Bonds, for a two-year license, and any appropriate action.\n\nAdministrative Courthouse 1 Courthouse Drive Denton, TX 76208",
+      "chunk_type": "parent",
+      "heading": "V. APPLICATIONS AND HEARINGS"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-child-7-0",
+      "parent_chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-7",
+      "text": "## V. APPLICATIONS AND HEARINGS\n\n- V. A. Approval of the new application for Melinda Webb d/b/a Alley Katz Credit Bail Bonds, for a two-year license, and any appropriate action.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-child-7-1",
+      "parent_chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-7",
+      "text": "Administrative Courthouse 1 Courthouse Drive Denton, TX 76208",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-8",
+      "parent_chunk_id": null,
+      "text": "## VI. EXECUTIVE SESSION",
+      "chunk_type": "parent",
+      "heading": "VI. EXECUTIVE SESSION"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-9",
+      "parent_chunk_id": null,
+      "text": "## VII. FUTURE MEETING\n\nThursday, JULY 23, 2026",
+      "chunk_type": "parent",
+      "heading": "VII. FUTURE MEETING"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-child-9-0",
+      "parent_chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-9",
+      "text": "## VII. FUTURE MEETING\n\nThursday, JULY 23, 2026",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-10",
+      "parent_chunk_id": null,
+      "text": "## VIII. ADJOURNMENT\n\nThis posting is made to allow action by Denton County Bail Bond Board.  Persons with disabilities who plan to attend this meeting and who may need auxiliary aid or services such as interpreter for persons who are deaf or hearing impaired, are requested to contact the Aide-to-the Court's Office at 940-349-2830 two working days prior to the meeting so the appropriate arrangements can be made.",
+      "chunk_type": "parent",
+      "heading": "VIII. ADJOURNMENT"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-child-10-0",
+      "parent_chunk_id": "doc-tx-dentoncounty-65acdacd6f35fb90-parent-10",
+      "text": "## VIII. ADJOURNMENT\n\nThis posting is made to allow action by Denton County Bail Bond Board.  Persons with disabilities who plan to attend this meeting and who may need auxiliary aid or services such as interpreter for persons who are deaf or hearing impaired, are requested to contact the Aide-to-the Court's Office at 940-349-2830 two working days prior to the meeting so the appropriate arrangements can be made.",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "65acdacd6f35fb908130bfac1120e4ad2d75d787e239aff521bebd57a204aea9",
+  "extraction_method": "docling",
+  "source_url": "https://tx-dentoncounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_06252026-857",
+  "doc_type": "agenda",
+  "source_document_id": null
+}

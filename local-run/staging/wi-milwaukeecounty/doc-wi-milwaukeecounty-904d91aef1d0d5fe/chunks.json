@@ -1,0 +1,178 @@
+{
+  "document_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe",
+  "county_id": "wi-milwaukeecounty",
+  "trace_id": "451a08bd-d387-4902-ab78-11bdfde4926e",
+  "extracted_at": "2026-06-25T16:30:44.861889+00:00",
+  "chunk_count": 26,
+  "chunks": [
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-1",
+      "parent_chunk_id": null,
+      "text": "## AGING ADVISORY COUNCIL MEETING MINUTES MAY 28, 2026\n\nThe Milwaukee County Aging Advisory Council convened in-person at West Allis Senior Center (7001 W. National Avenue, Milwaukee). Members and attendees also joined virtually.",
+      "chunk_type": "parent",
+      "heading": "AGING ADVISORY COUNCIL MEETING MINUTES MAY 28, 2026"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-1-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-1",
+      "text": "## AGING ADVISORY COUNCIL MEETING MINUTES MAY 28, 2026\n\nThe Milwaukee County Aging Advisory Council convened in-person at West Allis Senior Center (7001 W. National Avenue, Milwaukee). Members and attendees also joined virtually.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-2",
+      "parent_chunk_id": null,
+      "text": "## Members Present\n\nEllen Pimentel, Chair\n\nJudith Amorsen\n\nKaren Guszkowski\n\nGloria Miller\n\nMegan Newman\n\nAmy O'Connor\n\nCassandra Robinson\n\nNancy Simuel\n\nLinda Stone",
+      "chunk_type": "parent",
+      "heading": "Members Present"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-2-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-2",
+      "text": "## Members Present\n\nEllen Pimentel, Chair",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-3",
+      "parent_chunk_id": null,
+      "text": "## Members Excused\n\nCommissioner Paula Penebaker, Ex Officio\n\nJoanne Allbaugh\n\nJennifer Bliese, Vice Chair\n\nDeborah Lewis\n\nJulia Means\n\nConstance Tenhawks\n\nMichael Vanblaricum",
+      "chunk_type": "parent",
+      "heading": "Members Excused"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-3-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-3",
+      "text": "## Members Excused\n\nCommissioner Paula Penebaker, Ex Officio",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-4",
+      "parent_chunk_id": null,
+      "text": "## Staff Present\n\nDaniel Idzikowski, DHHS-AAA Kayla Steinke , DHHS-AAA",
+      "chunk_type": "parent",
+      "heading": "Staff Present"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-4-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-4",
+      "text": "## Staff Present\n\nDaniel Idzikowski, DHHS-AAA Kayla Steinke , DHHS-AAA",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-5",
+      "parent_chunk_id": null,
+      "text": "## MINUTES",
+      "chunk_type": "parent",
+      "heading": "MINUTES"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-6",
+      "parent_chunk_id": null,
+      "text": "## I. CALL TO ORDER AND ROLL CALL\n\nAdvisory Council Chair, Ellen Pimentel, called the meeting to order at 1:10 p.m., and Director Idzikowski called the roll. A quorum of Council members was present.",
+      "chunk_type": "parent",
+      "heading": "I. CALL TO ORDER AND ROLL CALL"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-6-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-6",
+      "text": "## I. CALL TO ORDER AND ROLL CALL\n\nAdvisory Council Chair, Ellen Pimentel, called the meeting to order at 1:10 p.m., and Director Idzikowski called the roll. A quorum of Council members was present.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "parent_chunk_id": null,
+      "text": "## II. REVIEW AND APPROVAL OF APRIL 23, 2026 ADVISORY COUNCIL MEETING MINUTES\n\nMOTION : To approve the April 23, 2026 Advisory Council meeting minutes. ACTION : Motion prevailed by unanimous consent (Guszkowski moved, O ' Connor second).\n\n- III. REPORT FROM ADVISORY COUNCIL EX-OFFICIO MEMBER\n\nEx Officio Member Paula Penebaker was not present to provide a report.\n\n- IV. REPORT ON THE AGE FRIENDLY MILWAUKEE COUNTY STEERING COMMITTEE\n\n- Director Idzikowski provided a brief summary of the Age Friendly Steering Committee areas of concern and noted that the Committee is now considering Affordable and Accessible Housing.\n- V. PRESENTATION  ON  MILWAUKEE  COUNTY  AREA  AGENCY  ON  AGING CAREGIVER  SUPPORT  PROGRAMS  AND  2025-2027  AREA  AGING  PLAN CAREGIVER SUPPORT GOALS\n\nCaregiver Program Coordinator Kayla Steinke provided a presentation on the National Family Caregiver Support Program and the Wisconsin Alzheimer ' s Caregiver Family Support Program, as well as progress on the caregiver goals in the 2025-27 Area Aging Plan. The Council discussed with no action taken.\n\n- VI.  IDENTIFICATION OF AREAS OF UNMET NEED\n\nDirector Idzikowski briefly discussed the role of the Council in assessing unmet need in the aging community and urged Council members to review the Area Aging Plan and think about areas of particular interest to each member.\n\n- VII.  ANNOUNCEMENTS AND ENGAGEMENT OPPORTUNITIES\n\nCoordinator Steinke shared upcoming caregiver support activities. The Council discussed with no action taken.\n\n- VIII.  ADJOURNMENT\n\nMOTION : To adjourn. ACTION : Motion prevailed by unanimous consent (Stone moved, Robinson\n\nsecond).\n\nMeeting adjourned at 2:45 p.m. The next Aging Advisory Council meeting is June 25, 2026.\n\nRecorder: Daniel Idzikowski Aging Services Director",
+      "chunk_type": "parent",
+      "heading": "II. REVIEW AND APPROVAL OF APRIL 23, 2026 ADVISORY COUNCIL MEETING MINUTES"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "## II. REVIEW AND APPROVAL OF APRIL 23, 2026 ADVISORY COUNCIL MEETING MINUTES\n\nMOTION : To approve the April 23, 2026 Advisory Council meeting minutes. ACTION : Motion prevailed by unanimous consent (Guszkowski moved, O ' Connor second).",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-1",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "- III. REPORT FROM ADVISORY COUNCIL EX-OFFICIO MEMBER",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-2",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "Ex Officio Member Paula Penebaker was not present to provide a report.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-3",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "- IV. REPORT ON THE AGE FRIENDLY MILWAUKEE COUNTY STEERING COMMITTEE",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-4",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "- Director Idzikowski provided a brief summary of the Age Friendly Steering Committee areas of concern and noted that the Committee is now considering Affordable and Accessible Housing.\n- V. PRESENTATION  ON  MILWAUKEE  COUNTY  AREA  AGENCY  ON  AGING CAREGIVER  SUPPORT  PROGRAMS  AND  2025-2027  AREA  AGING  PLAN CAREGIVER SUPPORT GOALS",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-5",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "Caregiver Program Coordinator Kayla Steinke provided a presentation on the National Family Caregiver Support Program and the Wisconsin Alzheimer ' s Caregiver Family Support Program, as well as progress on the caregiver goals in the 2025-27 Area Aging Plan. The Council discussed with no action taken.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-6",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "- VI.  IDENTIFICATION OF AREAS OF UNMET NEED",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-7",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "Director Idzikowski briefly discussed the role of the Council in assessing unmet need in the aging community and urged Council members to review the Area Aging Plan and think about areas of particular interest to each member.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-8",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "- VII.  ANNOUNCEMENTS AND ENGAGEMENT OPPORTUNITIES",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-9",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "Coordinator Steinke shared upcoming caregiver support activities. The Council discussed with no action taken.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-10",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "MOTION : To adjourn. ACTION : Motion prevailed by unanimous consent (Stone moved, Robinson",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-11",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "Meeting adjourned at 2:45 p.m. The next Aging Advisory Council meeting is June 25, 2026.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-child-7-12",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-904d91aef1d0d5fe-parent-7",
+      "text": "Recorder: Daniel Idzikowski Aging Services Director",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "904d91aef1d0d5feb9e5e11320df14a03571a0ae783bbb0037596f77d96e341f",
+  "extraction_method": "docling",
+  "source_url": "https://MilwaukeeCounty.legistar.com/gateway.aspx?M=F&ID=0aec828d-5038-499e-9280-63441274b29b.pdf",
+  "doc_type": "other",
+  "source_document_id": "doc-wi-milwaukeecounty-6a808343f44752b9"
+}

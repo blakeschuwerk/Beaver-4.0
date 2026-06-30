@@ -7,6 +7,10 @@ interface CountyAutocompleteProps {
   exclude?: string[];
   placeholder?: string;
   buttonLabel?: string;
+  /** Search function — defaults to all US counties. Pass a scoped one (e.g. verified-only). */
+  search?: (query: string, limit?: number) => string[];
+  /** Validity check — defaults to all US counties. Must agree with `search`. */
+  isValid?: (label: string) => boolean;
 }
 
 export function CountyAutocomplete({
@@ -14,6 +18,8 @@ export function CountyAutocomplete({
   exclude = [],
   placeholder = 'Search US counties…',
   buttonLabel = 'Add',
+  search = searchUSCounties,
+  isValid = isValidUSCounty,
 }: CountyAutocompleteProps) {
   const [query, setQuery] = useState('');
   const [selected, setSelected] = useState<string | null>(null);
@@ -39,7 +45,7 @@ export function CountyAutocomplete({
       setOpen(false);
       return;
     }
-    const results = searchUSCounties(query, 10).filter((c) => !exclude.includes(c));
+    const results = search(query, 10).filter((c) => !exclude.includes(c));
     setSuggestions(results);
     setActiveIndex(0);
     setOpen(query.length > 0 && results.length > 0);
@@ -53,14 +59,14 @@ export function CountyAutocomplete({
   }
 
   function handleSubmit() {
-    if (selected && isValidUSCounty(selected)) {
+    if (selected && isValid(selected)) {
       onSelect(selected);
       setQuery('');
       setSelected(null);
       setError(null);
       return;
     }
-    if (query.trim() && isValidUSCounty(query.trim()) && !exclude.includes(query.trim())) {
+    if (query.trim() && isValid(query.trim()) && !exclude.includes(query.trim())) {
       onSelect(query.trim());
       setQuery('');
       setSelected(null);
@@ -129,7 +135,7 @@ export function CountyAutocomplete({
         <button
           type="button"
           className="county-autocomplete__add"
-          disabled={!selected && !isValidUSCounty(query.trim())}
+          disabled={!selected && !isValid(query.trim())}
           onClick={handleSubmit}
         >
           {buttonLabel}

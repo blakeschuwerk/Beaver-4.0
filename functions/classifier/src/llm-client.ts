@@ -1,14 +1,17 @@
 /**
  * External LLM client for Qwen 2.5 7B (RunPod or OpenAI-compatible endpoint).
- * Supports mock mode, timeout, and retry.
+ * Supports timeout and retry.
  *
  * Failure policy (see CLAUDE.md "Failure & Observability Principles"):
- * mock fallback is ONLY used when LLM_MOCK_MODE=true (local dev). In production
- * (LLM_MOCK_MODE=false), a call that fails every retry throws LlmUnavailableError
- * so the caller dead-letters the message instead of writing fake data to BigQuery.
+ * the real endpoint is always called — local dev points LLM_ENDPOINT_URL at a
+ * local model server (LLM_LOCAL_ONLY=true enforces it stays local) instead of
+ * RunPod. A call that fails every retry throws LlmUnavailableError so the
+ * caller dead-letters the message instead of writing fake data to BigQuery.
+ * `mockClassification` is only a parse-failure fallback when the LLM responds
+ * with non-JSON content — never a substitute for the call itself.
  */
 
-import { LlmUnavailableError, logEvent } from '@beaver/shared';
+import { assertLlmLocalOnly, LlmUnavailableError, logEvent } from '@beaver/shared';
 
 const SERVICE = 'beaver-classifier';
 
@@ -32,7 +35,6 @@ export interface ClassificationResult {
 
 const VALID_STAGES = new Set(['subcommittee', 'approved', 'bidding', 'awarded', 'closed']);
 
-const MOCK_MODE = process.env.LLM_MOCK_MODE !== 'false';
 const ENDPOINT = process.env.LLM_ENDPOINT_URL ?? '';
 const API_KEY = process.env.LLM_API_KEY ?? '';
 const TIMEOUT_MS = Number(process.env.LLM_TIMEOUT_MS ?? 30000);
@@ -109,9 +111,13 @@ export function parseClassificationResult(raw: string, fallbackText: string): Cl
 }
 
 async function callLlm(messages: LlmMessage[]): Promise<string> {
-  if (MOCK_MODE || !ENDPOINT || ENDPOINT.includes('your-runpod-endpoint')) {
-    return JSON.stringify(mockClassification(messages[1]?.content ?? ''));
+  if (!ENDPOINT || ENDPOINT.includes('your-runpod-endpoint')) {
+    throw new Error(
+      'LLM_ENDPOINT_URL is not configured. Set it to your RunPod endpoint (prod) or a local model ' +
+      'server (dev), e.g. LLM_ENDPOINT_URL=http://localhost:8000/v1/chat/completions with LLM_LOCAL_ONLY=true.',
+    );
   }
+  assertLlmLocalOnly(ENDPOINT);
 
   let lastError: Error | undefined;
   let lastStatus: number | undefined;

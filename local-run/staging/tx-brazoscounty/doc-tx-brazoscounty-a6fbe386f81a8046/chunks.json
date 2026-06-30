@@ -1,0 +1,25 @@
+{
+  "document_id": "doc-tx-brazoscounty-a6fbe386f81a8046",
+  "county_id": "tx-brazoscounty",
+  "trace_id": "8f9e25b3-183e-4099-9891-75cd56d23fa9",
+  "extracted_at": "2026-06-25T15:21:13.184137+00:00",
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "doc-tx-brazoscounty-a6fbe386f81a8046-parent-0",
+      "parent_chunk_id": null,
+      "text": "Mock extracted text for municipal infrastructure project. Tracking Number: CIP-2024-042. Estimated budget $2.5M for roadway resurfacing and drainage improvements. Subcommittee agenda item regarding capital improvement plan allocation.",
+      "chunk_type": "parent"
+    },
+    {
+      "chunk_id": "doc-tx-brazoscounty-a6fbe386f81a8046-child-0",
+      "parent_chunk_id": "doc-tx-brazoscounty-a6fbe386f81a8046-parent-0",
+      "text": "Mock extracted text for municipal infrastructure project. Tracking Number: CIP-2024-042. Estimated budget $2.5M for roadway resurfacing and drainage improvements. Subcommittee agenda item regarding capital improvement plan allocation.",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "a6fbe386f81a804674fbbf70496f7dce8b539e42f727dffc2b0424997bd82af2",
+  "extraction_method": "mock",
+  "source_url": "https://brazos.novusagenda.com/agendapublic/Meetings.aspx",
+  "doc_type": "agenda"
+}

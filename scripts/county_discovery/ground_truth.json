@@ -1,0 +1,237 @@
+{
+  "$schema": "Hand-labeled ground truth for county discovery validation (manually verified)",
+  "samples": [
+    {
+      "entry": "Sonoma County, CA",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Nash County, NC",
+      "expected_platform": "civicplus",
+      "expected_url_contains": "civicplus.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Denton County, TX",
+      "expected_platform": "civicplus",
+      "expected_url_contains": "civicplus.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Centre County, PA",
+      "expected_platform": "civicplus",
+      "expected_url_contains": "civicplus.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Pima County, AZ",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Milwaukee County, WI",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Brazos County, TX",
+      "expected_platform": "novusagenda",
+      "expected_url_contains": "novusagenda.com",
+      "expected_strategy": "crawl4ai"
+    },
+    {
+      "entry": "Alameda County, CA",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Clark County, NV",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Pinellas County, FL",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Wake County, NC",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Mecklenburg County, NC",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Oakland County, MI",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Cook County, IL",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Maricopa County, AZ",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "King County, WA",
+      "expected_platform": "escribe",
+      "expected_url_contains": "escribemeetings.com",
+      "expected_strategy": "crawl4ai"
+    },
+    {
+      "entry": "Loudoun County, VA",
+      "expected_platform": "escribe",
+      "expected_url_contains": "escribemeetings.com",
+      "expected_strategy": "crawl4ai"
+    },
+    {
+      "entry": "Hamilton County, OH",
+      "expected_platform": "escribe",
+      "expected_url_contains": "escribemeetings.com",
+      "expected_strategy": "crawl4ai"
+    },
+    {
+      "entry": "Autauga County, AL",
+      "expected_none": true
+    },
+    {
+      "entry": "Bullock County, AL",
+      "expected_none": true
+    },
+    {
+      "entry": "Sacramento County, CA",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Orange County, CA",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "San Diego County, CA",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Multnomah County, OR",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Franklin County, OH",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Cuyahoga County, OH",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Travis County, TX",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Harris County, TX",
+      "expected_platform": "unknown",
+      "expected_strategy": "crawl4ai"
+    },
+    {
+      "entry": "Tarrant County, TX",
+      "expected_platform": "unknown",
+      "expected_strategy": "crawl4ai"
+    },
+    {
+      "entry": "Collin County, TX",
+      "expected_platform": "civicplus",
+      "expected_url_contains": "civicplus.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Williamson County, TX",
+      "expected_platform": "civicplus",
+      "expected_url_contains": "civicplus.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Boulder County, CO",
+      "expected_platform": "civicplus",
+      "expected_url_contains": "civicplus.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Larimer County, CO",
+      "expected_platform": "civicplus",
+      "expected_url_contains": "civicplus.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Jefferson County, CO",
+      "expected_platform": "civicplus",
+      "expected_url_contains": "civicplus.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Washtenaw County, MI",
+      "expected_platform": "civicplus",
+      "expected_url_contains": "civicplus.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Brevard County, FL",
+      "expected_platform": "legistar",
+      "expected_url_contains": "legistar.com",
+      "expected_strategy": "civic_scraper"
+    },
+    {
+      "entry": "Fairfax County, VA",
+      "expected_platform": "granicus",
+      "expected_strategy": "crawl4ai"
+    },
+    {
+      "entry": "Montgomery County, MD",
+      "expected_platform": "granicus",
+      "expected_strategy": "crawl4ai"
+    },
+    {
+      "entry": "Los Angeles County, CA",
+      "expected_platform": "novusagenda",
+      "expected_url_contains": "novusagenda.com",
+      "expected_strategy": "crawl4ai"
+    },
+    {
+      "entry": "Hennepin County, MN",
+      "expected_platform": "novusagenda",
+      "expected_url_contains": "novusagenda.com",
+      "expected_strategy": "crawl4ai"
+    }
+  ]
+}

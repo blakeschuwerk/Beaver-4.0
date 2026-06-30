@@ -165,7 +165,6 @@ export async function runPersonalization(project: ProjectCreatedMessage): Promis
   const nicheUsers = filterUsersByNiche(users, project);
 
   let matchesCreated = 0;
-  const matchMethod = process.env.LLM_MOCK_MODE === 'true' ? 'heuristic' : 'llm';
 
   for (const user of nicheUsers.slice(0, MATCH_MAX_PER_PROJECT)) {
     const relevanceScore = await scoreRelevance(user, project);
@@ -178,7 +177,7 @@ export async function runPersonalization(project: ProjectCreatedMessage): Promis
       project_id: project.project_id,
       county_id: project.county_id,
       relevance_score: relevanceScore,
-      match_method: matchMethod,
+      match_method: 'llm',
     });
 
     await publishMatchCreated(pubsub, {
@@ -196,7 +195,7 @@ export async function runPersonalization(project: ProjectCreatedMessage): Promis
   return {
     trace_id: project.trace_id,
     matches_created: matchesCreated,
-    status: matchMethod === 'heuristic' ? 'stub' : 'ok',
+    status: 'ok',
   };
 }
 

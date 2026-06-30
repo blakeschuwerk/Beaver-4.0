@@ -10,6 +10,14 @@ export interface AuthenticatedRequest extends Request {
 }
 
 const MOCK_MODE = process.env.MOCK_MODE === 'true';
+// Local read-only mode: read REAL BigQuery/Firestore but suppress every write,
+// with the LLM running locally instead of RunPod. This is "run my app locally"
+// — the full backend with nothing persisted. Distinct from MOCK_MODE, which
+// serves canned fixtures and runs no real logic.
+const READ_ONLY = process.env.LOCAL_NO_WRITES === 'true';
+// In read-only mode, impersonate this real user id so you can see your own real
+// projects/matches without going through a Firebase login locally.
+const LOCAL_USER_ID = process.env.LOCAL_USER_ID;
 
 let firebaseApp: App | undefined;
 
@@ -32,6 +40,22 @@ export async function authMiddleware(
   if (MOCK_MODE) {
     req.userId = MOCK_USER.user_id;
     req.profile = { ...MOCK_USER };
+    next();
+    return;
+  }
+
+  // Local read-only: skip Firebase login and act as the configured real user so
+  // reads return real data. Preload the real profile so admin/sandbox routes work.
+  if (READ_ONLY && LOCAL_USER_ID) {
+    req.userId = LOCAL_USER_ID;
+    try {
+      // Dynamic import avoids a static auth.ts <-> firestore.ts import cycle.
+      const { getProfile } = await import('./firestore.js');
+      const profile = await getProfile(LOCAL_USER_ID);
+      if (profile) req.profile = profile;
+    } catch (error) {
+      console.warn(`[read-only] could not preload profile for ${LOCAL_USER_ID}:`, error);
+    }
     next();
     return;
   }
@@ -68,4 +92,9 @@ export function requireAdmin(
 
 export function isMockMode(): boolean {
   return MOCK_MODE;
+}
+
+/** True when running locally with real reads but writes suppressed. */
+export function isReadOnly(): boolean {
+  return READ_ONLY;
 }

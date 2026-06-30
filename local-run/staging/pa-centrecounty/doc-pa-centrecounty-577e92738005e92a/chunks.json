@@ -1,0 +1,104 @@
+{
+  "document_id": "doc-pa-centrecounty-577e92738005e92a",
+  "county_id": "pa-centrecounty",
+  "trace_id": "e2351d8a-e777-4a03-bb9a-6b487755b194",
+  "extracted_at": "2026-06-25T16:30:01.687475+00:00",
+  "chunk_count": 14,
+  "chunks": [
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-0",
+      "parent_chunk_id": null,
+      "text": "Thomas E. Boldin, Chair Thomas Songer III, Vice Chair Ronald J. Hoover,  Secretary Lamartine Hood , Treasurer Gillian Warner Joel Myers Heather Ishler James Heckman Elizabeth Pirrone-Brusse, Coordinator\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "Thomas E. Boldin, Chair Thomas Songer III, Vice Chair Ronald J. Hoover,  Secretary Lamartine Hood , Treasurer Gillian Warner Joel Myers Heather Ishler James Heckman Elizabeth Pirrone-Brusse, Coordinator"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-child-0-0",
+      "parent_chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-0",
+      "text": "Thomas E. Boldin, Chair Thomas Songer III, Vice Chair Ronald J. Hoover,  Secretary Lamartine Hood , Treasurer Gillian Warner Joel Myers Heather Ishler James Heckman Elizabeth Pirrone-Brusse, Coordinator",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-1",
+      "parent_chunk_id": null,
+      "text": "## CENTRE COUNTY AGRICULTURAL LAND PRESERVATION BOARD\n\nWillowbank Office Building \u00b7 420 Holmes Street \u00b7 Bellefonte, PA 16823 (814)355-6791 \u00b7 Fax: (814)355-8661 \u00b7 www.centrecountypa.gov/agland",
+      "chunk_type": "parent",
+      "heading": "CENTRE COUNTY AGRICULTURAL LAND PRESERVATION BOARD"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-child-1-0",
+      "parent_chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-1",
+      "text": "## CENTRE COUNTY AGRICULTURAL LAND PRESERVATION BOARD\n\nWillowbank Office Building \u00b7 420 Holmes Street \u00b7 Bellefonte, PA 16823 (814)355-6791 \u00b7 Fax: (814)355-8661 \u00b7 www.centrecountypa.gov/agland",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-2",
+      "parent_chunk_id": null,
+      "text": "## MEETING AGENDA Thursday, April 23, 2026 6:30 pm Room 146, Willowbank Building 420 Holmes Street, Bellefonte, PA 16823 Virtual Option available -link on reverse",
+      "chunk_type": "parent",
+      "heading": "MEETING AGENDA Thursday, April 23, 2026 6:30 pm Room 146, Willowbank Building 420 Holmes Street, Bellefonte, PA 16823 Virtual Option available -link on reverse"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-3",
+      "parent_chunk_id": null,
+      "text": "## Meeting Agenda\n\n1. Call to Order -Pledge of Allegiance",
+      "chunk_type": "parent",
+      "heading": "Meeting Agenda"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-child-3-0",
+      "parent_chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-3",
+      "text": "## Meeting Agenda\n\n1. Call to Order -Pledge of Allegiance",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-4",
+      "parent_chunk_id": null,
+      "text": "## Note: The meeting is being recorded.\n\n2. Additions to the Agenda (Act 65 of 2021)\n3. Introductions and Opportunity for Public Comment (5-minute limit per person)\n4. Approval of March 26, 2026, Meeting Minutes\n5. Old Business\n- a. Monetary Contribution Threshold\n- b. Woodland Donation Threshold\n6. New Business\n- a. Appraisal for Strouse\n- b. Appraisal for Gray\n- c. Appraisal for Michael\n7. Correspondence\n8. Agricultural Land Preservation Coordinator ' s Report\n9. Items for the Good of the Order\n10. Adjournment\n\n| 2026 Attendance         | J   | F   | M   | A   | M   | J   | J   | A   | S   | O   | N   | D   |\n|-------------------------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|\n| Boldin, Chair           | X   |     | X   |     |     |     |     | --  |     |     |     |     |\n| Heckman                 | X   |     | X   |     |     |     |     | --  |     |     |     |     |\n| Hood, Treasurer         | X   |     | X   |     |     |     |     | --  |     |     |     |     |\n| Hoover, Secretary       | --  |     | X   |     |     |     |     | --  |     |     |     |     |\n| Ishler                  | X   |     | X   |     |     |     |     | --  |     |     |     |     |\n| Myers                   | X   |     | X   |     |     |     |     | --  |     |     |     |     |\n| Songer, Vice Chair      | X   |     | X   |     |     |     |     | --  |     |     |     |     |\n| Warner                  | X   |     | X   |     |     |     |     | --  |     |     |     |     |\n| Vacant                  |     |     |     |     |     |     |     | --  |     |     |     |     |\n| Commissioner Concepcion | X   |     | --  |     |     |     |     | --  |     |     |     |     |\n| Cancelled Meeting       |     | X   |     |     |     |     |     |     |     |     |     |     |\n\nA quorum requires a minimum of five board members to be present at the meeting.\n\nThe next Board meeting is scheduled for 6:30 pm in Room 146 of the Willowbank Building on Thursday,",
+      "chunk_type": "parent",
+      "heading": "Note: The meeting is being recorded."
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-child-4-0",
+      "parent_chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-4",
+      "text": "## Note: The meeting is being recorded.\n\n2. Additions to the Agenda (Act 65 of 2021)\n3. Introductions and Opportunity for Public Comment (5-minute limit per person)\n4. Approval of March 26, 2026, Meeting Minutes\n5. Old Business\n- a. Monetary Contribution Threshold\n- b. Woodland Donation Threshold\n6. New Business\n- a. Appraisal for Strouse\n- b. Appraisal for Gray\n- c. Appraisal for Michael\n7. Correspondence\n8. Agricultural Land Preservation Coordinator ' s Report\n9. Items for the Good of the Order\n10. Adjournment",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-child-4-1",
+      "parent_chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-4",
+      "text": "A quorum requires a minimum of five board members to be present at the meeting.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-child-4-2",
+      "parent_chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-4",
+      "text": "The next Board meeting is scheduled for 6:30 pm in Room 146 of the Willowbank Building on Thursday, May 28 th , 2026.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-5",
+      "parent_chunk_id": null,
+      "text": "## Remaining meetings for the year:\n\nJune 25 th July 23 th September 24 th October 22 rd November 19 th\n\nDecember 17 th\n\nVirtual Option - Centre County Agricultural Land Preservation Board | Meeting-Join | Microsoft Teams https://teams.microsoft.com/meet/29575731763938?p=UjCsGiDJlnx4p23YSG",
+      "chunk_type": "parent",
+      "heading": "Remaining meetings for the year:"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-child-5-0",
+      "parent_chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-5",
+      "text": "## Remaining meetings for the year:\n\nJune 25 th July 23 th September 24 th October 22 rd November 19 th",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-pa-centrecounty-577e92738005e92a-child-5-1",
+      "parent_chunk_id": "doc-pa-centrecounty-577e92738005e92a-parent-5",
+      "text": "Virtual Option - Centre County Agricultural Land Preservation Board | Meeting-Join | Microsoft Teams https://teams.microsoft.com/meet/29575731763938?p=UjCsGiDJlnx4p23YSG",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "577e92738005e92a909469183173de2f014c776562f33af92a42f41819d4b7c5",
+  "extraction_method": "docling",
+  "source_url": "https://pa-centrecounty.civicplus.com/AgendaCenter/ViewFile/Agenda/_04232026-2314",
+  "doc_type": "agenda",
+  "source_document_id": null
+}

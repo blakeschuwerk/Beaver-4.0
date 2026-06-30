@@ -30,5 +30,11 @@ app.use('/api/updates', updatesRouter);
 app.use('/api/admin', adminRouter);
 
 app.listen(PORT, () => {
-  console.log(`${SERVICE_API} listening on :${PORT} (MOCK_MODE=${process.env.MOCK_MODE ?? 'false'})`);
+  const mode =
+    process.env.MOCK_MODE === 'true'
+      ? 'mock-fixtures (no real reads/writes)'
+      : process.env.LOCAL_NO_WRITES === 'true'
+        ? `local read-only (real reads, writes suppressed, user=${process.env.LOCAL_USER_ID ?? 'via-login'})`
+        : 'live (real reads + writes)';
+  console.log(`${SERVICE_API} listening on :${PORT} — mode: ${mode}`);
 });

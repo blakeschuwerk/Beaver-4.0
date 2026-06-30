@@ -1,0 +1,76 @@
+{
+  "document_id": "doc-tx-dentoncounty-962ca48b0e109d86",
+  "county_id": "tx-dentoncounty",
+  "trace_id": "35cedf5d-4bf3-4137-9367-225a18c08b09",
+  "extracted_at": "2026-06-25T16:29:37.277535+00:00",
+  "chunk_count": 10,
+  "chunks": [
+    {
+      "chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-parent-0",
+      "parent_chunk_id": null,
+      "text": "David Tran/ham, Chairperson, District Clerk Asltley D'Anna, County Oerk Designee Holly Sad/owski, Commissioners Court Representative Jea1111ie Claggett, Criminal District Attomey's Desig11ee Nick Woltr, Attorney Represe11tative Judge C Tyler Atkinso11,  Mu11icipal Judge Representative\n\nMAY 28, 2026\n\nIT IS ORDERED THAT THE DENTON COUNTY BAIL BOND BOARD ACCEPTED and APPROVED the security deposit on file for Financial Casualty &amp; Surety (FSC), Inc., Agent Jonathan Martinez d/b/a Express Bail Bonds.\n\nIT IS ORDERED THAT THE DENTON COUNTY BAIL BOND BOARD APPROVED the renewal application for Carrie Lea Sanders d/b/a Bail Bond Headquarters (License #20-25-06) for a two-year license.\n\nIT IS ORDERED THAT THE DENTON COUNTY BAIL BOND BOARD APPROVED the renewal application for Allegheny Casualty Company for Agent, Jerry Wynn Dillard Ill d/b/a Doc's Bail Bonds #2 (License #2022-23-06) for a two-year license.\n\nIT IS ORDERED THAT THE DENTON COUNTY BAIL BOND BOARD APPROVED the renewal application for Allegheny Casualty Company for Agent, Melinda Webb d/b/a Webb's Statewide Bail Bonds (License #03-01-06) for a three-year license.\n\n<!-- image -->\n\nPresiding Officer Denton County Bail Bond Board\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "David Tran/ham, Chairperson, District Clerk Asltley D'Anna, County Oerk Designee Holly Sad/owski, Commissioners Court Representative Jea1111ie Claggett, Criminal District Attomey's Desig11ee Nick Woltr, Attorney Represe11tative Judge C Tyler Atkinso11,  Mu11icipal Judge Representative"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-child-0-0",
+      "parent_chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-parent-0",
+      "text": "David Tran/ham, Chairperson, District Clerk Asltley D'Anna, County Oerk Designee Holly Sad/owski, Commissioners Court Representative Jea1111ie Claggett, Criminal District Attomey's Desig11ee Nick Woltr, Attorney Represe11tative Judge C Tyler Atkinso11,  Mu11icipal Judge Representative",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-child-0-1",
+      "parent_chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-parent-0",
+      "text": "IT IS ORDERED THAT THE DENTON COUNTY BAIL BOND BOARD ACCEPTED and APPROVED the security deposit on file for Financial Casualty &amp; Surety (FSC), Inc., Agent Jonathan Martinez d/b/a Express Bail Bonds.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-child-0-2",
+      "parent_chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-parent-0",
+      "text": "IT IS ORDERED THAT THE DENTON COUNTY BAIL BOND BOARD APPROVED the renewal application for Carrie Lea Sanders d/b/a Bail Bond Headquarters (License #20-25-06) for a two-year license.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-child-0-3",
+      "parent_chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-parent-0",
+      "text": "IT IS ORDERED THAT THE DENTON COUNTY BAIL BOND BOARD APPROVED the renewal application for Allegheny Casualty Company for Agent, Jerry Wynn Dillard Ill d/b/a Doc's Bail Bonds #2 (License #2022-23-06) for a two-year license.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-child-0-4",
+      "parent_chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-parent-0",
+      "text": "IT IS ORDERED THAT THE DENTON COUNTY BAIL BOND BOARD APPROVED the renewal application for Allegheny Casualty Company for Agent, Melinda Webb d/b/a Webb's Statewide Bail Bonds (License #03-01-06) for a three-year license.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-child-0-5",
+      "parent_chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-parent-0",
+      "text": "Presiding Officer Denton County Bail Bond Board",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-parent-1",
+      "parent_chunk_id": null,
+      "text": "## DENTON COUNTY BAIL BOND BOARD\n\nDen/on County Administrative Courthouse I Courthouse Drive, Suite 3/00\n\nDen/on, Texas 76208\n\nPhone: (940) 349-3230\n\nCi11dy  Yeatts Brown, County Treasurer Edith Burgess, Bail Bond Representative Lt\\_ Melinda Hunter, Sheriff's  Designee Judge Alan Wheeler, Justice ofthe Peace Representative Judge Chance Oliver, County Courts'  Representative Judge Brody Shanklin, District Courts'  Represe11tative",
+      "chunk_type": "parent",
+      "heading": "DENTON COUNTY BAIL BOND BOARD"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-child-1-0",
+      "parent_chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-parent-1",
+      "text": "## DENTON COUNTY BAIL BOND BOARD\n\nDen/on County Administrative Courthouse I Courthouse Drive, Suite 3/00",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-child-1-1",
+      "parent_chunk_id": "doc-tx-dentoncounty-962ca48b0e109d86-parent-1",
+      "text": "Ci11dy  Yeatts Brown, County Treasurer Edith Burgess, Bail Bond Representative Lt\\_ Melinda Hunter, Sheriff's  Designee Judge Alan Wheeler, Justice ofthe Peace Representative Judge Chance Oliver, County Courts'  Representative Judge Brody Shanklin, District Courts'  Represe11tative",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "962ca48b0e109d868943ea1019ef106d8fb935f499f3eb9f3f96eddbee278a96",
+  "extraction_method": "docling",
+  "source_url": "https://tx-dentoncounty.civicplus.com/AgendaCenter/ViewFile/Minutes/_05282026-846",
+  "doc_type": "agenda",
+  "source_document_id": null
+}

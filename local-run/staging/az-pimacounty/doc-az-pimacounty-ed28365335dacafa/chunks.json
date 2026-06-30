@@ -1,0 +1,102 @@
+{
+  "document_id": "doc-az-pimacounty-ed28365335dacafa",
+  "county_id": "az-pimacounty",
+  "trace_id": "abb8726d-6f9c-4331-945e-01be36a0d140",
+  "extracted_at": "2026-06-25T16:30:20.147970+00:00",
+  "chunk_count": 14,
+  "chunks": [
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-1",
+      "parent_chunk_id": null,
+      "text": "## MEMORANDUM\n\nJune 9,  2026\n\nTo:\n\nMelissa Manriquez\n\nClerk of the Board\n\nRE:\n\nItem for the June 23 rd  agenda\n\nPlease add the following to the June 23 rd  agenda\n\nProclamation:\n\nNational Aphasia Awareness Month\n\nThank you.\n\nFrom:\n\nAndres Cano\n\nDistrict 5 Supervisor\n\n<!-- image -->",
+      "chunk_type": "parent",
+      "heading": "MEMORANDUM"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-child-1-0",
+      "parent_chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-1",
+      "text": "Please add the following to the June 23 rd  agenda",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-2",
+      "parent_chunk_id": null,
+      "text": "## PROCLAMATION\n\nWHEREAS ,  aphasia is a communication impairment that affects the ability to express and understand language, often resulting from damage to the left hemisphere of the brain, most commonly caused by a stroke or brain injury; and\n\nWHEREAS ,  aphasia can impact an individual's ability to speak, write, and understand language, yet does not affect their intellect; and\n\nWHEREAS , according to the National Aphasia Association, aphasia affects over 2 million people in the United States, yet 85% of the public is unaware of what aphasia is, leading to unnecessary isolation for those affected; and\n\nWHEREAS ,  Friends  of  Aphasia  is  dedicated  to  educating  the  public  about  aphasia, promoting research, and supporting individuals with aphasia and their families to help them regain communication skills and minimize the psychosocial impact of this disorder; and\n\nWHEREAS ,  by  naming  aphasia  clearly  and  publicly,  we  can  reduce  stigma,  promote communication access, and empower individuals with aphasia to fully participate in their communities.\n\nNOW, THEREFORE, BE IT RESOLVED that  the  Pima  County  Board  of  Supervisors hereby proclaims the month of June 2026 to be:",
+      "chunk_type": "parent",
+      "heading": "PROCLAMATION"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-child-2-0",
+      "parent_chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-2",
+      "text": "## PROCLAMATION\n\nWHEREAS ,  aphasia is a communication impairment that affects the ability to express and understand language, often resulting from damage to the left hemisphere of the brain, most commonly caused by a stroke or brain injury; and",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-child-2-1",
+      "parent_chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-2",
+      "text": "WHEREAS ,  aphasia can impact an individual's ability to speak, write, and understand language, yet does not affect their intellect; and",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-child-2-2",
+      "parent_chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-2",
+      "text": "WHEREAS , according to the National Aphasia Association, aphasia affects over 2 million people in the United States, yet 85% of the public is unaware of what aphasia is, leading to unnecessary isolation for those affected; and",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-child-2-3",
+      "parent_chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-2",
+      "text": "WHEREAS ,  Friends  of  Aphasia  is  dedicated  to  educating  the  public  about  aphasia, promoting research, and supporting individuals with aphasia and their families to help them regain communication skills and minimize the psychosocial impact of this disorder; and",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-child-2-4",
+      "parent_chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-2",
+      "text": "WHEREAS ,  by  naming  aphasia  clearly  and  publicly,  we  can  reduce  stigma,  promote communication access, and empower individuals with aphasia to fully participate in their communities.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-child-2-5",
+      "parent_chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-2",
+      "text": "NOW, THEREFORE, BE IT RESOLVED that  the  Pima  County  Board  of  Supervisors hereby proclaims the month of June 2026 to be:",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-3",
+      "parent_chunk_id": null,
+      "text": "## \"NATIONAL APHASIA AWARENESS MONTH\"\n\nin Tucson, AZ, and urges all residents to recognize the needs of those with aphasia and to support efforts that facilitate their communication, participation, and quality of life.\n\nPASSED AND ADOPTED 2026.\n\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nThe Honorable Jennifer Allen, Chair Pima County Board of Supervisors\n\nATTEST:\n\n\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_\n\nMelissa Manriquez, Clerk Pima County Board of Supervisors",
+      "chunk_type": "parent",
+      "heading": "\"NATIONAL APHASIA AWARENESS MONTH\""
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-child-3-0",
+      "parent_chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-3",
+      "text": "## \"NATIONAL APHASIA AWARENESS MONTH\"\n\nin Tucson, AZ, and urges all residents to recognize the needs of those with aphasia and to support efforts that facilitate their communication, participation, and quality of life.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-child-3-1",
+      "parent_chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-3",
+      "text": "The Honorable Jennifer Allen, Chair Pima County Board of Supervisors",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-az-pimacounty-ed28365335dacafa-child-3-2",
+      "parent_chunk_id": "doc-az-pimacounty-ed28365335dacafa-parent-3",
+      "text": "Melissa Manriquez, Clerk Pima County Board of Supervisors",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "ed28365335dacafa536329b2d8e3706cad3821cdff90aea4214511175fdc0b0f",
+  "extraction_method": "docling",
+  "source_url": "https://pima.legistar.com/gateway.aspx?M=F&ID=d8976967-54e8-4fba-bd78-eeb232257970.pdf",
+  "doc_type": "other",
+  "source_document_id": "doc-az-pimacounty-a92b391eb6feeb2b"
+}

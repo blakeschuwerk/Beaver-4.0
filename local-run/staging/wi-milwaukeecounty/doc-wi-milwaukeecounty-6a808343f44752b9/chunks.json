@@ -1,0 +1,133 @@
+{
+  "document_id": "doc-wi-milwaukeecounty-6a808343f44752b9",
+  "county_id": "wi-milwaukeecounty",
+  "trace_id": "85bf3b4e-548c-471b-a34a-b620d944d0df",
+  "extracted_at": "2026-06-25T16:30:41.437752+00:00",
+  "chunk_count": 19,
+  "chunks": [
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-0",
+      "parent_chunk_id": null,
+      "text": "<!-- image -->\n\nThursday, June 25, 2026",
+      "chunk_type": "parent",
+      "heading": "<!-- image -->"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-1",
+      "parent_chunk_id": null,
+      "text": "## Milwaukee County",
+      "chunk_type": "parent",
+      "heading": "Milwaukee County"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-2",
+      "parent_chunk_id": null,
+      "text": "## Commission on Aging Meeting Agenda - Final\n\nCommissioner Denise Callaway, Chair Commissioner Eugene Guszkowski, B.S., M.Arch, Vice-Chair; Chair, Senior Center Committee Commissioner Brian Peters. Legislative Officer; Chair, Advocacy Committee Commissioner George Banda, Secretary; Chair, Service Delivery Committee Commissioner Paula Penebaker, At-Large Executive Committee Commissioner Cindy Van Vreede, Chair, Nutrition Council Commissioner Jacqueline Smith, Chair, Wellness Committee Commissioner Juan Miguel Martinez, County Supervisor Commissioner Mark P. Behar, PA-C Commissioner Terrence Regan Moore, Sr. Commissioner Crocker Stephenson Commissioner Janice Wilberg, Ph.D.\n\n1:00 PM\n\nThis meeting is recorded (In person and Virtual)\n\nClinton Rose Senior Center 3045 N. Martin Luther King Jr. Dr., Milwaukee By Zoom: Phone: 1-309-205-3325 Meeting ID: 876 8097 5062 Passcode: 429973",
+      "chunk_type": "parent",
+      "heading": "Commission on Aging Meeting Agenda - Final"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-2-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-2",
+      "text": "## Commission on Aging Meeting Agenda - Final\n\nCommissioner Denise Callaway, Chair Commissioner Eugene Guszkowski, B.S., M.Arch, Vice-Chair; Chair, Senior Center Committee Commissioner Brian Peters. Legislative Officer; Chair, Advocacy Committee Commissioner George Banda, Secretary; Chair, Service Delivery Committee Commissioner Paula Penebaker, At-Large Executive Committee Commissioner Cindy Van Vreede, Chair, Nutrition Council Commissioner Jacqueline Smith, Chair, Wellness Committee Commissioner Juan Miguel Martinez, County Supervisor Commissioner Mark P. Behar, PA-C Commissioner Terrence Regan Moore, Sr. Commissioner Crocker Stephenson Commissioner Janice Wilberg, Ph.D.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-2-1",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-2",
+      "text": "This meeting is recorded (In person and Virtual)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-2-2",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-2",
+      "text": "Clinton Rose Senior Center 3045 N. Martin Luther King Jr. Dr., Milwaukee By Zoom: Phone: 1-309-205-3325 Meeting ID: 876 8097 5062 Passcode: 429973",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-3",
+      "parent_chunk_id": null,
+      "text": "## Advisory Council Meeting\n\n- I. CALL TO ORDER AND ROLL\n\n[HRA26-513](https://milwaukeecounty.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=16154)\n\n2026-06-25 Attachments Aging Advisory Council mtg\n\n2026-06-25 Agenda Advisory Council\n\n2026-05-28 Minutes Advisory Council Draft\n\nReframing Aging and Disability\n\nSocial Isolation &amp; Loneliness in Older Adults\\_Milwaukee County\n\nAttachments:\n\n- II. REVIEW AND APPROVAL OF MAY 28, 2026 ADVISORY COUNCIL MINUTES (Action Item)\n- III. REPORT FROM ADVISORY COUNCIL EX OFFICIO MEMBER (Information/Discussion)\n- IV. REPORT ON THE AGE FRIENDLY MILWAUKEE COUNTY STEERING COMMITTEE (Information/Discussion)\n\nMarcia P. Coggs Health\n\nand Human Services Center 1230 W. Cherry St., Milwaukee, WI  53205",
+      "chunk_type": "parent",
+      "heading": "Advisory Council Meeting"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-3-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-3",
+      "text": "## Advisory Council Meeting\n\n- I. CALL TO ORDER AND ROLL",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-3-1",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-3",
+      "text": "[HRA26-513](https://milwaukeecounty.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=16154)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-3-2",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-3",
+      "text": "2026-06-25 Attachments Aging Advisory Council mtg",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-3-3",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-3",
+      "text": "2026-05-28 Minutes Advisory Council Draft",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-3-4",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-3",
+      "text": "Social Isolation &amp; Loneliness in Older Adults\\_Milwaukee County",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-3-5",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-3",
+      "text": "- II. REVIEW AND APPROVAL OF MAY 28, 2026 ADVISORY COUNCIL MINUTES (Action Item)\n- III. REPORT FROM ADVISORY COUNCIL EX OFFICIO MEMBER (Information/Discussion)\n- IV. REPORT ON THE AGE FRIENDLY MILWAUKEE COUNTY STEERING COMMITTEE (Information/Discussion)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-3-6",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-3",
+      "text": "and Human Services Center 1230 W. Cherry St., Milwaukee, WI  53205",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-4",
+      "parent_chunk_id": null,
+      "text": "## V. WISCONSIN DHS AGING POLICY INITIATIVES\n\n- A. REFRAMING AGING (Information/Discussion)\n- B. SOCIAL ISOLATION &amp; LONELINESS (Information/Discussion)\n- VI. SELECTING AREAS OF CONCERN (Discussion)\n- VII. ANNOUNCEMENTS AND ENGAGEMENT OPPORTUNITIES (Information)\n- VIII. ADJOURNMENT\n\nADA Accommodation Requests: ADA Accommodation requests should be filed with the Milwaukee County Office for Persons with Disabilities, (414) 239-5679 (Voice) or 711 (TRS) upon receipt of this notice.\n\nAdvisory Council meetings are recorded and open to the public. The Chair will take public comments on each agenda item at her/his discretion.\n\nPublic comments are an important part of our board and commission meetings, providing an opportunity for the community to share their views. Comments must be relevant to items on the agenda and adhere to established procedures and standards of decorum. Speakers are limited to three (3) minutes each, with time limits subject to adjustment by the Chair. All remarks must be directed to the presiding officer and should focus on issues, not individuals. Disruptive behavior, personal attacks, or commercial promotions are not permitted. The Chair reserves the right to enforce these rules, including ending remarks or removing individuals who violate meeting protocols.",
+      "chunk_type": "parent",
+      "heading": "V. WISCONSIN DHS AGING POLICY INITIATIVES"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-4-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-4",
+      "text": "## V. WISCONSIN DHS AGING POLICY INITIATIVES\n\n- A. REFRAMING AGING (Information/Discussion)\n- B. SOCIAL ISOLATION &amp; LONELINESS (Information/Discussion)\n- VI. SELECTING AREAS OF CONCERN (Discussion)\n- VII. ANNOUNCEMENTS AND ENGAGEMENT OPPORTUNITIES (Information)\n- VIII. ADJOURNMENT",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-4-1",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-4",
+      "text": "ADA Accommodation Requests: ADA Accommodation requests should be filed with the Milwaukee County Office for Persons with Disabilities, (414) 239-5679 (Voice) or 711 (TRS) upon receipt of this notice.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-4-2",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-4",
+      "text": "Advisory Council meetings are recorded and open to the public. The Chair will take public comments on each agenda item at her/his discretion.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-child-4-3",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-6a808343f44752b9-parent-4",
+      "text": "Public comments are an important part of our board and commission meetings, providing an opportunity for the community to share their views. Comments must be relevant to items on the agenda and adhere to established procedures and standards of decorum. Speakers are limited to three (3) minutes each, with time limits subject to adjustment by the Chair. All remarks must be directed to the presiding officer and should focus on issues, not individuals. Disruptive behavior, personal attacks, or commercial promotions are not permitted. The Chair reserves the right to enforce these rules, including ending remarks or removing individuals who violate meeting protocols.",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "6a808343f44752b90a013715eb1303a96ced4662fa2583b36d8cefa1983d53f3",
+  "extraction_method": "docling",
+  "source_url": "https://milwaukeecounty.legistar.com/View.ashx?M=A&ID=1364077&GUID=48FAFFC8-9EE3-40DF-B51A-FA9A4D9D0E4B",
+  "doc_type": "agenda",
+  "source_document_id": null
+}

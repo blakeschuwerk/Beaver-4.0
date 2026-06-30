@@ -1,0 +1,113 @@
+{
+  "document_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac",
+  "county_id": "wi-milwaukeecounty",
+  "trace_id": "b4321f23-633c-48ed-bdd9-00a8c028450c",
+  "extracted_at": "2026-06-25T16:30:43.161862+00:00",
+  "chunk_count": 16,
+  "chunks": [
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-0",
+      "parent_chunk_id": null,
+      "text": "## COMMISSION ON AGING\n\nDenise Callaway Chair\n\nEugene Guszkowski, B.S., M.Arch Vice-Chair Chair, Senior Center Committee\n\nBrian Peters Legislative Officer Chair, Advocacy Committee\n\nGeorge Banda Secretary Chair, Service Delivery Committee\n\nPaula Penebaker At Large Executive Committee\n\nCindy Van Vreede Chair, Nutrition Council\n\nJacqueline Smith Chair, Wellness Committee\n\nJuan Miguel-Martinez County Supervisor\n\nMark P. Behar, PA-C\n\nAlan Goodman\n\nTerrence Regan Moore, Sr.\n\nCrocker Stephenson\n\nJanice Wilberg, Ph.D.\n\n<!-- image -->\n\nADVISORY COUNCIL Thursday, June 25, 2026 | 1 p.m.\n\nIN PERSON Clinton Rose Center 3045 N. Dr. Martin Luther King, Jr. Dr. Milwaukee WI 53212",
+      "chunk_type": "parent",
+      "heading": "COMMISSION ON AGING"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-0-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-0",
+      "text": "## COMMISSION ON AGING\n\nDenise Callaway Chair",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-0-1",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-0",
+      "text": "Eugene Guszkowski, B.S., M.Arch Vice-Chair Chair, Senior Center Committee",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-0-2",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-0",
+      "text": "Brian Peters Legislative Officer Chair, Advocacy Committee",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-0-3",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-0",
+      "text": "George Banda Secretary Chair, Service Delivery Committee",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-0-4",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-0",
+      "text": "Paula Penebaker At Large Executive Committee",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-0-5",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-0",
+      "text": "Cindy Van Vreede Chair, Nutrition Council",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-0-6",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-0",
+      "text": "Jacqueline Smith Chair, Wellness Committee",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-0-7",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-0",
+      "text": "ADVISORY COUNCIL Thursday, June 25, 2026 | 1 p.m.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-0-8",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-0",
+      "text": "IN PERSON Clinton Rose Center 3045 N. Dr. Martin Luther King, Jr. Dr. Milwaukee WI 53212",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-1",
+      "parent_chunk_id": null,
+      "text": "## JOIN ZOOM\n\n(Call In) Phone: 1-309-205-3325\n\nMeeting ID: 876 8097 5062\n\nPasscode: 429973",
+      "chunk_type": "parent",
+      "heading": "JOIN ZOOM"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-1-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-1",
+      "text": "## JOIN ZOOM\n\n(Call In) Phone: 1-309-205-3325",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-2",
+      "parent_chunk_id": null,
+      "text": "## AGENDA\n\n- I.  CALL TO ORDER AND ROLL (1:00 p.m.)\n- II.  REVIEW AND APPROVAL OF MAY 28, 2026 ADVISORY COUNCIL MINUTES (Action Item) (1:05 p.m.)\n- III.  REPORT FROM ADVISORY COUNCIL EX OFFICIO MEMBER (Information/Discussion) (1:10 p.m.)\n- IV.  REPORT ON THE AGE FRIENDLY MILWAUKEE COUNTY STEERING COMMITTEE (Information/Discussion) (1:15 p.m.)\n- V.  WISCONSIN DHS AGING POLICY INITIATIVES\n- A.  REFRAMING AGING (Information/Discussion) (1:25 p.m.)\n- B.  SOCIAL ISOLATION &amp; LONELINESS (Information/Discussion)(2:05 p.m.)\n- VI. SELECTING AREAS OF CONCERN (Discussion) (2:35)\n- VII. ANNOUNCEMENTS AND ENGAGEMENT OPPORTUNITIES (Information) (2:55 p.m.)\n- VIII. ADJOURNMENT (3:00 p.m.)\n\nADA Accommodation Requests: ADA Accommodation requests should be filed with the Milwaukee County Office for Persons with Disabilities, (414) 239-5679 (Voice) or 711 (TRS) upon receipt of this notice .\n\nAdvisory Council meetings are recorded and open to the public. The Chair will take public comments on each agenda item at her/his discretion.",
+      "chunk_type": "parent",
+      "heading": "AGENDA"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-2-0",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-2",
+      "text": "## AGENDA\n\n- I.  CALL TO ORDER AND ROLL (1:00 p.m.)\n- II.  REVIEW AND APPROVAL OF MAY 28, 2026 ADVISORY COUNCIL MINUTES (Action Item) (1:05 p.m.)\n- III.  REPORT FROM ADVISORY COUNCIL EX OFFICIO MEMBER (Information/Discussion) (1:10 p.m.)\n- IV.  REPORT ON THE AGE FRIENDLY MILWAUKEE COUNTY STEERING COMMITTEE (Information/Discussion) (1:15 p.m.)\n- V.  WISCONSIN DHS AGING POLICY INITIATIVES\n- A.  REFRAMING AGING (Information/Discussion) (1:25 p.m.)\n- B.  SOCIAL ISOLATION &amp; LONELINESS (Information/Discussion)(2:05 p.m.)\n- VI. SELECTING AREAS OF CONCERN (Discussion) (2:35)\n- VII. ANNOUNCEMENTS AND ENGAGEMENT OPPORTUNITIES (Information) (2:55 p.m.)\n- VIII. ADJOURNMENT (3:00 p.m.)",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-2-1",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-2",
+      "text": "ADA Accommodation Requests: ADA Accommodation requests should be filed with the Milwaukee County Office for Persons with Disabilities, (414) 239-5679 (Voice) or 711 (TRS) upon receipt of this notice .",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-child-2-2",
+      "parent_chunk_id": "doc-wi-milwaukeecounty-ac82a8ee5917fbac-parent-2",
+      "text": "Advisory Council meetings are recorded and open to the public. The Chair will take public comments on each agenda item at her/his discretion.",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "ac82a8ee5917fbac337ca5ec0af41a1d4f177db45d15cce7775b06aeb2bf3b41",
+  "extraction_method": "docling",
+  "source_url": "https://MilwaukeeCounty.legistar.com/gateway.aspx?M=F&ID=9d30e1ac-61f2-4209-a829-faecbc6f90db.pdf",
+  "doc_type": "other",
+  "source_document_id": "doc-wi-milwaukeecounty-6a808343f44752b9"
+}

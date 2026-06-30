@@ -1,0 +1,32 @@
+{
+  "document_id": "doc-demo-county-4fd5c2ca5ce986d2",
+  "county_id": "demo-county",
+  "trace_id": "9cd96d56-86dc-489e-928c-2d28454ef63b",
+  "extracted_at": "2026-06-28T13:49:03.785425+00:00",
+  "chunk_count": 3,
+  "chunks": [
+    {
+      "chunk_id": "doc-demo-county-4fd5c2ca5ce986d2-parent-0",
+      "parent_chunk_id": null,
+      "text": "## # Board of Supervisors Agenda\n\nCapital Improvement Project CIP-2024-042 \u00b7 Roadway Resurfacing and Drainage Improvements.\n\nEstimated budget $2.5M for Phase 1 civil infrastructure along County Route 12. Subcommittee review of scope i",
+      "chunk_type": "parent",
+      "heading": "# Board of Supervisors Agenda"
+    },
+    {
+      "chunk_id": "doc-demo-county-4fd5c2ca5ce986d2-child-0-0",
+      "parent_chunk_id": "doc-demo-county-4fd5c2ca5ce986d2-parent-0",
+      "text": "## # Board of Supervisors Agenda\n\nCapital Improvement Project CIP-2024-042 \u00b7 Roadway Resurfacing and Drainage Improvements.",
+      "chunk_type": "child"
+    },
+    {
+      "chunk_id": "doc-demo-county-4fd5c2ca5ce986d2-child-0-1",
+      "parent_chunk_id": "doc-demo-county-4fd5c2ca5ce986d2-parent-0",
+      "text": "Estimated budget $2.5M for Phase 1 civil infrastructure along County Route 12. Subcommittee review of scope i",
+      "chunk_type": "child"
+    }
+  ],
+  "content_hash": "4fd5c2ca5ce986d2e09552f4c6f006d953d6748e5adc08be9ad1fb421c0773e8",
+  "extraction_method": "docling",
+  "source_url": "local://demo",
+  "doc_type": "agenda"
+}

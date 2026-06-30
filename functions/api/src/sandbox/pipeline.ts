@@ -5,6 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
 import type { ProjectCreatedMessage, UserProfile } from '@beaver/shared';
+import { assertLlmLocalOnly, LocalOnlyViolationError } from '@beaver/shared';
 import { classifyChunk } from '@beaver/classifier/dist/llm-client.js';
 import { scoreProjectRelevance } from '@beaver/personalization/dist/llm-client.js';
 import { appendRunLog } from './runLog.js';
@@ -15,21 +16,10 @@ const REPO_ROOT = path.resolve(__dirname, '../../../..');
 const PYTHON_BIN = path.join(REPO_ROOT, '.venv', 'bin', 'python3');
 const SANDBOX_EXTRACT_SCRIPT = path.join(REPO_ROOT, 'functions', 'analyzer', 'src', 'sandbox_extract.py');
 
-export class LocalOnlyViolationError extends Error {
-  constructor(message: string) {
-    super(message);
-    this.name = 'LocalOnlyViolationError';
-  }
-}
+export { LocalOnlyViolationError };
 
 function assertLocalLlmOnly(): void {
-  if (process.env.LLM_LOCAL_ONLY !== 'true') return;
-  const url = process.env.LLM_ENDPOINT_URL ?? '';
-  if (!url.startsWith('http://localhost') && !url.startsWith('http://127.0.0.1')) {
-    throw new LocalOnlyViolationError(
-      `LLM_ENDPOINT_URL points to a remote host while LLM_LOCAL_ONLY=true (got: ${url || '(unset)'})`,
-    );
-  }
+  assertLlmLocalOnly(process.env.LLM_ENDPOINT_URL ?? '');
 }
 
 export interface SandboxChunk {

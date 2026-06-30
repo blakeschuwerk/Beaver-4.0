@@ -1,0 +1,5112 @@
+[
+  {
+    "county_id": "sc-abbeville",
+    "label": "Abbeville County, SC",
+    "state": "SC",
+    "url": "https://sc-abbeville.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-adams",
+    "label": "Adams County, IN",
+    "state": "IN",
+    "url": "https://in-adamscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-adams",
+    "label": "Adams County, WA",
+    "state": "WA",
+    "url": "https://wa-adamscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "fl-alachua",
+    "label": "Alachua County, FL",
+    "state": "FL",
+    "url": "https://alachua.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "co-alamosa",
+    "label": "Alamosa County, CO",
+    "state": "CO",
+    "url": "https://co-alamosacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-albany",
+    "label": "Albany County, NY",
+    "state": "NY",
+    "url": "https://ny-albany.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "md-allegany",
+    "label": "Allegany County, MD",
+    "state": "MD",
+    "url": "https://md-alleganycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-allegheny",
+    "label": "Allegheny County, PA",
+    "state": "PA",
+    "url": "https://allegheny.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "in-allen",
+    "label": "Allen County, IN",
+    "state": "IN",
+    "url": "https://in-allencounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-allen",
+    "label": "Allen County, KS",
+    "state": "KS",
+    "url": "https://allen.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ky-allen",
+    "label": "Allen County, KY",
+    "state": "KY",
+    "url": "https://allen.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "oh-allen",
+    "label": "Allen County, OH",
+    "state": "OH",
+    "url": "https://allen.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "mi-alpena",
+    "label": "Alpena County, MI",
+    "state": "MI",
+    "url": "https://mi-alpenacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ca-alpine",
+    "label": "Alpine County, CA",
+    "state": "CA",
+    "url": "https://ca-alpinecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-amherst",
+    "label": "Amherst County, VA",
+    "state": "VA",
+    "url": "https://pub-amherst.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "tx-andrews",
+    "label": "Andrews County, TX",
+    "state": "TX",
+    "url": "https://tx-andrewscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "me-androscoggin",
+    "label": "Androscoggin County, ME",
+    "state": "ME",
+    "url": "https://me-androscoggincounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-anoka",
+    "label": "Anoka County, MN",
+    "state": "MN",
+    "url": "https://mn-anokacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-anson",
+    "label": "Anson County, NC",
+    "state": "NC",
+    "url": "https://nc-ansoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-appomattox",
+    "label": "Appomattox County, VA",
+    "state": "VA",
+    "url": "https://va-appomattoxcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-arapahoe",
+    "label": "Arapahoe County, CO",
+    "state": "CO",
+    "url": "https://arapahoe.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "nc-ashe",
+    "label": "Ashe County, NC",
+    "state": "NC",
+    "url": "https://ashecounty.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "wi-ashland",
+    "label": "Ashland County, WI",
+    "state": "WI",
+    "url": "https://wi-ashland.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-ashtabula",
+    "label": "Ashtabula County, OH",
+    "state": "OH",
+    "url": "https://oh-ashtabulacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-asotin",
+    "label": "Asotin County, WA",
+    "state": "WA",
+    "url": "https://wa-asotincounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-baldwin",
+    "label": "Baldwin County, GA",
+    "state": "GA",
+    "url": "https://ga-baldwincounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-banks",
+    "label": "Banks County, GA",
+    "state": "GA",
+    "url": "https://ga-bankscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "al-barbour",
+    "label": "Barbour County, AL",
+    "state": "AL",
+    "url": "https://al-barbourcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sc-barnwell",
+    "label": "Barnwell County, SC",
+    "state": "SC",
+    "url": "https://sc-barnwell.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-barron",
+    "label": "Barron County, WI",
+    "state": "WI",
+    "url": "https://wi-barron.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-barrow",
+    "label": "Barrow County, GA",
+    "state": "GA",
+    "url": "https://ga-barrowcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "fl-bay",
+    "label": "Bay County, FL",
+    "state": "FL",
+    "url": "https://fl-baycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-bayfield",
+    "label": "Bayfield County, WI",
+    "state": "WI",
+    "url": "https://wi-bayfieldcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sd-beadle",
+    "label": "Beadle County, SD",
+    "state": "SD",
+    "url": "https://sd-beadlecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-beaufort",
+    "label": "Beaufort County, NC",
+    "state": "NC",
+    "url": "https://nc-beaufortcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sc-beaufort",
+    "label": "Beaufort County, SC",
+    "state": "SC",
+    "url": "https://sc-beaufort.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ut-beaver",
+    "label": "Beaver County, UT",
+    "state": "UT",
+    "url": "https://ut-beavercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-becker",
+    "label": "Becker County, MN",
+    "state": "MN",
+    "url": "https://mn-becker.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-bedford",
+    "label": "Bedford County, VA",
+    "state": "VA",
+    "url": "https://va-bedford.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-bee",
+    "label": "Bee County, TX",
+    "state": "TX",
+    "url": "https://tx-beecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nh-belknap",
+    "label": "Belknap County, NH",
+    "state": "NH",
+    "url": "https://nh-belknapcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-benton",
+    "label": "Benton County, MN",
+    "state": "MN",
+    "url": "https://mn-bentoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wv-berkeley",
+    "label": "Berkeley County, WV",
+    "state": "WV",
+    "url": "https://wv-berkeleycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ak-bethel",
+    "label": "Bethel Census Area, AK",
+    "state": "AK",
+    "url": "https://ak-bethel.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mt-bighorn",
+    "label": "Big Horn County, MT",
+    "state": "MT",
+    "url": "https://mt-bighorncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nd-billings",
+    "label": "Billings County, ND",
+    "state": "ND",
+    "url": "https://nd-billingscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ia-blackhawk",
+    "label": "Black Hawk County, IA",
+    "state": "IA",
+    "url": "https://ia-blackhawkcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-blackford",
+    "label": "Blackford County, IN",
+    "state": "IN",
+    "url": "https://www.blackfordcounty.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "id-blaine",
+    "label": "Blaine County, ID",
+    "state": "ID",
+    "url": "https://id-blainecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-blanco",
+    "label": "Blanco County, TX",
+    "state": "TX",
+    "url": "https://tx-blanco.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tn-blount",
+    "label": "Blount County, TN",
+    "state": "TN",
+    "url": "https://tn-blountcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-blueearth",
+    "label": "Blue Earth County, MN",
+    "state": "MN",
+    "url": "https://mn-blueearthcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-bosque",
+    "label": "Bosque County, TX",
+    "state": "TX",
+    "url": "https://tx-bosquecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-botetourt",
+    "label": "Botetourt County, VA",
+    "state": "VA",
+    "url": "https://va-botetourtcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-boulder",
+    "label": "Boulder County, CO",
+    "state": "CO",
+    "url": "https://boulder.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ut-boxelder",
+    "label": "Box Elder County, UT",
+    "state": "UT",
+    "url": "https://www.boxeldercountyut.gov/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ky-boyd",
+    "label": "Boyd County, KY",
+    "state": "KY",
+    "url": "https://ky-boydcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ky-boyle",
+    "label": "Boyle County, KY",
+    "state": "KY",
+    "url": "https://ky-boylecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-brazoria",
+    "label": "Brazoria County, TX",
+    "state": "TX",
+    "url": "https://tx-brazoria.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-brazos",
+    "label": "Brazos County, TX",
+    "state": "TX",
+    "url": "https://tx-brazoscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sd-brookings",
+    "label": "Brookings County, SD",
+    "state": "SD",
+    "url": "https://sd-brookings.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-brooks",
+    "label": "Brooks County, GA",
+    "state": "GA",
+    "url": "https://brooks.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "tx-brooks",
+    "label": "Brooks County, TX",
+    "state": "TX",
+    "url": "https://brooks.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "in-brown",
+    "label": "Brown County, IN",
+    "state": "IN",
+    "url": "https://in-browncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-brown",
+    "label": "Brown County, KS",
+    "state": "KS",
+    "url": "https://ks-browncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-brown",
+    "label": "Brown County, MN",
+    "state": "MN",
+    "url": "https://mn-browncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-brunswick",
+    "label": "Brunswick County, NC",
+    "state": "NC",
+    "url": "https://nc-brunswickcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-brunswick",
+    "label": "Brunswick County, VA",
+    "state": "VA",
+    "url": "https://brunswick.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "wi-buffalo",
+    "label": "Buffalo County, WI",
+    "state": "WI",
+    "url": "https://wi-buffalocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-buncombe",
+    "label": "Buncombe County, NC",
+    "state": "NC",
+    "url": "https://nc-buncombecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-burke",
+    "label": "Burke County, NC",
+    "state": "NC",
+    "url": "https://nc-burkecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nj-burlington",
+    "label": "Burlington County, NJ",
+    "state": "NJ",
+    "url": "https://nj-burlingtoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-burnet",
+    "label": "Burnet County, TX",
+    "state": "TX",
+    "url": "https://tx-burnetcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-butler",
+    "label": "Butler County, PA",
+    "state": "PA",
+    "url": "https://pa-butlercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ca-calaveras",
+    "label": "Calaveras County, CA",
+    "state": "CA",
+    "url": "https://calaverascounty.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "nc-caldwell",
+    "label": "Caldwell County, NC",
+    "state": "NC",
+    "url": "https://nc-caldwellcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-calumet",
+    "label": "Calumet County, WI",
+    "state": "WI",
+    "url": "https://wi-calumetcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "md-calvert",
+    "label": "Calvert County, MD",
+    "state": "MD",
+    "url": "https://md-calvertcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-camden",
+    "label": "Camden County, GA",
+    "state": "GA",
+    "url": "https://camdencounty.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "ky-campbell",
+    "label": "Campbell County, KY",
+    "state": "KY",
+    "url": "https://pub-campbell.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "sd-campbell",
+    "label": "Campbell County, SD",
+    "state": "SD",
+    "url": "https://pub-campbell.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "tn-campbell",
+    "label": "Campbell County, TN",
+    "state": "TN",
+    "url": "https://pub-campbell.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "va-campbell",
+    "label": "Campbell County, VA",
+    "state": "VA",
+    "url": "https://va-campbellcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-candler",
+    "label": "Candler County, GA",
+    "state": "GA",
+    "url": "https://ga-candlercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nj-capemay",
+    "label": "Cape May County, NJ",
+    "state": "NJ",
+    "url": "https://nj-capemaycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-carlton",
+    "label": "Carlton County, MN",
+    "state": "MN",
+    "url": "https://mn-carltoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "md-caroline",
+    "label": "Caroline County, MD",
+    "state": "MD",
+    "url": "https://md-carolinecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-caroline",
+    "label": "Caroline County, VA",
+    "state": "VA",
+    "url": "https://va-carolinecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-carroll",
+    "label": "Carroll County, GA",
+    "state": "GA",
+    "url": "https://ga-carrollcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nh-carroll",
+    "label": "Carroll County, NH",
+    "state": "NH",
+    "url": "https://nh-carrollcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-carteret",
+    "label": "Carteret County, NC",
+    "state": "NC",
+    "url": "https://nc-carteretcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-carver",
+    "label": "Carver County, MN",
+    "state": "MN",
+    "url": "https://mn-carver.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mt-cascade",
+    "label": "Cascade County, MT",
+    "state": "MT",
+    "url": "https://mt-cascadecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-cass",
+    "label": "Cass County, MI",
+    "state": "MI",
+    "url": "https://mi-casscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mo-cass",
+    "label": "Cass County, MO",
+    "state": "MO",
+    "url": "https://mo-casscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-cayuga",
+    "label": "Cayuga County, NY",
+    "state": "NY",
+    "url": "https://ny-cayugacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-centre",
+    "label": "Centre County, PA",
+    "state": "PA",
+    "url": "https://pa-centrecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-chambers",
+    "label": "Chambers County, TX",
+    "state": "TX",
+    "url": "https://tx-chamberscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-charlevoix",
+    "label": "Charlevoix County, MI",
+    "state": "MI",
+    "url": "https://mi-charlevoix.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-charlton",
+    "label": "Charlton County, GA",
+    "state": "GA",
+    "url": "https://ga-charltoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-chattooga",
+    "label": "Chattooga County, GA",
+    "state": "GA",
+    "url": "https://ga-chattoogacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-chemung",
+    "label": "Chemung County, NY",
+    "state": "NY",
+    "url": "https://ny-chemungcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-chenango",
+    "label": "Chenango County, NY",
+    "state": "NY",
+    "url": "https://ny-chenangocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sc-chester",
+    "label": "Chester County, SC",
+    "state": "SC",
+    "url": "https://sc-chester.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tn-chester",
+    "label": "Chester County, TN",
+    "state": "TN",
+    "url": "https://pub-chester.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "mn-chippewa",
+    "label": "Chippewa County, MN",
+    "state": "MN",
+    "url": "https://mn-chippewacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-chippewa",
+    "label": "Chippewa County, WI",
+    "state": "WI",
+    "url": "https://wi-chippewacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nv-churchill",
+    "label": "Churchill County, NV",
+    "state": "NV",
+    "url": "https://nv-churchillcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-clallam",
+    "label": "Clallam County, WA",
+    "state": "WA",
+    "url": "https://wa-clallamcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ar-clark",
+    "label": "Clark County, AR",
+    "state": "AR",
+    "url": "https://clark.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "id-clark",
+    "label": "Clark County, ID",
+    "state": "ID",
+    "url": "https://clark.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "il-clark",
+    "label": "Clark County, IL",
+    "state": "IL",
+    "url": "https://clark.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "in-clark",
+    "label": "Clark County, IN",
+    "state": "IN",
+    "url": "https://clark.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "ks-clark",
+    "label": "Clark County, KS",
+    "state": "KS",
+    "url": "https://clark.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "ky-clark",
+    "label": "Clark County, KY",
+    "state": "KY",
+    "url": "https://ky-clarkcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mo-clark",
+    "label": "Clark County, MO",
+    "state": "MO",
+    "url": "https://clark.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "nv-clark",
+    "label": "Clark County, NV",
+    "state": "NV",
+    "url": "https://clark.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "oh-clark",
+    "label": "Clark County, OH",
+    "state": "OH",
+    "url": "https://oh-clarkcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sd-clark",
+    "label": "Clark County, SD",
+    "state": "SD",
+    "url": "https://clark.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "wa-clark",
+    "label": "Clark County, WA",
+    "state": "WA",
+    "url": "https://clark.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "wi-clark",
+    "label": "Clark County, WI",
+    "state": "WI",
+    "url": "https://clark.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "or-clatsop",
+    "label": "Clatsop County, OR",
+    "state": "OR",
+    "url": "https://or-clatsopcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-clay",
+    "label": "Clay County, KS",
+    "state": "KS",
+    "url": "https://ks-claycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-clay",
+    "label": "Clay County, MN",
+    "state": "MN",
+    "url": "https://mn-claycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mo-clay",
+    "label": "Clay County, MO",
+    "state": "MO",
+    "url": "https://mo-claycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ms-clay",
+    "label": "Clay County, MS",
+    "state": "MS",
+    "url": "https://claycounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ia-clayton",
+    "label": "Clayton County, IA",
+    "state": "IA",
+    "url": "https://ia-claytoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-clearcreek",
+    "label": "Clear Creek County, CO",
+    "state": "CO",
+    "url": "https://co-clearcreekcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-clearfield",
+    "label": "Clearfield County, PA",
+    "state": "PA",
+    "url": "https://pa-clearfieldcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ar-cleveland",
+    "label": "Cleveland County, AR",
+    "state": "AR",
+    "url": "https://cleveland.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "nc-cleveland",
+    "label": "Cleveland County, NC",
+    "state": "NC",
+    "url": "https://cleveland.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ok-cleveland",
+    "label": "Cleveland County, OK",
+    "state": "OK",
+    "url": "https://ok-clevelandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ia-clinton",
+    "label": "Clinton County, IA",
+    "state": "IA",
+    "url": "https://ia-clinton.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-clinton",
+    "label": "Clinton County, MI",
+    "state": "MI",
+    "url": "https://mi-clintoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "az-cochise",
+    "label": "Cochise County, AZ",
+    "state": "AZ",
+    "url": "https://az-cochisecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "al-coffee",
+    "label": "Coffee County, AL",
+    "state": "AL",
+    "url": "https://al-coffeecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tn-coffee",
+    "label": "Coffee County, TN",
+    "state": "TN",
+    "url": "https://tn-coffeecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-coffey",
+    "label": "Coffey County, KS",
+    "state": "KS",
+    "url": "https://ks-coffeycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mo-cole",
+    "label": "Cole County, MO",
+    "state": "MO",
+    "url": "https://mo-colecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ar-columbia",
+    "label": "Columbia County, AR",
+    "state": "AR",
+    "url": "https://columbia.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "fl-columbia",
+    "label": "Columbia County, FL",
+    "state": "FL",
+    "url": "https://columbia.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ga-columbia",
+    "label": "Columbia County, GA",
+    "state": "GA",
+    "url": "https://ga-columbiacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-columbia",
+    "label": "Columbia County, NY",
+    "state": "NY",
+    "url": "https://columbia.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "or-columbia",
+    "label": "Columbia County, OR",
+    "state": "OR",
+    "url": "https://or-columbiacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-columbia",
+    "label": "Columbia County, PA",
+    "state": "PA",
+    "url": "https://columbia.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "wa-columbia",
+    "label": "Columbia County, WA",
+    "state": "WA",
+    "url": "https://columbia.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "wi-columbia",
+    "label": "Columbia County, WI",
+    "state": "WI",
+    "url": "https://columbia.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ca-colusa",
+    "label": "Colusa County, CA",
+    "state": "CA",
+    "url": "https://ca-colusacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-comal",
+    "label": "Comal County, TX",
+    "state": "TX",
+    "url": "https://www.comalcounty.gov/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wy-converse",
+    "label": "Converse County, WY",
+    "state": "WY",
+    "url": "https://wy-conversecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-cook",
+    "label": "Cook County, MN",
+    "state": "MN",
+    "url": "https://cook-county.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "ny-cortland",
+    "label": "Cortland County, NY",
+    "state": "NY",
+    "url": "https://ny-cortlandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-cottonwood",
+    "label": "Cottonwood County, MN",
+    "state": "MN",
+    "url": "https://cottonwood.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ks-cowley",
+    "label": "Cowley County, KS",
+    "state": "KS",
+    "url": "https://ks-cowleycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-cowlitz",
+    "label": "Cowlitz County, WA",
+    "state": "WA",
+    "url": "https://wa-cowlitzcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-craven",
+    "label": "Craven County, NC",
+    "state": "NC",
+    "url": "https://nc-cravencounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "or-crook",
+    "label": "Crook County, OR",
+    "state": "OR",
+    "url": "https://or-crookcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "al-cullman",
+    "label": "Cullman County, AL",
+    "state": "AL",
+    "url": "https://al-cullman.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-culpeper",
+    "label": "Culpeper County, VA",
+    "state": "VA",
+    "url": "https://pub-culpepercounty.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "il-cumberland",
+    "label": "Cumberland County, IL",
+    "state": "IL",
+    "url": "https://cumberland.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ky-cumberland",
+    "label": "Cumberland County, KY",
+    "state": "KY",
+    "url": "https://cumberland.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "me-cumberland",
+    "label": "Cumberland County, ME",
+    "state": "ME",
+    "url": "https://cumberland.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "nc-cumberland",
+    "label": "Cumberland County, NC",
+    "state": "NC",
+    "url": "https://cumberland.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "nj-cumberland",
+    "label": "Cumberland County, NJ",
+    "state": "NJ",
+    "url": "https://cumberland.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "pa-cumberland",
+    "label": "Cumberland County, PA",
+    "state": "PA",
+    "url": "https://cumberland.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "tn-cumberland",
+    "label": "Cumberland County, TN",
+    "state": "TN",
+    "url": "https://cumberland.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "va-cumberland",
+    "label": "Cumberland County, VA",
+    "state": "VA",
+    "url": "https://va-cumberlandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-dade",
+    "label": "Dade County, GA",
+    "state": "GA",
+    "url": "https://ga-dadecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-dakota",
+    "label": "Dakota County, MN",
+    "state": "MN",
+    "url": "https://dakota.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "ne-dakota",
+    "label": "Dakota County, NE",
+    "state": "NE",
+    "url": "https://dakota.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "ia-dallas",
+    "label": "Dallas County, IA",
+    "state": "IA",
+    "url": "https://ia-dallascounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-dane",
+    "label": "Dane County, WI",
+    "state": "WI",
+    "url": "https://dane.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "nc-davidson",
+    "label": "Davidson County, NC",
+    "state": "NC",
+    "url": "https://nc-davidsoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-davie",
+    "label": "Davie County, NC",
+    "state": "NC",
+    "url": "https://davie.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "in-daviess",
+    "label": "Daviess County, IN",
+    "state": "IN",
+    "url": "https://in-daviesscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ia-decatur",
+    "label": "Decatur County, IA",
+    "state": "IA",
+    "url": "https://decatur.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "in-decatur",
+    "label": "Decatur County, IN",
+    "state": "IN",
+    "url": "https://decatur.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ks-decatur",
+    "label": "Decatur County, KS",
+    "state": "KS",
+    "url": "https://decatur.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "tn-decatur",
+    "label": "Decatur County, TN",
+    "state": "TN",
+    "url": "https://decatur.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "oh-defiance",
+    "label": "Defiance County, OH",
+    "state": "OH",
+    "url": "https://oh-defiance.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "il-dekalb",
+    "label": "DeKalb County, IL",
+    "state": "IL",
+    "url": "https://il-dekalb.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-delta",
+    "label": "Delta County, CO",
+    "state": "CO",
+    "url": "https://co-delta.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-delta",
+    "label": "Delta County, MI",
+    "state": "MI",
+    "url": "https://pub-delta.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "tx-delta",
+    "label": "Delta County, TX",
+    "state": "TX",
+    "url": "https://pub-delta.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "tx-denton",
+    "label": "Denton County, TX",
+    "state": "TX",
+    "url": "https://tx-denton.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "or-deschutes",
+    "label": "Deschutes County, OR",
+    "state": "OR",
+    "url": "https://or-deschutescounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "fl-desoto",
+    "label": "DeSoto County, FL",
+    "state": "FL",
+    "url": "https://fl-desotocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ok-dewey",
+    "label": "Dewey County, OK",
+    "state": "OK",
+    "url": "https://ok-dewey.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-dickenson",
+    "label": "Dickenson County, VA",
+    "state": "VA",
+    "url": "https://va-dickensoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-dinwiddie",
+    "label": "Dinwiddie County, VA",
+    "state": "VA",
+    "url": "https://va-dinwiddiecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-door",
+    "label": "Door County, WI",
+    "state": "WI",
+    "url": "https://www.co.door.wi.gov/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-douglas",
+    "label": "Douglas County, GA",
+    "state": "GA",
+    "url": "https://ga-douglascounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "or-douglas",
+    "label": "Douglas County, OR",
+    "state": "OR",
+    "url": "https://or-douglascounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-douglas",
+    "label": "Douglas County, WA",
+    "state": "WA",
+    "url": "https://wa-douglascounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ia-dubuque",
+    "label": "Dubuque County, IA",
+    "state": "IA",
+    "url": "https://ia-dubuquecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-duplin",
+    "label": "Duplin County, NC",
+    "state": "NC",
+    "url": "https://nc-duplincounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-durham",
+    "label": "Durham County, NC",
+    "state": "NC",
+    "url": "https://durhamcounty.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "co-eagle",
+    "label": "Eagle County, CO",
+    "state": "CO",
+    "url": "https://eaglecounty.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "mi-eaton",
+    "label": "Eaton County, MI",
+    "state": "MI",
+    "url": "https://mi-eatoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nm-eddy",
+    "label": "Eddy County, NM",
+    "state": "NM",
+    "url": "https://nm-eddycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-effingham",
+    "label": "Effingham County, GA",
+    "state": "GA",
+    "url": "https://ga-effinghamcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-elpaso",
+    "label": "El Paso County, TX",
+    "state": "TX",
+    "url": "https://tx-elpasocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-elbert",
+    "label": "Elbert County, CO",
+    "state": "CO",
+    "url": "https://co-elbertcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-emanuel",
+    "label": "Emanuel County, GA",
+    "state": "GA",
+    "url": "https://ga-emanuelcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ia-emmet",
+    "label": "Emmet County, IA",
+    "state": "IA",
+    "url": "https://emmetcounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ma-essex",
+    "label": "Essex County, MA",
+    "state": "MA",
+    "url": "https://ma-essex.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nj-essex",
+    "label": "Essex County, NJ",
+    "state": "NJ",
+    "url": "https://essex.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ny-essex",
+    "label": "Essex County, NY",
+    "state": "NY",
+    "url": "https://essex.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "va-essex",
+    "label": "Essex County, VA",
+    "state": "VA",
+    "url": "https://essex.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "vt-essex",
+    "label": "Essex County, VT",
+    "state": "VT",
+    "url": "https://essex.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "oh-fairfield",
+    "label": "Fairfield County, OH",
+    "state": "OH",
+    "url": "https://oh-fairfield.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-faribault",
+    "label": "Faribault County, MN",
+    "state": "MN",
+    "url": "https://mn-faribault.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-fauquier",
+    "label": "Fauquier County, VA",
+    "state": "VA",
+    "url": "https://fauquier.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "oh-fayette",
+    "label": "Fayette County, OH",
+    "state": "OH",
+    "url": "https://oh-fayettecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-fayette",
+    "label": "Fayette County, PA",
+    "state": "PA",
+    "url": "https://pa-fayettecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-finney",
+    "label": "Finney County, KS",
+    "state": "KS",
+    "url": "https://ks-finneycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sc-florence",
+    "label": "Florence County, SC",
+    "state": "SC",
+    "url": "https://florence.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "wi-florence",
+    "label": "Florence County, WI",
+    "state": "WI",
+    "url": "https://florence.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ia-floyd",
+    "label": "Floyd County, IA",
+    "state": "IA",
+    "url": "https://ia-floydcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-fonddulac",
+    "label": "Fond du Lac County, WI",
+    "state": "WI",
+    "url": "https://fonddulac.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ks-ford",
+    "label": "Ford County, KS",
+    "state": "KS",
+    "url": "https://ks-fordcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ma-franklin",
+    "label": "Franklin County, MA",
+    "state": "MA",
+    "url": "https://ma-franklin.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-franklin",
+    "label": "Franklin County, VA",
+    "state": "VA",
+    "url": "https://va-franklincounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-franklin",
+    "label": "Franklin County, WA",
+    "state": "WA",
+    "url": "https://wa-franklincounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-freeborn",
+    "label": "Freeborn County, MN",
+    "state": "MN",
+    "url": "https://mn-freeborncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-fulton",
+    "label": "Fulton County, IN",
+    "state": "IN",
+    "url": "https://in-fultoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-fulton",
+    "label": "Fulton County, OH",
+    "state": "OH",
+    "url": "https://oh-fultoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mt-gallatin",
+    "label": "Gallatin County, MT",
+    "state": "MT",
+    "url": "https://mt-gallatincounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-galveston",
+    "label": "Galveston County, TX",
+    "state": "TX",
+    "url": "https://tx-galveston.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-garfield",
+    "label": "Garfield County, CO",
+    "state": "CO",
+    "url": "https://pub-garfield.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ne-garfield",
+    "label": "Garfield County, NE",
+    "state": "NE",
+    "url": "https://pub-garfield.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ok-garfield",
+    "label": "Garfield County, OK",
+    "state": "OK",
+    "url": "https://pub-garfield.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "wa-garfield",
+    "label": "Garfield County, WA",
+    "state": "WA",
+    "url": "https://pub-garfield.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "nc-gaston",
+    "label": "Gaston County, NC",
+    "state": "NC",
+    "url": "https://nc-gastoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-geary",
+    "label": "Geary County, KS",
+    "state": "KS",
+    "url": "https://ks-gearycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sc-georgetown",
+    "label": "Georgetown County, SC",
+    "state": "SC",
+    "url": "https://sc-georgetowncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-gillespie",
+    "label": "Gillespie County, TX",
+    "state": "TX",
+    "url": "https://tx-gillespiecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nj-gloucester",
+    "label": "Gloucester County, NJ",
+    "state": "NJ",
+    "url": "https://nj-gloucestercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-goliad",
+    "label": "Goliad County, TX",
+    "state": "TX",
+    "url": "https://tx-goliad.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-goochland",
+    "label": "Goochland County, VA",
+    "state": "VA",
+    "url": "https://va-goochlandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "id-gooding",
+    "label": "Gooding County, ID",
+    "state": "ID",
+    "url": "https://id-goodingcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-gordon",
+    "label": "Gordon County, GA",
+    "state": "GA",
+    "url": "https://ga-gordoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wy-goshen",
+    "label": "Goshen County, WY",
+    "state": "WY",
+    "url": "https://wy-goshencounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ok-grady",
+    "label": "Grady County, OK",
+    "state": "OK",
+    "url": "https://ok-gradycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "az-graham",
+    "label": "Graham County, AZ",
+    "state": "AZ",
+    "url": "https://az-grahamcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-grand",
+    "label": "Grand County, CO",
+    "state": "CO",
+    "url": "https://co-grandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ut-grand",
+    "label": "Grand County, UT",
+    "state": "UT",
+    "url": "https://ut-grandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-grandtraverse",
+    "label": "Grand Traverse County, MI",
+    "state": "MI",
+    "url": "https://mi-grandtraversecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-grant",
+    "label": "Grant County, MN",
+    "state": "MN",
+    "url": "https://mn-grantcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nm-grant",
+    "label": "Grant County, NM",
+    "state": "NM",
+    "url": "https://nm-grantcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "or-grant",
+    "label": "Grant County, OR",
+    "state": "OR",
+    "url": "https://or-grantcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-grant",
+    "label": "Grant County, WA",
+    "state": "WA",
+    "url": "https://wa-grantcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-granville",
+    "label": "Granville County, NC",
+    "state": "NC",
+    "url": "https://nc-granvillecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-gratiot",
+    "label": "Gratiot County, MI",
+    "state": "MI",
+    "url": "https://mi-gratiotcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-grayson",
+    "label": "Grayson County, TX",
+    "state": "TX",
+    "url": "https://grayson.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "va-grayson",
+    "label": "Grayson County, VA",
+    "state": "VA",
+    "url": "https://va-graysoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-green",
+    "label": "Green County, WI",
+    "state": "WI",
+    "url": "https://wi-greencounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-greene",
+    "label": "Greene County, GA",
+    "state": "GA",
+    "url": "https://ga-greenecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-greene",
+    "label": "Greene County, VA",
+    "state": "VA",
+    "url": "https://va-greenecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-greenwood",
+    "label": "Greenwood County, KS",
+    "state": "KS",
+    "url": "https://pub-greenwood.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ok-greer",
+    "label": "Greer County, OK",
+    "state": "OK",
+    "url": "https://greer.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "nc-guilford",
+    "label": "Guilford County, NC",
+    "state": "NC",
+    "url": "https://guilford.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "co-gunnison",
+    "label": "Gunnison County, CO",
+    "state": "CO",
+    "url": "https://co-gunnisoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-halifax",
+    "label": "Halifax County, NC",
+    "state": "NC",
+    "url": "https://nc-halifaxcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-halifax",
+    "label": "Halifax County, VA",
+    "state": "VA",
+    "url": "https://va-halifaxcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-hall",
+    "label": "Hall County, GA",
+    "state": "GA",
+    "url": "https://ga-hallcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-hamilton",
+    "label": "Hamilton County, IN",
+    "state": "IN",
+    "url": "https://in-hamiltoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-hamilton",
+    "label": "Hamilton County, KS",
+    "state": "KS",
+    "url": "https://ks-hamiltoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ne-hamilton",
+    "label": "Hamilton County, NE",
+    "state": "NE",
+    "url": "https://pub-hamilton.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ny-hamilton",
+    "label": "Hamilton County, NY",
+    "state": "NY",
+    "url": "https://ny-hamilton.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-hamilton",
+    "label": "Hamilton County, TX",
+    "state": "TX",
+    "url": "https://tx-hamiltoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ma-hampden",
+    "label": "Hampden County, MA",
+    "state": "MA",
+    "url": "https://ma-hampden.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-hancock",
+    "label": "Hancock County, OH",
+    "state": "OH",
+    "url": "https://oh-hancockcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-hanover",
+    "label": "Hanover County, VA",
+    "state": "VA",
+    "url": "https://pub-hanover.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ky-hardin",
+    "label": "Hardin County, KY",
+    "state": "KY",
+    "url": "https://ky-hardincounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "md-harford",
+    "label": "Harford County, MD",
+    "state": "MD",
+    "url": "https://md-harfordcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ms-harrison",
+    "label": "Harrison County, MS",
+    "state": "MS",
+    "url": "https://harrison.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "oh-harrison",
+    "label": "Harrison County, OH",
+    "state": "OH",
+    "url": "https://oh-harrison.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ct-hartford",
+    "label": "Hartford County, CT",
+    "state": "CT",
+    "url": "https://hartford.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "tx-hays",
+    "label": "Hays County, TX",
+    "state": "TX",
+    "url": "https://tx-hayscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-haywood",
+    "label": "Haywood County, NC",
+    "state": "NC",
+    "url": "https://nc-haywoodcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-hemphill",
+    "label": "Hemphill County, TX",
+    "state": "TX",
+    "url": "https://tx-hemphill.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ky-henderson",
+    "label": "Henderson County, KY",
+    "state": "KY",
+    "url": "https://ky-hendersoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "il-henry",
+    "label": "Henry County, IL",
+    "state": "IL",
+    "url": "https://il-henrycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-henry",
+    "label": "Henry County, IN",
+    "state": "IN",
+    "url": "https://in-henrycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-henry",
+    "label": "Henry County, OH",
+    "state": "OH",
+    "url": "https://oh-henrycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-henry",
+    "label": "Henry County, VA",
+    "state": "VA",
+    "url": "https://va-henrycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "fl-hillsborough",
+    "label": "Hillsborough County, FL",
+    "state": "FL",
+    "url": "https://pub-hillsborough.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "nh-hillsborough",
+    "label": "Hillsborough County, NH",
+    "state": "NH",
+    "url": "https://pub-hillsborough.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "nc-hoke",
+    "label": "Hoke County, NC",
+    "state": "NC",
+    "url": "https://nc-hokecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-howard",
+    "label": "Howard County, TX",
+    "state": "TX",
+    "url": "https://tx-howardcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nv-humboldt",
+    "label": "Humboldt County, NV",
+    "state": "NV",
+    "url": "https://nv-humboldtcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nj-hunterdon",
+    "label": "Hunterdon County, NJ",
+    "state": "NJ",
+    "url": "https://nj-hunterdoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-huron",
+    "label": "Huron County, MI",
+    "state": "MI",
+    "url": "https://huroncounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ca-imperial",
+    "label": "Imperial County, CA",
+    "state": "CA",
+    "url": "https://ca-imperial.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ar-independence",
+    "label": "Independence County, AR",
+    "state": "AR",
+    "url": "https://independence.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "mi-ionia",
+    "label": "Ionia County, MI",
+    "state": "MI",
+    "url": "https://mi-ionia.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-iredell",
+    "label": "Iredell County, NC",
+    "state": "NC",
+    "url": "https://nc-iredellcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-irion",
+    "label": "Irion County, TX",
+    "state": "TX",
+    "url": "https://tx-irioncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-isanti",
+    "label": "Isanti County, MN",
+    "state": "MN",
+    "url": "https://mn-isanticounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-island",
+    "label": "Island County, WA",
+    "state": "WA",
+    "url": "https://wa-islandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-itasca",
+    "label": "Itasca County, MN",
+    "state": "MN",
+    "url": "https://mn-itascacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "al-jackson",
+    "label": "Jackson County, AL",
+    "state": "AL",
+    "url": "https://al-jacksoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-jackson",
+    "label": "Jackson County, GA",
+    "state": "GA",
+    "url": "https://ga-jacksoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "il-jackson",
+    "label": "Jackson County, IL",
+    "state": "IL",
+    "url": "https://il-jacksoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-jackson",
+    "label": "Jackson County, KS",
+    "state": "KS",
+    "url": "https://ks-jacksoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-jackson",
+    "label": "Jackson County, MI",
+    "state": "MI",
+    "url": "https://mi-jacksoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mo-jackson",
+    "label": "Jackson County, MO",
+    "state": "MO",
+    "url": "https://mo-jackson.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ms-jackson",
+    "label": "Jackson County, MS",
+    "state": "MS",
+    "url": "https://ms-jacksoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-jackson",
+    "label": "Jackson County, NC",
+    "state": "NC",
+    "url": "https://nc-jacksoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "al-jefferson",
+    "label": "Jefferson County, AL",
+    "state": "AL",
+    "url": "https://al-jeffersoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ar-jefferson",
+    "label": "Jefferson County, AR",
+    "state": "AR",
+    "url": "https://jefferson.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "co-jefferson",
+    "label": "Jefferson County, CO",
+    "state": "CO",
+    "url": "https://co-jeffersoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-jefferson",
+    "label": "Jefferson County, GA",
+    "state": "GA",
+    "url": "https://ga-jefferson.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "id-jefferson",
+    "label": "Jefferson County, ID",
+    "state": "ID",
+    "url": "https://id-jeffersoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-jefferson",
+    "label": "Jefferson County, IN",
+    "state": "IN",
+    "url": "https://in-jeffersoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mo-jefferson",
+    "label": "Jefferson County, MO",
+    "state": "MO",
+    "url": "https://mo-jeffersoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ms-jefferson",
+    "label": "Jefferson County, MS",
+    "state": "MS",
+    "url": "https://jefferson.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "or-jefferson",
+    "label": "Jefferson County, OR",
+    "state": "OR",
+    "url": "https://jefferson.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "wa-jefferson",
+    "label": "Jefferson County, WA",
+    "state": "WA",
+    "url": "https://wa-jeffersoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-jefferson",
+    "label": "Jefferson County, WI",
+    "state": "WI",
+    "url": "https://jefferson.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "id-jerome",
+    "label": "Jerome County, ID",
+    "state": "ID",
+    "url": "https://id-jeromecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "il-jodaviess",
+    "label": "Jo Daviess County, IL",
+    "state": "IL",
+    "url": "https://il-jodaviesscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mo-johnson",
+    "label": "Johnson County, MO",
+    "state": "MO",
+    "url": "https://mo-johnsoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-juneau",
+    "label": "Juneau County, WI",
+    "state": "WI",
+    "url": "https://wi-juneau.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-juniata",
+    "label": "Juniata County, PA",
+    "state": "PA",
+    "url": "https://pa-juniatacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ut-kane",
+    "label": "Kane County, UT",
+    "state": "UT",
+    "url": "https://ut-kanecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "il-kankakee",
+    "label": "Kankakee County, IL",
+    "state": "IL",
+    "url": "https://il-kankakeecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-kaufman",
+    "label": "Kaufman County, TX",
+    "state": "TX",
+    "url": "https://tx-kaufmancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ok-kay",
+    "label": "Kay County, OK",
+    "state": "OK",
+    "url": "https://ok-kaycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-kendall",
+    "label": "Kendall County, TX",
+    "state": "TX",
+    "url": "https://tx-kendallcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-kenosha",
+    "label": "Kenosha County, WI",
+    "state": "WI",
+    "url": "https://wi-kenoshacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-kent",
+    "label": "Kent County, MI",
+    "state": "MI",
+    "url": "https://mi-kentcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-kent",
+    "label": "Kent County, TX",
+    "state": "TX",
+    "url": "https://kent.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ky-kenton",
+    "label": "Kenton County, KY",
+    "state": "KY",
+    "url": "https://ky-kentoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-king",
+    "label": "King County, WA",
+    "state": "WA",
+    "url": "https://pub-king.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "va-kinggeorge",
+    "label": "King George County, VA",
+    "state": "VA",
+    "url": "https://va-kinggeorgecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-kingwilliam",
+    "label": "King William County, VA",
+    "state": "VA",
+    "url": "https://va-kingwilliamcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-kiowa",
+    "label": "Kiowa County, KS",
+    "state": "KS",
+    "url": "https://ks-kiowacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "or-klamath",
+    "label": "Klamath County, OR",
+    "state": "OR",
+    "url": "https://or-klamathcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-klickitat",
+    "label": "Klickitat County, WA",
+    "state": "WA",
+    "url": "https://wa-klickitatcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-koochiching",
+    "label": "Koochiching County, MN",
+    "state": "MN",
+    "url": "https://mn-koochichingcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "az-lapaz",
+    "label": "La Paz County, AZ",
+    "state": "AZ",
+    "url": "https://az-lapazcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-lasalle",
+    "label": "La Salle County, TX",
+    "state": "TX",
+    "url": "https://pub-lasalle.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ca-lake",
+    "label": "Lake County, CA",
+    "state": "CA",
+    "url": "https://ca-lakecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-lake",
+    "label": "Lake County, CO",
+    "state": "CO",
+    "url": "https://co-lakecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-lake",
+    "label": "Lake County, MN",
+    "state": "MN",
+    "url": "https://mn-lakecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mt-lake",
+    "label": "Lake County, MT",
+    "state": "MT",
+    "url": "https://mt-lakecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-lampasas",
+    "label": "Lampasas County, TX",
+    "state": "TX",
+    "url": "https://tx-lampasas.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ne-lancaster",
+    "label": "Lancaster County, NE",
+    "state": "NE",
+    "url": "https://ne-lancastercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-lancaster",
+    "label": "Lancaster County, PA",
+    "state": "PA",
+    "url": "https://pa-lancastercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-lane",
+    "label": "Lane County, KS",
+    "state": "KS",
+    "url": "https://pub-lanecounty.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "in-laporte",
+    "label": "LaPorte County, IN",
+    "state": "IN",
+    "url": "https://pub-laporte.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "wy-laramie",
+    "label": "Laramie County, WY",
+    "state": "WY",
+    "url": "https://laramiecounty.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "il-lasalle",
+    "label": "LaSalle County, IL",
+    "state": "IL",
+    "url": "https://il-lasallecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ca-lassen",
+    "label": "Lassen County, CA",
+    "state": "CA",
+    "url": "https://ca-lassencounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-laurens",
+    "label": "Laurens County, GA",
+    "state": "GA",
+    "url": "https://ga-laurenscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-lawrence",
+    "label": "Lawrence County, IN",
+    "state": "IN",
+    "url": "https://in-lawrencecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sd-lawrence",
+    "label": "Lawrence County, SD",
+    "state": "SD",
+    "url": "https://sd-lawrencecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-lesueur",
+    "label": "Le Sueur County, MN",
+    "state": "MN",
+    "url": "https://mn-lesueurcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "al-lee",
+    "label": "Lee County, AL",
+    "state": "AL",
+    "url": "https://leecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ar-lee",
+    "label": "Lee County, AR",
+    "state": "AR",
+    "url": "https://leecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "fl-lee",
+    "label": "Lee County, FL",
+    "state": "FL",
+    "url": "https://fl-leecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-lee",
+    "label": "Lee County, GA",
+    "state": "GA",
+    "url": "https://leecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ia-lee",
+    "label": "Lee County, IA",
+    "state": "IA",
+    "url": "https://leecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "il-lee",
+    "label": "Lee County, IL",
+    "state": "IL",
+    "url": "https://il-leecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ky-lee",
+    "label": "Lee County, KY",
+    "state": "KY",
+    "url": "https://leecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ms-lee",
+    "label": "Lee County, MS",
+    "state": "MS",
+    "url": "https://leecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "nc-lee",
+    "label": "Lee County, NC",
+    "state": "NC",
+    "url": "https://leecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "sc-lee",
+    "label": "Lee County, SC",
+    "state": "SC",
+    "url": "https://leecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "tx-lee",
+    "label": "Lee County, TX",
+    "state": "TX",
+    "url": "https://leecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "va-lee",
+    "label": "Lee County, VA",
+    "state": "VA",
+    "url": "https://leecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "id-lemhi",
+    "label": "Lemhi County, ID",
+    "state": "ID",
+    "url": "https://id-lemhicounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "fl-levy",
+    "label": "Levy County, FL",
+    "state": "FL",
+    "url": "https://fl-levycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mt-lewisandclark",
+    "label": "Lewis and Clark County, MT",
+    "state": "MT",
+    "url": "https://lewisandclark.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "sc-lexington",
+    "label": "Lexington County, SC",
+    "state": "SC",
+    "url": "https://sc-lexington.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-liberty",
+    "label": "Liberty County, GA",
+    "state": "GA",
+    "url": "https://ga-libertycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-liberty",
+    "label": "Liberty County, TX",
+    "state": "TX",
+    "url": "https://tx-liberty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ar-lincoln",
+    "label": "Lincoln County, AR",
+    "state": "AR",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "co-lincoln",
+    "label": "Lincoln County, CO",
+    "state": "CO",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "id-lincoln",
+    "label": "Lincoln County, ID",
+    "state": "ID",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ks-lincoln",
+    "label": "Lincoln County, KS",
+    "state": "KS",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ky-lincoln",
+    "label": "Lincoln County, KY",
+    "state": "KY",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "me-lincoln",
+    "label": "Lincoln County, ME",
+    "state": "ME",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "mn-lincoln",
+    "label": "Lincoln County, MN",
+    "state": "MN",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "mo-lincoln",
+    "label": "Lincoln County, MO",
+    "state": "MO",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "mt-lincoln",
+    "label": "Lincoln County, MT",
+    "state": "MT",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ne-lincoln",
+    "label": "Lincoln County, NE",
+    "state": "NE",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "nm-lincoln",
+    "label": "Lincoln County, NM",
+    "state": "NM",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "nv-lincoln",
+    "label": "Lincoln County, NV",
+    "state": "NV",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "or-lincoln",
+    "label": "Lincoln County, OR",
+    "state": "OR",
+    "url": "https://or-lincolncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sd-lincoln",
+    "label": "Lincoln County, SD",
+    "state": "SD",
+    "url": "https://sd-lincolncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tn-lincoln",
+    "label": "Lincoln County, TN",
+    "state": "TN",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "wa-lincoln",
+    "label": "Lincoln County, WA",
+    "state": "WA",
+    "url": "https://wa-lincolncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-lincoln",
+    "label": "Lincoln County, WI",
+    "state": "WI",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "wv-lincoln",
+    "label": "Lincoln County, WV",
+    "state": "WV",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "wy-lincoln",
+    "label": "Lincoln County, WY",
+    "state": "WY",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "la-lincoln",
+    "label": "Lincoln Parish, LA",
+    "state": "LA",
+    "url": "https://pub-lincoln.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ks-linn",
+    "label": "Linn County, KS",
+    "state": "KS",
+    "url": "https://ks-linncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-livingston",
+    "label": "Livingston County, NY",
+    "state": "NY",
+    "url": "https://livingston.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "tx-llano",
+    "label": "Llano County, TX",
+    "state": "TX",
+    "url": "https://tx-llano.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ky-logan",
+    "label": "Logan County, KY",
+    "state": "KY",
+    "url": "https://ky-logancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ok-logan",
+    "label": "Logan County, OK",
+    "state": "OK",
+    "url": "https://ok-logancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-lorain",
+    "label": "Lorain County, OH",
+    "state": "OH",
+    "url": "https://oh-loraincounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-loudoun",
+    "label": "Loudoun County, VA",
+    "state": "VA",
+    "url": "https://va-loudouncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-louisa",
+    "label": "Louisa County, VA",
+    "state": "VA",
+    "url": "https://va-louisacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-lowndes",
+    "label": "Lowndes County, GA",
+    "state": "GA",
+    "url": "https://ga-lowndescounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ms-lowndes",
+    "label": "Lowndes County, MS",
+    "state": "MS",
+    "url": "https://ms-lowndescounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-lucas",
+    "label": "Lucas County, OH",
+    "state": "OH",
+    "url": "https://oh-lucascounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-lumpkin",
+    "label": "Lumpkin County, GA",
+    "state": "GA",
+    "url": "https://ga-lumpkincounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-lyon",
+    "label": "Lyon County, KS",
+    "state": "KS",
+    "url": "https://ks-lyoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-macomb",
+    "label": "Macomb County, MI",
+    "state": "MI",
+    "url": "https://mi-macomb.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ca-madera",
+    "label": "Madera County, CA",
+    "state": "CA",
+    "url": "https://pub-maderacounty.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ga-madison",
+    "label": "Madison County, GA",
+    "state": "GA",
+    "url": "https://ga-madison.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mt-madison",
+    "label": "Madison County, MT",
+    "state": "MT",
+    "url": "https://mt-madisoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-madison",
+    "label": "Madison County, NY",
+    "state": "NY",
+    "url": "https://ny-madisoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tn-madison",
+    "label": "Madison County, TN",
+    "state": "TN",
+    "url": "https://tn-madisoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-madison",
+    "label": "Madison County, VA",
+    "state": "VA",
+    "url": "https://va-madisoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-manistee",
+    "label": "Manistee County, MI",
+    "state": "MI",
+    "url": "https://mi-manisteecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "az-maricopa",
+    "label": "Maricopa County, AZ",
+    "state": "AZ",
+    "url": "https://az-maricopacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-marinette",
+    "label": "Marinette County, WI",
+    "state": "WI",
+    "url": "https://wi-marinette.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-marion",
+    "label": "Marion County, KS",
+    "state": "KS",
+    "url": "https://ks-marion.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "al-marshall",
+    "label": "Marshall County, AL",
+    "state": "AL",
+    "url": "https://pub-marshall.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ia-marshall",
+    "label": "Marshall County, IA",
+    "state": "IA",
+    "url": "https://ia-marshallcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-marshall",
+    "label": "Marshall County, IN",
+    "state": "IN",
+    "url": "https://pub-marshall.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ky-marshall",
+    "label": "Marshall County, KY",
+    "state": "KY",
+    "url": "https://pub-marshall.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ok-marshall",
+    "label": "Marshall County, OK",
+    "state": "OK",
+    "url": "https://pub-marshall.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "sd-marshall",
+    "label": "Marshall County, SD",
+    "state": "SD",
+    "url": "https://pub-marshall.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "wv-marshall",
+    "label": "Marshall County, WV",
+    "state": "WV",
+    "url": "https://pub-marshall.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "va-mathews",
+    "label": "Mathews County, VA",
+    "state": "VA",
+    "url": "https://va-mathewscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tn-maury",
+    "label": "Maury County, TN",
+    "state": "TN",
+    "url": "https://tn-maurycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-mcintosh",
+    "label": "McIntosh County, GA",
+    "state": "GA",
+    "url": "https://ga-mcintoshcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nd-mckenzie",
+    "label": "McKenzie County, ND",
+    "state": "ND",
+    "url": "https://mckenzie.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "nm-mckinley",
+    "label": "McKinley County, NM",
+    "state": "NM",
+    "url": "https://nm-mckinleycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-mclennan",
+    "label": "McLennan County, TX",
+    "state": "TX",
+    "url": "https://tx-mclennancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-mcpherson",
+    "label": "McPherson County, KS",
+    "state": "KS",
+    "url": "https://ks-mcpherson.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-meade",
+    "label": "Meade County, KS",
+    "state": "KS",
+    "url": "https://ks-meadecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ky-meade",
+    "label": "Meade County, KY",
+    "state": "KY",
+    "url": "https://ky-meadecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-mecklenburg",
+    "label": "Mecklenburg County, VA",
+    "state": "VA",
+    "url": "https://va-mecklenburgcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-meeker",
+    "label": "Meeker County, MN",
+    "state": "MN",
+    "url": "https://mn-meekercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-meriwether",
+    "label": "Meriwether County, GA",
+    "state": "GA",
+    "url": "https://ga-meriwethercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-miami",
+    "label": "Miami County, IN",
+    "state": "IN",
+    "url": "https://in-miamicounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-miami",
+    "label": "Miami County, KS",
+    "state": "KS",
+    "url": "https://ks-miamicounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-miami",
+    "label": "Miami County, OH",
+    "state": "OH",
+    "url": "https://oh-miamicounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ct-middlesex",
+    "label": "Middlesex County, CT",
+    "state": "CT",
+    "url": "https://pub-middlesexcounty.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "nj-middlesex",
+    "label": "Middlesex County, NJ",
+    "state": "NJ",
+    "url": "https://pub-middlesexcounty.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "va-middlesex",
+    "label": "Middlesex County, VA",
+    "state": "VA",
+    "url": "https://va-middlesexcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-midland",
+    "label": "Midland County, MI",
+    "state": "MI",
+    "url": "https://mi-midland.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-midland",
+    "label": "Midland County, TX",
+    "state": "TX",
+    "url": "https://tx-midlandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-millelacs",
+    "label": "Mille Lacs County, MN",
+    "state": "MN",
+    "url": "https://mn-millelacscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ia-mills",
+    "label": "Mills County, IA",
+    "state": "IA",
+    "url": "https://ia-millscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "id-minidoka",
+    "label": "Minidoka County, ID",
+    "state": "ID",
+    "url": "https://id-minidokacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-mitchell",
+    "label": "Mitchell County, GA",
+    "state": "GA",
+    "url": "https://mitchellcounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ia-mitchell",
+    "label": "Mitchell County, IA",
+    "state": "IA",
+    "url": "https://mitchellcounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ks-mitchell",
+    "label": "Mitchell County, KS",
+    "state": "KS",
+    "url": "https://mitchellcounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "nc-mitchell",
+    "label": "Mitchell County, NC",
+    "state": "NC",
+    "url": "https://mitchellcounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "tx-mitchell",
+    "label": "Mitchell County, TX",
+    "state": "TX",
+    "url": "https://mitchellcounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ca-mono",
+    "label": "Mono County, CA",
+    "state": "CA",
+    "url": "https://ca-monocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "al-monroe",
+    "label": "Monroe County, AL",
+    "state": "AL",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ar-monroe",
+    "label": "Monroe County, AR",
+    "state": "AR",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "fl-monroe",
+    "label": "Monroe County, FL",
+    "state": "FL",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ga-monroe",
+    "label": "Monroe County, GA",
+    "state": "GA",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ia-monroe",
+    "label": "Monroe County, IA",
+    "state": "IA",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ky-monroe",
+    "label": "Monroe County, KY",
+    "state": "KY",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "mi-monroe",
+    "label": "Monroe County, MI",
+    "state": "MI",
+    "url": "https://mi-monroecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mo-monroe",
+    "label": "Monroe County, MO",
+    "state": "MO",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ms-monroe",
+    "label": "Monroe County, MS",
+    "state": "MS",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ny-monroe",
+    "label": "Monroe County, NY",
+    "state": "NY",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "oh-monroe",
+    "label": "Monroe County, OH",
+    "state": "OH",
+    "url": "https://oh-monroe.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-monroe",
+    "label": "Monroe County, PA",
+    "state": "PA",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "wi-monroe",
+    "label": "Monroe County, WI",
+    "state": "WI",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "wv-monroe",
+    "label": "Monroe County, WV",
+    "state": "WV",
+    "url": "https://monroecounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "mi-montcalm",
+    "label": "Montcalm County, MI",
+    "state": "MI",
+    "url": "https://mi-montcalmcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "il-montgomery",
+    "label": "Montgomery County, IL",
+    "state": "IL",
+    "url": "https://il-montgomery.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-montgomery",
+    "label": "Montgomery County, KS",
+    "state": "KS",
+    "url": "https://ks-montgomerycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-montgomery",
+    "label": "Montgomery County, NC",
+    "state": "NC",
+    "url": "https://nc-montgomerycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-montgomery",
+    "label": "Montgomery County, OH",
+    "state": "OH",
+    "url": "https://oh-montgomerycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-montgomery",
+    "label": "Montgomery County, PA",
+    "state": "PA",
+    "url": "https://pa-montgomerycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-moore",
+    "label": "Moore County, NC",
+    "state": "NC",
+    "url": "https://nc-moorecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-morgan",
+    "label": "Morgan County, GA",
+    "state": "GA",
+    "url": "https://ga-morgancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-morrison",
+    "label": "Morrison County, MN",
+    "state": "MN",
+    "url": "https://mn-morrisoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-morton",
+    "label": "Morton County, KS",
+    "state": "KS",
+    "url": "https://ks-mortoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-mower",
+    "label": "Mower County, MN",
+    "state": "MN",
+    "url": "https://mn-mowercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-muskegon",
+    "label": "Muskegon County, MI",
+    "state": "MI",
+    "url": "https://mi-muskegoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-nacogdoches",
+    "label": "Nacogdoches County, TX",
+    "state": "TX",
+    "url": "https://tx-nacogdochescounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ma-nantucket",
+    "label": "Nantucket County, MA",
+    "state": "MA",
+    "url": "https://ma-nantucket.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ca-napa",
+    "label": "Napa County, CA",
+    "state": "CA",
+    "url": "https://napa.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "nc-nash",
+    "label": "Nash County, NC",
+    "state": "NC",
+    "url": "https://nc-nashcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-neosho",
+    "label": "Neosho County, KS",
+    "state": "KS",
+    "url": "https://ks-neoshocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ca-nevada",
+    "label": "Nevada County, CA",
+    "state": "CA",
+    "url": "https://ca-nevadacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-newhanover",
+    "label": "New Hanover County, NC",
+    "state": "NC",
+    "url": "https://nc-newhanovercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-newkent",
+    "label": "New Kent County, VA",
+    "state": "VA",
+    "url": "https://newkent.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ga-newton",
+    "label": "Newton County, GA",
+    "state": "GA",
+    "url": "https://ga-newtoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-nicollet",
+    "label": "Nicollet County, MN",
+    "state": "MN",
+    "url": "https://mn-nicolletcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ma-norfolk",
+    "label": "Norfolk County, MA",
+    "state": "MA",
+    "url": "https://pub-norfolkcounty.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "nc-northampton",
+    "label": "Northampton County, NC",
+    "state": "NC",
+    "url": "https://nc-northamptoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-northumberland",
+    "label": "Northumberland County, PA",
+    "state": "PA",
+    "url": "https://pub-northumberland.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "va-northumberland",
+    "label": "Northumberland County, VA",
+    "state": "VA",
+    "url": "https://va-northumberlandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nv-nye",
+    "label": "Nye County, NV",
+    "state": "NV",
+    "url": "https://nv-nyecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-oconee",
+    "label": "Oconee County, GA",
+    "state": "GA",
+    "url": "https://ga-oconeecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-oconto",
+    "label": "Oconto County, WI",
+    "state": "WI",
+    "url": "https://wi-ocontocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ms-oktibbeha",
+    "label": "Oktibbeha County, MS",
+    "state": "MS",
+    "url": "https://ms-oktibbehacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nd-oliver",
+    "label": "Oliver County, ND",
+    "state": "ND",
+    "url": "https://pub-oliver.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "mn-olmsted",
+    "label": "Olmsted County, MN",
+    "state": "MN",
+    "url": "https://olmstedcounty.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "nc-orange",
+    "label": "Orange County, NC",
+    "state": "NC",
+    "url": "https://nc-orangecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-orange",
+    "label": "Orange County, NY",
+    "state": "NY",
+    "url": "https://ny-orangecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-orange",
+    "label": "Orange County, TX",
+    "state": "TX",
+    "url": "https://tx-orange.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-orange",
+    "label": "Orange County, VA",
+    "state": "VA",
+    "url": "https://va-orangecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sc-orangeburg",
+    "label": "Orangeburg County, SC",
+    "state": "SC",
+    "url": "https://sc-orangeburgcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-osage",
+    "label": "Osage County, KS",
+    "state": "KS",
+    "url": "https://ks-osagecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-oswego",
+    "label": "Oswego County, NY",
+    "state": "NY",
+    "url": "https://pub-oswegocounty.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "nm-otero",
+    "label": "Otero County, NM",
+    "state": "NM",
+    "url": "https://nm-oterocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-otsego",
+    "label": "Otsego County, MI",
+    "state": "MI",
+    "url": "https://mi-otsegocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-ottawa",
+    "label": "Ottawa County, KS",
+    "state": "KS",
+    "url": "https://ks-ottawa.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-ottawa",
+    "label": "Ottawa County, MI",
+    "state": "MI",
+    "url": "https://ottawa.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "oh-ottawa",
+    "label": "Ottawa County, OH",
+    "state": "OH",
+    "url": "https://oh-ottawacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ok-ottawa",
+    "label": "Ottawa County, OK",
+    "state": "OK",
+    "url": "https://ottawa.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "co-ouray",
+    "label": "Ouray County, CO",
+    "state": "CO",
+    "url": "https://co-ouraycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "me-oxford",
+    "label": "Oxford County, ME",
+    "state": "ME",
+    "url": "https://me-oxford.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-ozaukee",
+    "label": "Ozaukee County, WI",
+    "state": "WI",
+    "url": "https://wi-ozaukeecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-page",
+    "label": "Page County, VA",
+    "state": "VA",
+    "url": "https://va-pagecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-park",
+    "label": "Park County, CO",
+    "state": "CO",
+    "url": "https://co-parkcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-parker",
+    "label": "Parker County, TX",
+    "state": "TX",
+    "url": "https://tx-parkercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nj-passaic",
+    "label": "Passaic County, NJ",
+    "state": "NJ",
+    "url": "https://nj-passaic.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-patrick",
+    "label": "Patrick County, VA",
+    "state": "VA",
+    "url": "https://va-patrickcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-paulding",
+    "label": "Paulding County, GA",
+    "state": "GA",
+    "url": "https://ga-pauldingcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-pawnee",
+    "label": "Pawnee County, KS",
+    "state": "KS",
+    "url": "https://ks-pawneecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ms-pearlriver",
+    "label": "Pearl River County, MS",
+    "state": "MS",
+    "url": "https://ms-pearlrivercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-pender",
+    "label": "Pender County, NC",
+    "state": "NC",
+    "url": "https://nc-pendercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "il-peoria",
+    "label": "Peoria County, IL",
+    "state": "IL",
+    "url": "https://il-peoriacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "al-perry",
+    "label": "Perry County, AL",
+    "state": "AL",
+    "url": "https://pub-perry.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ar-perry",
+    "label": "Perry County, AR",
+    "state": "AR",
+    "url": "https://pub-perry.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "in-perry",
+    "label": "Perry County, IN",
+    "state": "IN",
+    "url": "https://pub-perry.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "mo-perry",
+    "label": "Perry County, MO",
+    "state": "MO",
+    "url": "https://pub-perry.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ms-perry",
+    "label": "Perry County, MS",
+    "state": "MS",
+    "url": "https://pub-perry.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "oh-perry",
+    "label": "Perry County, OH",
+    "state": "OH",
+    "url": "https://pub-perry.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "pa-perry",
+    "label": "Perry County, PA",
+    "state": "PA",
+    "url": "https://pub-perry.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "tn-perry",
+    "label": "Perry County, TN",
+    "state": "TN",
+    "url": "https://pub-perry.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ga-pickens",
+    "label": "Pickens County, GA",
+    "state": "GA",
+    "url": "https://ga-pickenscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "al-pike",
+    "label": "Pike County, AL",
+    "state": "AL",
+    "url": "https://pike.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ar-pike",
+    "label": "Pike County, AR",
+    "state": "AR",
+    "url": "https://pike.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ga-pike",
+    "label": "Pike County, GA",
+    "state": "GA",
+    "url": "https://pike.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "il-pike",
+    "label": "Pike County, IL",
+    "state": "IL",
+    "url": "https://pike.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "in-pike",
+    "label": "Pike County, IN",
+    "state": "IN",
+    "url": "https://pike.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ky-pike",
+    "label": "Pike County, KY",
+    "state": "KY",
+    "url": "https://pike.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "mo-pike",
+    "label": "Pike County, MO",
+    "state": "MO",
+    "url": "https://pike.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ms-pike",
+    "label": "Pike County, MS",
+    "state": "MS",
+    "url": "https://pike.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "oh-pike",
+    "label": "Pike County, OH",
+    "state": "OH",
+    "url": "https://pike.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "pa-pike",
+    "label": "Pike County, PA",
+    "state": "PA",
+    "url": "https://pike.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "az-pinal",
+    "label": "Pinal County, AZ",
+    "state": "AZ",
+    "url": "https://pinal.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "fl-pinellas",
+    "label": "Pinellas County, FL",
+    "state": "FL",
+    "url": "https://pinellas.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "mn-pipestone",
+    "label": "Pipestone County, MN",
+    "state": "MN",
+    "url": "https://mn-pipestone.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-pitkin",
+    "label": "Pitkin County, CO",
+    "state": "CO",
+    "url": "https://pitkin.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "nc-pitt",
+    "label": "Pitt County, NC",
+    "state": "NC",
+    "url": "https://nc-pittcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-pittsylvania",
+    "label": "Pittsylvania County, VA",
+    "state": "VA",
+    "url": "https://va-pittsylvaniacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ma-plymouth",
+    "label": "Plymouth County, MA",
+    "state": "MA",
+    "url": "https://ma-plymouthcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ar-polk",
+    "label": "Polk County, AR",
+    "state": "AR",
+    "url": "https://polkcounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "fl-polk",
+    "label": "Polk County, FL",
+    "state": "FL",
+    "url": "https://polkcounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ia-polk",
+    "label": "Polk County, IA",
+    "state": "IA",
+    "url": "https://polkcounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "mn-polk",
+    "label": "Polk County, MN",
+    "state": "MN",
+    "url": "https://mn-polkcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "or-polk",
+    "label": "Polk County, OR",
+    "state": "OR",
+    "url": "https://or-polkcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-polk",
+    "label": "Polk County, TX",
+    "state": "TX",
+    "url": "https://tx-polkcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-polk",
+    "label": "Polk County, WI",
+    "state": "WI",
+    "url": "https://polkcounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "oh-portage",
+    "label": "Portage County, OH",
+    "state": "OH",
+    "url": "https://oh-portagecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-portage",
+    "label": "Portage County, WI",
+    "state": "WI",
+    "url": "https://wi-portagecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-powhatan",
+    "label": "Powhatan County, VA",
+    "state": "VA",
+    "url": "https://va-powhatancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-pratt",
+    "label": "Pratt County, KS",
+    "state": "KS",
+    "url": "https://ks-prattcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-preble",
+    "label": "Preble County, OH",
+    "state": "OH",
+    "url": "https://oh-preblecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-price",
+    "label": "Price County, WI",
+    "state": "WI",
+    "url": "https://wi-pricecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-princegeorge",
+    "label": "Prince George County, VA",
+    "state": "VA",
+    "url": "https://pub-princegeorge.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "md-princegeorges",
+    "label": "Prince George's County, MD",
+    "state": "MD",
+    "url": "https://md-princegeorgescounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-putnam",
+    "label": "Putnam County, GA",
+    "state": "GA",
+    "url": "https://ga-putnamcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "md-queenannes",
+    "label": "Queen Anne's County, MD",
+    "state": "MD",
+    "url": "https://md-queenannescounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nd-ramsey",
+    "label": "Ramsey County, ND",
+    "state": "ND",
+    "url": "https://nd-ramseycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-randall",
+    "label": "Randall County, TX",
+    "state": "TX",
+    "url": "https://tx-randallcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-randolph",
+    "label": "Randolph County, NC",
+    "state": "NC",
+    "url": "https://nc-randolphcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mt-ravalli",
+    "label": "Ravalli County, MT",
+    "state": "MT",
+    "url": "https://mt-ravallicounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-rensselaer",
+    "label": "Rensselaer County, NY",
+    "state": "NY",
+    "url": "https://ny-rensselaercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sc-richland",
+    "label": "Richland County, SC",
+    "state": "SC",
+    "url": "https://sc-richlandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-richmond",
+    "label": "Richmond County, GA",
+    "state": "GA",
+    "url": "https://pub-richmond.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "nc-richmond",
+    "label": "Richmond County, NC",
+    "state": "NC",
+    "url": "https://nc-richmondcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-richmond",
+    "label": "Richmond County, NY",
+    "state": "NY",
+    "url": "https://pub-richmond.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "co-rioblanco",
+    "label": "Rio Blanco County, CO",
+    "state": "CO",
+    "url": "https://co-rioblancocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-roanoke",
+    "label": "Roanoke County, VA",
+    "state": "VA",
+    "url": "https://va-roanokecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "il-rockisland",
+    "label": "Rock Island County, IL",
+    "state": "IL",
+    "url": "https://il-rockislandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-rockbridge",
+    "label": "Rockbridge County, VA",
+    "state": "VA",
+    "url": "https://va-rockbridgecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ok-rogers",
+    "label": "Rogers County, OK",
+    "state": "OK",
+    "url": "https://www.rogerscounty.org/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-roscommon",
+    "label": "Roscommon County, MI",
+    "state": "MI",
+    "url": "https://mi-roscommoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-rowan",
+    "label": "Rowan County, NC",
+    "state": "NC",
+    "url": "https://nc-rowancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-russell",
+    "label": "Russell County, KS",
+    "state": "KS",
+    "url": "https://ks-russellcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-russell",
+    "label": "Russell County, VA",
+    "state": "VA",
+    "url": "https://va-russellcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-saginaw",
+    "label": "Saginaw County, MI",
+    "state": "MI",
+    "url": "https://mi-saginaw.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "il-saline",
+    "label": "Saline County, IL",
+    "state": "IL",
+    "url": "https://pub-salinecounty.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "ca-sanbernardino",
+    "label": "San Bernardino County, CA",
+    "state": "CA",
+    "url": "https://ca-sanbernardino.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ut-sanjuan",
+    "label": "San Juan County, UT",
+    "state": "UT",
+    "url": "https://ut-sanjuancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-sanjuan",
+    "label": "San Juan County, WA",
+    "state": "WA",
+    "url": "https://wa-sanjuancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-sanmiguel",
+    "label": "San Miguel County, CO",
+    "state": "CO",
+    "url": "https://sanmiguel.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "nm-sanmiguel",
+    "label": "San Miguel County, NM",
+    "state": "NM",
+    "url": "https://sanmiguel.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "mt-sanders",
+    "label": "Sanders County, MT",
+    "state": "MT",
+    "url": "https://mt-sanderscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ut-sanpete",
+    "label": "Sanpete County, UT",
+    "state": "UT",
+    "url": "https://ut-sanpetecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "az-santacruz",
+    "label": "Santa Cruz County, AZ",
+    "state": "AZ",
+    "url": "https://az-santacruzcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "fl-santarosa",
+    "label": "Santa Rosa County, FL",
+    "state": "FL",
+    "url": "https://fl-santarosacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ne-sarpy",
+    "label": "Sarpy County, NE",
+    "state": "NE",
+    "url": "https://ne-sarpycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-sawyer",
+    "label": "Sawyer County, WI",
+    "state": "WI",
+    "url": "https://wi-sawyercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-schenectady",
+    "label": "Schenectady County, NY",
+    "state": "NY",
+    "url": "https://ny-schenectady.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-scotland",
+    "label": "Scotland County, NC",
+    "state": "NC",
+    "url": "https://nc-scotlandcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-scott",
+    "label": "Scott County, IN",
+    "state": "IN",
+    "url": "https://in-scottcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-scott",
+    "label": "Scott County, MN",
+    "state": "MN",
+    "url": "https://mn-scottcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-scott",
+    "label": "Scott County, VA",
+    "state": "VA",
+    "url": "https://va-scottcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-sedgwick",
+    "label": "Sedgwick County, CO",
+    "state": "CO",
+    "url": "https://sedgwickcounty.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "ks-sedgwick",
+    "label": "Sedgwick County, KS",
+    "state": "KS",
+    "url": "https://sedgwickcounty.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "fl-seminole",
+    "label": "Seminole County, FL",
+    "state": "FL",
+    "url": "https://fl-seminole.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-seminole",
+    "label": "Seminole County, GA",
+    "state": "GA",
+    "url": "https://ga-seminolecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-shawano",
+    "label": "Shawano County, WI",
+    "state": "WI",
+    "url": "https://wi-shawano.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-shawnee",
+    "label": "Shawnee County, KS",
+    "state": "KS",
+    "url": "https://shawnee.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "al-shelby",
+    "label": "Shelby County, AL",
+    "state": "AL",
+    "url": "https://al-shelbycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-shenandoah",
+    "label": "Shenandoah County, VA",
+    "state": "VA",
+    "url": "https://va-shenandoahcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "or-sherman",
+    "label": "Sherman County, OR",
+    "state": "OR",
+    "url": "https://or-shermancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-sibley",
+    "label": "Sibley County, MN",
+    "state": "MN",
+    "url": "https://mn-sibleycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ca-sierra",
+    "label": "Sierra County, CA",
+    "state": "CA",
+    "url": "https://ca-sierracounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ca-siskiyou",
+    "label": "Siskiyou County, CA",
+    "state": "CA",
+    "url": "https://ca-siskiyoucounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-spalding",
+    "label": "Spalding County, GA",
+    "state": "GA",
+    "url": "https://spaldingcounty.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "sc-spartanburg",
+    "label": "Spartanburg County, SC",
+    "state": "SC",
+    "url": "https://sc-spartanburg.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mo-stcharles",
+    "label": "St. Charles County, MO",
+    "state": "MO",
+    "url": "https://mo-stcharlescounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-stcroix",
+    "label": "St. Croix County, WI",
+    "state": "WI",
+    "url": "https://wi-stcroixcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-stjoseph",
+    "label": "St. Joseph County, IN",
+    "state": "IN",
+    "url": "https://in-stjosephcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-stanly",
+    "label": "Stanly County, NC",
+    "state": "NC",
+    "url": "https://nc-stanlycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-steuben",
+    "label": "Steuben County, NY",
+    "state": "NY",
+    "url": "https://ny-steubencounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mt-stillwater",
+    "label": "Stillwater County, MT",
+    "state": "MT",
+    "url": "https://mt-stillwatercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nv-storey",
+    "label": "Storey County, NV",
+    "state": "NV",
+    "url": "https://nv-storeycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ia-story",
+    "label": "Story County, IA",
+    "state": "IA",
+    "url": "https://ia-storycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wy-sublette",
+    "label": "Sublette County, WY",
+    "state": "WY",
+    "url": "https://wy-sublettecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ut-summit",
+    "label": "Summit County, UT",
+    "state": "UT",
+    "url": "https://ut-summitcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-surry",
+    "label": "Surry County, VA",
+    "state": "VA",
+    "url": "https://va-surrycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "de-sussex",
+    "label": "Sussex County, DE",
+    "state": "DE",
+    "url": "https://pub-sussex.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "nj-sussex",
+    "label": "Sussex County, NJ",
+    "state": "NJ",
+    "url": "https://pub-sussex.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "va-sussex",
+    "label": "Sussex County, VA",
+    "state": "VA",
+    "url": "https://pub-sussex.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "wy-sweetwater",
+    "label": "Sweetwater County, WY",
+    "state": "WY",
+    "url": "https://pub-sweetwater.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "nm-taos",
+    "label": "Taos County, NM",
+    "state": "NM",
+    "url": "https://nm-taoscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-taylor",
+    "label": "Taylor County, TX",
+    "state": "TX",
+    "url": "https://tx-taylor.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "co-teller",
+    "label": "Teller County, CO",
+    "state": "CO",
+    "url": "https://co-tellercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mt-teton",
+    "label": "Teton County, MT",
+    "state": "MT",
+    "url": "https://pub-tetoncounty.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "wy-teton",
+    "label": "Teton County, WY",
+    "state": "WY",
+    "url": "https://wy-tetoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "or-tillamook",
+    "label": "Tillamook County, OR",
+    "state": "OR",
+    "url": "https://or-tillamookcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-tippecanoe",
+    "label": "Tippecanoe County, IN",
+    "state": "IN",
+    "url": "https://in-tippecanoecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ct-tolland",
+    "label": "Tolland County, CT",
+    "state": "CT",
+    "url": "https://ct-tolland.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nd-traill",
+    "label": "Traill County, ND",
+    "state": "ND",
+    "url": "https://nd-traillcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-troup",
+    "label": "Troup County, GA",
+    "state": "GA",
+    "url": "https://troup.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "ok-tulsa",
+    "label": "Tulsa County, OK",
+    "state": "OK",
+    "url": "https://tulsa.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ms-tunica",
+    "label": "Tunica County, MS",
+    "state": "MS",
+    "url": "https://ms-tunica.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "or-umatilla",
+    "label": "Umatilla County, OR",
+    "state": "OR",
+    "url": "https://or-umatilla.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nm-union",
+    "label": "Union County, NM",
+    "state": "NM",
+    "url": "https://nm-unioncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-union",
+    "label": "Union County, OH",
+    "state": "OH",
+    "url": "https://oh-union.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-upson",
+    "label": "Upson County, GA",
+    "state": "GA",
+    "url": "https://ga-upsoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-valverde",
+    "label": "Val Verde County, TX",
+    "state": "TX",
+    "url": "https://tx-valverdecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nm-valencia",
+    "label": "Valencia County, NM",
+    "state": "NM",
+    "url": "https://nm-valenciacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mt-valley",
+    "label": "Valley County, MT",
+    "state": "MT",
+    "url": "https://mt-valleycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ar-vanburen",
+    "label": "Van Buren County, AR",
+    "state": "AR",
+    "url": "https://ar-vanburen.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "in-vanderburgh",
+    "label": "Vanderburgh County, IN",
+    "state": "IN",
+    "url": "https://in-vanderburghcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-venango",
+    "label": "Venango County, PA",
+    "state": "PA",
+    "url": "https://pa-venangocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-vernon",
+    "label": "Vernon County, WI",
+    "state": "WI",
+    "url": "https://pub-vernon.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "la-vernon",
+    "label": "Vernon Parish, LA",
+    "state": "LA",
+    "url": "https://pub-vernon.escribemeetings.com/",
+    "platform": "escribe"
+  },
+  {
+    "county_id": "tx-victoria",
+    "label": "Victoria County, TX",
+    "state": "TX",
+    "url": "https://tx-victoria.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-wabaunsee",
+    "label": "Wabaunsee County, KS",
+    "state": "KS",
+    "url": "https://ks-wabaunseecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-wadena",
+    "label": "Wadena County, MN",
+    "state": "MN",
+    "url": "https://mn-wadenacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ok-wagoner",
+    "label": "Wagoner County, OK",
+    "state": "OK",
+    "url": "https://ok-wagonercounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-wahkiakum",
+    "label": "Wahkiakum County, WA",
+    "state": "WA",
+    "url": "https://wa-wahkiakumcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-wake",
+    "label": "Wake County, NC",
+    "state": "NC",
+    "url": "https://wake.legistar.com/Calendar.aspx",
+    "platform": "legistar"
+  },
+  {
+    "county_id": "tx-waller",
+    "label": "Waller County, TX",
+    "state": "TX",
+    "url": "https://tx-waller.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-walton",
+    "label": "Walton County, GA",
+    "state": "GA",
+    "url": "https://ga-waltoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-walworth",
+    "label": "Walworth County, WI",
+    "state": "WI",
+    "url": "https://wi-walworthcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nd-ward",
+    "label": "Ward County, ND",
+    "state": "ND",
+    "url": "https://nd-wardcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-warren",
+    "label": "Warren County, NC",
+    "state": "NC",
+    "url": "https://nc-warrencounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-warren",
+    "label": "Warren County, PA",
+    "state": "PA",
+    "url": "https://pa-warrencounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-warren",
+    "label": "Warren County, VA",
+    "state": "VA",
+    "url": "https://va-warrencounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-waseca",
+    "label": "Waseca County, MN",
+    "state": "MN",
+    "url": "https://mn-wasecacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wy-washakie",
+    "label": "Washakie County, WY",
+    "state": "WY",
+    "url": "https://wy-washakiecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-washington",
+    "label": "Washington County, GA",
+    "state": "GA",
+    "url": "https://ga-washingtoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ia-washington",
+    "label": "Washington County, IA",
+    "state": "IA",
+    "url": "https://ia-washingtoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "id-washington",
+    "label": "Washington County, ID",
+    "state": "ID",
+    "url": "https://id-washingtoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-washington",
+    "label": "Washington County, MN",
+    "state": "MN",
+    "url": "https://mn-washingtoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-washington",
+    "label": "Washington County, NY",
+    "state": "NY",
+    "url": "https://ny-washingtoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-washington",
+    "label": "Washington County, OH",
+    "state": "OH",
+    "url": "https://oh-washingtoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tn-washington",
+    "label": "Washington County, TN",
+    "state": "TN",
+    "url": "https://tn-washingtoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-watonwan",
+    "label": "Watonwan County, MN",
+    "state": "MN",
+    "url": "https://mn-watonwancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mi-wayne",
+    "label": "Wayne County, MI",
+    "state": "MI",
+    "url": "https://mi-wayne.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-wayne",
+    "label": "Wayne County, NC",
+    "state": "NC",
+    "url": "https://nc-waynecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-wayne",
+    "label": "Wayne County, NY",
+    "state": "NY",
+    "url": "https://ny-waynecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-wayne",
+    "label": "Wayne County, PA",
+    "state": "PA",
+    "url": "https://pa-waynecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-webster",
+    "label": "Webster County, GA",
+    "state": "GA",
+    "url": "https://webster.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ia-webster",
+    "label": "Webster County, IA",
+    "state": "IA",
+    "url": "https://webster.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ky-webster",
+    "label": "Webster County, KY",
+    "state": "KY",
+    "url": "https://webster.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "mo-webster",
+    "label": "Webster County, MO",
+    "state": "MO",
+    "url": "https://webster.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ms-webster",
+    "label": "Webster County, MS",
+    "state": "MS",
+    "url": "https://webster.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "ne-webster",
+    "label": "Webster County, NE",
+    "state": "NE",
+    "url": "https://webster.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "wv-webster",
+    "label": "Webster County, WV",
+    "state": "WV",
+    "url": "https://webster.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "wy-weston",
+    "label": "Weston County, WY",
+    "state": "WY",
+    "url": "https://weston.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "tx-wharton",
+    "label": "Wharton County, TX",
+    "state": "TX",
+    "url": "https://wharton.novusagenda.com/agendapublic/",
+    "platform": "novusagenda"
+  },
+  {
+    "county_id": "wa-whatcom",
+    "label": "Whatcom County, WA",
+    "state": "WA",
+    "url": "https://wa-whatcomcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ga-white",
+    "label": "White County, GA",
+    "state": "GA",
+    "url": "https://ga-whitecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nv-whitepine",
+    "label": "White Pine County, NV",
+    "state": "NV",
+    "url": "https://nv-whitepinecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "il-whiteside",
+    "label": "Whiteside County, IL",
+    "state": "IL",
+    "url": "https://il-whitesidecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-whitman",
+    "label": "Whitman County, WA",
+    "state": "WA",
+    "url": "https://wa-whitmancounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ks-wichita",
+    "label": "Wichita County, KS",
+    "state": "KS",
+    "url": "https://ks-wichitacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "md-wicomico",
+    "label": "Wicomico County, MD",
+    "state": "MD",
+    "url": "https://md-wicomicocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-wilkes",
+    "label": "Wilkes County, NC",
+    "state": "NC",
+    "url": "https://nc-wilkescounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-williams",
+    "label": "Williams County, OH",
+    "state": "OH",
+    "url": "https://oh-williamscounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "sc-williamsburg",
+    "label": "Williamsburg County, SC",
+    "state": "SC",
+    "url": "https://sc-williamsburgcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tn-wilson",
+    "label": "Wilson County, TN",
+    "state": "TN",
+    "url": "https://tn-wilsoncounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ct-windham",
+    "label": "Windham County, CT",
+    "state": "CT",
+    "url": "https://ct-windham.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "vt-windsor",
+    "label": "Windsor County, VT",
+    "state": "VT",
+    "url": "https://vt-windsor.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wi-winnebago",
+    "label": "Winnebago County, WI",
+    "state": "WI",
+    "url": "https://wi-winnebagocounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-winona",
+    "label": "Winona County, MN",
+    "state": "MN",
+    "url": "https://mn-winonacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "tx-wise",
+    "label": "Wise County, TX",
+    "state": "TX",
+    "url": "https://tx-wisecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-wise",
+    "label": "Wise County, VA",
+    "state": "VA",
+    "url": "https://va-wisecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-wood",
+    "label": "Wood County, OH",
+    "state": "OH",
+    "url": "https://oh-woodcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "il-woodford",
+    "label": "Woodford County, IL",
+    "state": "IL",
+    "url": "https://il-woodfordcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ky-woodford",
+    "label": "Woodford County, KY",
+    "state": "KY",
+    "url": "https://ky-woodfordcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ok-woodward",
+    "label": "Woodward County, OK",
+    "state": "OK",
+    "url": "https://ok-woodward.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "mn-wright",
+    "label": "Wright County, MN",
+    "state": "MN",
+    "url": "https://mn-wrightcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "oh-wyandot",
+    "label": "Wyandot County, OH",
+    "state": "OH",
+    "url": "https://oh-wyandotcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "ny-wyoming",
+    "label": "Wyoming County, NY",
+    "state": "NY",
+    "url": "https://ny-wyomingcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-wythe",
+    "label": "Wythe County, VA",
+    "state": "VA",
+    "url": "https://va-wythecounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-yadkin",
+    "label": "Yadkin County, NC",
+    "state": "NC",
+    "url": "https://nc-yadkincounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "wa-yakima",
+    "label": "Yakima County, WA",
+    "state": "WA",
+    "url": "https://wa-yakimacounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "or-yamhill",
+    "label": "Yamhill County, OR",
+    "state": "OR",
+    "url": "https://or-yamhillcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "nc-yancey",
+    "label": "Yancey County, NC",
+    "state": "NC",
+    "url": "https://nc-yanceycounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "me-york",
+    "label": "York County, ME",
+    "state": "ME",
+    "url": "https://me-york.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "pa-york",
+    "label": "York County, PA",
+    "state": "PA",
+    "url": "https://pa-yorkcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  },
+  {
+    "county_id": "va-york",
+    "label": "York County, VA",
+    "state": "VA",
+    "url": "https://va-yorkcounty.civicplus.com/AgendaCenter",
+    "platform": "civicplus"
+  }
+]
